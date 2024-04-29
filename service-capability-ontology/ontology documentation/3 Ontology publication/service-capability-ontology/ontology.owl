@@ -1,0 +1,876 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://purl.org/sco/ns#"
+     xml:base="https://purl.org/sco/ns"
+     xmlns:ns="https://creativecommons.org/ns#"
+     xmlns:mod="https://w3id.org/mod#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/">
+    <owl:Ontology rdf:about="https://purl.org/sco/ns#">
+        <owl:versionIRI rdf:resource="https://purl.org/sco/ns#"/>
+        <terms:contributor rdf:nodeID="genid1"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2024</terms:created>
+        <terms:creator rdf:nodeID="genid3"/>
+        <terms:description xml:lang="en">This is the Service Capability (SCO). SCO is a light-weight, application ontology for the translation of legacy IoT devices to the W3C Web of Things. SCO contributes to the automatic generation of Thing Descriptions for modeling the key components necessary for a W3C Web of Things Thing Description.  </terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-14</terms:issued>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+        <terms:publisher rdf:resource="https://renedorsch.solidweb.org/#me"/>
+        <terms:title xml:lang="en">Service Capability Ontology</terms:title>
+        <bibo:doi rdf:resource="https://doi.org/tbd"/>
+        <vann:preferredNamespacePrefix>sco</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceURI>https://purl.org/sco/ns#</vann:preferredNamespaceURI>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <foaf:depiction rdf:resource="http://purl.org/sco/schema_diagram"/>
+        <ns:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+        <mod:acronym>SCO</mod:acronym>
+        <mod:competencyQuestion rdf:resource="http://purl.org/sco/repository/cq"/>
+        <mod:hasSyntax rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
+    </owl:Ontology>
+    <rdf:Description rdf:nodeID="genid1">
+        <schema:affiliation rdf:nodeID="genid2"/>
+        <rdfs:seeAlso rdf:resource="https://www.th-nuernberg.de/person/ascencion-arevalo-kiara-marnitt/"/>
+        <foaf:homepage rdf:resource="https://orcid.org/0000-0002-4158-9478"/>
+        <foaf:name>Kiara Marnitt Ascencion Arevalo</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid3">
+        <schema:affiliation rdf:nodeID="genid4"/>
+        <rdfs:seeAlso rdf:resource="https://renedorsch.solidweb.org/#me"/>
+        <foaf:homepage rdf:resource="https://orcid.org/0000-0001-6857-7314"/>
+        <foaf:name>Rene Dorsch</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid2">
+        <foaf:homepage rdf:resource="https://www.th-nuernberg.de/einrichtungen-gesamt/fraunhofer-forschungsgruppen/future-engineering/"/>
+        <foaf:name>Future Engineering Research Group</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid4">
+        <foaf:homepage rdf:resource="https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html"/>
+        <foaf:name>Data Spaces and IoT Solutions</foaf:name>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/doi -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/doi"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceURI -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceURI"/>
+    
+
+
+    <!-- http://schema.org/affiliation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/affiliation"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/depiction -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depiction"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- https://creativecommons.org/ns#license -->
+
+
+    <owl:AnnotationProperty rdf:about="https://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- https://w3id.org/mod#acronym -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mod#acronym"/>
+    
+
+
+    <!-- https://w3id.org/mod#competencyQuestion -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mod#competencyQuestion"/>
+    
+
+
+    <!-- https://w3id.org/mod#hasSyntax -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mod#hasSyntax"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://purl.org/sco/ns#dataModelOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://purl.org/sco/ns#dataModelOf">
+        <owl:inverseOf rdf:resource="https://purl.org/sco/ns#hasDataModel"/>
+        <rdfs:domain rdf:resource="https://purl.org/sco/ns#DataModel"/>
+        <rdfs:range rdf:resource="https://purl.org/sco/ns#ServiceCapability"/>
+        <rdfs:comment>Represents the connection of data model to a specific service capability.</rdfs:comment>
+        <rdfs:label>is datamodel of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.org/sco/ns#decodingRuleOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://purl.org/sco/ns#decodingRuleOf">
+        <rdfs:subPropertyOf rdf:resource="https://purl.org/sco/ns#transformationRuleOf"/>
+        <owl:inverseOf rdf:resource="https://purl.org/sco/ns#hasDecodingRule"/>
+        <rdfs:domain rdf:resource="https://purl.org/sco/ns#TransformationRule"/>
+        <rdfs:range rdf:resource="https://purl.org/sco/ns#DataModel"/>
+        <rdfs:comment>Is the decoding rule (a specail type of transformation rule) for some data model.</rdfs:comment>
+        <rdfs:label>is decoding rule of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.org/sco/ns#encodingRuleOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://purl.org/sco/ns#encodingRuleOf">
+        <rdfs:subPropertyOf rdf:resource="https://purl.org/sco/ns#transformationRuleOf"/>
+        <owl:inverseOf rdf:resource="https://purl.org/sco/ns#hasEncodingRule"/>
+        <rdfs:domain rdf:resource="https://purl.org/sco/ns#TransformationRule"/>
+        <rdfs:range rdf:resource="https://purl.org/sco/ns#DataModel"/>
+        <rdfs:comment>Is the encoding rule (a specail type of transformation rule) for some data model.</rdfs:comment>
+        <rdfs:label>is encoding rule of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.org/sco/ns#hasDataModel -->
+
+
+    <owl:ObjectProperty rdf:about="https://purl.org/sco/ns#hasDataModel">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://purl.org/sco/ns#ServiceCapability"/>
+        <rdfs:range rdf:resource="https://purl.org/sco/ns#DataModel"/>
+        <rdfs:comment>References to the data model of a service capability of a device.</rdfs:comment>
+        <rdfs:label>has datamodel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.org/sco/ns#hasDecodingRule -->
+
+
+    <owl:ObjectProperty rdf:about="https://purl.org/sco/ns#hasDecodingRule">
+        <rdfs:subPropertyOf rdf:resource="https://purl.org/sco/ns#hasTransformationRule"/>
+        <rdfs:domain rdf:resource="https://purl.org/sco/ns#DataModel"/>
+        <rdfs:range rdf:resource="https://purl.org/sco/ns#TransformationRule"/>
+        <rdfs:comment>Identifies the transformation rule as a decoding rule, to decode some data provided by the device.</rdfs:comment>
+        <rdfs:label>has decoding rule</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.org/sco/ns#hasEncodingRule -->
+
+
+    <owl:ObjectProperty rdf:about="https://purl.org/sco/ns#hasEncodingRule">
+        <rdfs:subPropertyOf rdf:resource="https://purl.org/sco/ns#hasTransformationRule"/>
+        <rdfs:domain rdf:resource="https://purl.org/sco/ns#DataModel"/>
+        <rdfs:range rdf:resource="https://purl.org/sco/ns#TransformationRule"/>
+        <rdfs:comment>Identifies the transformation rule as a encoding rule, to encode some data provided for the device.</rdfs:comment>
+        <rdfs:label>has encoding rule</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.org/sco/ns#hasInputFormat -->
+
+
+    <owl:ObjectProperty rdf:about="https://purl.org/sco/ns#hasInputFormat">
+        <owl:inverseOf rdf:resource="https://purl.org/sco/ns#inputFormatOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://purl.org/sco/ns#DataModel"/>
+        <rdfs:range rdf:resource="https://purl.org/sco/ns#Format"/>
+        <rdfs:comment>Defines the expected inputformat for some data of a service capability.</rdfs:comment>
+        <rdfs:label>has inputformat</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.org/sco/ns#hasInteraction -->
+
+
+    <owl:ObjectProperty rdf:about="https://purl.org/sco/ns#hasInteraction">
+        <owl:inverseOf rdf:resource="https://purl.org/sco/ns#interactionOf"/>
+        <rdfs:domain rdf:resource="https://purl.org/sco/ns#ServiceCapability"/>
+        <rdfs:range rdf:resource="https://purl.org/sco/ns#ServiceInteraction"/>
+        <rdfs:comment>Indicates the interaction provided by a service capability through a specific service interaction method.</rdfs:comment>
+        <rdfs:label>has interaction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.org/sco/ns#hasManufacturer -->
+
+
+    <owl:ObjectProperty rdf:about="https://purl.org/sco/ns#hasManufacturer">
+        <owl:inverseOf rdf:resource="https://purl.org/sco/ns#manufacturerOf"/>
+        <rdfs:domain rdf:resource="https://purl.org/sco/ns#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.org/sco/ns#hasOutputFormat -->
+
+
+    <owl:ObjectProperty rdf:about="https://purl.org/sco/ns#hasOutputFormat">
+        <owl:inverseOf rdf:resource="https://purl.org/sco/ns#outputFormatOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://purl.org/sco/ns#DataModel"/>
+        <rdfs:range rdf:resource="https://purl.org/sco/ns#Format"/>
+        <rdfs:comment>Defines the expected outputformat for some data of a service capability.</rdfs:comment>
+        <rdfs:label>has outputformat</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.org/sco/ns#hasProtocolStack -->
+
+
+    <owl:ObjectProperty rdf:about="https://purl.org/sco/ns#hasProtocolStack">
+        <owl:inverseOf rdf:resource="https://purl.org/sco/ns#protocolStackOf"/>
+        <rdfs:domain rdf:resource="https://purl.org/sco/ns#ServiceInteraction"/>
+        <rdfs:range rdf:resource="https://purl.org/sco/ns#ProtocolStack"/>
+        <rdfs:comment>Refers to the set of network protocols used by a device or service.</rdfs:comment>
+        <rdfs:label>has protocolstack</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.org/sco/ns#hasServiceCapability -->
+
+
+    <owl:ObjectProperty rdf:about="https://purl.org/sco/ns#hasServiceCapability">
+        <owl:inverseOf rdf:resource="https://purl.org/sco/ns#serviceCapabilityOf"/>
+        <rdfs:domain rdf:resource="https://purl.org/sco/ns#Device"/>
+        <rdfs:range rdf:resource="https://purl.org/sco/ns#ServiceCapability"/>
+        <rdfs:comment>Highlights the relation between the service capability and the device.</rdfs:comment>
+        <rdfs:label>has servicecapability</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.org/sco/ns#hasTransformationRule -->
+
+
+    <owl:ObjectProperty rdf:about="https://purl.org/sco/ns#hasTransformationRule">
+        <owl:inverseOf rdf:resource="https://purl.org/sco/ns#transformationRuleOf"/>
+        <rdfs:domain rdf:resource="https://purl.org/sco/ns#DataModel"/>
+        <rdfs:range rdf:resource="https://purl.org/sco/ns#TransformationRule"/>
+        <rdfs:comment>The rule used on some data provided through the data model.</rdfs:comment>
+        <rdfs:label>has transformation rule</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.org/sco/ns#hasUnit -->
+
+
+    <owl:ObjectProperty rdf:about="https://purl.org/sco/ns#hasUnit">
+        <owl:inverseOf rdf:resource="https://purl.org/sco/ns#unitOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://purl.org/sco/ns#DataModel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Links the unit of some data provided by the device to the data model.</rdfs:comment>
+        <rdfs:label>has unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.org/sco/ns#inputFormatOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://purl.org/sco/ns#inputFormatOf">
+        <rdfs:domain rdf:resource="https://purl.org/sco/ns#Format"/>
+        <rdfs:range rdf:resource="https://purl.org/sco/ns#DataModel"/>
+        <rdfs:comment>Is the expected inputformat from the device after executing the optionally transformation function.</rdfs:comment>
+        <rdfs:label>is inputformat of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.org/sco/ns#interactionOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://purl.org/sco/ns#interactionOf">
+        <rdfs:domain rdf:resource="https://purl.org/sco/ns#ServiceInteraction"/>
+        <rdfs:range rdf:resource="https://purl.org/sco/ns#ServiceCapability"/>
+        <rdfs:comment>References to a service interaction that is part of a specific service capability.</rdfs:comment>
+        <rdfs:label>is interaction of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.org/sco/ns#manufacturerOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://purl.org/sco/ns#manufacturerOf">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="https://purl.org/sco/ns#Device"/>
+        <rdfs:comment>Links the manufacturer to a specifc device.</rdfs:comment>
+        <rdfs:label>is manufacturer of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.org/sco/ns#outputFormatOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://purl.org/sco/ns#outputFormatOf">
+        <rdfs:domain rdf:resource="https://purl.org/sco/ns#Format"/>
+        <rdfs:range rdf:resource="https://purl.org/sco/ns#DataModel"/>
+        <rdfs:comment>Is the expected outputformat from the device after executing the optionally transformation function.</rdfs:comment>
+        <rdfs:label>is output format of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.org/sco/ns#protocolStackOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://purl.org/sco/ns#protocolStackOf">
+        <rdfs:domain rdf:resource="https://purl.org/sco/ns#ProtocolStack"/>
+        <rdfs:range rdf:resource="https://purl.org/sco/ns#ServiceInteraction"/>
+        <rdfs:comment>Is the protocol stack used for some interaction with a service capability.</rdfs:comment>
+        <rdfs:label>is protocolstack of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.org/sco/ns#serviceCapabilityOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://purl.org/sco/ns#serviceCapabilityOf">
+        <rdfs:domain rdf:resource="https://purl.org/sco/ns#ServiceCapability"/>
+        <rdfs:range rdf:resource="https://purl.org/sco/ns#Device"/>
+        <rdfs:comment>Is the service capability of a device.</rdfs:comment>
+        <rdfs:label>is servicecapability of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.org/sco/ns#transformationRuleOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://purl.org/sco/ns#transformationRuleOf">
+        <rdfs:domain rdf:resource="https://purl.org/sco/ns#TransformationRule"/>
+        <rdfs:range rdf:resource="https://purl.org/sco/ns#DataModel"/>
+        <rdfs:comment>Is the transformation rule for some data model.</rdfs:comment>
+        <rdfs:label>is transformationrule of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.org/sco/ns#unitOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://purl.org/sco/ns#unitOf">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="https://purl.org/sco/ns#DataModel"/>
+        <rdfs:comment>A unit of a data model.</rdfs:comment>
+        <rdfs:label>is unit of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://purl.org/sco/ns#hasAddress -->
+
+
+    <owl:DatatypeProperty rdf:about="https://purl.org/sco/ns#hasAddress">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://purl.org/sco/ns#ServiceInteraction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The address of a service capability to interact with it. E.g. a href for HTTP.</rdfs:comment>
+        <rdfs:label>has Address</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purl.org/sco/ns#hasManufacturer -->
+
+
+    <owl:DatatypeProperty rdf:about="https://purl.org/sco/ns#hasManufacturer"/>
+    
+
+
+    <!-- https://purl.org/sco/ns#hasName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://purl.org/sco/ns#hasName">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://purl.org/sco/ns#Device"/>
+                    <rdf:Description rdf:about="https://purl.org/sco/ns#ServiceCapability"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The name of a device. Often a device provides a prefered name (e.g. Bluetooth LE or ZigBee).</rdfs:comment>
+        <rdfs:label>has Name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://purl.org/sco/ns#ActionInteraction -->
+
+
+    <owl:Class rdf:about="https://purl.org/sco/ns#ActionInteraction">
+        <rdfs:subClassOf rdf:resource="https://purl.org/sco/ns#ServiceInteraction"/>
+        <rdfs:comment>A action that is triggered whenever a service capability from the device is triggered. A action is a method to mainpultae or trigger a process.</rdfs:comment>
+        <rdfs:label>Action Interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/sco/ns#DataModel -->
+
+
+    <owl:Class rdf:about="https://purl.org/sco/ns#DataModel">
+        <rdfs:comment>The Data Model describes how data for a specific Service Capability for the exchange between the device and another device is prepared.</rdfs:comment>
+        <rdfs:label>Data Model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/sco/ns#Device -->
+
+
+    <owl:Class rdf:about="https://purl.org/sco/ns#Device">
+        <rdfs:comment>A device, capable of machine-to-machine (M2M) communication.</rdfs:comment>
+        <rdfs:label>Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/sco/ns#Format -->
+
+
+    <owl:Class rdf:about="https://purl.org/sco/ns#Format">
+        <rdfs:comment>A kind of dataformat to interpret the data exchanged by the Service capability.</rdfs:comment>
+        <rdfs:label>Format</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/sco/ns#ProtocolStack -->
+
+
+    <owl:Class rdf:about="https://purl.org/sco/ns#ProtocolStack">
+        <rdfs:comment>The machine-to-machine communication protocol used to exchange information between two devices.</rdfs:comment>
+        <rdfs:label>Protocolstack</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/sco/ns#ReadInteraction -->
+
+
+    <owl:Class rdf:about="https://purl.org/sco/ns#ReadInteraction">
+        <rdfs:subClassOf rdf:resource="https://purl.org/sco/ns#ServiceInteraction"/>
+        <rdfs:comment>A reading of some data from the device whenever a service capability is triggered.</rdfs:comment>
+        <rdfs:label>Read Interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/sco/ns#ServiceCapability -->
+
+
+    <owl:Class rdf:about="https://purl.org/sco/ns#ServiceCapability">
+        <rdfs:comment>A service provided by a device to achieve some kind of processing. The service has often in machine-to-machine communication protocols other names, such as Characteristic in Bluetooth LE, Command or Attribute in ZigBee.</rdfs:comment>
+        <rdfs:label>Service Capability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/sco/ns#ServiceInteraction -->
+
+
+    <owl:Class rdf:about="https://purl.org/sco/ns#ServiceInteraction">
+        <rdfs:comment>A kind of interaction provided through the service capability from the device.</rdfs:comment>
+        <rdfs:label>Service Interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/sco/ns#SubscribeInteraction -->
+
+
+    <owl:Class rdf:about="https://purl.org/sco/ns#SubscribeInteraction">
+        <rdfs:subClassOf rdf:resource="https://purl.org/sco/ns#ServiceInteraction"/>
+        <rdfs:comment>A subscribing to a service capability that is triggered when a change occurs to some data associated to the service capability.</rdfs:comment>
+        <rdfs:label>Subscribe Interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/sco/ns#TransformationRule -->
+
+
+    <owl:Class rdf:about="https://purl.org/sco/ns#TransformationRule">
+        <rdfs:comment>A custom transformation rule expressed with a kind of model ontology, such as Function Ontology, Binary Data Ontology, or OpenMath, that can be used to describe the necessary transformations for a payload.</rdfs:comment>
+        <rdfs:label>Transformation Rule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/sco/ns#WriteInteraction -->
+
+
+    <owl:Class rdf:about="https://purl.org/sco/ns#WriteInteraction">
+        <rdfs:subClassOf rdf:resource="https://purl.org/sco/ns#ServiceInteraction"/>
+        <rdfs:comment>A writing of some data to the device whenever a service capability is triggered.</rdfs:comment>
+        <rdfs:label>Write Interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://purl.org/sco/ns#ArraySchema -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/sco/ns#ArraySchema">
+        <rdf:type rdf:resource="https://purl.org/sco/ns#Format"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/sco/ns#BluetoothLE -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/sco/ns#BluetoothLE">
+        <rdf:type rdf:resource="https://purl.org/sco/ns#ProtocolStack"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/sco/ns#Zigbee -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/sco/ns#Zigbee">
+        <rdf:type rdf:resource="https://purl.org/sco/ns#ProtocolStack"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.w3.org/2019/wot/json-schema#BooleanSchema -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/json-schema#BooleanSchema">
+        <rdf:type rdf:resource="https://purl.org/sco/ns#Format"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.w3.org/2019/wot/json-schema#IntegerSchema -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/json-schema#IntegerSchema">
+        <rdf:type rdf:resource="https://purl.org/sco/ns#Format"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.w3.org/2019/wot/json-schema#NullSchema -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/json-schema#NullSchema">
+        <rdf:type rdf:resource="https://purl.org/sco/ns#Format"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.w3.org/2019/wot/json-schema#NumberSchema -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/json-schema#NumberSchema">
+        <rdf:type rdf:resource="https://purl.org/sco/ns#Format"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.w3.org/2019/wot/json-schema#ObjectSchema -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/json-schema#ObjectSchema">
+        <rdf:type rdf:resource="https://purl.org/sco/ns#Format"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.w3.org/2019/wot/json-schema#StringSchema -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/json-schema#StringSchema">
+        <rdf:type rdf:resource="https://purl.org/sco/ns#Format"/>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid8">
+        <schema:affiliation rdf:nodeID="genid9"/>
+        <rdfs:seeAlso rdf:resource="https://renedorsch.solidweb.org/#me"/>
+        <foaf:homepage rdf:resource="https://orcid.org/0000-0001-6857-7314"/>
+        <foaf:name>Rene Dorsch</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid9">
+        <foaf:homepage rdf:resource="https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html"/>
+        <foaf:name>Data Spaces and IoT Solutions</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid10">
+        <schema:affiliation rdf:nodeID="genid11"/>
+        <rdfs:seeAlso rdf:resource="https://renedorsch.solidweb.org/#me"/>
+        <foaf:homepage rdf:resource="https://orcid.org/0000-0001-6857-7314"/>
+        <foaf:name>Rene Dorsch</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid11">
+        <foaf:homepage rdf:resource="https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html"/>
+        <foaf:name>Data Spaces and IoT Solutions</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid12">
+        <schema:affiliation rdf:nodeID="genid13"/>
+        <rdfs:seeAlso rdf:resource="https://renedorsch.solidweb.org/#me"/>
+        <foaf:homepage rdf:resource="https://orcid.org/0000-0001-6857-7314"/>
+        <foaf:name>Rene Dorsch</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid13">
+        <foaf:homepage rdf:resource="https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html"/>
+        <foaf:name>Data Spaces and IoT Solutions</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid14">
+        <schema:affiliation rdf:nodeID="genid15"/>
+        <rdfs:seeAlso rdf:resource="https://renedorsch.solidweb.org/#me"/>
+        <foaf:homepage rdf:resource="https://orcid.org/0000-0001-6857-7314"/>
+        <foaf:name>Rene Dorsch</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid15">
+        <foaf:homepage rdf:resource="https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html"/>
+        <foaf:name>Data Spaces and IoT Solutions</foaf:name>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://purl.org/sco/ns#hasManufacturer">
+        <rdfs:comment>A organization that designed the device or its capabilitiy.</rdfs:comment>
+        <rdfs:label>has Manufacturer</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://purl.org/sco/ns#DataModel"/>
+            <rdf:Description rdf:about="https://purl.org/sco/ns#Device"/>
+            <rdf:Description rdf:about="https://purl.org/sco/ns#Format"/>
+            <rdf:Description rdf:about="https://purl.org/sco/ns#ProtocolStack"/>
+            <rdf:Description rdf:about="https://purl.org/sco/ns#ServiceCapability"/>
+            <rdf:Description rdf:about="https://purl.org/sco/ns#ServiceInteraction"/>
+            <rdf:Description rdf:about="https://purl.org/sco/ns#TransformationRule"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

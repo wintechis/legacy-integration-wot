@@ -1,0 +1,1037 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://purl.org/sco/ns" ],
+    "title" : {
+      "en" : "Service Capability Ontology"
+    },
+    "iri" : "https://purl.org/sco/ns#",
+    "version" : "1.0",
+    "author" : [ "_:genid2147483664" ],
+    "description" : {
+      "en" : "This is the Service Capability (SCO). SCO is a light-weight, application ontology for the translation of legacy IoT devices to the W3C Web of Things. SCO contributes to the automatic generation of Thing Descriptions for modeling the key components necessary for a W3C Web of Things Thing Description.  "
+    },
+    "other" : {
+      "competencyQuestion" : [ {
+        "identifier" : "competencyQuestion",
+        "language" : "undefined",
+        "value" : "http://purl.org/sco/repository/cq",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "_:genid2147483664",
+        "type" : "label"
+      } ],
+      "acronym" : [ {
+        "identifier" : "acronym",
+        "language" : "undefined",
+        "value" : "SCO",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2024",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Service Capability Ontology",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by-sa/4.0/",
+        "type" : "iri"
+      }, {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by-sa/4.0/",
+        "type" : "iri"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "_:genid2147483663",
+        "type" : "label"
+      } ],
+      "hasSyntax" : [ {
+        "identifier" : "hasSyntax",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/formats/Turtle",
+        "type" : "iri"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "sco",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "https://renedorsch.solidweb.org/#me",
+        "type" : "iri"
+      } ],
+      "preferredNamespaceURI" : [ {
+        "identifier" : "preferredNamespaceURI",
+        "language" : "undefined",
+        "value" : "https://purl.org/sco/ns#",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2024-01-14",
+        "type" : "label"
+      } ],
+      "doi" : [ {
+        "identifier" : "doi",
+        "language" : "undefined",
+        "value" : "https://doi.org/tbd",
+        "type" : "iri"
+      } ],
+      "depiction" : [ {
+        "identifier" : "depiction",
+        "language" : "undefined",
+        "value" : "http://purl.org/sco/schema_diagram",
+        "type" : "iri"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "19",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "25",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "29",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://purl.org/sco/ns#ProtocolStack",
+    "baseIri" : "https://purl.org/sco/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProtocolStack",
+      "undefined" : "Protocolstack"
+    },
+    "individuals" : [ {
+      "iri" : "https://purl.org/sco/ns#Zigbee",
+      "baseIri" : "https://purl.org/sco/ns",
+      "labels" : {
+        "IRI-based" : "Zigbee"
+      }
+    }, {
+      "iri" : "https://purl.org/sco/ns#BluetoothLE",
+      "baseIri" : "https://purl.org/sco/ns",
+      "labels" : {
+        "IRI-based" : "BluetoothLE"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "The machine-to-machine communication protocol used to exchange information between two devices."
+    },
+    "id" : "13"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "20",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "19",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "25",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "22", "2" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://purl.org/sco/ns#SubscribeInteraction",
+    "baseIri" : "https://purl.org/sco/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubscribeInteraction",
+      "undefined" : "Subscribe Interaction"
+    },
+    "comment" : {
+      "undefined" : "A subscribing to a service capability that is triggered when a change occurs to some data associated to the service capability."
+    },
+    "id" : "17",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://purl.org/sco/ns#Device",
+    "baseIri" : "https://purl.org/sco/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Device",
+      "undefined" : "Device"
+    },
+    "comment" : {
+      "undefined" : "A device, capable of machine-to-machine (M2M) communication."
+    },
+    "id" : "22"
+  }, {
+    "iri" : "https://purl.org/sco/ns#ActionInteraction",
+    "baseIri" : "https://purl.org/sco/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActionInteraction",
+      "undefined" : "Action Interaction"
+    },
+    "comment" : {
+      "undefined" : "A action that is triggered whenever a service capability from the device is triggered. A action is a method to mainpultae or trigger a process."
+    },
+    "id" : "15",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://purl.org/sco/ns#ServiceInteraction",
+    "baseIri" : "https://purl.org/sco/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ServiceInteraction",
+      "undefined" : "Service Interaction"
+    },
+    "subClasses" : [ "17", "15", "8", "37" ],
+    "comment" : {
+      "undefined" : "A kind of interaction provided through the service capability from the device."
+    },
+    "id" : "9"
+  }, {
+    "iri" : "https://purl.org/sco/ns#TransformationRule",
+    "baseIri" : "https://purl.org/sco/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransformationRule",
+      "undefined" : "Transformation Rule"
+    },
+    "comment" : {
+      "undefined" : "A custom transformation rule expressed with a kind of model ontology, such as Function Ontology, Binary Data Ontology, or OpenMath, that can be used to describe the necessary transformations for a payload."
+    },
+    "id" : "5"
+  }, {
+    "iri" : "https://purl.org/sco/ns#DataModel",
+    "baseIri" : "https://purl.org/sco/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataModel",
+      "undefined" : "Data Model"
+    },
+    "comment" : {
+      "undefined" : "The Data Model describes how data for a specific Service Capability for the exchange between the device and another device is prepared."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "https://purl.org/sco/ns#ServiceCapability",
+    "baseIri" : "https://purl.org/sco/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ServiceCapability",
+      "undefined" : "Service Capability"
+    },
+    "comment" : {
+      "undefined" : "A service provided by a device to achieve some kind of processing. The service has often in machine-to-machine communication protocols other names, such as Characteristic in Bluetooth LE, Command or Attribute in ZigBee."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "https://purl.org/sco/ns#ReadInteraction",
+    "baseIri" : "https://purl.org/sco/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReadInteraction",
+      "undefined" : "Read Interaction"
+    },
+    "comment" : {
+      "undefined" : "A reading of some data from the device whenever a service capability is triggered."
+    },
+    "id" : "8",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://purl.org/sco/ns#Format",
+    "baseIri" : "https://purl.org/sco/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Format",
+      "undefined" : "Format"
+    },
+    "individuals" : [ {
+      "iri" : "https://www.w3.org/2019/wot/json-schema#ObjectSchema",
+      "baseIri" : "https://www.w3.org/2019/wot/json-schema",
+      "labels" : {
+        "IRI-based" : "ObjectSchema"
+      }
+    }, {
+      "iri" : "https://www.w3.org/2019/wot/json-schema#BooleanSchema",
+      "baseIri" : "https://www.w3.org/2019/wot/json-schema",
+      "labels" : {
+        "IRI-based" : "BooleanSchema"
+      }
+    }, {
+      "iri" : "https://www.w3.org/2019/wot/json-schema#IntegerSchema",
+      "baseIri" : "https://www.w3.org/2019/wot/json-schema",
+      "labels" : {
+        "IRI-based" : "IntegerSchema"
+      }
+    }, {
+      "iri" : "https://www.w3.org/2019/wot/json-schema#NullSchema",
+      "baseIri" : "https://www.w3.org/2019/wot/json-schema",
+      "labels" : {
+        "IRI-based" : "NullSchema"
+      }
+    }, {
+      "iri" : "https://purl.org/sco/ns#ArraySchema",
+      "baseIri" : "https://purl.org/sco/ns",
+      "labels" : {
+        "IRI-based" : "ArraySchema"
+      }
+    }, {
+      "iri" : "https://www.w3.org/2019/wot/json-schema#StringSchema",
+      "baseIri" : "https://www.w3.org/2019/wot/json-schema",
+      "labels" : {
+        "IRI-based" : "StringSchema"
+      }
+    }, {
+      "iri" : "https://www.w3.org/2019/wot/json-schema#NumberSchema",
+      "baseIri" : "https://www.w3.org/2019/wot/json-schema",
+      "labels" : {
+        "IRI-based" : "NumberSchema"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A kind of dataformat to interpret the data exchanged by the Service capability."
+    },
+    "id" : "11"
+  }, {
+    "iri" : "https://purl.org/sco/ns#WriteInteraction",
+    "baseIri" : "https://purl.org/sco/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WriteInteraction",
+      "undefined" : "Write Interaction"
+    },
+    "comment" : {
+      "undefined" : "A writing of some data to the device whenever a service capability is triggered."
+    },
+    "id" : "37",
+    "superClasses" : [ "9" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "35",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "36",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "38",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "39",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "40",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "41",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "42",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "43",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "44",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "45",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "52",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "53",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "56",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "57",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "58",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "59",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://purl.org/sco/ns#dataModelOf",
+    "inverse" : "3",
+    "baseIri" : "https://purl.org/sco/ns",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "dataModelOf",
+      "undefined" : "is datamodel of"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Represents the connection of data model to a specific service capability."
+    },
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://purl.org/sco/ns#hasEncodingRule",
+    "baseIri" : "https://purl.org/sco/ns",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasEncodingRule",
+      "undefined" : "has encoding rule"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Identifies the transformation rule as a encoding rule, to encode some data provided for the device."
+    },
+    "attributes" : [ "object" ],
+    "id" : "4"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://purl.org/sco/ns#hasOutputFormat",
+    "inverse" : "12",
+    "baseIri" : "https://purl.org/sco/ns",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasOutputFormat",
+      "undefined" : "has outputformat"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Defines the expected outputformat for some data of a service capability."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "10"
+  }, {
+    "range" : "9",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "14"
+  }, {
+    "range" : "9",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://purl.org/sco/ns#unitOf",
+    "baseIri" : "https://purl.org/sco/ns",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "unitOf",
+      "undefined" : "is unit of"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "A unit of a data model."
+    },
+    "attributes" : [ "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://purl.org/sco/ns#outputFormatOf",
+    "baseIri" : "https://purl.org/sco/ns",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "outputFormatOf",
+      "undefined" : "is output format of"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Is the expected outputformat from the device after executing the optionally transformation function."
+    },
+    "attributes" : [ "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://purl.org/sco/ns#hasServiceCapability",
+    "inverse" : "23",
+    "baseIri" : "https://purl.org/sco/ns",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasServiceCapability",
+      "undefined" : "has servicecapability"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Highlights the relation between the service capability and the device."
+    },
+    "attributes" : [ "object" ],
+    "id" : "21"
+  }, {
+    "range" : "5",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://purl.org/sco/ns#protocolStackOf",
+    "baseIri" : "https://purl.org/sco/ns",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "protocolStackOf",
+      "undefined" : "is protocolstack of"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "Is the protocol stack used for some interaction with a service capability."
+    },
+    "attributes" : [ "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://purl.org/sco/ns#manufacturerOf",
+    "baseIri" : "https://purl.org/sco/ns",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "manufacturerOf",
+      "undefined" : "is manufacturer of"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Links the manufacturer to a specifc device."
+    },
+    "attributes" : [ "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://purl.org/sco/ns#hasInputFormat",
+    "inverse" : "33",
+    "baseIri" : "https://purl.org/sco/ns",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasInputFormat",
+      "undefined" : "has inputformat"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Defines the expected inputformat for some data of a service capability."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://purl.org/sco/ns#hasDataModel",
+    "baseIri" : "https://purl.org/sco/ns",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasDataModel",
+      "undefined" : "has datamodel"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "References to the data model of a service capability of a device."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "3"
+  }, {
+    "range" : "9",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "range" : "5",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "range" : "5",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "36"
+  }, {
+    "range" : "5",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  }, {
+    "range" : "9",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "range" : "9",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "40"
+  }, {
+    "range" : "2",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "range" : "5",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "42"
+  }, {
+    "range" : "2",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "43"
+  }, {
+    "range" : "13",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://purl.org/sco/ns#hasName",
+    "baseIri" : "https://purl.org/sco/ns",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "hasName",
+      "undefined" : "has Name"
+    },
+    "domain" : "29",
+    "comment" : {
+      "undefined" : "The name of a device. Often a device provides a prefered name (e.g. Bluetooth LE or ZigBee)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://purl.org/sco/ns#hasAddress",
+    "baseIri" : "https://purl.org/sco/ns",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "hasAddress",
+      "undefined" : "has Address"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "The address of a service capability to interact with it. E.g. a href for HTTP."
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "46"
+  }, {
+    "range" : "13",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://purl.org/sco/ns#encodingRuleOf",
+    "inverse" : "4",
+    "baseIri" : "https://purl.org/sco/ns",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "encodingRuleOf",
+      "undefined" : "is encoding rule of"
+    },
+    "superproperty" : [ "49" ],
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "Is the encoding rule (a specail type of transformation rule) for some data model."
+    },
+    "attributes" : [ "object" ],
+    "id" : "48"
+  }, {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://purl.org/sco/ns#inputFormatOf",
+    "baseIri" : "https://purl.org/sco/ns",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "inputFormatOf",
+      "undefined" : "is inputformat of"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Is the expected inputformat from the device after executing the optionally transformation function."
+    },
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
+    "range" : "9",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "51"
+  }, {
+    "range" : "5",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "52"
+  }, {
+    "range" : "11",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://purl.org/sco/ns#hasUnit",
+    "inverse" : "18",
+    "baseIri" : "https://purl.org/sco/ns",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "hasUnit",
+      "undefined" : "has unit"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Links the unit of some data provided by the device to the data model."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "54"
+  }, {
+    "range" : "13",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "55"
+  }, {
+    "range" : "2",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "range" : "9",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "range" : "22",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "58"
+  }, {
+    "range" : "11",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
+  }, {
+    "iri" : "https://purl.org/sco/ns#decodingRuleOf",
+    "inverse" : "61",
+    "baseIri" : "https://purl.org/sco/ns",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "decodingRuleOf",
+      "undefined" : "is decoding rule of"
+    },
+    "superproperty" : [ "49" ],
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "Is the decoding rule (a specail type of transformation rule) for some data model."
+    },
+    "attributes" : [ "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://purl.org/sco/ns#transformationRuleOf",
+    "baseIri" : "https://purl.org/sco/ns",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "transformationRuleOf",
+      "undefined" : "is transformationrule of"
+    },
+    "domain" : "5",
+    "subproperty" : [ "60", "48" ],
+    "comment" : {
+      "undefined" : "Is the transformation rule for some data model."
+    },
+    "attributes" : [ "object" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://purl.org/sco/ns#hasTransformationRule",
+    "inverse" : "49",
+    "baseIri" : "https://purl.org/sco/ns",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasTransformationRule",
+      "undefined" : "has transformation rule"
+    },
+    "domain" : "1",
+    "subproperty" : [ "4", "61" ],
+    "comment" : {
+      "undefined" : "The rule used on some data provided through the data model."
+    },
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://purl.org/sco/ns#hasDecodingRule",
+    "baseIri" : "https://purl.org/sco/ns",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasDecodingRule",
+      "undefined" : "has decoding rule"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Identifies the transformation rule as a decoding rule, to decode some data provided by the device."
+    },
+    "attributes" : [ "object" ],
+    "id" : "61"
+  }, {
+    "iri" : "https://purl.org/sco/ns#serviceCapabilityOf",
+    "baseIri" : "https://purl.org/sco/ns",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "serviceCapabilityOf",
+      "undefined" : "is servicecapability of"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Is the service capability of a device."
+    },
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://purl.org/sco/ns#hasProtocolStack",
+    "inverse" : "30",
+    "baseIri" : "https://purl.org/sco/ns",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasProtocolStack",
+      "undefined" : "has protocolstack"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Refers to the set of network protocols used by a device or service."
+    },
+    "attributes" : [ "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://purl.org/sco/ns#hasInteraction",
+    "inverse" : "64",
+    "baseIri" : "https://purl.org/sco/ns",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasInteraction",
+      "undefined" : "has interaction"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Indicates the interaction provided by a service capability through a specific service interaction method."
+    },
+    "attributes" : [ "object" ],
+    "id" : "63"
+  }, {
+    "iri" : "https://purl.org/sco/ns#interactionOf",
+    "baseIri" : "https://purl.org/sco/ns",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "interactionOf",
+      "undefined" : "is interaction of"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "References to a service interaction that is part of a specific service capability."
+    },
+    "attributes" : [ "object" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://purl.org/sco/ns#hasManufacturer",
+    "inverse" : "31",
+    "baseIri" : "https://purl.org/sco/ns",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hasManufacturer",
+      "undefined" : "has Manufacturer"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "A organization that designed the device or its capabilitiy."
+    },
+    "attributes" : [ "object" ],
+    "id" : "65"
+  }, {
+    "range" : "9",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "66"
+  } ]
+}
