@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "zigbee-scrapper"
+version = "0.1.0"
+description = ""
+authors = ["ThinkPad Rene <rene.dorsch@iis.fraunhofer.de>"]
+readme = "README.md"
+packages = [{include = "zigbee_scrapper"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.31.0"
+py7zr = "^0.21.0"
+rarfile = "^4.1"
+pandas = "^2.2.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
