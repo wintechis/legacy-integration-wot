@@ -7,3 +7,8 @@ evaluation/**/zigbee-scrapper/zigbee_scrapper/data/unknown_files/
 evaluation/**/zigbee-scrapper/zigbee_scrapper/products.json
 evaluation/**/zigbee-scrapper/zigbee_scrapper/products_detailed.json
 evaluation/**/zigbee-scrapper/.vscode/settings.json
+evaluation/Effectivness Evaluation/bluetooth-scraper/bluetooth-scrapper/.mypy_cache/
+evaluation/Effectivness Evaluation/bluetooth-scraper/data/bluetooth_devices/
+evaluation/Effectivness Evaluation/bluetooth-scraper/data/device_details/
+evaluation/Effectivness Evaluation/bluetooth-scraper/.vscode/settings.json
+evaluation/Effectivness Evaluation/bluetooth-scraper/bluetooth-scrapper/data.json

@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "bluetooth-scrapper"
+version = "0.1.0"
+description = ""
+authors = ["ThinkPad Rene <rene.dorsch@iis.fraunhofer.de>"]
+readme = "README.md"
+packages = [{include = "bluetooth_scrapper"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pytest-playwright = "^0.4.4"
+aiofiles = "^23.2.1"
+pandas = "^2.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
