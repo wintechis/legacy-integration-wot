@@ -11,6 +11,7 @@ python = "^3.9"
 pytest-playwright = "^0.4.4"
 aiofiles = "^23.2.1"
 pandas = "^2.2.1"
+requests = "^2.31.0"
 
 
 [build-system]

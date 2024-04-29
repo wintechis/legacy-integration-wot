@@ -1,0 +1,177 @@
+Layer,Frequency
+Devices, 55220
+Advanced Audio Distribution Profile,27437
+Audio/Video Control Transport Protocol,25854
+Audio/Video Distribution Transport Protocol,26392
+Audio/Video Remote Control Profile,26342
+Baseband Conformance,32013
+Generic Access Profile,41060
+Generic Audio/Video Distribution Profile,27491
+Hands-Free Profile,24052
+Headset Profile,15594
+Interoperability Test Suite,36898
+Link Manager Protocol,32013
+Logical Link Control and Adaption Protocol,41053
+Product Type,55202
+Radio,31880
+RFCOMM,27868
+Serial Port Profile,27545
+Service Discovery Protocol,30128
+Summary ICS,55177
+AMP Manager Protocol,721
+Basic Imaging Profile,845
+Basic Printing Profile,649
+Bluetooth Network Encapsulation Protocol,7503
+Device Identification,7125
+Fax Profile,33
+File Transfer Profile,3219
+Hardcopy Cable Replacement Profile,610
+Host Controller Interface,12739
+Human Interface Device Profile,7986
+Object Push Profile,9774
+Personal Area Network Profile,6630
+Phone Book Access Profile,8958
+Service Discovery Application Profile,1770
+Synchronization Profile,373
+Video Distribution Profile,67
+Attribute Protocol,27361
+Generic Attribute Profile,27369
+Low Energy Link Layer,29161
+Low Energy RF PHY,28983
+Message Access Profile,5685
+Security Manager Protocol,27400
+SIM Access Profile,2244
+HID over GATT Profile,6557
+Multi-Channel Adaptation Protocol,3082
+Scan Parameters Profile,4237
+Dial-up Networking Profile,3163
+Basic Printing Profile 1.0,450
+4.0 Host Controller Interface,14398
+Health Device Profile,849
+Human Interface Device v1.1 or later,2212
+Isochronous Adaptation Layer,1154
+Device Information Service,5903
+Battery Service,5048
+HID Service,2645
+Alert Notification Profile,1078
+Blood Pressure Profile,1215
+Cycling Speed and Cadence Profile,1176
+Glucose Profile,1146
+Health Thermometer Profile,1668
+Heart Rate Profile,2043
+Time Profile,1134
+Blood Pressure Service,1305
+Cycling Speed and Cadence Service,1229
+Glucose Service,1211
+Health Thermometer Service,1785
+Heart Rate Service,2127
+Immediate Alert Service,2282
+Link Loss Service,2235
+Proximity Profile,2059
+Running Speed and Cadence Profile,1039
+Running Speed and Cadence Service,1114
+TX Power Service,1964
+Alert Notification Service,665
+Current Time Service,970
+Cycling Power Profile,462
+Cycling Power Service,421
+Find Me Profile,2114
+Location and Navigation Profile,587
+Location and Navigation Service,618
+Next DST Change Service,649
+Phone Alert Status Profile,868
+Phone Alert Status Service,609
+Reference Time Update Service,664
+Scan Parameters Service,1424
+Mesh Model,458
+Mesh Protocol,539
+"Calendar, Tasks and Notes Profile",107
+Multi-Profile Specification,514
+Pulse Oximeter Profile,233
+Global Navigation Satellite System,128
+802.11 Protocol Adaptation Layer,572
+AMP Host Controller Interface,698
+3D Synchronization Profile,64
+Automation IO Profile,133
+Automation IO Service,134
+Body Composition Service,344
+Bond Management Service,268
+Continuous Glucose Monitoring Profile,247
+Continuous Glucose Monitoring Service,251
+Environmental Sensing Profile,157
+Environmental Sensing Service,158
+HTTP Proxy Service,82
+Indoor Positioning Service,97
+Internet Protocol Support Profile,266
+Object Transfer Profile,141
+Object Transfer Service,185
+Pulse Oximeter Service,216
+Transport Discovery Service,211
+User Data Service,212
+Weight Scale Profile,556
+Weight Scale Service,613
+Audio Input Control Service,227
+Call Control Profile,343
+Coordinated Set Identification Profile,351
+Coordinated Set Identification Service,247
+Generic Media Control Service,335
+Generic Telephone Bearer Service,326
+Low Complexity Communication Codec,409
+Media Control Profile,343
+Media Control Service,203
+Microphone Control Profile,257
+Microphone Control Service,228
+Telephone Bearer Service,200
+Volume Control Profile,372
+Volume Control Service,267
+Volume Offset Control Service,231
+Audio Stream Control Service,206
+Basic Audio Profile,311
+Broadcast Audio Scan Service,205
+Common Audio Profile,273
+Common Audio Service,178
+Public Broadcast Profile,189
+Published Audio Capabilities Service,215
+Telephony and Media Audio Profile,224
+Hearing Access Profile,148
+Fitness Machine Service,139
+Hard Copy Replacement Profile,239
+Hearing Access Service,93
+Binary Sensor Profile,57
+Binary Sensor Service,57
+BR/EDR Connection Handover Profile,41
+Device Time Profile,50
+Device Time Service,51
+Emergency Configuration Service,47
+Emergency Profile,44
+Fitness Machine Profile,110
+Insulin Delivery Profile,51
+Insulin Delivery Service,52
+Mesh Configuration Database Profile,41
+Physical Activity Monitor Profile,40
+Physical Activity Monitor Service,40
+Reconnection Configuration Profile,97
+Reconnection Configuration Service,90
+802.11 MAC-PHY,7
+Multi-Profile Test Cases,44
+Ambient Light Sensor NLC Profile,17
+Authorization Control Profile,8
+Authorization Control Service,9
+Basic Lightness Controller NLC Profile,17
+Basic Scene Selector NLC Profile,17
+Dimming Control NLC Profile,17
+Elapsed Time Service,5
+Electronic Shelf Label Profile,7
+Electronic Shelf Label Service,7
+Energy Monitor NLC Profile,17
+Gaming Audio Profile,2
+Generic Health Sensor Profile,5
+Generic Health Sensor Service,5
+Mesh Binary Large Object Transfer Model,15
+Mesh Device Firmware Update Model,15
+Occupancy Sensor NLC Profile,17
+Asset Tracking Profile,12
+Constant Tone Extension Service,15
+Multi-Device Test Cases,10
+Cordless Telephony Profile,10
+Intercom Profile,11
