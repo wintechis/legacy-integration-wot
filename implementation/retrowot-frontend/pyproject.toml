@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "retrowot-frontend"
+version = "0.1.0"
+description = "The frontend for retrowot."
+authors = ["ThinkPad Rene <rene.dorsch@iis.fraunhofer.de>"]
+readme = "README.md"
+packages = [{include = "retrowot_frontend"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "^1.33.0"
+requests = "^2.31.0"
+urllib3 = "^2.2.1"
+python-dotenv = "^1.0.1"
+pydantic = "^2.7.1"
+pydantic-settings = "^2.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

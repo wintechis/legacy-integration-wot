@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  triplestore:
+    image: acimmino/auroral-fuseky:latest
+    environment:
+      ADMIN_PASSWORD: pw123
+    # Uncomment and modify the volume path as required
+    # volumes:
+    #   - triplestore:/fuseki
+    ports:
+      - '3030:3030'
+
+  wothive:
+    image: acimmino/wot-hive:latest
+    # Uncomment the following line and provide the correct host configuration file path
+    # volumes:
+    #   - ./configuration.json:/usr/src/wothive/configuration.json
+    ports:
+      - '9000:9000'
+
+  retrowot:
+    build: ./woble-system/
+    devices:
+      - "/dev/bus/usb/001/030:/dev/bus/usb/001/030"
+    ports:
+      - '8000:8000'
+    environment:
+      - THING_DIRECTORY_URL=http://wothive:9000
+      - BLUETOOTH_HCI_DEVICE_LINK=usb:0a12:0001
+
+  retrowot-frontend:
+    build: ./retrowot-frontend/
+    ports:
+      - '8501:8501' 
+    environment:
+      - RETROWOT_HTTP_SERVER_HOST=retrowot
+    
+
+
+# Uncomment and define the volume if you need persistent storage for triplestore
+# volumes:
+#   triplestore:
