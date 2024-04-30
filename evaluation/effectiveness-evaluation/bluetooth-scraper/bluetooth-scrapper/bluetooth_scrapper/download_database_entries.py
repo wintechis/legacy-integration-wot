@@ -1,5 +1,6 @@
-import requests
 import json
+
+import requests
 
 # The URL is constructed from the scheme, host, and filename
 url = "https://platformapi.bluetooth.com/api/platform/Listings/Search"
@@ -23,7 +24,7 @@ payload = {
     "userId": 0,
     "memberId": None,
     "layers": [],
-    "maxResults": 50000
+    "maxResults": 50000,
 }
 
 
@@ -34,7 +35,7 @@ for i in range(year_range):
     latest_date = f"{2025 - i}-12-31"
     payload["listingDateEarliest"] = earliest_date
     payload["listingDateLatest"] = latest_date
-        
+
     # Make the POST request
     response = requests.post(url, json=payload)
 
@@ -44,9 +45,10 @@ for i in range(year_range):
         print(f"Response from server for {latest_date} to {earliest_date}:")
         print(len(response.json()))
         dump = json.dumps(response.json(), indent=4)
-        #print(dump)
-        with open(f'../../data/bluetooth_devices/{earliest_date}_{latest_date}.json', 'w') as f:
+        # print(dump)
+        with open(
+            f"../../data/bluetooth_devices/{earliest_date}_{latest_date}.json", "w"
+        ) as f:
             f.write(dump)
     else:
         print(f"Failed to retrieve data, status code: {response.status_code}")
-

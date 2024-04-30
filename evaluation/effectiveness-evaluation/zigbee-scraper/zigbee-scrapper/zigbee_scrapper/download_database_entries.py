@@ -1,8 +1,9 @@
-import requests
-from bs4 import BeautifulSoup
 import json
 
-user_agent = {'User-agent': 'Mozilla/5.0'}
+import requests
+from bs4 import BeautifulSoup
+
+user_agent = {"User-agent": "Mozilla/5.0"}
 
 products = []
 for page in range(1, 131):
@@ -10,30 +11,29 @@ for page in range(1, 131):
     if page % 10 == 0:
         print(f"Page {page} of 130")
         product_string = json.dumps(products)
-        with open('products.json', 'w') as f:
-            f.write(product_string)        
+        with open("products.json", "w") as f:
+            f.write(product_string)
     response = requests.get(uri, headers=user_agent)
     html_doc = response.text
     # print(response.text)
 
     # Parse the HTML content
-    soup = BeautifulSoup(html_doc, 'lxml')
+    soup = BeautifulSoup(html_doc, "lxml")
 
     # Find all 'a' tags
-    tags = soup.find_all('a')
+    tags = soup.find_all("a")
 
     # Extract 'href' attributes
-    hrefs = [tag.get('href') for tag in tags]
+    hrefs = [tag.get("href") for tag in tags]
 
-    
     for href in hrefs:
         if href is not None:
-            if 'https://csa-iot.org/csa_product/' in href:
+            if "https://csa-iot.org/csa_product/" in href:
                 products.append(href)
 
 
 print(products)
 
 product_string = json.dumps(products)
-with open('products.json', 'w') as f:
-    f.write(product_string)  
+with open("products.json", "w") as f:
+    f.write(product_string)

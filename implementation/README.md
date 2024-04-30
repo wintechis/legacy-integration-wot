@@ -1,5 +1,5 @@
 # RetroWoT Middleware
-This repository contains a Proof of Concept for a middleware to generate for legacy IoT devices (currently Bluetooth LE and ZigBee) a Web of Things Thing Description. 
+This repository contains a proof of concept for a middleware to generate for legacy IoT devices (currently Bluetooth LE and ZigBee) a Web of Things Thing Description. 
 It is designed with different components to be easily extensible.
 
 

@@ -1,13 +1,11 @@
-
-
-import os
 import json
+import os
 
 layers = []
-for file in os.listdir('../../data/device_details'):
-    if file.endswith('.json'):
-        #print(file)
-        with open(f'../../data/device_details/{file}') as f:
+for file in os.listdir("../../data/device_details"):
+    if file.endswith(".json"):
+        # print(file)
+        with open(f"../../data/device_details/{file}") as f:
             data = json.load(f)
             if data is None:
                 print(file)
@@ -22,7 +20,7 @@ for file in os.listdir('../../data/device_details'):
                 if data["ReferencedQualifiedDesigns"] is not None:
                     trigger = False
                     for reference in data["ReferencedQualifiedDesigns"]:
-                        
+
                         if "Layers" in reference.keys():
                             # print(reference["Layers"])
                             layers.extend(reference["Layers"])
@@ -32,12 +30,12 @@ for file in os.listdir('../../data/device_details'):
                         continue
             print(file)
             print("error no layer found")
-            #["ReferencedQualifiedDesigns"]["Layers"]
-            
+            # ["ReferencedQualifiedDesigns"]["Layers"]
+
 
 from collections import Counter
 
-#print(layers[0])
+# print(layers[0])
 # Use a list comprehension to extract FullName values and count them with Counter
 fullname_counts = Counter([layer["FullName"] for layer in layers])
 

@@ -1,0 +1,2761 @@
+Test size: 50
+Discovery Time: 4.529693911999971
+Capability Generalization Time: 0.5727949680000393
+Capability Enrichment Time: 3.478173580000089
+Thing Description Generation Time: 0.28139226099995085
+Overall Time: 8.86205472100005
+Discovery Time: 4.630248097000049
+Capability Generalization Time: 0.32356559100003324
+Capability Enrichment Time: 3.6177146720000337
+Thing Description Generation Time: 0.2754620419999583
+Overall Time: 8.846990402000074
+Discovery Time: 4.549625023999965
+Capability Generalization Time: 0.44213685900001565
+Capability Enrichment Time: 4.345569695999984
+Thing Description Generation Time: 0.32328725000002123
+Overall Time: 9.660618828999986
+Discovery Time: 4.531728488999988
+Capability Generalization Time: 0.3642572640000026
+Capability Enrichment Time: 3.486130290999995
+Thing Description Generation Time: 0.26839646500002345
+Overall Time: 8.65051250900001
+Discovery Time: 4.5505817010000555
+Capability Generalization Time: 0.3410714240000061
+Capability Enrichment Time: 3.372009056000138
+Thing Description Generation Time: 0.25561359299990727
+Overall Time: 8.519275774000107
+Discovery Time: 4.540714581999964
+Capability Generalization Time: 0.35404592600002616
+Capability Enrichment Time: 3.4714798010001005
+Thing Description Generation Time: 0.25520408199997746
+Overall Time: 8.621444391000068
+Discovery Time: 4.518816720000018
+Capability Generalization Time: 0.38593260700008614
+Capability Enrichment Time: 3.4867022070000075
+Thing Description Generation Time: 0.24943935500004955
+Overall Time: 8.640890889000161
+Discovery Time: 4.604909780999947
+Capability Generalization Time: 0.3907610989999739
+Capability Enrichment Time: 3.412512401000072
+Thing Description Generation Time: 0.2726195849999158
+Overall Time: 8.680802865999908
+Discovery Time: 4.564853974999892
+Capability Generalization Time: 0.3245211470000413
+Capability Enrichment Time: 3.351348399000017
+Thing Description Generation Time: 0.26853001400002086
+Overall Time: 8.50925353499997
+Discovery Time: 4.522998113999961
+Capability Generalization Time: 0.36905144099989684
+Capability Enrichment Time: 3.4783818280000105
+Thing Description Generation Time: 0.2609292839999853
+Overall Time: 8.631360666999853
+Discovery Time: 4.575860820999992
+Capability Generalization Time: 0.36643904300001395
+Capability Enrichment Time: 3.3619812709999906
+Thing Description Generation Time: 0.3384177460000046
+Overall Time: 8.642698881000001
+Discovery Time: 4.569159941000066
+Capability Generalization Time: 0.3524566790000563
+Capability Enrichment Time: 3.2927535499999294
+Thing Description Generation Time: 0.2540969850000465
+Overall Time: 8.468467155000099
+Discovery Time: 4.522061785000005
+Capability Generalization Time: 0.3577632700000777
+Capability Enrichment Time: 3.6147214139999733
+Thing Description Generation Time: 0.2672795880000649
+Overall Time: 8.761826057000121
+Discovery Time: 4.557079331999944
+Capability Generalization Time: 0.39360702299995864
+Capability Enrichment Time: 3.281279770000083
+Thing Description Generation Time: 0.2836950319999687
+Overall Time: 8.515661156999954
+Discovery Time: 4.583566490999942
+Capability Generalization Time: 0.39217347700002847
+Capability Enrichment Time: 3.3422158050000235
+Thing Description Generation Time: 0.3319204599999921
+Overall Time: 8.649876232999986
+Discovery Time: 4.55289608399994
+Capability Generalization Time: 0.3419679130001896
+Capability Enrichment Time: 3.4591133829999308
+Thing Description Generation Time: 0.2594000630001574
+Overall Time: 8.613377443000218
+Discovery Time: 4.55798016000017
+Capability Generalization Time: 0.5382770370001708
+Capability Enrichment Time: 3.9989874220000274
+Thing Description Generation Time: 0.5771530939998684
+Overall Time: 9.672397713000237
+Discovery Time: 4.574090411000043
+Capability Generalization Time: 0.4487661160001153
+Capability Enrichment Time: 3.245619885999986
+Thing Description Generation Time: 0.27401801300015904
+Overall Time: 8.542494426000303
+Discovery Time: 4.521523395000031
+Capability Generalization Time: 0.3122075539999969
+Capability Enrichment Time: 3.289917937999917
+Thing Description Generation Time: 0.3434763259999727
+Overall Time: 8.467125212999917
+Discovery Time: 4.506265311999869
+Capability Generalization Time: 0.33908236600018427
+Capability Enrichment Time: 3.692197596000142
+Thing Description Generation Time: 0.2537845219999326
+Overall Time: 8.791329796000127
+Discovery Time: 4.526963316999854
+Capability Generalization Time: 0.3174940349999815
+Capability Enrichment Time: 3.175261155000271
+Thing Description Generation Time: 0.27309140799980014
+Overall Time: 8.292809914999907
+Discovery Time: 4.575593597000079
+Capability Generalization Time: 0.42583257199999025
+Capability Enrichment Time: 3.231017262000023
+Thing Description Generation Time: 0.2689149870000165
+Overall Time: 8.501358418000109
+Discovery Time: 4.570108420999986
+Capability Generalization Time: 0.346066454000038
+Capability Enrichment Time: 3.2843971110000894
+Thing Description Generation Time: 0.3194407969999702
+Overall Time: 8.520012783000084
+Discovery Time: 4.525143065999828
+Capability Generalization Time: 0.318847538
+Capability Enrichment Time: 3.507928903999982
+Thing Description Generation Time: 0.2539295620001667
+Overall Time: 8.605849069999977
+Discovery Time: 4.552010501000041
+Capability Generalization Time: 0.36462133499981064
+Capability Enrichment Time: 3.3333909390000827
+Thing Description Generation Time: 0.2562431449998712
+Overall Time: 8.506265919999805
+Discovery Time: 4.613111419999996
+Capability Generalization Time: 0.42469447299981766
+Capability Enrichment Time: 3.2423889850001615
+Thing Description Generation Time: 0.25687454099988827
+Overall Time: 8.537069418999863
+Discovery Time: 4.584155478999946
+Capability Generalization Time: 0.3653120950000357
+Capability Enrichment Time: 3.3821131629999854
+Thing Description Generation Time: 0.3329650519999632
+Overall Time: 8.66454578899993
+Discovery Time: 4.83188493800003
+Capability Generalization Time: 0.33844950799993967
+Capability Enrichment Time: 3.3103233830001955
+Thing Description Generation Time: 0.2597824279998804
+Overall Time: 8.740440257000046
+Discovery Time: 4.594623812000009
+Capability Generalization Time: 0.3090003429999797
+Capability Enrichment Time: 3.344323678999899
+Thing Description Generation Time: 0.26773519700009274
+Overall Time: 8.51568303099998
+Discovery Time: 4.517033173000073
+Capability Generalization Time: 0.4276697189998231
+Capability Enrichment Time: 3.226716113000066
+Thing Description Generation Time: 0.2732445379999717
+Overall Time: 8.444663542999933
+Discovery Time: 4.6838524809998034
+Capability Generalization Time: 0.3497100760000649
+Capability Enrichment Time: 3.2821335580001687
+Thing Description Generation Time: 0.333195170999943
+Overall Time: 8.64889128599998
+Discovery Time: 4.5860814719999325
+Capability Generalization Time: 0.33604470299997047
+Capability Enrichment Time: 3.4802780790000725
+Thing Description Generation Time: 0.26794477199996436
+Overall Time: 8.67034902599994
+Discovery Time: 4.56257573899984
+Capability Generalization Time: 0.3016343260001122
+Capability Enrichment Time: 3.7433166149999124
+Thing Description Generation Time: 0.2487627479999901
+Overall Time: 8.856289427999855
+Discovery Time: 4.523948977999908
+Capability Generalization Time: 0.44175299099993026
+Capability Enrichment Time: 3.294893583999965
+Thing Description Generation Time: 0.2682919349999793
+Overall Time: 8.528887487999782
+Discovery Time: 4.558601369999906
+Capability Generalization Time: 0.36541932299996915
+Capability Enrichment Time: 3.353382306000185
+Thing Description Generation Time: 0.34110280999993847
+Overall Time: 8.618505808999998
+Discovery Time: 4.536428977000014
+Capability Generalization Time: 0.33896363500002735
+Capability Enrichment Time: 3.478301868000017
+Thing Description Generation Time: 0.2679645260000143
+Overall Time: 8.621659006000073
+Discovery Time: 4.62167923700008
+Capability Generalization Time: 0.35335474200019235
+Capability Enrichment Time: 3.2276503640000556
+Thing Description Generation Time: 0.246985173999974
+Overall Time: 8.449669517000302
+Discovery Time: 4.569781336999995
+Capability Generalization Time: 0.49794442100005654
+Capability Enrichment Time: 3.423836174999906
+Thing Description Generation Time: 0.2989136230000895
+Overall Time: 8.790475556000047
+Discovery Time: 4.514443712000002
+Capability Generalization Time: 0.33285573999978624
+Capability Enrichment Time: 3.064728540000033
+Thing Description Generation Time: 0.35308648900013395
+Overall Time: 8.265114480999955
+Discovery Time: 4.601731838999967
+Capability Generalization Time: 0.3204730809998182
+Capability Enrichment Time: 3.1930449040000894
+Thing Description Generation Time: 0.25846703199999865
+Overall Time: 8.373716855999874
+Discovery Time: 4.524974964999956
+Capability Generalization Time: 0.34469233099980556
+Capability Enrichment Time: 3.347945453000193
+Thing Description Generation Time: 0.26479970399986996
+Overall Time: 8.482412452999824
+Discovery Time: 4.542635718000156
+Capability Generalization Time: 0.43561623300001884
+Capability Enrichment Time: 3.3969945549997647
+Thing Description Generation Time: 0.27070114700018166
+Overall Time: 8.645947653000121
+Discovery Time: 4.631171012000095
+Capability Generalization Time: 0.3481681050000134
+Capability Enrichment Time: 3.2967053410000062
+Thing Description Generation Time: 0.3200447730000633
+Overall Time: 8.596089231000178
+Discovery Time: 4.570620617000031
+Capability Generalization Time: 0.3761579089998577
+Capability Enrichment Time: 3.486640115
+Thing Description Generation Time: 0.26626482799997575
+Overall Time: 8.699683468999865
+Discovery Time: 4.549309237999978
+Capability Generalization Time: 0.36565677900011906
+Capability Enrichment Time: 3.362538145999906
+Thing Description Generation Time: 0.24762129100008679
+Overall Time: 8.52512545400009
+Discovery Time: 4.541037909999886
+Capability Generalization Time: 0.43366373300000305
+Capability Enrichment Time: 3.3599712140000975
+Thing Description Generation Time: 0.2495805979999659
+Overall Time: 8.584253454999953
+Discovery Time: 4.532064088000197
+Capability Generalization Time: 0.3543654909999532
+Capability Enrichment Time: 3.5652025800000047
+Thing Description Generation Time: 0.32716580800001793
+Overall Time: 8.778797967000173
+Discovery Time: 4.610699600000089
+Capability Generalization Time: 0.33092893200000617
+Capability Enrichment Time: 3.447128969000005
+Thing Description Generation Time: 0.25468092300002354
+Overall Time: 8.643438424000124
+Discovery Time: 4.688196144999893
+Capability Generalization Time: 0.3561119989999497
+Capability Enrichment Time: 3.1917450929997813
+Thing Description Generation Time: 0.2587852850001582
+Overall Time: 8.494838521999782
+Discovery Time: 4.57892010899991
+Capability Generalization Time: 0.4034776260000399
+Capability Enrichment Time: 3.4434135349999906
+Thing Description Generation Time: 0.25872903100002986
+Overall Time: 8.68454030099997
+Test size: 40
+Discovery Time: 3.8372192510000787
+Capability Generalization Time: 0.4630747580001753
+Capability Enrichment Time: 2.514054062000014
+Thing Description Generation Time: 0.19638071800000034
+Overall Time: 7.010728789000268
+Discovery Time: 3.8050971330001175
+Capability Generalization Time: 0.3274854530000084
+Capability Enrichment Time: 2.5259753649997947
+Thing Description Generation Time: 0.19671082800005024
+Overall Time: 6.855268778999971
+Discovery Time: 3.807172041000058
+Capability Generalization Time: 0.26818212000011954
+Capability Enrichment Time: 2.5579835549999643
+Thing Description Generation Time: 0.1914450520000628
+Overall Time: 6.824782768000205
+Discovery Time: 3.7867967029999363
+Capability Generalization Time: 0.2835835660000612
+Capability Enrichment Time: 2.533875672000022
+Thing Description Generation Time: 0.18920647499999177
+Overall Time: 6.793462416000011
+Discovery Time: 3.8292336749998412
+Capability Generalization Time: 0.31786007699997754
+Capability Enrichment Time: 2.6030218149996927
+Thing Description Generation Time: 0.2006691370002045
+Overall Time: 6.950784703999716
+Discovery Time: 3.792524622000201
+Capability Generalization Time: 0.3431284659998255
+Capability Enrichment Time: 2.560422926999763
+Thing Description Generation Time: 0.2022650890000932
+Overall Time: 6.898341103999883
+Discovery Time: 3.746305481000036
+Capability Generalization Time: 0.2894916479999665
+Capability Enrichment Time: 2.6858024220000516
+Thing Description Generation Time: 0.21188132899987977
+Overall Time: 6.933480879999934
+Discovery Time: 3.776033871999971
+Capability Generalization Time: 0.2865945940000074
+Capability Enrichment Time: 2.732311345999733
+Thing Description Generation Time: 0.18474621200016372
+Overall Time: 6.979686023999875
+Discovery Time: 3.816822049000166
+Capability Generalization Time: 0.3770247239999662
+Capability Enrichment Time: 2.560361979999925
+Thing Description Generation Time: 0.19635157700008676
+Overall Time: 6.950560330000144
+Discovery Time: 3.784371403000023
+Capability Generalization Time: 0.29255347799994524
+Capability Enrichment Time: 2.6446477349998077
+Thing Description Generation Time: 0.19157967700016343
+Overall Time: 6.913152292999939
+Discovery Time: 3.8537770430000364
+Capability Generalization Time: 0.2917620180000995
+Capability Enrichment Time: 2.6506904860000304
+Thing Description Generation Time: 0.18803671900013796
+Overall Time: 6.984266266000304
+Discovery Time: 3.857079418000012
+Capability Generalization Time: 0.2780265879998751
+Capability Enrichment Time: 2.505254980000018
+Thing Description Generation Time: 0.19196224000006623
+Overall Time: 6.832323225999971
+Discovery Time: 3.82752967600004
+Capability Generalization Time: 0.35401796299993293
+Capability Enrichment Time: 2.477069553000092
+Thing Description Generation Time: 0.18810246699990785
+Overall Time: 6.846719658999973
+Discovery Time: 3.787584809000009
+Capability Generalization Time: 0.291707691000056
+Capability Enrichment Time: 2.6695276069997362
+Thing Description Generation Time: 0.18782926500011854
+Overall Time: 6.93664937199992
+Discovery Time: 3.8384940169999027
+Capability Generalization Time: 0.291330834000064
+Capability Enrichment Time: 2.4840655970001535
+Thing Description Generation Time: 0.2126466959998652
+Overall Time: 6.826537143999985
+Discovery Time: 3.7638475379999363
+Capability Generalization Time: 0.3482249359999514
+Capability Enrichment Time: 2.663973974000328
+Thing Description Generation Time: 0.2048497639998459
+Overall Time: 6.9808962120000615
+Discovery Time: 3.8137701670000297
+Capability Generalization Time: 0.28347121000001607
+Capability Enrichment Time: 2.5936948630001098
+Thing Description Generation Time: 0.2029916179999418
+Overall Time: 6.893927858000097
+Discovery Time: 3.8012470940000185
+Capability Generalization Time: 0.2956143230001089
+Capability Enrichment Time: 2.6620756090001123
+Thing Description Generation Time: 0.2042915009999433
+Overall Time: 6.963228527000183
+Discovery Time: 3.8687061429998266
+Capability Generalization Time: 0.29077736900012496
+Capability Enrichment Time: 2.6222966830000587
+Thing Description Generation Time: 0.1963138749999871
+Overall Time: 6.978094069999997
+Discovery Time: 3.8395885219999855
+Capability Generalization Time: 0.3465392089999568
+Capability Enrichment Time: 2.5731115250000585
+Thing Description Generation Time: 0.22099439099997653
+Overall Time: 6.980233646999977
+Discovery Time: 3.8731394569999793
+Capability Generalization Time: 0.29128251899987845
+Capability Enrichment Time: 2.561718547000055
+Thing Description Generation Time: 0.22109011099996678
+Overall Time: 6.9472306339998795
+Discovery Time: 3.825340679999954
+Capability Generalization Time: 0.2805470119999427
+Capability Enrichment Time: 2.6846878819999347
+Thing Description Generation Time: 0.19728520500007107
+Overall Time: 6.987860778999902
+Discovery Time: 3.809711519000075
+Capability Generalization Time: 0.36017411500006347
+Capability Enrichment Time: 2.468906102999881
+Thing Description Generation Time: 0.20789659999991272
+Overall Time: 6.846688336999932
+Discovery Time: 3.8106322129999626
+Capability Generalization Time: 0.2959300570000778
+Capability Enrichment Time: 2.749667694000209
+Thing Description Generation Time: 0.20578184199985117
+Overall Time: 7.0620118060001005
+Discovery Time: 3.837279566999996
+Capability Generalization Time: 0.29624005699997724
+Capability Enrichment Time: 2.418751732999908
+Thing Description Generation Time: 0.24688848400001007
+Overall Time: 6.7991598409998915
+Discovery Time: 3.815354913999954
+Capability Generalization Time: 0.25609064599984777
+Capability Enrichment Time: 2.428496374000133
+Thing Description Generation Time: 0.19199497999989035
+Overall Time: 6.691936913999825
+Discovery Time: 3.8071850320000067
+Capability Generalization Time: 0.33996161400000346
+Capability Enrichment Time: 2.4988915940000425
+Thing Description Generation Time: 0.185997751000059
+Overall Time: 6.832035991000112
+Discovery Time: 3.843721318000007
+Capability Generalization Time: 0.28973135399996863
+Capability Enrichment Time: 2.648882201999868
+Thing Description Generation Time: 0.20853204800005187
+Overall Time: 6.990866921999896
+Discovery Time: 3.819780321000053
+Capability Generalization Time: 0.2831756140001289
+Capability Enrichment Time: 2.672907314999975
+Thing Description Generation Time: 0.20804494100002557
+Overall Time: 6.983908191000182
+Discovery Time: 3.832615687000043
+Capability Generalization Time: 0.36381681700004265
+Capability Enrichment Time: 2.4090655600000446
+Thing Description Generation Time: 0.20695510199993805
+Overall Time: 6.8124531660000684
+Discovery Time: 3.808263295000188
+Capability Generalization Time: 0.289167980000002
+Capability Enrichment Time: 2.720041035999884
+Thing Description Generation Time: 0.2295087530001183
+Overall Time: 7.046981064000192
+Discovery Time: 3.8267808390000937
+Capability Generalization Time: 0.3003055520000544
+Capability Enrichment Time: 2.722293167999851
+Thing Description Generation Time: 0.19010482900011993
+Overall Time: 7.039484388000119
+Discovery Time: 3.8084156319998783
+Capability Generalization Time: 0.2888809809999202
+Capability Enrichment Time: 2.681020960000069
+Thing Description Generation Time: 0.18894163999993907
+Overall Time: 6.9672592129998066
+Discovery Time: 3.879817219000188
+Capability Generalization Time: 0.34592070700000477
+Capability Enrichment Time: 2.576063123999802
+Thing Description Generation Time: 0.20186699200007752
+Overall Time: 7.003668042000072
+Discovery Time: 3.8193347750000157
+Capability Generalization Time: 0.28425276699999813
+Capability Enrichment Time: 2.6118443980001302
+Thing Description Generation Time: 0.20705035700007102
+Overall Time: 6.922482297000215
+Discovery Time: 3.8348937149999074
+Capability Generalization Time: 0.3253849519999221
+Capability Enrichment Time: 2.5001846619998105
+Thing Description Generation Time: 0.19346426900006009
+Overall Time: 6.8539275979997
+Discovery Time: 3.842443943000035
+Capability Generalization Time: 0.35668662800003403
+Capability Enrichment Time: 2.593809876000023
+Thing Description Generation Time: 0.19025403499995264
+Overall Time: 6.9831944820000444
+Discovery Time: 3.78412497599993
+Capability Generalization Time: 0.29811049099998854
+Capability Enrichment Time: 2.716111139000077
+Thing Description Generation Time: 0.19356493600002977
+Overall Time: 6.991911542000025
+Discovery Time: 3.9827742160000525
+Capability Generalization Time: 0.4679806990000088
+Capability Enrichment Time: 2.6510659220000434
+Thing Description Generation Time: 0.2736649010000747
+Overall Time: 7.3754857380001795
+Discovery Time: 3.809018642999945
+Capability Generalization Time: 0.3006003890000102
+Capability Enrichment Time: 2.3187039269998877
+Thing Description Generation Time: 0.19629115000020647
+Overall Time: 6.624614109000049
+Discovery Time: 3.8801366879999932
+Capability Generalization Time: 0.6036539250001169
+Capability Enrichment Time: 2.4795903750000434
+Thing Description Generation Time: 0.35023926100006975
+Overall Time: 7.313620249000223
+Discovery Time: 3.804105148999952
+Capability Generalization Time: 0.3775913629997376
+Capability Enrichment Time: 2.5183144349998656
+Thing Description Generation Time: 0.20323071200027698
+Overall Time: 6.903241658999832
+Discovery Time: 3.8118841269997574
+Capability Generalization Time: 0.34949697100000776
+Capability Enrichment Time: 2.8195428009998977
+Thing Description Generation Time: 0.21240879500010124
+Overall Time: 7.193332693999764
+Discovery Time: 3.822083944000042
+Capability Generalization Time: 0.2912303719999727
+Capability Enrichment Time: 2.542040938000355
+Thing Description Generation Time: 0.20284225299974423
+Overall Time: 6.8581975070001135
+Discovery Time: 3.755649858000197
+Capability Generalization Time: 0.3089669710002454
+Capability Enrichment Time: 2.559107291000146
+Thing Description Generation Time: 0.20752840400018613
+Overall Time: 6.831252524000774
+Discovery Time: 3.8918164209999304
+Capability Generalization Time: 0.3549430910002229
+Capability Enrichment Time: 2.6542684330001975
+Thing Description Generation Time: 0.212635248999959
+Overall Time: 7.11366319400031
+Discovery Time: 3.8298682240001654
+Capability Generalization Time: 0.27692225400005555
+Capability Enrichment Time: 2.6058499480000137
+Thing Description Generation Time: 0.20818715499990503
+Overall Time: 6.92082758100014
+Discovery Time: 3.846778519000054
+Capability Generalization Time: 0.28336906999993516
+Capability Enrichment Time: 2.832318342000235
+Thing Description Generation Time: 0.18735581400005685
+Overall Time: 7.149821745000281
+Discovery Time: 3.870365207999839
+Capability Generalization Time: 0.40071940999996514
+Capability Enrichment Time: 2.5520577990000675
+Thing Description Generation Time: 0.19081019299983382
+Overall Time: 7.013952609999706
+Discovery Time: 3.7504690789996857
+Capability Generalization Time: 0.29546136099997966
+Capability Enrichment Time: 2.815127738999763
+Thing Description Generation Time: 0.19905978399992819
+Overall Time: 7.060117962999357
+Test size: 30
+Discovery Time: 3.0795146880000175
+Capability Generalization Time: 0.4603265499999907
+Capability Enrichment Time: 2.119493808000243
+Thing Description Generation Time: 0.18103739799971663
+Overall Time: 5.840372443999968
+Discovery Time: 3.092191193999952
+Capability Generalization Time: 0.32836053099981655
+Capability Enrichment Time: 2.0672185580001496
+Thing Description Generation Time: 0.14173467000000528
+Overall Time: 5.629504952999923
+Discovery Time: 3.0862609129999328
+Capability Generalization Time: 0.26818960899981903
+Capability Enrichment Time: 2.207234250000056
+Thing Description Generation Time: 0.15724928100007673
+Overall Time: 5.718934052999884
+Discovery Time: 3.0945229030003247
+Capability Generalization Time: 0.23861151099981726
+Capability Enrichment Time: 2.0955594319998454
+Thing Description Generation Time: 0.15450588400017295
+Overall Time: 5.58319973000016
+Discovery Time: 3.1222349419999773
+Capability Generalization Time: 0.31533124999987194
+Capability Enrichment Time: 1.9471152450000773
+Thing Description Generation Time: 0.1568747119999898
+Overall Time: 5.541556148999916
+Discovery Time: 3.1959234709997872
+Capability Generalization Time: 0.2641569900001741
+Capability Enrichment Time: 2.1060049779998735
+Thing Description Generation Time: 0.1567141040000024
+Overall Time: 5.722799542999837
+Discovery Time: 3.0744386450001002
+Capability Generalization Time: 0.2722750709999673
+Capability Enrichment Time: 2.1352994619996934
+Thing Description Generation Time: 0.14442162700015615
+Overall Time: 5.626434804999917
+Discovery Time: 3.128132129000278
+Capability Generalization Time: 0.2855737509999017
+Capability Enrichment Time: 2.133204735000163
+Thing Description Generation Time: 0.16110789100002876
+Overall Time: 5.708018506000371
+Discovery Time: 3.084392798999943
+Capability Generalization Time: 0.2655091319998064
+Capability Enrichment Time: 2.146741221999946
+Thing Description Generation Time: 0.14788587100019868
+Overall Time: 5.644529023999894
+Discovery Time: 3.116341786999783
+Capability Generalization Time: 0.25745196099978784
+Capability Enrichment Time: 2.001754796000114
+Thing Description Generation Time: 0.1440335719998984
+Overall Time: 5.519582115999583
+Discovery Time: 3.0680291719995694
+Capability Generalization Time: 0.2625098960002106
+Capability Enrichment Time: 2.1790317949999007
+Thing Description Generation Time: 0.16173730800028352
+Overall Time: 5.671308170999964
+Discovery Time: 3.059917820999999
+Capability Generalization Time: 0.2647997909998594
+Capability Enrichment Time: 2.170155127999351
+Thing Description Generation Time: 0.1531830350004384
+Overall Time: 5.648055774999648
+Discovery Time: 3.1136687359999087
+Capability Generalization Time: 0.261484735999602
+Capability Enrichment Time: 2.0108284389998516
+Thing Description Generation Time: 0.1445266000000629
+Overall Time: 5.530508510999425
+Discovery Time: 3.1134764319999704
+Capability Generalization Time: 0.27061254599993845
+Capability Enrichment Time: 2.027078559000074
+Thing Description Generation Time: 0.1513224820000687
+Overall Time: 5.562490019000052
+Discovery Time: 3.134620810999877
+Capability Generalization Time: 0.24991736700030742
+Capability Enrichment Time: 2.0397572460001356
+Thing Description Generation Time: 0.2122495120001986
+Overall Time: 5.636544936000519
+Discovery Time: 3.1108356579998144
+Capability Generalization Time: 0.2653557849998833
+Capability Enrichment Time: 2.1137983040002837
+Thing Description Generation Time: 0.14309786800004076
+Overall Time: 5.633087615000022
+Discovery Time: 3.099629552999886
+Capability Generalization Time: 0.2606753340000978
+Capability Enrichment Time: 1.9932829389999824
+Thing Description Generation Time: 0.16062257600015073
+Overall Time: 5.514210402000117
+Discovery Time: 3.1603395959996305
+Capability Generalization Time: 0.33717766000017946
+Capability Enrichment Time: 2.064792407999903
+Thing Description Generation Time: 0.15266388700001698
+Overall Time: 5.71497355099973
+Discovery Time: 3.0264770889998545
+Capability Generalization Time: 0.24783651500001724
+Capability Enrichment Time: 2.067907374999777
+Thing Description Generation Time: 0.14505152000037924
+Overall Time: 5.487272499000028
+Discovery Time: 3.099678224999934
+Capability Generalization Time: 0.2602314559999286
+Capability Enrichment Time: 1.95646846200043
+Thing Description Generation Time: 0.1581658579998475
+Overall Time: 5.47454400100014
+Discovery Time: 3.082129532000181
+Capability Generalization Time: 0.3119576050003161
+Capability Enrichment Time: 2.0632815160001883
+Thing Description Generation Time: 0.1464404650000688
+Overall Time: 5.603809118000754
+Discovery Time: 3.096965772999738
+Capability Generalization Time: 0.29043501900014235
+Capability Enrichment Time: 2.025271542000155
+Thing Description Generation Time: 0.15372412599981544
+Overall Time: 5.566396459999851
+Discovery Time: 3.1116870760001802
+Capability Generalization Time: 0.269191322000097
+Capability Enrichment Time: 1.9386390899999242
+Thing Description Generation Time: 0.14892477200010035
+Overall Time: 5.468442260000302
+Discovery Time: 3.138705953999761
+Capability Generalization Time: 0.3082029130000592
+Capability Enrichment Time: 2.023789349999788
+Thing Description Generation Time: 0.14529107299995303
+Overall Time: 5.615989289999561
+Discovery Time: 3.1726493709998067
+Capability Generalization Time: 0.2935305830001198
+Capability Enrichment Time: 2.2218456550003793
+Thing Description Generation Time: 0.17583756199974232
+Overall Time: 5.863863171000048
+Discovery Time: 3.0781001350001134
+Capability Generalization Time: 0.26561776100015777
+Capability Enrichment Time: 1.96706121599982
+Thing Description Generation Time: 0.14826783199987403
+Overall Time: 5.459046943999965
+Discovery Time: 3.1456666939998286
+Capability Generalization Time: 0.326891894000255
+Capability Enrichment Time: 2.0719434540001203
+Thing Description Generation Time: 0.14840784699981668
+Overall Time: 5.6929098890000205
+Discovery Time: 3.099228414999743
+Capability Generalization Time: 0.2707771289997254
+Capability Enrichment Time: 2.22636142500005
+Thing Description Generation Time: 0.1468273750001572
+Overall Time: 5.743194343999676
+Discovery Time: 3.064162353000029
+Capability Generalization Time: 0.27249375499968664
+Capability Enrichment Time: 2.3229887689999487
+Thing Description Generation Time: 0.16479897099998198
+Overall Time: 5.824443847999646
+Discovery Time: 3.0798020140000517
+Capability Generalization Time: 0.33585988000004363
+Capability Enrichment Time: 2.2097872450003706
+Thing Description Generation Time: 0.15921702799960258
+Overall Time: 5.7846661670000685
+Discovery Time: 3.080213540999921
+Capability Generalization Time: 0.2576627970001937
+Capability Enrichment Time: 2.0569591769994986
+Thing Description Generation Time: 0.1440312510003423
+Overall Time: 5.5388667659999555
+Discovery Time: 3.10370428799979
+Capability Generalization Time: 0.4031005490001007
+Capability Enrichment Time: 1.9349631569998564
+Thing Description Generation Time: 0.16492450499981715
+Overall Time: 5.606692498999564
+Discovery Time: 3.0963513839997177
+Capability Generalization Time: 0.3169106909999755
+Capability Enrichment Time: 2.199482350999915
+Thing Description Generation Time: 0.17176789899986034
+Overall Time: 5.7845123249994685
+Discovery Time: 3.0550770330000887
+Capability Generalization Time: 0.26924514599977556
+Capability Enrichment Time: 2.3176805470002364
+Thing Description Generation Time: 0.16213766400005625
+Overall Time: 5.804140390000157
+Discovery Time: 3.1542935880002005
+Capability Generalization Time: 0.25905234000038035
+Capability Enrichment Time: 2.1082323219998216
+Thing Description Generation Time: 0.14923209600010523
+Overall Time: 5.670810346000508
+Discovery Time: 3.099177765999684
+Capability Generalization Time: 0.26360472500027754
+Capability Enrichment Time: 2.1023947680000674
+Thing Description Generation Time: 0.14709515899994585
+Overall Time: 5.612272417999975
+Discovery Time: 3.104238470999917
+Capability Generalization Time: 0.26254687599976023
+Capability Enrichment Time: 2.138485029000549
+Thing Description Generation Time: 0.17620694299967
+Overall Time: 5.681477318999896
+Discovery Time: 3.161868303999654
+Capability Generalization Time: 0.2658726459999343
+Capability Enrichment Time: 2.1813947759997063
+Thing Description Generation Time: 0.15564015700010714
+Overall Time: 5.764775882999402
+Discovery Time: 3.072286369000267
+Capability Generalization Time: 0.263600260000203
+Capability Enrichment Time: 2.117495285000132
+Thing Description Generation Time: 0.143613350999658
+Overall Time: 5.59699526500026
+Discovery Time: 3.1195853540002645
+Capability Generalization Time: 0.2738036759997158
+Capability Enrichment Time: 2.3178586179997183
+Thing Description Generation Time: 0.14954727200029083
+Overall Time: 5.860794919999989
+Discovery Time: 3.0844177150001997
+Capability Generalization Time: 0.2302642399999968
+Capability Enrichment Time: 2.146005292999689
+Thing Description Generation Time: 0.1677432060000683
+Overall Time: 5.628430453999954
+Discovery Time: 3.1440281180002785
+Capability Generalization Time: 0.28314247999969666
+Capability Enrichment Time: 1.905490084000121
+Thing Description Generation Time: 0.22669388199983587
+Overall Time: 5.559354563999932
+Discovery Time: 3.0919600389997868
+Capability Generalization Time: 0.3405649850001282
+Capability Enrichment Time: 2.0138024560001213
+Thing Description Generation Time: 0.28321049299984224
+Overall Time: 5.7295379729998785
+Discovery Time: 3.1142028869999194
+Capability Generalization Time: 0.2683947939999598
+Capability Enrichment Time: 1.909380118000172
+Thing Description Generation Time: 0.16769169500003045
+Overall Time: 5.459669494000082
+Discovery Time: 3.1319339920000857
+Capability Generalization Time: 0.24515454599986697
+Capability Enrichment Time: 2.132700243999807
+Thing Description Generation Time: 0.1584015170001294
+Overall Time: 5.668190298999889
+Discovery Time: 3.1312690310001017
+Capability Generalization Time: 0.31853636200003166
+Capability Enrichment Time: 1.9290984799999933
+Thing Description Generation Time: 0.14265738199992484
+Overall Time: 5.5215612550000515
+Discovery Time: 3.1120584770001187
+Capability Generalization Time: 0.28083800299964423
+Capability Enrichment Time: 1.9671649809997689
+Thing Description Generation Time: 0.14587021800025468
+Overall Time: 5.5059316789997865
+Discovery Time: 3.135031678999894
+Capability Generalization Time: 0.26457762900008674
+Capability Enrichment Time: 2.0887429419999535
+Thing Description Generation Time: 0.15615509700000985
+Overall Time: 5.644507346999944
+Discovery Time: 3.1292616000000635
+Capability Generalization Time: 0.3114696699999513
+Capability Enrichment Time: 1.9059808980000525
+Thing Description Generation Time: 0.14657635599996865
+Overall Time: 5.493288524000036
+Discovery Time: 3.13359577600022
+Capability Generalization Time: 0.268089277999934
+Capability Enrichment Time: 2.190474104000259
+Thing Description Generation Time: 0.15219785199997204
+Overall Time: 5.744357010000385
+Test size: 20
+Discovery Time: 2.361282262000259
+Capability Generalization Time: 0.4081282229999488
+Capability Enrichment Time: 1.4579010679999556
+Thing Description Generation Time: 0.10279948500010505
+Overall Time: 4.330111038000268
+Discovery Time: 2.3434225559999504
+Capability Generalization Time: 0.29543382700012444
+Capability Enrichment Time: 1.4062371349996283
+Thing Description Generation Time: 0.11377510900001653
+Overall Time: 4.15886862699972
+Discovery Time: 2.395338346999779
+Capability Generalization Time: 0.24706764399979875
+Capability Enrichment Time: 1.4926623620003738
+Thing Description Generation Time: 0.10357728700000735
+Overall Time: 4.238645639999959
+Discovery Time: 2.347806560999743
+Capability Generalization Time: 0.22098368100023436
+Capability Enrichment Time: 1.540906776999691
+Thing Description Generation Time: 0.10434763500006738
+Overall Time: 4.214044653999736
+Discovery Time: 2.3849519589998636
+Capability Generalization Time: 0.28518689800012
+Capability Enrichment Time: 1.5189893500000835
+Thing Description Generation Time: 0.1021474459998899
+Overall Time: 4.291275652999957
+Discovery Time: 2.376576827000008
+Capability Generalization Time: 0.23914466000042012
+Capability Enrichment Time: 1.6030609439999353
+Thing Description Generation Time: 0.11116874099980123
+Overall Time: 4.329951172000165
+Discovery Time: 2.3799876729999596
+Capability Generalization Time: 0.23559980399977576
+Capability Enrichment Time: 1.4530060629999753
+Thing Description Generation Time: 0.10101602800023102
+Overall Time: 4.169609567999942
+Discovery Time: 2.3744255990000056
+Capability Generalization Time: 0.23852025499991214
+Capability Enrichment Time: 1.5741739800000687
+Thing Description Generation Time: 0.10409540099999504
+Overall Time: 4.2912152349999815
+Discovery Time: 2.423912922999989
+Capability Generalization Time: 0.25996135199966375
+Capability Enrichment Time: 1.4488879229993472
+Thing Description Generation Time: 0.10461580900027911
+Overall Time: 4.237378006999279
+Discovery Time: 2.376308850999976
+Capability Generalization Time: 0.22097038699985205
+Capability Enrichment Time: 1.3799050309999075
+Thing Description Generation Time: 0.1114533320001101
+Overall Time: 4.088637600999846
+Discovery Time: 2.382219558000088
+Capability Generalization Time: 0.25684885500004384
+Capability Enrichment Time: 1.5919576490000509
+Thing Description Generation Time: 0.1050176690000626
+Overall Time: 4.336043731000245
+Discovery Time: 2.3561216660000355
+Capability Generalization Time: 0.24353568800006542
+Capability Enrichment Time: 1.410891661000278
+Thing Description Generation Time: 0.12564691899979152
+Overall Time: 4.13619593400017
+Discovery Time: 2.3584062479999375
+Capability Generalization Time: 0.3011783120000473
+Capability Enrichment Time: 1.4290347270002712
+Thing Description Generation Time: 0.1002598569998554
+Overall Time: 4.188879144000111
+Discovery Time: 2.3945997740001985
+Capability Generalization Time: 0.23952358299993648
+Capability Enrichment Time: 1.5097590939999463
+Thing Description Generation Time: 0.10662997400004315
+Overall Time: 4.2505124250001245
+Discovery Time: 2.3621724630002063
+Capability Generalization Time: 0.24454843200010146
+Capability Enrichment Time: 1.4190281969999887
+Thing Description Generation Time: 0.10022157999992487
+Overall Time: 4.125970672000221
+Discovery Time: 2.3402803089998088
+Capability Generalization Time: 0.2709953170001427
+Capability Enrichment Time: 1.3968337810001685
+Thing Description Generation Time: 0.10420423899995512
+Overall Time: 4.112313646000075
+Discovery Time: 2.419142096000087
+Capability Generalization Time: 0.23270431999981156
+Capability Enrichment Time: 1.4934429229997477
+Thing Description Generation Time: 0.10316660000034972
+Overall Time: 4.248455938999996
+Discovery Time: 2.482686226000169
+Capability Generalization Time: 0.2518833120002455
+Capability Enrichment Time: 1.45207087999961
+Thing Description Generation Time: 0.10094289400012713
+Overall Time: 4.287583312000152
+Discovery Time: 2.418300342999828
+Capability Generalization Time: 0.22284985599981155
+Capability Enrichment Time: 1.4560771679998652
+Thing Description Generation Time: 0.10613164599999436
+Overall Time: 4.203359012999499
+Discovery Time: 2.314144259999921
+Capability Generalization Time: 0.24078682299978027
+Capability Enrichment Time: 1.6040394289993856
+Thing Description Generation Time: 0.1055708600001708
+Overall Time: 4.2645413719992575
+Discovery Time: 2.4191332030000012
+Capability Generalization Time: 0.2429257730000245
+Capability Enrichment Time: 1.5460545780001667
+Thing Description Generation Time: 0.10598352899978636
+Overall Time: 4.314097082999979
+Discovery Time: 2.3839754370001174
+Capability Generalization Time: 0.23525805400004174
+Capability Enrichment Time: 1.4794829699999354
+Thing Description Generation Time: 0.10121025599983113
+Overall Time: 4.199926716999926
+Discovery Time: 2.4082913560000634
+Capability Generalization Time: 0.24418963099969915
+Capability Enrichment Time: 1.5081480119993103
+Thing Description Generation Time: 0.10236580100036008
+Overall Time: 4.262994799999433
+Discovery Time: 2.3672065490000023
+Capability Generalization Time: 0.3011716310002157
+Capability Enrichment Time: 1.4081621229997836
+Thing Description Generation Time: 0.10134442000025956
+Overall Time: 4.177884723000261
+Discovery Time: 2.472758450999663
+Capability Generalization Time: 0.23592289399994115
+Capability Enrichment Time: 1.5359373390001565
+Thing Description Generation Time: 0.12309930299988991
+Overall Time: 4.367717986999651
+Discovery Time: 2.3365957909995814
+Capability Generalization Time: 0.2659718969998721
+Capability Enrichment Time: 1.5260272900004566
+Thing Description Generation Time: 0.10487837599976046
+Overall Time: 4.2334733539996705
+Discovery Time: 2.413493233000281
+Capability Generalization Time: 0.32483863000015845
+Capability Enrichment Time: 1.5355548289999206
+Thing Description Generation Time: 0.111528066000119
+Overall Time: 4.385414758000479
+Discovery Time: 2.3315107669995996
+Capability Generalization Time: 0.235441450000053
+Capability Enrichment Time: 1.510191202000442
+Thing Description Generation Time: 0.10203488399974958
+Overall Time: 4.179178302999844
+Discovery Time: 2.4051686660000087
+Capability Generalization Time: 0.2388214689999586
+Capability Enrichment Time: 1.4927892250002515
+Thing Description Generation Time: 0.10184050599991679
+Overall Time: 4.2386198660001355
+Discovery Time: 2.3600532450000173
+Capability Generalization Time: 0.2556600829998388
+Capability Enrichment Time: 1.45743413900027
+Thing Description Generation Time: 0.10655396399988604
+Overall Time: 4.179701431000012
+Discovery Time: 2.428035757000089
+Capability Generalization Time: 0.22577980899995964
+Capability Enrichment Time: 1.5656047670004227
+Thing Description Generation Time: 0.10653163899996798
+Overall Time: 4.325951972000439
+Discovery Time: 2.351501598000141
+Capability Generalization Time: 0.24251029300012306
+Capability Enrichment Time: 1.5329398240000955
+Thing Description Generation Time: 0.10715958399987358
+Overall Time: 4.234111299000233
+Discovery Time: 2.371755796999878
+Capability Generalization Time: 0.37043958200001725
+Capability Enrichment Time: 1.4746622320003553
+Thing Description Generation Time: 0.09942908999983047
+Overall Time: 4.316286701000081
+Discovery Time: 2.333701001999998
+Capability Generalization Time: 0.25884487599978456
+Capability Enrichment Time: 1.4945763700002317
+Thing Description Generation Time: 0.10495764999996027
+Overall Time: 4.1920798979999745
+Discovery Time: 2.391154044999894
+Capability Generalization Time: 0.2804637589997583
+Capability Enrichment Time: 1.4438155080001707
+Thing Description Generation Time: 0.10376723599983961
+Overall Time: 4.219200547999662
+Discovery Time: 2.333723616000043
+Capability Generalization Time: 0.24316285199984122
+Capability Enrichment Time: 1.522073704000377
+Thing Description Generation Time: 0.10332749199960745
+Overall Time: 4.2022876639998685
+Discovery Time: 2.4126845400001002
+Capability Generalization Time: 0.2354201540001668
+Capability Enrichment Time: 1.3812416779996965
+Thing Description Generation Time: 0.10540338200007682
+Overall Time: 4.13474975400004
+Discovery Time: 2.3779916359999334
+Capability Generalization Time: 0.31616371200016147
+Capability Enrichment Time: 1.5109865790004733
+Thing Description Generation Time: 0.10245194199978869
+Overall Time: 4.307593869000357
+Discovery Time: 2.3824152629999844
+Capability Generalization Time: 0.2552589300003092
+Capability Enrichment Time: 1.455193295999834
+Thing Description Generation Time: 0.10024389099999098
+Overall Time: 4.1931113800001185
+Discovery Time: 2.324348914999973
+Capability Generalization Time: 0.235361887000181
+Capability Enrichment Time: 1.38495079500035
+Thing Description Generation Time: 0.10770754199984367
+Overall Time: 4.052369139000348
+Discovery Time: 2.428780568000093
+Capability Generalization Time: 0.24155288700012534
+Capability Enrichment Time: 1.4792835100001867
+Thing Description Generation Time: 0.10020549399996526
+Overall Time: 4.24982245900037
+Discovery Time: 2.3443159680000463
+Capability Generalization Time: 0.2575117010001122
+Capability Enrichment Time: 1.4849521860001005
+Thing Description Generation Time: 0.10747301699984746
+Overall Time: 4.194252872000106
+Discovery Time: 2.3669753310000488
+Capability Generalization Time: 0.24156812999990507
+Capability Enrichment Time: 1.499725615999978
+Thing Description Generation Time: 0.11265238099986163
+Overall Time: 4.220921457999793
+Discovery Time: 2.453550343999723
+Capability Generalization Time: 0.22655388200018933
+Capability Enrichment Time: 1.4903144089998932
+Thing Description Generation Time: 0.10321192899982634
+Overall Time: 4.273630563999632
+Discovery Time: 2.3963625799997317
+Capability Generalization Time: 0.2396263219998218
+Capability Enrichment Time: 1.4162410250000903
+Thing Description Generation Time: 0.1132621649999237
+Overall Time: 4.1654920919995675
+Discovery Time: 2.3886619579998296
+Capability Generalization Time: 0.30269620699982625
+Capability Enrichment Time: 1.407341216000077
+Thing Description Generation Time: 0.10659736200022962
+Overall Time: 4.205296742999963
+Discovery Time: 2.401624037000147
+Capability Generalization Time: 0.24807230999977037
+Capability Enrichment Time: 1.4795836720004445
+Thing Description Generation Time: 0.1015274049996151
+Overall Time: 4.230807423999977
+Discovery Time: 2.3885129939999388
+Capability Generalization Time: 0.2361142990002918
+Capability Enrichment Time: 1.4148477870003262
+Thing Description Generation Time: 0.10605262599983689
+Overall Time: 4.145527706000394
+Discovery Time: 2.4014454979997026
+Capability Generalization Time: 0.3076612350000687
+Capability Enrichment Time: 1.4069136749994868
+Thing Description Generation Time: 0.11417360300038126
+Overall Time: 4.230194010999639
+Discovery Time: 2.3883797529997537
+Capability Generalization Time: 0.25574275200006014
+Capability Enrichment Time: 1.576677405999817
+Thing Description Generation Time: 0.10256165800001327
+Overall Time: 4.323361568999644
+Test size: 10
+Discovery Time: 1.7558141960003013
+Capability Generalization Time: 0.3689146520000577
+Capability Enrichment Time: 1.0895789090000108
+Thing Description Generation Time: 0.05976569299991752
+Overall Time: 3.2740734500002873
+Discovery Time: 1.6592550360001042
+Capability Generalization Time: 0.2308142990000306
+Capability Enrichment Time: 1.0316806470000301
+Thing Description Generation Time: 0.05620857099984278
+Overall Time: 2.9779585530000077
+Discovery Time: 1.6606865200001266
+Capability Generalization Time: 0.2061477580000428
+Capability Enrichment Time: 1.1904882489998272
+Thing Description Generation Time: 0.05775445300014326
+Overall Time: 3.11507698000014
+Discovery Time: 1.5828364460003286
+Capability Generalization Time: 0.21455819099992368
+Capability Enrichment Time: 1.0347110350003277
+Thing Description Generation Time: 0.056154070000047795
+Overall Time: 2.8882597420006277
+Discovery Time: 1.6733660009999767
+Capability Generalization Time: 0.23700285200038707
+Capability Enrichment Time: 1.3521603280000818
+Thing Description Generation Time: 0.06832587400003831
+Overall Time: 3.330855055000484
+Discovery Time: 1.7289844040001299
+Capability Generalization Time: 0.20467455500011056
+Capability Enrichment Time: 1.0089418799998384
+Thing Description Generation Time: 0.05585464000023421
+Overall Time: 2.998455479000313
+Discovery Time: 1.648942605999764
+Capability Generalization Time: 0.25911994399984906
+Capability Enrichment Time: 1.124611637000271
+Thing Description Generation Time: 0.09068007399991984
+Overall Time: 3.123354260999804
+Discovery Time: 1.7406759049999891
+Capability Generalization Time: 0.207053198000267
+Capability Enrichment Time: 1.3576318000000356
+Thing Description Generation Time: 0.05753692600001159
+Overall Time: 3.3628978290003033
+Discovery Time: 1.6550624740002604
+Capability Generalization Time: 0.202257593000013
+Capability Enrichment Time: 1.0621593179998854
+Thing Description Generation Time: 0.05910791099995549
+Overall Time: 2.9785872960001143
+Discovery Time: 1.6523767640001097
+Capability Generalization Time: 0.20415931900015494
+Capability Enrichment Time: 1.3028939039995748
+Thing Description Generation Time: 0.059907107000071846
+Overall Time: 3.2193370939999113
+Discovery Time: 1.677956240000185
+Capability Generalization Time: 0.22158216099978745
+Capability Enrichment Time: 1.094665272000384
+Thing Description Generation Time: 0.061021227999844996
+Overall Time: 3.0552249010002015
+Discovery Time: 1.6558688109998911
+Capability Generalization Time: 0.27278902499983815
+Capability Enrichment Time: 1.064830947000246
+Thing Description Generation Time: 0.060012790999735444
+Overall Time: 3.0535015739997107
+Discovery Time: 1.6682258459995865
+Capability Generalization Time: 0.23253935799993997
+Capability Enrichment Time: 1.087889444999746
+Thing Description Generation Time: 0.058693352000318555
+Overall Time: 3.047348000999591
+Discovery Time: 1.6570774059996438
+Capability Generalization Time: 0.20454478000010567
+Capability Enrichment Time: 1.1299994429996332
+Thing Description Generation Time: 0.06086327100001654
+Overall Time: 3.052484899999399
+Discovery Time: 1.6384405459998561
+Capability Generalization Time: 0.19494040100016718
+Capability Enrichment Time: 1.262093836999611
+Thing Description Generation Time: 0.05538092400001915
+Overall Time: 3.1508557079996535
+Discovery Time: 1.6472566209999968
+Capability Generalization Time: 0.20687445899966406
+Capability Enrichment Time: 1.1202990990000217
+Thing Description Generation Time: 0.0913600580001912
+Overall Time: 3.0657902369998737
+Discovery Time: 1.6442004809996433
+Capability Generalization Time: 0.27438879500004987
+Capability Enrichment Time: 1.077366837000227
+Thing Description Generation Time: 0.0637167199997748
+Overall Time: 3.059672832999695
+Discovery Time: 1.675756604000071
+Capability Generalization Time: 0.19547748300010426
+Capability Enrichment Time: 1.1791874509999616
+Thing Description Generation Time: 0.05965775399999984
+Overall Time: 3.1100792920001368
+Discovery Time: 1.6619670869999936
+Capability Generalization Time: 0.22425741000006383
+Capability Enrichment Time: 1.0646026539998275
+Thing Description Generation Time: 0.05743397300011566
+Overall Time: 3.0082611240000006
+Discovery Time: 1.63121021500001
+Capability Generalization Time: 0.20367840799963233
+Capability Enrichment Time: 1.3120685409999169
+Thing Description Generation Time: 0.0628587329997572
+Overall Time: 3.2098158969993165
+Discovery Time: 1.6932319269999425
+Capability Generalization Time: 0.22402585200006797
+Capability Enrichment Time: 1.0496487620002881
+Thing Description Generation Time: 0.06331875799969566
+Overall Time: 3.0302252989999943
+Discovery Time: 1.6038394580000386
+Capability Generalization Time: 0.30942058700020425
+Capability Enrichment Time: 1.2029578259998743
+Thing Description Generation Time: 0.09129900800007817
+Overall Time: 3.2075168790001953
+Discovery Time: 1.6476772840001104
+Capability Generalization Time: 0.2015847580000809
+Capability Enrichment Time: 1.121893861999979
+Thing Description Generation Time: 0.0563528679999763
+Overall Time: 3.0275087720001466
+Discovery Time: 1.6217237959999693
+Capability Generalization Time: 0.23645260300008886
+Capability Enrichment Time: 1.1579675719999614
+Thing Description Generation Time: 0.08819184599997243
+Overall Time: 3.104335816999992
+Discovery Time: 1.7044760710000446
+Capability Generalization Time: 0.202682619999905
+Capability Enrichment Time: 1.2780279769999652
+Thing Description Generation Time: 0.05533993300014117
+Overall Time: 3.240526601000056
+Discovery Time: 1.6532137929998498
+Capability Generalization Time: 0.2121062470000652
+Capability Enrichment Time: 1.0548820590001924
+Thing Description Generation Time: 0.05545397800005958
+Overall Time: 2.975656077000167
+Discovery Time: 1.7463299969999753
+Capability Generalization Time: 0.30574630900036937
+Capability Enrichment Time: 1.3206868550000763
+Thing Description Generation Time: 0.06714935299987701
+Overall Time: 3.439912514000298
+Discovery Time: 1.6120160989999022
+Capability Generalization Time: 0.20067767999989883
+Capability Enrichment Time: 1.1529176620001635
+Thing Description Generation Time: 0.057182438999916485
+Overall Time: 3.022793879999881
+Discovery Time: 1.6863681700001507
+Capability Generalization Time: 0.274681949999831
+Capability Enrichment Time: 1.0634832749997258
+Thing Description Generation Time: 0.0605043610003122
+Overall Time: 3.0850377560000197
+Discovery Time: 1.6290745709998191
+Capability Generalization Time: 0.21249721000003774
+Capability Enrichment Time: 1.2628693829997246
+Thing Description Generation Time: 0.05838841200011302
+Overall Time: 3.1628295759996945
+Discovery Time: 1.6541302660002657
+Capability Generalization Time: 0.20437934099982158
+Capability Enrichment Time: 1.1239552649999496
+Thing Description Generation Time: 0.06210831800035521
+Overall Time: 3.044573190000392
+Discovery Time: 1.641028649999953
+Capability Generalization Time: 0.34722977000001265
+Capability Enrichment Time: 1.3358117600005244
+Thing Description Generation Time: 0.10021484799972313
+Overall Time: 3.424285028000213
+Discovery Time: 1.6918971330001114
+Capability Generalization Time: 0.19577651600002355
+Capability Enrichment Time: 1.1830341689997113
+Thing Description Generation Time: 0.060049555000205146
+Overall Time: 3.1307573730000513
+Discovery Time: 1.632225942000332
+Capability Generalization Time: 0.19285852700022588
+Capability Enrichment Time: 1.0851546570002029
+Thing Description Generation Time: 0.06890909799994915
+Overall Time: 2.97914822400071
+Discovery Time: 1.792564547999973
+Capability Generalization Time: 0.21125455799983683
+Capability Enrichment Time: 1.3509495120001702
+Thing Description Generation Time: 0.05894259600017904
+Overall Time: 3.413711214000159
+Discovery Time: 1.6555443720003495
+Capability Generalization Time: 0.21158423599990783
+Capability Enrichment Time: 1.134098985000037
+Thing Description Generation Time: 0.06176707099984924
+Overall Time: 3.0629946640001435
+Discovery Time: 1.6844646310000826
+Capability Generalization Time: 0.3181528410000283
+Capability Enrichment Time: 1.3340452880001976
+Thing Description Generation Time: 0.06933972600018024
+Overall Time: 3.4060024860004887
+Discovery Time: 1.6350117199999659
+Capability Generalization Time: 0.19802102599987847
+Capability Enrichment Time: 1.1039029170001413
+Thing Description Generation Time: 0.05718372499995894
+Overall Time: 2.9941193879999446
+Discovery Time: 1.6483208629997534
+Capability Generalization Time: 0.2134756849995938
+Capability Enrichment Time: 1.1620720329997312
+Thing Description Generation Time: 0.06342966500005787
+Overall Time: 3.0872982459991363
+Discovery Time: 1.6220653560003484
+Capability Generalization Time: 0.2029388559999461
+Capability Enrichment Time: 1.6209291159993882
+Thing Description Generation Time: 0.061413647000335914
+Overall Time: 3.5073469750000186
+Discovery Time: 1.6580861949996688
+Capability Generalization Time: 0.2111832739997226
+Capability Enrichment Time: 1.1237542920002852
+Thing Description Generation Time: 0.0579036740000447
+Overall Time: 3.0509274349997213
+Discovery Time: 1.6448548240000491
+Capability Generalization Time: 0.27496355200037215
+Capability Enrichment Time: 1.1065298509997774
+Thing Description Generation Time: 0.05752515799986213
+Overall Time: 3.083873385000061
+Discovery Time: 1.717687278000085
+Capability Generalization Time: 0.19834645799983264
+Capability Enrichment Time: 1.106952120999722
+Thing Description Generation Time: 0.05932987200003481
+Overall Time: 3.0823157289996743
+Discovery Time: 1.7315454800000225
+Capability Generalization Time: 0.204912561999663
+Capability Enrichment Time: 1.2940443130000858
+Thing Description Generation Time: 0.05989566699963689
+Overall Time: 3.2903980219994082
+Discovery Time: 1.6562300049999976
+Capability Generalization Time: 0.20254336200014222
+Capability Enrichment Time: 1.1961948370003483
+Thing Description Generation Time: 0.06199873699961245
+Overall Time: 3.1169669410001006
+Discovery Time: 1.6015124969999306
+Capability Generalization Time: 0.22138680599982763
+Capability Enrichment Time: 1.273454180999579
+Thing Description Generation Time: 0.06804100700037452
+Overall Time: 3.1643944909997117
+Discovery Time: 1.6447026139999252
+Capability Generalization Time: 0.20555840299994088
+Capability Enrichment Time: 1.1207378910003172
+Thing Description Generation Time: 0.05761573900008443
+Overall Time: 3.0286146470002677
+Discovery Time: 1.743417109999882
+Capability Generalization Time: 0.2239647490000607
+Capability Enrichment Time: 1.2067302040004506
+Thing Description Generation Time: 0.061570387999836385
+Overall Time: 3.2356824510002298
+Discovery Time: 1.7210958370001208
+Capability Generalization Time: 0.2093611699997382
+Capability Enrichment Time: 1.2280456630001026
+Thing Description Generation Time: 0.0684373140002208
+Overall Time: 3.2269399840001824
+Discovery Time: 1.6405631990000984
+Capability Generalization Time: 0.22407192399987252
+Capability Enrichment Time: 1.212374247999378
+Thing Description Generation Time: 0.06577070800040019
+Overall Time: 3.142780078999749
+Test size: 1
+Discovery Time: 0.9455694060002315
+Capability Generalization Time: 0.3975814030000038
+Capability Enrichment Time: 0.8433531490004498
+Thing Description Generation Time: 0.022965070999816817
+Overall Time: 2.209469029000502
+Discovery Time: 1.086996685000031
+Capability Generalization Time: 0.2600328919997992
+Capability Enrichment Time: 0.9901491959999476
+Thing Description Generation Time: 0.09752135200005796
+Overall Time: 2.4347001249998357
+Discovery Time: 0.9899116219999087
+Capability Generalization Time: 0.17978423500017016
+Capability Enrichment Time: 0.9079825619996882
+Thing Description Generation Time: 0.019939094000164914
+Overall Time: 2.097617512999932
+Discovery Time: 1.0074039119999725
+Capability Generalization Time: 0.18453512199994293
+Capability Enrichment Time: 1.021332696999707
+Thing Description Generation Time: 0.02154940099990199
+Overall Time: 2.2348211319995244
+Discovery Time: 0.976641350999671
+Capability Generalization Time: 0.24799812900027973
+Capability Enrichment Time: 0.9099607469997864
+Thing Description Generation Time: 0.021044385000095645
+Overall Time: 2.1556446119998327
+Discovery Time: 1.1145430840001609
+Capability Generalization Time: 0.19567901000027632
+Capability Enrichment Time: 0.8464258369999698
+Thing Description Generation Time: 0.019611724000242248
+Overall Time: 2.176259655000649
+Discovery Time: 0.9330039430001307
+Capability Generalization Time: 0.20354013099995427
+Capability Enrichment Time: 1.0443469390002065
+Thing Description Generation Time: 0.02311746699979267
+Overall Time: 2.204008480000084
+Discovery Time: 1.711510153999825
+Capability Generalization Time: 0.2092102110000269
+Capability Enrichment Time: 0.9075631109999449
+Thing Description Generation Time: 0.021011183000155143
+Overall Time: 2.849294658999952
+Discovery Time: 0.9754570499999318
+Capability Generalization Time: 0.2900798189998568
+Capability Enrichment Time: 1.0027720359998966
+Thing Description Generation Time: 0.036630639000122756
+Overall Time: 2.304939543999808
+Discovery Time: 1.0088731999999254
+Capability Generalization Time: 0.17848028999969756
+Capability Enrichment Time: 0.9153527539992865
+Thing Description Generation Time: 0.02172556900040945
+Overall Time: 2.124431812999319
+Discovery Time: 0.9684106969998538
+Capability Generalization Time: 0.22048875599966777
+Capability Enrichment Time: 1.072131700999762
+Thing Description Generation Time: 0.02483479400007127
+Overall Time: 2.285865947999355
+Discovery Time: 0.9421107080002002
+Capability Generalization Time: 0.190249662000042
+Capability Enrichment Time: 0.9193272640004579
+Thing Description Generation Time: 0.021033112999703008
+Overall Time: 2.072720747000403
+Discovery Time: 0.9833145600000535
+Capability Generalization Time: 0.23771337900006984
+Capability Enrichment Time: 0.8919427060000089
+Thing Description Generation Time: 0.02482790500016563
+Overall Time: 2.137798550000298
+Discovery Time: 0.9851398050000171
+Capability Generalization Time: 0.2040311009996003
+Capability Enrichment Time: 0.960607170000003
+Thing Description Generation Time: 0.02446446100020694
+Overall Time: 2.1742425369998273
+Discovery Time: 1.0117643009998574
+Capability Generalization Time: 0.18410930600020947
+Capability Enrichment Time: 0.909289187000013
+Thing Description Generation Time: 0.020923928000229353
+Overall Time: 2.1260867220003092
+Discovery Time: 0.9693325860002915
+Capability Generalization Time: 0.26859653900010017
+Capability Enrichment Time: 1.1160505660000126
+Thing Description Generation Time: 0.022351606000029278
+Overall Time: 2.3763312970004336
+Discovery Time: 1.0063784599997234
+Capability Generalization Time: 0.20910803700007818
+Capability Enrichment Time: 0.9470536829999219
+Thing Description Generation Time: 0.02020578200017553
+Overall Time: 2.182745961999899
+Discovery Time: 0.9980962320000799
+Capability Generalization Time: 0.1840225690002626
+Capability Enrichment Time: 0.8845158959998116
+Thing Description Generation Time: 0.02105332500013901
+Overall Time: 2.087688022000293
+Discovery Time: 0.9342133579998517
+Capability Generalization Time: 0.20045479300006264
+Capability Enrichment Time: 0.961427791999995
+Thing Description Generation Time: 0.02185252400022364
+Overall Time: 2.117948467000133
+Discovery Time: 0.9594616039998982
+Capability Generalization Time: 0.23009732499986058
+Capability Enrichment Time: 0.8462437800003499
+Thing Description Generation Time: 0.019340398999702302
+Overall Time: 2.055143107999811
+Discovery Time: 0.9906419899998582
+Capability Generalization Time: 0.3142306159998043
+Capability Enrichment Time: 1.1398120020003262
+Thing Description Generation Time: 0.03182579699978305
+Overall Time: 2.4765104049997717
+Discovery Time: 0.9764344159998473
+Capability Generalization Time: 0.1902889790003428
+Capability Enrichment Time: 0.8925883629999589
+Thing Description Generation Time: 0.023227102999953786
+Overall Time: 2.0825388610001028
+Discovery Time: 0.975432094000098
+Capability Generalization Time: 0.26239355100005923
+Capability Enrichment Time: 0.8746102870004506
+Thing Description Generation Time: 0.021121349999702943
+Overall Time: 2.133557282000311
+Discovery Time: 0.9854030919996148
+Capability Generalization Time: 0.17598033000012947
+Capability Enrichment Time: 0.9318979799995759
+Thing Description Generation Time: 0.0219695830001001
+Overall Time: 2.1152509849994203
+Discovery Time: 0.9538270150001154
+Capability Generalization Time: 0.19836244699990857
+Capability Enrichment Time: 0.8165532109997002
+Thing Description Generation Time: 0.020379466000122193
+Overall Time: 1.9891221389998464
+Discovery Time: 0.9885244470001453
+Capability Generalization Time: 0.21237698599998112
+Capability Enrichment Time: 1.2121711230001893
+Thing Description Generation Time: 0.025910887999998522
+Overall Time: 2.438983444000314
+Discovery Time: 1.0194668919998549
+Capability Generalization Time: 0.21499339899992265
+Capability Enrichment Time: 0.8475758309996309
+Thing Description Generation Time: 0.022369430000253487
+Overall Time: 2.104405551999662
+Discovery Time: 0.967450516000099
+Capability Generalization Time: 0.2751488740000241
+Capability Enrichment Time: 1.0601563129998794
+Thing Description Generation Time: 0.022766750999835494
+Overall Time: 2.325522453999838
+Discovery Time: 1.0248349809999127
+Capability Generalization Time: 0.21141957699956038
+Capability Enrichment Time: 1.015271384999778
+Thing Description Generation Time: 0.022066494000227976
+Overall Time: 2.273592436999479
+Discovery Time: 1.0159330740002588
+Capability Generalization Time: 0.20958212899995488
+Capability Enrichment Time: 0.8742418690003433
+Thing Description Generation Time: 0.021862185999907524
+Overall Time: 2.1216192580004645
+Discovery Time: 1.0044208720000825
+Capability Generalization Time: 0.19663615900026343
+Capability Enrichment Time: 1.1832702750002682
+Thing Description Generation Time: 0.02831910999975662
+Overall Time: 2.4126464160003707
+Discovery Time: 0.93885580999995
+Capability Generalization Time: 0.23034000699999524
+Capability Enrichment Time: 0.8203859399995963
+Thing Description Generation Time: 0.025599639000120078
+Overall Time: 2.0151813959996616
+Discovery Time: 1.002956892000384
+Capability Generalization Time: 0.29756124200002887
+Capability Enrichment Time: 1.0684022109999205
+Thing Description Generation Time: 0.03196473400021205
+Overall Time: 2.4008850790005454
+Discovery Time: 1.0350542850001148
+Capability Generalization Time: 0.21151557599978332
+Capability Enrichment Time: 0.820424973000172
+Thing Description Generation Time: 0.02027646599981381
+Overall Time: 2.087271299999884
+Discovery Time: 0.9716700869998931
+Capability Generalization Time: 0.26685318799991364
+Capability Enrichment Time: 0.9064838089998375
+Thing Description Generation Time: 0.024044856000273285
+Overall Time: 2.1690519399999175
+Discovery Time: 1.0038076820001152
+Capability Generalization Time: 0.19527043300013247
+Capability Enrichment Time: 0.9591241590001118
+Thing Description Generation Time: 0.02169386300010956
+Overall Time: 2.179896137000469
+Discovery Time: 1.0284982960001798
+Capability Generalization Time: 0.20061472199995478
+Capability Enrichment Time: 0.8919463270003689
+Thing Description Generation Time: 0.02067073599982905
+Overall Time: 2.1417300810003326
+Discovery Time: 0.9993771280001056
+Capability Generalization Time: 0.21620169000016176
+Capability Enrichment Time: 1.0933889299999464
+Thing Description Generation Time: 0.02470777899998211
+Overall Time: 2.333675527000196
+Discovery Time: 1.0468640789999881
+Capability Generalization Time: 0.19627650400025232
+Capability Enrichment Time: 0.9063169070000185
+Thing Description Generation Time: 0.022594764000132272
+Overall Time: 2.1720522540003913
+Discovery Time: 0.9570497479999176
+Capability Generalization Time: 0.1952790579998691
+Capability Enrichment Time: 1.1457661999997981
+Thing Description Generation Time: 0.020646995000333845
+Overall Time: 2.3187420009999187
+Discovery Time: 0.992506480999964
+Capability Generalization Time: 0.24443409900004553
+Capability Enrichment Time: 0.8444562199997563
+Thing Description Generation Time: 0.02062060600019322
+Overall Time: 2.102017405999959
+Discovery Time: 1.09483660900014
+Capability Generalization Time: 0.3329921539998395
+Capability Enrichment Time: 0.8718993520001277
+Thing Description Generation Time: 0.02179602199976216
+Overall Time: 2.3215241369998694
+Discovery Time: 1.0056784140001582
+Capability Generalization Time: 0.2156237770000189
+Capability Enrichment Time: 0.9942534440006057
+Thing Description Generation Time: 0.024239156999556144
+Overall Time: 2.239794792000339
+Discovery Time: 1.0273387339998408
+Capability Generalization Time: 0.18954132700037007
+Capability Enrichment Time: 0.8617274260000158
+Thing Description Generation Time: 0.020380216999910772
+Overall Time: 2.0989877040001375
+Discovery Time: 1.0426686410000912
+Capability Generalization Time: 0.22049761700009185
+Capability Enrichment Time: 1.250020424000013
+Thing Description Generation Time: 0.03431029000012131
+Overall Time: 2.5474969720003173
+Discovery Time: 1.136145870999826
+Capability Generalization Time: 0.20009387999971295
+Capability Enrichment Time: 0.9299577060000956
+Thing Description Generation Time: 0.022076009000102204
+Overall Time: 2.288273465999737
+Discovery Time: 0.9618804639999325
+Capability Generalization Time: 0.2349873079997451
+Capability Enrichment Time: 1.1588181759998406
+Thing Description Generation Time: 0.020327861000168923
+Overall Time: 2.376013808999687
+Discovery Time: 1.0291353919997164
+Capability Generalization Time: 0.20951811899976747
+Capability Enrichment Time: 0.8353434030000244
+Thing Description Generation Time: 0.01989660700019158
+Overall Time: 2.0938935209997
+Discovery Time: 0.9605945109997265
+Capability Generalization Time: 0.28835823500003244
+Capability Enrichment Time: 0.8658639180002865
+Thing Description Generation Time: 0.019435753999914596
+Overall Time: 2.13425241799996
+Discovery Time: 1.0608151839996935
+Capability Generalization Time: 0.26628760200037505
+Capability Enrichment Time: 1.2645769430000655
+Thing Description Generation Time: 0.03465672399988762
+Overall Time: 2.6263364530000217
+Test size: 60
+Discovery Time: 5.228742943999805
+Capability Generalization Time: 0.5590830860001006
+Capability Enrichment Time: 3.9100889009996536
+Thing Description Generation Time: 0.3244699340002626
+Overall Time: 10.022384864999822
+Discovery Time: 5.296381734000079
+Capability Generalization Time: 0.42313251399991714
+Capability Enrichment Time: 3.7796678200002134
+Thing Description Generation Time: 0.35553111699982765
+Overall Time: 9.854713185000037
+Discovery Time: 5.320847472999958
+Capability Generalization Time: 0.4641178319998289
+Capability Enrichment Time: 3.7799492710000777
+Thing Description Generation Time: 0.3123675169999842
+Overall Time: 9.877282092999849
+Discovery Time: 5.2528508710001915
+Capability Generalization Time: 0.3731728880002265
+Capability Enrichment Time: 4.156633980999686
+Thing Description Generation Time: 0.31593383300014466
+Overall Time: 10.098591573000249
+Discovery Time: 5.277239484999882
+Capability Generalization Time: 0.45092037599988544
+Capability Enrichment Time: 3.882280587999958
+Thing Description Generation Time: 0.30547160600008283
+Overall Time: 9.915912054999808
+Discovery Time: 5.259974602000057
+Capability Generalization Time: 0.42540692900001886
+Capability Enrichment Time: 4.289965884000139
+Thing Description Generation Time: 0.34492142999988573
+Overall Time: 10.3202688450001
+Discovery Time: 5.280606469000304
+Capability Generalization Time: 0.3939357320000454
+Capability Enrichment Time: 4.219210758999907
+Thing Description Generation Time: 0.3375538020000022
+Overall Time: 10.231306762000258
+Discovery Time: 5.246470301000045
+Capability Generalization Time: 0.4528091819997826
+Capability Enrichment Time: 3.8362361800000144
+Thing Description Generation Time: 0.3072924480002257
+Overall Time: 9.842808111000068
+Discovery Time: 5.3007892710002125
+Capability Generalization Time: 0.3486373040000217
+Capability Enrichment Time: 3.831760916999883
+Thing Description Generation Time: 0.3118268570001419
+Overall Time: 9.79301434900026
+Discovery Time: 5.318732767000256
+Capability Generalization Time: 0.4060974399999395
+Capability Enrichment Time: 4.072544103000382
+Thing Description Generation Time: 0.3209129329998177
+Overall Time: 10.118287243000395
+Discovery Time: 5.228263896000044
+Capability Generalization Time: 0.40778035200037266
+Capability Enrichment Time: 3.7585626770001
+Thing Description Generation Time: 0.3154370279999057
+Overall Time: 9.710043953000422
+Discovery Time: 5.28665161500021
+Capability Generalization Time: 0.45685346100026436
+Capability Enrichment Time: 4.224676125999395
+Thing Description Generation Time: 0.3155227760003072
+Overall Time: 10.283703978000176
+Discovery Time: 5.372931435000282
+Capability Generalization Time: 0.44372698000006494
+Capability Enrichment Time: 3.9972938759997305
+Thing Description Generation Time: 0.3511312059999909
+Overall Time: 10.165083497000069
+Discovery Time: 5.301242797000214
+Capability Generalization Time: 0.4114675850000822
+Capability Enrichment Time: 3.954182096000295
+Thing Description Generation Time: 0.31402723799965315
+Overall Time: 9.980919716000244
+Discovery Time: 5.300965444000212
+Capability Generalization Time: 0.3741172580002967
+Capability Enrichment Time: 3.8581757150000158
+Thing Description Generation Time: 0.3192641509999703
+Overall Time: 9.852522568000495
+Discovery Time: 5.304523148000044
+Capability Generalization Time: 0.3936579219998748
+Capability Enrichment Time: 4.067335710000407
+Thing Description Generation Time: 0.32986409799968897
+Overall Time: 10.095380878000014
+Discovery Time: 5.293650780000007
+Capability Generalization Time: 0.42487209899991285
+Capability Enrichment Time: 3.9019791320001787
+Thing Description Generation Time: 0.3194807069999115
+Overall Time: 9.93998271800001
+Discovery Time: 5.366259428999911
+Capability Generalization Time: 0.39371492999998736
+Capability Enrichment Time: 4.151031097000214
+Thing Description Generation Time: 0.39075688699995226
+Overall Time: 10.301762343000064
+Discovery Time: 5.292237157000272
+Capability Generalization Time: 0.3906640990003325
+Capability Enrichment Time: 4.199830243999713
+Thing Description Generation Time: 0.31961116800039235
+Overall Time: 10.20234266800071
+Discovery Time: 5.3053005390002
+Capability Generalization Time: 0.3801215010003034
+Capability Enrichment Time: 4.273214585999995
+Thing Description Generation Time: 0.31446083599985286
+Overall Time: 10.27309746200035
+Discovery Time: 5.253311513999961
+Capability Generalization Time: 0.39463196599990624
+Capability Enrichment Time: 4.251286346999677
+Thing Description Generation Time: 0.31620295100037765
+Overall Time: 10.215432777999922
+Discovery Time: 5.346197344999837
+Capability Generalization Time: 0.5055248979997486
+Capability Enrichment Time: 3.8593236000001525
+Thing Description Generation Time: 0.327833850999923
+Overall Time: 10.038879693999661
+Discovery Time: 5.274257815000055
+Capability Generalization Time: 0.41780838400018183
+Capability Enrichment Time: 4.11876908899967
+Thing Description Generation Time: 0.35012242400034665
+Overall Time: 10.160957712000254
+Discovery Time: 5.297226583999873
+Capability Generalization Time: 0.45902806100002636
+Capability Enrichment Time: 4.091128766000111
+Thing Description Generation Time: 0.3115165950002847
+Overall Time: 10.158900006000295
+Discovery Time: 5.451588379999976
+Capability Generalization Time: 0.4090625829999226
+Capability Enrichment Time: 3.9433289250005146
+Thing Description Generation Time: 0.311865798999861
+Overall Time: 10.115845687000274
+Discovery Time: 5.31847475099994
+Capability Generalization Time: 0.40206984799988277
+Capability Enrichment Time: 3.8519560880004065
+Thing Description Generation Time: 0.3237572889997864
+Overall Time: 9.896257976000015
+Discovery Time: 5.242176983000263
+Capability Generalization Time: 0.43753366999999344
+Capability Enrichment Time: 3.802452926999649
+Thing Description Generation Time: 0.31452929900024174
+Overall Time: 9.796692879000148
+Discovery Time: 5.276045651000004
+Capability Generalization Time: 0.3725115699999151
+Capability Enrichment Time: 3.9092573259995334
+Thing Description Generation Time: 0.306271838000157
+Overall Time: 9.86408638499961
+Discovery Time: 5.280672971000058
+Capability Generalization Time: 0.451324759000272
+Capability Enrichment Time: 3.944520817000466
+Thing Description Generation Time: 0.3115800809996472
+Overall Time: 9.988098628000444
+Discovery Time: 5.27508102999991
+Capability Generalization Time: 0.3909172670000771
+Capability Enrichment Time: 4.250107355999717
+Thing Description Generation Time: 0.31791351700030646
+Overall Time: 10.23401917000001
+Discovery Time: 5.259982248999677
+Capability Generalization Time: 0.5011460280002211
+Capability Enrichment Time: 3.9946646009998403
+Thing Description Generation Time: 0.3219886420001785
+Overall Time: 10.077781519999917
+Discovery Time: 5.272339167000155
+Capability Generalization Time: 0.4385141699999622
+Capability Enrichment Time: 3.7798464660004356
+Thing Description Generation Time: 0.314724816999842
+Overall Time: 9.805424620000394
+Discovery Time: 5.297698949000278
+Capability Generalization Time: 0.3992457330000434
+Capability Enrichment Time: 3.957683911999993
+Thing Description Generation Time: 0.31979222199970536
+Overall Time: 9.97442081600002
+Discovery Time: 5.5682045200001085
+Capability Generalization Time: 0.38598210400004973
+Capability Enrichment Time: 3.859687787000439
+Thing Description Generation Time: 0.31972916399990936
+Overall Time: 10.133603575000507
+Discovery Time: 5.28968034799982
+Capability Generalization Time: 0.41883550100010325
+Capability Enrichment Time: 3.905846878000375
+Thing Description Generation Time: 0.32927626399987275
+Overall Time: 9.94363899100017
+Discovery Time: 5.37136738900017
+Capability Generalization Time: 0.44890721699994174
+Capability Enrichment Time: 3.776021015999504
+Thing Description Generation Time: 0.3272791510003117
+Overall Time: 9.923574772999928
+Discovery Time: 5.2346405130001585
+Capability Generalization Time: 0.39445752500023445
+Capability Enrichment Time: 3.661247603999982
+Thing Description Generation Time: 0.39133856399985234
+Overall Time: 9.681684206000227
+Discovery Time: 5.275752152000223
+Capability Generalization Time: 0.3611551150002015
+Capability Enrichment Time: 3.9707887869999468
+Thing Description Generation Time: 0.309982022999975
+Overall Time: 9.917678077000346
+Discovery Time: 5.253907872000127
+Capability Generalization Time: 0.4309575219999715
+Capability Enrichment Time: 3.9295176330001595
+Thing Description Generation Time: 0.3303674969997701
+Overall Time: 9.944750524000028
+Discovery Time: 5.333304911000141
+Capability Generalization Time: 0.41027716300004613
+Capability Enrichment Time: 3.823884999999791
+Thing Description Generation Time: 0.3118452220001018
+Overall Time: 9.87931229600008
+Discovery Time: 5.345882276999873
+Capability Generalization Time: 0.45596393799996804
+Capability Enrichment Time: 3.931369142999756
+Thing Description Generation Time: 0.32555459300010625
+Overall Time: 10.058769950999704
+Discovery Time: 5.287405953999951
+Capability Generalization Time: 0.4202890970000226
+Capability Enrichment Time: 4.040500231999886
+Thing Description Generation Time: 0.3149343640002371
+Overall Time: 10.063129647000096
+Discovery Time: 5.293823244000123
+Capability Generalization Time: 0.3849099610001758
+Capability Enrichment Time: 3.983889700000418
+Thing Description Generation Time: 0.3277352609998161
+Overall Time: 9.990358166000533
+Discovery Time: 5.299666514000364
+Capability Generalization Time: 0.3557549229999495
+Capability Enrichment Time: 4.039026676000503
+Thing Description Generation Time: 0.3030493729997943
+Overall Time: 9.997497486000611
+Discovery Time: 5.293770068999947
+Capability Generalization Time: 0.3807083199999397
+Capability Enrichment Time: 3.966458010000224
+Thing Description Generation Time: 0.3164337479997812
+Overall Time: 9.957370146999892
+Discovery Time: 5.285574537999764
+Capability Generalization Time: 0.4390307860003304
+Capability Enrichment Time: 3.832232041000225
+Thing Description Generation Time: 0.31922653099991294
+Overall Time: 9.876063896000232
+Discovery Time: 5.20498783200037
+Capability Generalization Time: 0.42784235099998114
+Capability Enrichment Time: 4.014463952000369
+Thing Description Generation Time: 0.33001716299986583
+Overall Time: 9.977311298000586
+Discovery Time: 5.341658888999973
+Capability Generalization Time: 0.3733671720001439
+Capability Enrichment Time: 3.8822997000002033
+Thing Description Generation Time: 0.31692654800008313
+Overall Time: 9.914252309000403
+Discovery Time: 5.225899371000196
+Capability Generalization Time: 0.4307439450003585
+Capability Enrichment Time: 3.932657278000079
+Thing Description Generation Time: 0.31560056899979827
+Overall Time: 9.904901163000432
+Discovery Time: 5.4204272000001765
+Capability Generalization Time: 0.4173673380000764
+Capability Enrichment Time: 3.8390267639997546
+Thing Description Generation Time: 0.31875135800009957
+Overall Time: 9.995572660000107
+Test size: 70
+Discovery Time: 6.019240934000209
+Capability Generalization Time: 0.6582772450001357
+Capability Enrichment Time: 4.478601318000074
+Thing Description Generation Time: 0.360654643000089
+Overall Time: 11.516774140000507
+Discovery Time: 6.055204544999469
+Capability Generalization Time: 0.424396047999835
+Capability Enrichment Time: 4.1974859609990745
+Thing Description Generation Time: 0.37726492100046016
+Overall Time: 11.054351474998839
+Discovery Time: 5.999387296999885
+Capability Generalization Time: 0.5070093740005177
+Capability Enrichment Time: 4.2549156710001625
+Thing Description Generation Time: 0.371270894999725
+Overall Time: 11.13258323700029
+Discovery Time: 6.048776779000036
+Capability Generalization Time: 0.4493046059997141
+Capability Enrichment Time: 4.187531851000131
+Thing Description Generation Time: 0.3607524339995507
+Overall Time: 11.046365669999432
+Discovery Time: 5.95743937700081
+Capability Generalization Time: 0.43328912800006947
+Capability Enrichment Time: 4.54969253299987
+Thing Description Generation Time: 0.38863664000018616
+Overall Time: 11.329057678000936
+Discovery Time: 6.033697440000651
+Capability Generalization Time: 0.41871109400017303
+Capability Enrichment Time: 4.373755406998498
+Thing Description Generation Time: 0.3674564070006454
+Overall Time: 11.193620347999968
+Discovery Time: 5.938011314000505
+Capability Generalization Time: 0.4186780740001268
+Capability Enrichment Time: 4.597083323999868
+Thing Description Generation Time: 0.3762279339998713
+Overall Time: 11.330000646000371
+Discovery Time: 5.997568976999901
+Capability Generalization Time: 0.48110029500003293
+Capability Enrichment Time: 4.503169339999658
+Thing Description Generation Time: 0.3908148740001707
+Overall Time: 11.372653485999763
+Discovery Time: 6.063219529999515
+Capability Generalization Time: 0.47210500500023045
+Capability Enrichment Time: 4.213765292999597
+Thing Description Generation Time: 0.4740368660004606
+Overall Time: 11.223126693999802
+Discovery Time: 6.0057889429999705
+Capability Generalization Time: 0.43334466499982227
+Capability Enrichment Time: 4.293442327999401
+Thing Description Generation Time: 0.46033151600022393
+Overall Time: 11.192907451999417
+Discovery Time: 6.057653956999275
+Capability Generalization Time: 0.4334971649996078
+Capability Enrichment Time: 4.742329544000313
+Thing Description Generation Time: 0.37207518000013806
+Overall Time: 11.605555845999334
+Discovery Time: 5.993598338999618
+Capability Generalization Time: 0.40320105200044054
+Capability Enrichment Time: 4.454988733999926
+Thing Description Generation Time: 0.40893101100027707
+Overall Time: 11.260719136000262
+Discovery Time: 6.0299836579997645
+Capability Generalization Time: 0.44123483400016994
+Capability Enrichment Time: 4.60045145299955
+Thing Description Generation Time: 0.37467546700008825
+Overall Time: 11.446345411999573
+Discovery Time: 6.003605118999985
+Capability Generalization Time: 0.431190135000179
+Capability Enrichment Time: 4.491049835999547
+Thing Description Generation Time: 0.3833047220005028
+Overall Time: 11.309149812000214
+Discovery Time: 5.962160365999807
+Capability Generalization Time: 0.5401392450003186
+Capability Enrichment Time: 4.389933259999452
+Thing Description Generation Time: 0.3805802670003686
+Overall Time: 11.272813137999947
+Discovery Time: 6.037301421000848
+Capability Generalization Time: 0.4094273720002093
+Capability Enrichment Time: 4.155660960000205
+Thing Description Generation Time: 0.4591299089997847
+Overall Time: 11.061519662001047
+Discovery Time: 5.951619755999673
+Capability Generalization Time: 0.4117424360001678
+Capability Enrichment Time: 4.303794573000232
+Thing Description Generation Time: 0.3835549049999827
+Overall Time: 11.050711670000055
+Discovery Time: 6.012178946000859
+Capability Generalization Time: 0.48956962000011117
+Capability Enrichment Time: 4.385156516999814
+Thing Description Generation Time: 0.3608680130000721
+Overall Time: 11.247773096000856
+Discovery Time: 5.957983575000071
+Capability Generalization Time: 0.42587770499994804
+Capability Enrichment Time: 4.379802378000022
+Thing Description Generation Time: 0.367968423000093
+Overall Time: 11.131632081000134
+Discovery Time: 6.013278631000503
+Capability Generalization Time: 0.4951944710001044
+Capability Enrichment Time: 4.237003659000038
+Thing Description Generation Time: 0.37791664999986097
+Overall Time: 11.123393411000507
+Discovery Time: 5.977518991000579
+Capability Generalization Time: 0.5533569049994185
+Capability Enrichment Time: 4.643642643999556
+Thing Description Generation Time: 0.3812608440002805
+Overall Time: 11.555779383999834
+Discovery Time: 6.014444078999986
+Capability Generalization Time: 0.41375944999981584
+Capability Enrichment Time: 4.768662095999389
+Thing Description Generation Time: 0.4010651100006726
+Overall Time: 11.597930734999863
+Discovery Time: 5.996904505000202
+Capability Generalization Time: 0.4465101509995293
+Capability Enrichment Time: 4.285295844000757
+Thing Description Generation Time: 0.36901387099987915
+Overall Time: 11.097724371000368
+Discovery Time: 5.987212594000084
+Capability Generalization Time: 0.409094152999387
+Capability Enrichment Time: 4.3173669389998395
+Thing Description Generation Time: 0.37123135999991064
+Overall Time: 11.084905045999221
+Discovery Time: 5.966095085999768
+Capability Generalization Time: 0.4083032030002869
+Capability Enrichment Time: 4.353107550000459
+Thing Description Generation Time: 0.3889424939998207
+Overall Time: 11.116448333000335
+Discovery Time: 6.016357167000024
+Capability Generalization Time: 0.5101313039995148
+Capability Enrichment Time: 4.293460027000947
+Thing Description Generation Time: 0.3810151849993417
+Overall Time: 11.200963682999827
+Discovery Time: 5.958788742000252
+Capability Generalization Time: 0.5133909309997762
+Capability Enrichment Time: 4.42950761999964
+Thing Description Generation Time: 0.3834634990007544
+Overall Time: 11.285150792000422
+Discovery Time: 5.964969568000015
+Capability Generalization Time: 0.416320541999994
+Capability Enrichment Time: 4.482412213998941
+Thing Description Generation Time: 0.3915742320004938
+Overall Time: 11.255276555999444
+Discovery Time: 5.962495806999868
+Capability Generalization Time: 0.41670341699955316
+Capability Enrichment Time: 4.317625135000526
+Thing Description Generation Time: 0.3682011049995708
+Overall Time: 11.065025463999518
+Discovery Time: 6.023946842999976
+Capability Generalization Time: 0.4164319890005572
+Capability Enrichment Time: 4.458578368000417
+Thing Description Generation Time: 0.3702070449999155
+Overall Time: 11.269164245000866
+Discovery Time: 6.066390025999681
+Capability Generalization Time: 0.5218857830004708
+Capability Enrichment Time: 4.985868949000178
+Thing Description Generation Time: 0.4789571649998834
+Overall Time: 12.053101923000213
+Discovery Time: 6.012117360999582
+Capability Generalization Time: 0.7987525150001602
+Capability Enrichment Time: 4.356816430999061
+Thing Description Generation Time: 0.7893164830002206
+Overall Time: 11.957002789999024
+Discovery Time: 6.2020766819996425
+Capability Generalization Time: 0.4908735019998858
+Capability Enrichment Time: 4.151670217001083
+Thing Description Generation Time: 0.4718800029995691
+Overall Time: 11.31650040400018
+Discovery Time: 5.997580950000156
+Capability Generalization Time: 0.4465511320004225
+Capability Enrichment Time: 4.1377892149994295
+Thing Description Generation Time: 0.3992990810002084
+Overall Time: 10.981220378000216
+Discovery Time: 5.992537971999809
+Capability Generalization Time: 0.5199580930002412
+Capability Enrichment Time: 4.3410365749996345
+Thing Description Generation Time: 0.4024177960000088
+Overall Time: 11.255950435999694
+Discovery Time: 6.008172890999958
+Capability Generalization Time: 0.45682187900001736
+Capability Enrichment Time: 4.240782881999621
+Thing Description Generation Time: 0.37963168199985375
+Overall Time: 11.08540933399945
+Discovery Time: 6.069214636999277
+Capability Generalization Time: 0.4645904919998429
+Capability Enrichment Time: 3.9678397460011183
+Thing Description Generation Time: 0.40643264899972564
+Overall Time: 10.908077523999964
+Discovery Time: 6.008708166999895
+Capability Generalization Time: 0.4924128339998788
+Capability Enrichment Time: 4.069196178000311
+Thing Description Generation Time: 0.3925893879995783
+Overall Time: 10.962906566999663
+Discovery Time: 6.058518689000266
+Capability Generalization Time: 0.46680712400029734
+Capability Enrichment Time: 3.995201439000084
+Thing Description Generation Time: 0.4948276889999761
+Overall Time: 11.015354941000624
+Discovery Time: 5.9839938990007795
+Capability Generalization Time: 0.48342732200035243
+Capability Enrichment Time: 4.113796567999088
+Thing Description Generation Time: 0.37809851900055946
+Overall Time: 10.95931630800078
+Discovery Time: 6.20273108299989
+Capability Generalization Time: 0.5034974640002474
+Capability Enrichment Time: 4.269590908999817
+Thing Description Generation Time: 0.4087409129997468
+Overall Time: 11.3845603689997
+Discovery Time: 6.052218297999389
+Capability Generalization Time: 0.4539516080003523
+Capability Enrichment Time: 4.134929189999639
+Thing Description Generation Time: 0.39763672099979885
+Overall Time: 11.038735816999178
+Discovery Time: 6.110768286000166
+Capability Generalization Time: 0.5827630200001295
+Capability Enrichment Time: 4.085448566000196
+Thing Description Generation Time: 0.37759495099999185
+Overall Time: 11.156574823000483
+Discovery Time: 5.981495144999826
+Capability Generalization Time: 0.5259600789995602
+Capability Enrichment Time: 4.257927417000246
+Thing Description Generation Time: 0.3853072700003395
+Overall Time: 11.150689910999972
+Discovery Time: 6.03021388399975
+Capability Generalization Time: 0.4509668229993622
+Capability Enrichment Time: 4.080555708000247
+Thing Description Generation Time: 0.3721004540002468
+Overall Time: 10.933836868999606
+Discovery Time: 6.0102048939997985
+Capability Generalization Time: 0.4795231190000777
+Capability Enrichment Time: 4.078206913000031
+Thing Description Generation Time: 0.37732267699993827
+Overall Time: 10.945257602999845
+Discovery Time: 6.090541305000443
+Capability Generalization Time: 0.41868489799981035
+Capability Enrichment Time: 4.141953640000793
+Thing Description Generation Time: 0.38130321399967215
+Overall Time: 11.032483057000718
+Discovery Time: 6.082804094000494
+Capability Generalization Time: 0.5049192120004591
+Capability Enrichment Time: 4.027947089999543
+Thing Description Generation Time: 0.3981973050003944
+Overall Time: 11.01386770100089
+Discovery Time: 6.0756483059994935
+Capability Generalization Time: 0.5514248839999709
+Capability Enrichment Time: 4.200147440001274
+Thing Description Generation Time: 0.4006183739993503
+Overall Time: 11.227839004000089
+Discovery Time: 6.002129174999936
+Capability Generalization Time: 0.5932876110000507
+Capability Enrichment Time: 4.146719475000282
+Thing Description Generation Time: 0.4168429749997813
+Overall Time: 11.15897923600005
+Test size: 80
+Discovery Time: 6.816248520000045
+Capability Generalization Time: 0.654832524000085
+Capability Enrichment Time: 4.8125924760006455
+Thing Description Generation Time: 0.46428158700018685
+Overall Time: 12.747955107000962
+Discovery Time: 6.868910913000036
+Capability Generalization Time: 0.4831186820001676
+Capability Enrichment Time: 4.395777744000043
+Thing Description Generation Time: 0.4591473330001463
+Overall Time: 12.206954672000393
+Discovery Time: 6.808670246000474
+Capability Generalization Time: 0.4788181359999726
+Capability Enrichment Time: 4.356329754999933
+Thing Description Generation Time: 0.44006927000009455
+Overall Time: 12.083887407000475
+Discovery Time: 6.769773895000071
+Capability Generalization Time: 0.5787301619993741
+Capability Enrichment Time: 4.4390991870004655
+Thing Description Generation Time: 0.41131553600007464
+Overall Time: 12.198918779999985
+Discovery Time: 6.823443760000373
+Capability Generalization Time: 0.5272086830000262
+Capability Enrichment Time: 4.561827034000089
+Thing Description Generation Time: 0.454458596999757
+Overall Time: 12.366938074000245
+Discovery Time: 6.787794144000145
+Capability Generalization Time: 0.4648813079993488
+Capability Enrichment Time: 4.497871845999725
+Thing Description Generation Time: 0.4341261580002538
+Overall Time: 12.184673455999473
+Discovery Time: 6.683891656999549
+Capability Generalization Time: 0.47627125500002876
+Capability Enrichment Time: 4.79373980300079
+Thing Description Generation Time: 0.43204048099960346
+Overall Time: 12.385943195999971
+Discovery Time: 6.740747163000378
+Capability Generalization Time: 0.4488867849995586
+Capability Enrichment Time: 4.669001733999721
+Thing Description Generation Time: 0.4429089230006866
+Overall Time: 12.301544605000345
+Discovery Time: 6.841090783999789
+Capability Generalization Time: 0.49093330199957563
+Capability Enrichment Time: 4.656496726000114
+Thing Description Generation Time: 0.4247190480000427
+Overall Time: 12.413239859999521
+Discovery Time: 6.698134684000252
+Capability Generalization Time: 0.4900661570000011
+Capability Enrichment Time: 4.384983191999709
+Thing Description Generation Time: 0.4339139889998478
+Overall Time: 12.00709802199981
+Discovery Time: 6.682119903000057
+Capability Generalization Time: 0.5418359799996324
+Capability Enrichment Time: 4.517719444999784
+Thing Description Generation Time: 0.44055929600017407
+Overall Time: 12.182234623999648
+Discovery Time: 6.873551292999764
+Capability Generalization Time: 0.5235366209999484
+Capability Enrichment Time: 4.38005896300092
+Thing Description Generation Time: 0.41732482599945797
+Overall Time: 12.19447170300009
+Discovery Time: 6.717512014000022
+Capability Generalization Time: 0.5009230599998773
+Capability Enrichment Time: 4.502636105999045
+Thing Description Generation Time: 0.5202649090006162
+Overall Time: 12.24133608899956
+Discovery Time: 6.770736223000313
+Capability Generalization Time: 0.5372292130005007
+Capability Enrichment Time: 4.609440879000431
+Thing Description Generation Time: 0.4071795909994762
+Overall Time: 12.32458590600072
+Discovery Time: 6.73391482200077
+Capability Generalization Time: 0.46177394799997273
+Capability Enrichment Time: 4.464531272999011
+Thing Description Generation Time: 0.4278526240004794
+Overall Time: 12.088072667000233
+Discovery Time: 6.701835208000375
+Capability Generalization Time: 0.4513406339992798
+Capability Enrichment Time: 4.440039420000176
+Thing Description Generation Time: 0.427447373999712
+Overall Time: 12.020662635999543
+Discovery Time: 6.679742409999562
+Capability Generalization Time: 0.4981957700001658
+Capability Enrichment Time: 4.51068449900049
+Thing Description Generation Time: 0.4447899299993878
+Overall Time: 12.133412608999606
+Discovery Time: 6.825953571999889
+Capability Generalization Time: 0.5929618999998638
+Capability Enrichment Time: 4.481633012999737
+Thing Description Generation Time: 0.41733176199977606
+Overall Time: 12.317880246999266
+Discovery Time: 6.726317998000013
+Capability Generalization Time: 0.5410718110006201
+Capability Enrichment Time: 4.547336763000203
+Thing Description Generation Time: 0.43055838999953266
+Overall Time: 12.245284962000369
+Discovery Time: 6.743888367999716
+Capability Generalization Time: 0.422574373000316
+Capability Enrichment Time: 4.466896224998891
+Thing Description Generation Time: 0.5307135870007187
+Overall Time: 12.164072552999642
+Discovery Time: 6.840886613000293
+Capability Generalization Time: 0.4537578859999485
+Capability Enrichment Time: 4.414060726999196
+Thing Description Generation Time: 0.41743272400071874
+Overall Time: 12.126137950000157
+Discovery Time: 6.716414692000399
+Capability Generalization Time: 0.46833686900026805
+Capability Enrichment Time: 4.428756660000545
+Thing Description Generation Time: 0.4198693110001841
+Overall Time: 12.033377532001396
+Discovery Time: 6.687412667999524
+Capability Generalization Time: 0.48477076000017405
+Capability Enrichment Time: 4.476471187000243
+Thing Description Generation Time: 0.4243973709999409
+Overall Time: 12.073051985999882
+Discovery Time: 6.8845116369993775
+Capability Generalization Time: 0.5013497740001185
+Capability Enrichment Time: 4.5357604490000085
+Thing Description Generation Time: 0.4415005540004131
+Overall Time: 12.363122413999918
+Discovery Time: 6.7446977019999395
+Capability Generalization Time: 0.5661058440000488
+Capability Enrichment Time: 4.509337098000287
+Thing Description Generation Time: 0.4137196940000649
+Overall Time: 12.23386033800034
+Discovery Time: 6.672264427999835
+Capability Generalization Time: 0.6214562750001278
+Capability Enrichment Time: 4.703257462000693
+Thing Description Generation Time: 0.4607977799996661
+Overall Time: 12.457775945000321
+Discovery Time: 6.717540878000364
+Capability Generalization Time: 0.5130573759997787
+Capability Enrichment Time: 4.47261313800027
+Thing Description Generation Time: 0.4207149929998195
+Overall Time: 12.123926385000232
+Discovery Time: 6.779270392999933
+Capability Generalization Time: 0.49927104899961705
+Capability Enrichment Time: 4.720187220000298
+Thing Description Generation Time: 0.41614914599995245
+Overall Time: 12.414877807999801
+Discovery Time: 6.7928813589996935
+Capability Generalization Time: 0.46486881700002414
+Capability Enrichment Time: 4.822782020000886
+Thing Description Generation Time: 0.4305876599992189
+Overall Time: 12.511119855999823
+Discovery Time: 6.904841325999769
+Capability Generalization Time: 0.43054496300010214
+Capability Enrichment Time: 4.5327571729994816
+Thing Description Generation Time: 0.41824785500011785
+Overall Time: 12.28639131699947
+Discovery Time: 6.8662356369995905
+Capability Generalization Time: 0.49334735200045543
+Capability Enrichment Time: 4.578747700999884
+Thing Description Generation Time: 0.4231051019996812
+Overall Time: 12.361435791999611
+Discovery Time: 6.805892096999742
+Capability Generalization Time: 0.481972087000031
+Capability Enrichment Time: 4.5973491590002595
+Thing Description Generation Time: 0.4515984859999662
+Overall Time: 12.336811828999998
+Discovery Time: 6.7432572799998525
+Capability Generalization Time: 0.5603562319993216
+Capability Enrichment Time: 4.324937138999303
+Thing Description Generation Time: 0.42586422200020024
+Overall Time: 12.054414872998677
+Discovery Time: 6.71765761000006
+Capability Generalization Time: 0.5317433870004606
+Capability Enrichment Time: 4.5418870840003365
+Thing Description Generation Time: 0.4531495809997068
+Overall Time: 12.244437662000564
+Discovery Time: 6.745004504999997
+Capability Generalization Time: 0.4643564799998785
+Capability Enrichment Time: 4.414141993999692
+Thing Description Generation Time: 0.5106492060003802
+Overall Time: 12.134152184999948
+Discovery Time: 6.712566885999877
+Capability Generalization Time: 0.4837330769996697
+Capability Enrichment Time: 4.666127646000859
+Thing Description Generation Time: 0.4317430829996738
+Overall Time: 12.29417069200008
+Discovery Time: 6.794421130000046
+Capability Generalization Time: 0.49829904999933206
+Capability Enrichment Time: 4.4367415050001
+Thing Description Generation Time: 0.4124481939998077
+Overall Time: 12.141909878999286
+Discovery Time: 6.903970635000405
+Capability Generalization Time: 0.439105417999599
+Capability Enrichment Time: 4.738020533999588
+Thing Description Generation Time: 0.42241051100063487
+Overall Time: 12.503507098000227
+Discovery Time: 6.852378448999843
+Capability Generalization Time: 0.5731937949994972
+Capability Enrichment Time: 4.449870121000458
+Thing Description Generation Time: 0.5619878739998967
+Overall Time: 12.437430238999696
+Discovery Time: 6.7588582879998285
+Capability Generalization Time: 0.5655554160002794
+Capability Enrichment Time: 4.61796183199931
+Thing Description Generation Time: 0.44757526200010034
+Overall Time: 12.389950797999518
+Discovery Time: 6.736850064000464
+Capability Generalization Time: 0.5532324929999959
+Capability Enrichment Time: 4.564091608000126
+Thing Description Generation Time: 0.4288187440006368
+Overall Time: 12.282992909001223
+Discovery Time: 6.718787118000364
+Capability Generalization Time: 0.43515670000033424
+Capability Enrichment Time: 4.5389461240001765
+Thing Description Generation Time: 0.5076627810003629
+Overall Time: 12.200552723001238
+Discovery Time: 6.6762321270007305
+Capability Generalization Time: 0.44039241399968887
+Capability Enrichment Time: 4.444140927999797
+Thing Description Generation Time: 0.4030456600003163
+Overall Time: 11.963811129000533
+Discovery Time: 6.704930611000236
+Capability Generalization Time: 0.49022767299993575
+Capability Enrichment Time: 4.429608602000371
+Thing Description Generation Time: 0.4359767340001781
+Overall Time: 12.060743620000721
+Discovery Time: 6.729758933000085
+Capability Generalization Time: 0.4541197859998647
+Capability Enrichment Time: 4.472048530999928
+Thing Description Generation Time: 0.4665045120000286
+Overall Time: 12.122431761999906
+Discovery Time: 6.828485814000487
+Capability Generalization Time: 0.4998729459994138
+Capability Enrichment Time: 4.559509263000109
+Thing Description Generation Time: 0.4443377830002646
+Overall Time: 12.332205806000275
+Discovery Time: 6.8659067480002705
+Capability Generalization Time: 0.4585602229999495
+Capability Enrichment Time: 4.5852874799993515
+Thing Description Generation Time: 0.4233344060003219
+Overall Time: 12.333088856999893
+Discovery Time: 6.8053421919994435
+Capability Generalization Time: 0.554925483000261
+Capability Enrichment Time: 4.37597401200037
+Thing Description Generation Time: 0.42293572099970334
+Overall Time: 12.159177407999778
+Discovery Time: 6.737338543000078
+Capability Generalization Time: 0.5116992220000611
+Capability Enrichment Time: 4.547821516000113
+Thing Description Generation Time: 0.4298533109995333
+Overall Time: 12.226712591999785
+Discovery Time: 6.866624389999743
+Capability Generalization Time: 0.47176474099978805
+Capability Enrichment Time: 4.486854849999872
+Thing Description Generation Time: 0.43628090000038355
+Overall Time: 12.261524880999787
+Test size: 90
+Discovery Time: 7.513360250000005
+Capability Generalization Time: 0.761241512000197
+Capability Enrichment Time: 4.839225665000413
+Thing Description Generation Time: 0.5408911209997314
+Overall Time: 13.654718548000346
+Discovery Time: 7.392458777999309
+Capability Generalization Time: 0.48966181200012215
+Capability Enrichment Time: 4.899832995999532
+Thing Description Generation Time: 0.4664690330000667
+Overall Time: 13.24842261899903
+Discovery Time: 7.603517376999662
+Capability Generalization Time: 0.5136475729996164
+Capability Enrichment Time: 4.784304051000618
+Thing Description Generation Time: 0.4820815319999383
+Overall Time: 13.383550532999834
+Discovery Time: 7.453340148999814
+Capability Generalization Time: 0.5687567550003223
+Capability Enrichment Time: 4.751514901000519
+Thing Description Generation Time: 0.47173185700012255
+Overall Time: 13.245343662000778
+Discovery Time: 7.4506326989994704
+Capability Generalization Time: 0.5744521530004931
+Capability Enrichment Time: 4.928914304999125
+Thing Description Generation Time: 0.5038135720005812
+Overall Time: 13.45781272899967
+Discovery Time: 7.444141489999311
+Capability Generalization Time: 0.6090554429993063
+Capability Enrichment Time: 4.800135077000959
+Thing Description Generation Time: 0.48445379699933255
+Overall Time: 13.337785806998909
+Discovery Time: 7.607639253000343
+Capability Generalization Time: 0.5095201899994208
+Capability Enrichment Time: 4.903045744000337
+Thing Description Generation Time: 0.5794914649995917
+Overall Time: 13.599696651999693
+Discovery Time: 7.444183907000479
+Capability Generalization Time: 0.4868864169993685
+Capability Enrichment Time: 5.020058879000317
+Thing Description Generation Time: 0.4894209359999877
+Overall Time: 13.440550139000152
+Discovery Time: 7.708071543999722
+Capability Generalization Time: 0.4479770780008039
+Capability Enrichment Time: 4.813942130000214
+Thing Description Generation Time: 0.48589132699999027
+Overall Time: 13.45588207900073
+Discovery Time: 7.422786206000637
+Capability Generalization Time: 0.5054510670006493
+Capability Enrichment Time: 5.075387680999484
+Thing Description Generation Time: 0.48084397700040427
+Overall Time: 13.484468931001174
+Discovery Time: 7.4416948149992095
+Capability Generalization Time: 0.4831538010002987
+Capability Enrichment Time: 4.945560613999987
+Thing Description Generation Time: 0.4793881149998924
+Overall Time: 13.349797344999388
+Discovery Time: 7.448631864000163
+Capability Generalization Time: 0.5131019589998687
+Capability Enrichment Time: 5.1646074139998746
+Thing Description Generation Time: 0.48625828599961096
+Overall Time: 13.612599522999517
+Discovery Time: 7.430868840000585
+Capability Generalization Time: 0.5216128299998672
+Capability Enrichment Time: 4.768827316999705
+Thing Description Generation Time: 0.47506119100034994
+Overall Time: 13.196370178000507
+Discovery Time: 7.58891795100044
+Capability Generalization Time: 0.5643635619999259
+Capability Enrichment Time: 4.848767477000365
+Thing Description Generation Time: 0.48067855999943276
+Overall Time: 13.482727550000163
+Discovery Time: 7.460124604999692
+Capability Generalization Time: 0.6088460589999158
+Capability Enrichment Time: 5.08418464100032
+Thing Description Generation Time: 0.4818294890001198
+Overall Time: 13.634984794000047
+Discovery Time: 7.597789544999614
+Capability Generalization Time: 0.5552564409999832
+Capability Enrichment Time: 4.79551835699931
+Thing Description Generation Time: 0.48392988000068726
+Overall Time: 13.432494222999594
+Discovery Time: 7.666582883000046
+Capability Generalization Time: 0.47561556299933727
+Capability Enrichment Time: 4.872936151999966
+Thing Description Generation Time: 0.5765139209997869
+Overall Time: 13.591648518999136
+Discovery Time: 7.424936856000386
+Capability Generalization Time: 0.506391117000021
+Capability Enrichment Time: 4.9899759549998635
+Thing Description Generation Time: 0.49248048499975994
+Overall Time: 13.41378441300003
+Discovery Time: 7.772391712999706
+Capability Generalization Time: 0.47843052799998986
+Capability Enrichment Time: 4.8418078700005935
+Thing Description Generation Time: 0.48417958399932104
+Overall Time: 13.57680969499961
+Discovery Time: 7.637828804000492
+Capability Generalization Time: 0.49773014200036414
+Capability Enrichment Time: 4.85189869000078
+Thing Description Generation Time: 0.4890139619992624
+Overall Time: 13.476471598000899
+Discovery Time: 7.416396108999834
+Capability Generalization Time: 0.4695338960000299
+Capability Enrichment Time: 4.986961113000689
+Thing Description Generation Time: 0.46620763299961254
+Overall Time: 13.339098751000165
+Discovery Time: 7.386912683000446
+Capability Generalization Time: 0.5449761660001968
+Capability Enrichment Time: 5.147159952999573
+Thing Description Generation Time: 0.5437699990006877
+Overall Time: 13.622818801000903
+Discovery Time: 7.446132045000013
+Capability Generalization Time: 0.5101952069999243
+Capability Enrichment Time: 4.932063430998824
+Thing Description Generation Time: 0.49843804300053307
+Overall Time: 13.386828725999294
+Discovery Time: 7.725625460000629
+Capability Generalization Time: 0.4970010059996639
+Capability Enrichment Time: 4.773012253000161
+Thing Description Generation Time: 0.48754426400046214
+Overall Time: 13.483182983000916
+Discovery Time: 7.468931130999408
+Capability Generalization Time: 0.5814573950001432
+Capability Enrichment Time: 4.660902831000385
+Thing Description Generation Time: 0.5186112100000173
+Overall Time: 13.229902566999954
+Discovery Time: 7.473318348000248
+Capability Generalization Time: 0.6529856020006264
+Capability Enrichment Time: 4.91390747800051
+Thing Description Generation Time: 0.48016333099985786
+Overall Time: 13.520374759001243
+Discovery Time: 7.449286103999839
+Capability Generalization Time: 0.565196420000575
+Capability Enrichment Time: 4.927421355000661
+Thing Description Generation Time: 0.4748002799997266
+Overall Time: 13.416704159000801
+Discovery Time: 7.484144224999909
+Capability Generalization Time: 0.5129586069997458
+Capability Enrichment Time: 4.720202748999327
+Thing Description Generation Time: 0.5641207819999181
+Overall Time: 13.2814263629989
+Discovery Time: 7.504118075000406
+Capability Generalization Time: 0.49358097200001794
+Capability Enrichment Time: 4.816647835000367
+Thing Description Generation Time: 0.49532694699973945
+Overall Time: 13.30967382900053
+Discovery Time: 7.479977668999709
+Capability Generalization Time: 0.47683422200043424
+Capability Enrichment Time: 5.030241843000113
+Thing Description Generation Time: 0.48280966299989814
+Overall Time: 13.469863397000154
+Discovery Time: 7.4756272730001
+Capability Generalization Time: 0.49644833999991533
+Capability Enrichment Time: 4.821692388999509
+Thing Description Generation Time: 0.4849199780001072
+Overall Time: 13.278687979999631
+Discovery Time: 7.457134463999864
+Capability Generalization Time: 0.5138178610004616
+Capability Enrichment Time: 5.024424744000498
+Thing Description Generation Time: 0.5015592749996358
+Overall Time: 13.49693634400046
+Discovery Time: 7.4448804499998005
+Capability Generalization Time: 0.5264810750004472
+Capability Enrichment Time: 4.906258840999726
+Thing Description Generation Time: 0.49656238700026734
+Overall Time: 13.374182753000241
+Discovery Time: 7.498253099000067
+Capability Generalization Time: 0.5532183469995289
+Capability Enrichment Time: 4.894436034000137
+Thing Description Generation Time: 0.4579033840000193
+Overall Time: 13.403810863999752
+Discovery Time: 7.4414573190006195
+Capability Generalization Time: 0.5994475749994308
+Capability Enrichment Time: 4.830040222999742
+Thing Description Generation Time: 0.4727177100003246
+Overall Time: 13.343662827000117
+Discovery Time: 7.4596770190000825
+Capability Generalization Time: 0.573372554999878
+Capability Enrichment Time: 4.739608548000433
+Thing Description Generation Time: 0.4643518109996876
+Overall Time: 13.237009933000081
+Discovery Time: 7.504586515000483
+Capability Generalization Time: 0.6108482159997948
+Capability Enrichment Time: 4.88291026800016
+Thing Description Generation Time: 0.5023374479997074
+Overall Time: 13.500682447000145
+Discovery Time: 7.493910309999592
+Capability Generalization Time: 0.4804785879996416
+Capability Enrichment Time: 4.894860159999553
+Thing Description Generation Time: 0.578841461000593
+Overall Time: 13.44809051899938
+Discovery Time: 7.415254550999634
+Capability Generalization Time: 0.5234432930001276
+Capability Enrichment Time: 4.875593429000219
+Thing Description Generation Time: 0.4697146039998188
+Overall Time: 13.2840058769998
+Discovery Time: 7.405219850999856
+Capability Generalization Time: 0.5017369580000377
+Capability Enrichment Time: 5.019770827999309
+Thing Description Generation Time: 0.4741550469998401
+Overall Time: 13.400882683999043
+Discovery Time: 7.46207818899984
+Capability Generalization Time: 0.49105248900013976
+Capability Enrichment Time: 4.789818776000175
+Thing Description Generation Time: 0.4937089310005831
+Overall Time: 13.236658385000737
+Discovery Time: 7.5009802289996514
+Capability Generalization Time: 0.49891145099991263
+Capability Enrichment Time: 4.843201587999829
+Thing Description Generation Time: 0.48420668600010686
+Overall Time: 13.3272999539995
+Discovery Time: 7.433966474999579
+Capability Generalization Time: 0.49759159099994577
+Capability Enrichment Time: 4.934628664000229
+Thing Description Generation Time: 0.48718542599999637
+Overall Time: 13.35337215599975
+Discovery Time: 7.608004339000217
+Capability Generalization Time: 0.48258126900054776
+Capability Enrichment Time: 4.7354778419994545
+Thing Description Generation Time: 0.4938432469998588
+Overall Time: 13.319906697000079
+Discovery Time: 7.450894870999946
+Capability Generalization Time: 0.6411234040006093
+Capability Enrichment Time: 4.945785695000268
+Thing Description Generation Time: 0.49879274199975043
+Overall Time: 13.536596712000573
+Discovery Time: 7.430050203000064
+Capability Generalization Time: 0.6064179019995208
+Capability Enrichment Time: 4.759782201999769
+Thing Description Generation Time: 0.4696174059999976
+Overall Time: 13.265867712999352
+Discovery Time: 7.559916066999904
+Capability Generalization Time: 0.6139046470007088
+Capability Enrichment Time: 4.7814197800007605
+Thing Description Generation Time: 0.4806945749996885
+Overall Time: 13.435935069001061
+Discovery Time: 7.507890091999798
+Capability Generalization Time: 0.540448718999869
+Capability Enrichment Time: 4.79527004999909
+Thing Description Generation Time: 0.5917724540004201
+Overall Time: 13.435381314999177
+Discovery Time: 7.496100745999684
+Capability Generalization Time: 0.5482523259997834
+Capability Enrichment Time: 4.844129089000489
+Thing Description Generation Time: 0.48076894599944353
+Overall Time: 13.3692511069994
+Discovery Time: 7.601242543999433
+Capability Generalization Time: 0.5139977679991716
+Capability Enrichment Time: 4.8513033070003075
+Thing Description Generation Time: 0.4898888569996416
+Overall Time: 13.456432475998554
+Test size: 100
+Discovery Time: 7.972298104999936
+Capability Generalization Time: 0.723585756999455
+Capability Enrichment Time: 5.580111421999391
+Thing Description Generation Time: 0.5325924620001388
+Overall Time: 14.80858774599892
+Discovery Time: 7.989567711999371
+Capability Generalization Time: 0.5326495079998494
+Capability Enrichment Time: 5.836282451999978
+Thing Description Generation Time: 0.5858007229999203
+Overall Time: 14.944300394999118
+Discovery Time: 8.004831630999433
+Capability Generalization Time: 0.5374526020004851
+Capability Enrichment Time: 5.71985330499956
+Thing Description Generation Time: 0.5343946180000785
+Overall Time: 14.796532155999557
+Discovery Time: 8.008988809000584
+Capability Generalization Time: 0.5623829839996688
+Capability Enrichment Time: 5.7290225670003565
+Thing Description Generation Time: 0.5299174359997778
+Overall Time: 14.830311796000387
+Discovery Time: 8.04355889800081
+Capability Generalization Time: 0.565978245000224
+Capability Enrichment Time: 5.689354054000432
+Thing Description Generation Time: 0.5106131009997625
+Overall Time: 14.80950429800123
+Discovery Time: 7.969089936000273
+Capability Generalization Time: 0.6324016549997395
+Capability Enrichment Time: 5.505776196000625
+Thing Description Generation Time: 0.535917036999308
+Overall Time: 14.643184823999945
+Discovery Time: 7.9750930730006075
+Capability Generalization Time: 0.6416656669998702
+Capability Enrichment Time: 5.557719910000742
+Thing Description Generation Time: 0.5123237079997125
+Overall Time: 14.686802358000932
+Discovery Time: 8.020513804000075
+Capability Generalization Time: 0.7061408509998728
+Capability Enrichment Time: 5.68768769000053
+Thing Description Generation Time: 0.6279720989996349
+Overall Time: 15.042314444000112
+Discovery Time: 7.954886335000083
+Capability Generalization Time: 0.5761377079998056
+Capability Enrichment Time: 5.845703152001079
+Thing Description Generation Time: 0.5295397869995213
+Overall Time: 14.906266982000488
+Discovery Time: 8.004654788000153
+Capability Generalization Time: 0.6205443769995327
+Capability Enrichment Time: 5.5265754689999085
+Thing Description Generation Time: 0.5422390240000823
+Overall Time: 14.694013657999676
+Discovery Time: 8.012593630999618
+Capability Generalization Time: 0.5476780639992285
+Capability Enrichment Time: 5.8456599480005025
+Thing Description Generation Time: 0.6078311940000276
+Overall Time: 15.013762836999376
+Discovery Time: 7.9959885379994375
+Capability Generalization Time: 0.6922046780000528
+Capability Enrichment Time: 5.79210681800032
+Thing Description Generation Time: 0.5264544250003382
+Overall Time: 15.006754459000149
+Discovery Time: 8.038418975999775
+Capability Generalization Time: 0.5449074939997445
+Capability Enrichment Time: 5.535219782999775
+Thing Description Generation Time: 0.5142837929997768
+Overall Time: 14.632830045999071
+Discovery Time: 8.076733141999284
+Capability Generalization Time: 0.529024206000031
+Capability Enrichment Time: 5.4202554790008435
+Thing Description Generation Time: 0.5469783809994624
+Overall Time: 14.572991207999621
+Discovery Time: 7.962458237999272
+Capability Generalization Time: 0.6436949139997523
+Capability Enrichment Time: 5.849659856000471
+Thing Description Generation Time: 0.5316872909997983
+Overall Time: 14.987500298999294
+Discovery Time: 8.017425342999559
+Capability Generalization Time: 0.528093058000195
+Capability Enrichment Time: 5.993266370999663
+Thing Description Generation Time: 0.5297869579999315
+Overall Time: 15.068571729999348
+Discovery Time: 7.964567670999713
+Capability Generalization Time: 0.5396312940001735
+Capability Enrichment Time: 5.715781296999921
+Thing Description Generation Time: 0.5494293100000505
+Overall Time: 14.769409571999859
+Discovery Time: 7.979231236000487
+Capability Generalization Time: 0.49659631099984836
+Capability Enrichment Time: 5.56353766400116
+Thing Description Generation Time: 0.5197212129996842
+Overall Time: 14.55908642400118
+Discovery Time: 8.115828758000134
+Capability Generalization Time: 0.5241566870008683
+Capability Enrichment Time: 5.591618609000761
+Thing Description Generation Time: 0.5293067169995993
+Overall Time: 14.760910771001363
+Discovery Time: 8.071697466999467
+Capability Generalization Time: 0.5481668279999212
+Capability Enrichment Time: 5.569725975000438
+Thing Description Generation Time: 0.5820345729998735
+Overall Time: 14.7716248429997
+Discovery Time: 8.021797665999657
+Capability Generalization Time: 0.5765096680006536
+Capability Enrichment Time: 5.553503336999711
+Thing Description Generation Time: 0.5117845320000924
+Overall Time: 14.663595203000114
+Discovery Time: 7.972840709000593
+Capability Generalization Time: 0.6079962359999627
+Capability Enrichment Time: 5.610897761999695
+Thing Description Generation Time: 0.5393217280006866
+Overall Time: 14.731056435000937
+Discovery Time: 7.976500935999866
+Capability Generalization Time: 0.6769500419995893
+Capability Enrichment Time: 5.573261051000372
+Thing Description Generation Time: 0.6289919490000102
+Overall Time: 14.855703977999838
+Discovery Time: 7.947392175999994
+Capability Generalization Time: 0.624733980000201
+Capability Enrichment Time: 5.543062427999757
+Thing Description Generation Time: 0.5088779899997462
+Overall Time: 14.624066573999698
+Discovery Time: 7.999077610999848
+Capability Generalization Time: 0.580281272999855
+Capability Enrichment Time: 5.4552643079996415
+Thing Description Generation Time: 0.5332872999997562
+Overall Time: 14.5679104919991
+Discovery Time: 8.023112488000152
+Capability Generalization Time: 0.562913492000007
+Capability Enrichment Time: 5.600901847000387
+Thing Description Generation Time: 0.6056311109996386
+Overall Time: 14.792558938000184
+Discovery Time: 7.989050304000557
+Capability Generalization Time: 0.5397737030007193
+Capability Enrichment Time: 5.537608897000609
+Thing Description Generation Time: 0.5140210769995974
+Overall Time: 14.580453981001483
+Discovery Time: 7.96603081000012
+Capability Generalization Time: 0.5003426630000831
+Capability Enrichment Time: 5.666185566999047
+Thing Description Generation Time: 0.6319430890007425
+Overall Time: 14.764502128999993
+Discovery Time: 8.048509030999412
+Capability Generalization Time: 0.5392507560000013
+Capability Enrichment Time: 5.536847989999842
+Thing Description Generation Time: 0.5291139769997244
+Overall Time: 14.65372175399898
+Discovery Time: 7.960112142999606
+Capability Generalization Time: 0.504880308999418
+Capability Enrichment Time: 5.788875004000147
+Thing Description Generation Time: 0.5518922199998997
+Overall Time: 14.80575967599907
+Discovery Time: 7.9979559690000315
+Capability Generalization Time: 0.5535498830004144
+Capability Enrichment Time: 5.470816029998787
+Thing Description Generation Time: 0.5289150120006525
+Overall Time: 14.551236893999885
+Discovery Time: 7.9825681129996156
+Capability Generalization Time: 0.6774127640001097
+Capability Enrichment Time: 5.91345780499978
+Thing Description Generation Time: 0.5227922750000289
+Overall Time: 15.096230956999534
+Discovery Time: 8.028542777000439
+Capability Generalization Time: 0.5477321110001867
+Capability Enrichment Time: 5.675629310001568
+Thing Description Generation Time: 0.5037153099992793
+Overall Time: 14.755619508001473
+Discovery Time: 8.134321105999334
+Capability Generalization Time: 0.5219305829996301
+Capability Enrichment Time: 5.493391774999509
+Thing Description Generation Time: 0.5205782450002516
+Overall Time: 14.670221708998724
+Discovery Time: 7.947812974000044
+Capability Generalization Time: 0.49170549900009064
+Capability Enrichment Time: 5.637262826000551
+Thing Description Generation Time: 0.5415780809998978
+Overall Time: 14.618359380000584
+Discovery Time: 8.289872345999356
+Capability Generalization Time: 0.6776205070000287
+Capability Enrichment Time: 5.579391822999241
+Thing Description Generation Time: 0.5954843570007142
+Overall Time: 15.14236903299934
+Discovery Time: 8.019985015000202
+Capability Generalization Time: 0.5863677719999032
+Capability Enrichment Time: 5.275103036000473
+Thing Description Generation Time: 0.5696582649998163
+Overall Time: 14.451114088000395
+Discovery Time: 8.034487891000026
+Capability Generalization Time: 0.5843068529993616
+Capability Enrichment Time: 5.436618487001397
+Thing Description Generation Time: 0.5186761609993482
+Overall Time: 14.574089392000133
+Discovery Time: 8.037547005000306
+Capability Generalization Time: 0.6362878269992507
+Capability Enrichment Time: 5.549396581999645
+Thing Description Generation Time: 0.5364695150001353
+Overall Time: 14.759700928999337
+Discovery Time: 7.986172940999495
+Capability Generalization Time: 0.6831033570006184
+Capability Enrichment Time: 6.1517132330000095
+Thing Description Generation Time: 0.5803892670001005
+Overall Time: 15.401378798000223
+Discovery Time: 8.058126005000304
+Capability Generalization Time: 0.5028494879998107
+Capability Enrichment Time: 5.34796114800065
+Thing Description Generation Time: 0.7317334210001718
+Overall Time: 14.640670062000936
+Discovery Time: 7.962228327000048
+Capability Generalization Time: 0.5430345790000501
+Capability Enrichment Time: 5.654633958999511
+Thing Description Generation Time: 0.5272655440003291
+Overall Time: 14.687162408999939
+Discovery Time: 8.081569013000262
+Capability Generalization Time: 0.5144135049995384
+Capability Enrichment Time: 5.841839642001105
+Thing Description Generation Time: 0.5406580029994075
+Overall Time: 14.978480163000313
+Discovery Time: 8.047827835000135
+Capability Generalization Time: 0.5031428269994649
+Capability Enrichment Time: 5.7600612490005005
+Thing Description Generation Time: 0.5367230229994675
+Overall Time: 14.847754933999568
+Discovery Time: 7.969348697999521
+Capability Generalization Time: 0.5214705990001676
+Capability Enrichment Time: 5.544101518999923
+Thing Description Generation Time: 0.5428758159996505
+Overall Time: 14.577796631999263
+Discovery Time: 8.002731348000452
+Capability Generalization Time: 0.6044084250006563
+Capability Enrichment Time: 5.879659194999476
+Thing Description Generation Time: 0.6136871859998791
+Overall Time: 15.100486154000464
+Discovery Time: 8.014289007000116
+Capability Generalization Time: 0.5742337609999595
+Capability Enrichment Time: 5.773285508000299
+Thing Description Generation Time: 0.5453508339996915
+Overall Time: 14.907159110000066
+Discovery Time: 8.016844138000124
+Capability Generalization Time: 0.5267417519999071
+Capability Enrichment Time: 5.626353138000013
+Thing Description Generation Time: 0.5467423959998996
+Overall Time: 14.716681423999944
+Discovery Time: 8.087879169000189
+Capability Generalization Time: 0.5076640070001304
+Capability Enrichment Time: 5.566909614999531
+Thing Description Generation Time: 0.5369757680000475
+Overall Time: 14.699428558999898
+Discovery Time: 8.007276945999365
+Capability Generalization Time: 0.6597486580003533
+Capability Enrichment Time: 5.776147112000217
+Thing Description Generation Time: 0.6192490359999283
+Overall Time: 15.062421751999864
