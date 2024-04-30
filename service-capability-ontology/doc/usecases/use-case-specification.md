@@ -1,4 +1,4 @@
-# Use Case Specification of the Hydrogen Ontology
+# Use Case Specification of the Service Capability Ontology
 
 The following document introduces example use cases for the Service Capability Ontology. The use case specification is aligned with the standards of the Linked Open Terms Methodology.
 
