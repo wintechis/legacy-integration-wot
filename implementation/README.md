@@ -1,7 +1,7 @@
-# LIG-WoT (**L**egacy device **I**nte**G**ration of IoT devices for the **W**eb **O**f **T**hings)
+# RetroWoT Middleware
 This repository contains a Proof of Concept for a middleware to generate for legacy IoT devices (currently Bluetooth LE and ZigBee) a Web of Things Thing Description. 
 It is designed with different components to be easily extensible.
-The general method of our approach is explained in the upcoming paper "LIG-WoT: ...".
+
 
 ## Features
 - Supports the generation of Thing Descriptions (TDs) for Bluetooth LE and ZigBee devices.
@@ -10,14 +10,14 @@ The general method of our approach is explained in the upcoming paper "LIG-WoT: 
 - Extends the interaction affordances with additional forms for HTTP or CoAP
 
 ## Installation
-1. Ensure you have poetry and python installed. The software has been tested on  Ubuntu 22.04 LTS.
+1. Ensure you have poetry and python installed. The software has been tested on Ubuntu 22.04 LTS.
 2. Clone the repository
 3. Install the requirements (necessary python packages with):
 ``` 
 poetry install
 ```
 ## Usage
-1. To start the LIG-WoT run:
+1. To start the RetroWoT run:
 ```
 python main.py
 ```

@@ -1,4 +1,4 @@
-# Data Scrapper for Bluetooth LE 
+# Data Scrapper for ZigBee 
 This script contains the different components to extract bluetooth device information from the Bluetooth Listing Database. 
 
 ## Installation
