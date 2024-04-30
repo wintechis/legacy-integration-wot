@@ -25,7 +25,6 @@ for page in range(1, 131):
     # Extract 'href' attributes
     hrefs = [tag.get('href') for tag in tags]
 
- 
     
     for href in hrefs:
         if href is not None:

@@ -6,9 +6,8 @@ import json
 import rarfile
 import py7zr
 
-user_agent = {'User-agent': 'Mozilla/5.0'}
 
-with open('products_detailed.json', 'r') as f:
+with open('../../data/products_detailed.json', 'r') as f:
     products = json.loads(f.read())  
 
     for _, product in products.items():   
@@ -23,7 +22,7 @@ with open('products_detailed.json', 'r') as f:
         # URL of the ZIP file
         
         # Checks if the device name already exists as a fol
-        if os.path.exists(f'./data/product_documentations/{device_name}'):
+        if os.path.exists(f'../../data/product_documentations/{device_name}'):
             print(f"Device {device_name} already exists")
             continue    
         zip_url = product["Compliance Document"]
@@ -33,10 +32,10 @@ with open('products_detailed.json', 'r') as f:
         zip_path = f'downloaded_zip.{zip_format}'
 
         # Directory to extract the ZIP file's contents
-        extract_dir = './data/extracted_files'
+        extract_dir = '../../data/extracted_files'
 
         # Directory to store the XML files
-        xml_dir = f'./data/product_documentations/{device_name}/'
+        xml_dir = f'../../data/product_documentations/{device_name}/'
 
 
 
@@ -60,14 +59,14 @@ with open('products_detailed.json', 'r') as f:
             else: 
                 print("The file is not a zip or 7z file")
                 # Move file to a folder for manual inspection
-                shutil.move(zip_path, './data/unknown_files')
+                shutil.move(zip_path, '../../data/unknown_files')
                 continue
         except Exception as e:
             print(e)
             # Move file to a folder for manual inspection
-            if os.path.exists(f'./data/unknown_files/{device_name}.{zip_format}'):
+            if os.path.exists(f'../../data/unknown_files/{device_name}.{zip_format}'):
                 print(f"Device {device_name} already exists")
-            shutil.move(zip_path, f'./data/unknown_files/{device_name}.{zip_format}')
+            shutil.move(zip_path, f'../../data/unknown_files/{device_name}.{zip_format}')
             
             continue
 

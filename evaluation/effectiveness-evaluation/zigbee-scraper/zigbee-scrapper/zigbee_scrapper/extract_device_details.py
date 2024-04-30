@@ -4,7 +4,7 @@ import json
 
 user_agent = {'User-agent': 'Mozilla/5.0'}
 
-with open('products.json', 'r') as f:
+with open('../../data/products.json', 'r') as f:
     products = json.loads(f.read())  
 
 res = {}
@@ -38,13 +38,14 @@ for num, product in enumerate(products):
     
     if num % 10 == 0:  
         print(f"Device {num} of {len(products)}")
-        product_string = json.dumps(res)
-        with open('products_detailed.json', 'w') as f:
+        product_string = json.dumps(res, indent=4)
+        with open('../../data/products_detailed.json', 'w') as f:
             f.write(product_string)     
- 
+
+
 print(f"Device {num} of {len(products)}")
 product_string = json.dumps(res, indent=4)
-with open('products_detailed.json', 'w') as f:
+with open('../../data/products_detailed.json', 'w') as f:
     f.write(product_string)     
 
 
