@@ -17,6 +17,19 @@ It is designed with different components to be easily extensible.
 poetry install
 ```
 ## Usage
+
+### Usage via Frontend
+1. To start the RetroWoT run:
+```
+python main.py
+```
+2. In a new terminal run:
+```
+streamlit run app.py
+```
+
+### Usage via browser directly
+
 1. To start the RetroWoT run:
 ```
 python main.py
@@ -28,6 +41,8 @@ python main.py
 5. Select your address of your device and run `localhost:8000/bluetooth/service_discovery/$ADDRESS$` or `localhost:8000/zigbee/service_discovery/$ADDRESS$`.
 
 ## Demo
-
-## Contributing
-Contributions to improve the LIG-WoT are welcome. Please feel free to submit pull requests or open issues to discuss potential improvements or report bugs.
+The demonstrator showcases the functionality of RetroWoT for Bluetooth LE devices (but also implemented for ZigBee). 
+- 1. Device Discovery: Surrounding devices are discovered and a user can select a given device (in the example a device with the address F3:82:06:2F:7C:0A)  
+- 2. Service Discovery: The devices services are discovered and generalized with the SCO ontology for further processing and creation of the TD
+- 3. Thing Descriptions: The Thing Description that is now accessible.
+![](./demo.gif)
