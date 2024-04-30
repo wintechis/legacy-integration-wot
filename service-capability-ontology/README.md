@@ -1,4 +1,8 @@
-# Goal
+# Service Capability Ontology
+This is the Service Capability (SCO). SCO is a light-weight, application ontology for the translation of legacy IoT devices to the W3C Web of Things.
+SCO contributes to the automatic generation of Thing Descriptions for modeling the key components necessary for a W3C Web of Things Thing Description.
+
+## Ontology Requirement Specification
 The aim of the requirements specification process is to state why the ontology is being built and to identify and define the requirements the ontology should fulfil.
 
 ### Use Case Specification
@@ -25,3 +29,28 @@ Activity aiming to formalize requirements into test cases.
 ### Ontology Requirements specification document (ORSD) formalization
 The ORSD stores all functional and non-functional requirements identified and the information associated with them 
 * Result: [Ontology Requirment Specifcation Document](./ontology-requirement-specification-document.md) 
+
+
+## Ontology Implementation
+- Title: Service Capability Ontology
+- Publisher: Technische Hochschule Nürnberg Georg Simon Ohm
+- Authors
+- License: Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+- Issued Date: 2023-09-16
+- Modified Date: 2024-04-26
+- Namespace URI: http://purl.org/sco/ns#
+- Version: 1.0
+- Version IRI: http://purl.org/sco/ns#
+- Prefix: sco
+
+### Diagram
+<img src="./Service Capability Ontology.png" width="100%" alt="description">
+
+
+## Ontology Publication
+- For the Ontology Publication Process WIDOCO is used.
+- The Ontology is available over: http://purl.org/sco/documentation
+- The codebase is also provided [here](./service-capability-ontology/).
+- Licenses of SCO and other imported ontologies can be found [here](./LICENSE.md) 
+
+

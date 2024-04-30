@@ -49,8 +49,8 @@ The farm has multiple fields and greenhouses. On the fields water flow and soil 
 This requires integrating the complete irrigation systems into an IoT-based monitoring and control platform, allowing for real-time data collection and automated decision-making.
 
 ### Realworld Example:
-- [Greenhouse Wireless Monitoring System Based on ZigBee](https://link.springer.com/chapter/10.1007/978-3-642-36124-1_14): A research project between Fraunhofer, Siemens, and Trevisto to improve transparency of production lines.
-- [Water Consumption Measurement with Mioty Diehl](https://www.diehl.com/metering/en/customer-cases/iot-smart-meters-for-a-sustainable-water-consumption/): 
+- [Greenhouse Wireless Monitoring System Based on ZigBee](https://link.springer.com/chapter/10.1007/978-3-642-36124-1_14)
+- [Water Consumption Measurement with Mioty Diehl](https://www.diehl.com/metering/en/customer-cases/iot-smart-meters-for-a-sustainable-water-consumption/)
 
 ### Actors:
 - Agricultural equipment

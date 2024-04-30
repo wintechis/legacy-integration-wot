@@ -12,3 +12,5 @@ evaluation/**/bluetooth-scraper/data/bluetooth_devices/
 evaluation/**/bluetooth-scraper/data/device_details/
 evaluation/**/bluetooth-scraper/.vscode/settings.json
 evaluation/**/bluetooth-scraper/bluetooth-scrapper/data.json
+service-capability-ontology/ontology-documentation/
+service-capability-ontology/ontology documentation/2 Ontology implementation/service-capability-ontology.rdf
