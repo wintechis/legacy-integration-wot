@@ -104,8 +104,9 @@ python main.py
 5. Select your address of your device and run `localhost:8000/bluetooth/service_discovery/$ADDRESS$` or `localhost:8000/zigbee/service_discovery/$ADDRESS$`.
 
 ## Demo
+<img src="./demo.gif" width="25%" alt="description">
+
 The demonstrator showcases the functionality of RetroWoT for Bluetooth LE devices (but also implemented for ZigBee). 
-- 1. Device Discovery: Surrounding devices are discovered and a user can select a given device (in the example a device with the address F3:82:06:2F:7C:0A)  
-- 2. Service Discovery: The devices services are discovered and generalized with the SCO ontology for further processing and creation of the TD
-- 3. Thing Descriptions: The Thing Description that is now accessible.
-![](./demo.gif)
+1. Device Discovery: Surrounding devices are discovered and a user can select a given device (in the example a device with the address F3:82:06:2F:7C:0A)  
+2. Service Discovery: The devices services are discovered and generalized with the SCO ontology for further processing and creation of the TD
+3. Thing Descriptions: The Thing Description that is now accessible.
