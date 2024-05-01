@@ -33,7 +33,6 @@ The ORSD stores all functional and non-functional requirements identified and th
 
 ## Ontology Implementation
 - Title: Service Capability Ontology
-- Publisher: Technische Hochschule Nürnberg Georg Simon Ohm
 - Authors
 - License: Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 - Issued Date: 2023-09-16
