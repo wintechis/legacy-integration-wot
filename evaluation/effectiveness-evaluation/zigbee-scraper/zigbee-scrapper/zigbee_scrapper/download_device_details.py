@@ -1,11 +1,22 @@
 import json
 import os
 import shutil
+import subprocess
 import zipfile
 
 import py7zr
-import rarfile
 import requests
+
+
+def is_rar(file_path: str) -> bool:
+    if file_path.endswith(".rar"):
+        return True
+    return False
+
+
+def unrar(file_path: str, dest_path: str):
+    subprocess.run(["7z", "-aoa", "e", f"-o{dest_path}", file_path])
+
 
 with open("../../data/products_detailed.json", "r") as f:
     products = json.loads(f.read())
@@ -51,9 +62,8 @@ with open("../../data/products_detailed.json", "r") as f:
             elif py7zr.is_7zfile(zip_path):
                 with py7zr.SevenZipFile(zip_path, mode="r") as z:
                     z.extractall(path=extract_dir)
-            elif rarfile.is_rarfile(zip_path):
-                with rarfile.RarFile(zip_path, "r") as z:
-                    z.extractall(path=extract_dir)
+            elif is_rar(zip_path):
+                unrar(zip_path, extract_dir)
             else:
                 print("The file is not a zip or 7z file")
                 # Move file to a folder for manual inspection

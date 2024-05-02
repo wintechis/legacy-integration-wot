@@ -6,7 +6,9 @@ from bs4 import BeautifulSoup
 user_agent = {"User-agent": "Mozilla/5.0"}
 
 products = []
-for page in range(1, 131):
+for page in range(
+    1, 131
+):  # Number was chosen based on the number of pages on the website
     uri = f"https://csa-iot.org/csa-iot_products/page/{page}/?p_keywords&p_type%5B0%5D=14&p_program_type%5B0%5D=966&p_certificate&p_family"
     if page % 10 == 0:
         print(f"Page {page} of 130")
@@ -35,5 +37,5 @@ for page in range(1, 131):
 print(products)
 
 product_string = json.dumps(products)
-with open("products.json", "w") as f:
+with open("../../data/products.json", "w") as f:
     f.write(product_string)
