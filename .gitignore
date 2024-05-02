@@ -1,11 +1,11 @@
 /implementation/woble-system/.mypy_cache
 /implementation/woble-system/.vscode
 evaluation/**/zigbee-scrapper/zigbee_scrapper/.~lock.cleaned_frequency.csv#
-evaluation/**/zigbee-scrapper/zigbee_scrapper/data/extracted_files/
-evaluation/**/zigbee-scrapper/zigbee_scrapper/data/product_documentations/
-evaluation/**/zigbee-scrapper/zigbee_scrapper/data/unknown_files/
-evaluation/**/zigbee-scrapper/zigbee_scrapper/products.json
-evaluation/**/zigbee-scrapper/zigbee_scrapper/products_detailed.json
+evaluation/**/zigbee-scrapper/data/extracted_files/
+evaluation/**/zigbee-scrapper/data/product_documentations/
+evaluation/**/zigbee-scrapper/data/unknown_files/
+evaluation/**/zigbee-scrapper/products.json
+evaluation/**/zigbee-scrapper/products_detailed.json
 evaluation/**/zigbee-scrapper/.vscode/settings.json
 evaluation/**/bluetooth-scraper/bluetooth-scrapper/.mypy_cache/
 evaluation/**/bluetooth-scraper/data/bluetooth_devices/
@@ -14,3 +14,7 @@ evaluation/**/bluetooth-scraper/.vscode/settings.json
 evaluation/**/bluetooth-scraper/bluetooth-scrapper/data.json
 service-capability-ontology/ontology-documentation/
 service-capability-ontology/ontology documentation/2 Ontology implementation/service-capability-ontology.rdf
+evaluation/effectiveness-evaluation/zigbee-scraper/zigbee-scrapper/data/products_detailed.json
+evaluation/effectiveness-evaluation/zigbee-scraper/zigbee-scrapper/data/cluster.csv
+evaluation/effectiveness-evaluation/zigbee-scraper/zigbee-scrapper/data/products.json
+evaluation/effectiveness-evaluation/.~lock.summary_g1_data.xlsx#
