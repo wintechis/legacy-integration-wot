@@ -545,6 +545,19 @@
     
 
 
+    <!-- https://purl.org/sco/ns#hasInteractionID -->
+
+
+    <owl:DatatypeProperty rdf:about="https://purl.org/sco/ns#hasInteractionID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://purl.org/sco/ns#ServiceInteraction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Reference to a unique identifier of the interaction capability.</rdfs:comment>
+        <rdfs:label>has Interaction ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://purl.org/sco/ns#hasManufacturer -->
 
 
@@ -556,14 +569,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://purl.org/sco/ns#hasName">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://purl.org/sco/ns#Device"/>
-                    <rdf:Description rdf:about="https://purl.org/sco/ns#ServiceCapability"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="https://purl.org/sco/ns#Device"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>The name of a device. Often a device provides a prefered name (e.g. Bluetooth LE or ZigBee).</rdfs:comment>
         <rdfs:label>has Name</rdfs:label>
@@ -787,45 +793,65 @@
     <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/json-schema#StringSchema">
         <rdf:type rdf:resource="https://purl.org/sco/ns#Format"/>
     </owl:NamedIndividual>
-    <rdf:Description rdf:nodeID="genid8">
-        <schema:affiliation rdf:nodeID="genid9"/>
+    <rdf:Description rdf:nodeID="genid5">
+        <schema:affiliation rdf:nodeID="genid6"/>
         <rdfs:seeAlso rdf:resource="https://renedorsch.solidweb.org/#me"/>
         <foaf:homepage rdf:resource="https://orcid.org/0000-0001-6857-7314"/>
         <foaf:name>Rene Dorsch</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid6">
+        <foaf:homepage rdf:resource="https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html"/>
+        <foaf:name>Data Spaces and IoT Solutions</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid7">
+        <schema:affiliation rdf:nodeID="genid8"/>
+        <rdfs:seeAlso rdf:resource="https://renedorsch.solidweb.org/#me"/>
+        <foaf:homepage rdf:resource="https://orcid.org/0000-0001-6857-7314"/>
+        <foaf:name>Rene Dorsch</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid8">
+        <foaf:homepage rdf:resource="https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html"/>
+        <foaf:name>Data Spaces and IoT Solutions</foaf:name>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid9">
-        <foaf:homepage rdf:resource="https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html"/>
-        <foaf:name>Data Spaces and IoT Solutions</foaf:name>
+        <schema:affiliation rdf:nodeID="genid10"/>
+        <rdfs:seeAlso rdf:resource="https://renedorsch.solidweb.org/#me"/>
+        <foaf:homepage rdf:resource="https://orcid.org/0000-0001-6857-7314"/>
+        <foaf:name>Rene Dorsch</foaf:name>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid10">
-        <schema:affiliation rdf:nodeID="genid11"/>
-        <rdfs:seeAlso rdf:resource="https://renedorsch.solidweb.org/#me"/>
-        <foaf:homepage rdf:resource="https://orcid.org/0000-0001-6857-7314"/>
-        <foaf:name>Rene Dorsch</foaf:name>
+        <foaf:homepage rdf:resource="https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html"/>
+        <foaf:name>Data Spaces and IoT Solutions</foaf:name>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid11">
-        <foaf:homepage rdf:resource="https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html"/>
-        <foaf:name>Data Spaces and IoT Solutions</foaf:name>
+        <schema:affiliation rdf:nodeID="genid12"/>
+        <rdfs:seeAlso rdf:resource="https://renedorsch.solidweb.org/#me"/>
+        <foaf:homepage rdf:resource="https://orcid.org/0000-0001-6857-7314"/>
+        <foaf:name>Rene Dorsch</foaf:name>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid12">
-        <schema:affiliation rdf:nodeID="genid13"/>
-        <rdfs:seeAlso rdf:resource="https://renedorsch.solidweb.org/#me"/>
-        <foaf:homepage rdf:resource="https://orcid.org/0000-0001-6857-7314"/>
-        <foaf:name>Rene Dorsch</foaf:name>
+        <foaf:homepage rdf:resource="https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html"/>
+        <foaf:name>Data Spaces and IoT Solutions</foaf:name>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid13">
-        <foaf:homepage rdf:resource="https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html"/>
-        <foaf:name>Data Spaces and IoT Solutions</foaf:name>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid14">
-        <schema:affiliation rdf:nodeID="genid15"/>
+        <schema:affiliation rdf:nodeID="genid14"/>
         <rdfs:seeAlso rdf:resource="https://renedorsch.solidweb.org/#me"/>
         <foaf:homepage rdf:resource="https://orcid.org/0000-0001-6857-7314"/>
         <foaf:name>Rene Dorsch</foaf:name>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid15">
+    <rdf:Description rdf:nodeID="genid14">
         <foaf:homepage rdf:resource="https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html"/>
         <foaf:name>Data Spaces and IoT Solutions</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid15">
+        <schema:affiliation rdf:nodeID="genid16"/>
+        <rdfs:seeAlso rdf:resource="https://www.th-nuernberg.de/person/ascencion-arevalo-kiara-marnitt/"/>
+        <foaf:homepage rdf:resource="https://orcid.org/0000-0002-4158-9478"/>
+        <foaf:name>Kiara Marnitt Ascencion Arevalo</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid16">
+        <foaf:homepage rdf:resource="https://www.th-nuernberg.de/einrichtungen-gesamt/fraunhofer-forschungsgruppen/future-engineering/"/>
+        <foaf:name>Future Engineering Research Group</foaf:name>
     </rdf:Description>
     
 

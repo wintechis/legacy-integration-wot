@@ -14,52 +14,38 @@
   } ]
 }, {
   "@id" : "_:genid10",
-  "http://schema.org/affiliation" : [ {
-    "@id" : "_:genid11"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@id" : "https://renedorsch.solidweb.org/#me"
-  } ],
   "http://xmlns.com/foaf/0.1/homepage" : [ {
-    "@id" : "https://orcid.org/0000-0001-6857-7314"
+    "@id" : "https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html"
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Rene Dorsch"
+    "@value" : "Data Spaces and IoT Solutions"
   } ]
 }, {
   "@id" : "_:genid11",
+  "http://schema.org/affiliation" : [ {
+    "@id" : "_:genid12"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://renedorsch.solidweb.org/#me"
+  } ],
   "http://xmlns.com/foaf/0.1/homepage" : [ {
-    "@id" : "https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html"
+    "@id" : "https://orcid.org/0000-0001-6857-7314"
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Data Spaces and IoT Solutions"
+    "@value" : "Rene Dorsch"
   } ]
 }, {
   "@id" : "_:genid12",
-  "http://schema.org/affiliation" : [ {
-    "@id" : "_:genid13"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@id" : "https://renedorsch.solidweb.org/#me"
-  } ],
   "http://xmlns.com/foaf/0.1/homepage" : [ {
-    "@id" : "https://orcid.org/0000-0001-6857-7314"
+    "@id" : "https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html"
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Rene Dorsch"
+    "@value" : "Data Spaces and IoT Solutions"
   } ]
 }, {
   "@id" : "_:genid13",
-  "http://xmlns.com/foaf/0.1/homepage" : [ {
-    "@id" : "https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html"
-  } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Data Spaces and IoT Solutions"
-  } ]
-}, {
-  "@id" : "_:genid14",
   "http://schema.org/affiliation" : [ {
-    "@id" : "_:genid15"
+    "@id" : "_:genid14"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@id" : "https://renedorsch.solidweb.org/#me"
@@ -71,7 +57,7 @@
     "@value" : "Rene Dorsch"
   } ]
 }, {
-  "@id" : "_:genid15",
+  "@id" : "_:genid14",
   "http://xmlns.com/foaf/0.1/homepage" : [ {
     "@id" : "https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html"
   } ],
@@ -79,7 +65,29 @@
     "@value" : "Data Spaces and IoT Solutions"
   } ]
 }, {
+  "@id" : "_:genid15",
+  "http://schema.org/affiliation" : [ {
+    "@id" : "_:genid16"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://www.th-nuernberg.de/person/ascencion-arevalo-kiara-marnitt/"
+  } ],
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "https://orcid.org/0000-0002-4158-9478"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Kiara Marnitt Ascencion Arevalo"
+  } ]
+}, {
   "@id" : "_:genid16",
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "https://www.th-nuernberg.de/einrichtungen-gesamt/fraunhofer-forschungsgruppen/future-engineering/"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Future Engineering Research Group"
+  } ]
+}, {
+  "@id" : "_:genid17",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -130,18 +138,8 @@
   } ]
 }, {
   "@id" : "_:genid5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://purl.org/sco/ns#Device"
-    }, {
-      "@id" : "https://purl.org/sco/ns#ServiceCapability"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid8",
   "http://schema.org/affiliation" : [ {
-    "@id" : "_:genid9"
+    "@id" : "_:genid6"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@id" : "https://renedorsch.solidweb.org/#me"
@@ -153,12 +151,48 @@
     "@value" : "Rene Dorsch"
   } ]
 }, {
-  "@id" : "_:genid9",
+  "@id" : "_:genid6",
   "http://xmlns.com/foaf/0.1/homepage" : [ {
     "@id" : "https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html"
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Data Spaces and IoT Solutions"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "http://schema.org/affiliation" : [ {
+    "@id" : "_:genid8"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://renedorsch.solidweb.org/#me"
+  } ],
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "https://orcid.org/0000-0001-6857-7314"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Rene Dorsch"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Data Spaces and IoT Solutions"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "http://schema.org/affiliation" : [ {
+    "@id" : "_:genid10"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://renedorsch.solidweb.org/#me"
+  } ],
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "https://orcid.org/0000-0001-6857-7314"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Rene Dorsch"
   } ]
 }, {
   "@id" : "http://purl.org/dc/terms/contributor",
@@ -568,6 +602,21 @@
     "@id" : "https://purl.org/sco/ns#interactionOf"
   } ]
 }, {
+  "@id" : "https://purl.org/sco/ns#hasInteractionID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Reference to a unique identifier of the interaction capability."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.org/sco/ns#ServiceInteraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has Interaction ID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
   "@id" : "https://purl.org/sco/ns#hasManufacturer",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -592,7 +641,7 @@
     "@value" : "The name of a device. Often a device provides a prefered name (e.g. Bluetooth LE or ZigBee)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid5"
+    "@id" : "https://purl.org/sco/ns#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has Name"

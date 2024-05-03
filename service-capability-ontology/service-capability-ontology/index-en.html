@@ -2,17 +2,28 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
- <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>Service Capability Ontology</title>
+<link rel="stylesheet" href="resources/primer.css" media="screen"/>
+<link rel="stylesheet" href="resources/rec.css" media="screen"/>
+<link rel="stylesheet" href="resources/extra.css" media="screen"/>
+<link rel="stylesheet" href="resources/owl.css" media="screen"/>
+<link rel="stylesheet" href="resources/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="resources/slider.css" media="screen"/>
+<meta name="color-scheme" content="dark light">
+<script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
+	<dark-mode-toggle class="slider"></dark-mode-toggle>
+</div>
+ <title>Service Capability Ontology</title>
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://purl.org/sco/ns#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://purl.org/sco/ns#","name":"Service Capability Ontology", "headline":"Document describing the ontology https://purl.org/sco/ns#", "dateReleased":"2024", "version":"1.0", "license":"https://creativecommons.org/licenses/by-sa/4.0/", "author":[{"@type":"Person","name":"Rene Dorsch","url":"https://orcid.org/0000-0001-6857-7314"}], "contributor":[{"@type":"Person","name":"Kiara Marnitt Ascencion Arevalo","url":"https://orcid.org/0000-0002-4158-9478"},{"@type":"Person","name":"Michael Freund"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://purl.org/sco/ns#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://purl.org/sco/ns#","name":"Service Capability Ontology", "headline":"Document describing the ontology https://purl.org/sco/ns#", "dateReleased":"2024", "version":"1.0", "license":"https://creativecommons.org/licenses/by-sa/4.0/", "author":[{"@type":"Person","name":"Rene Dorsch","url":"https://orcid.org/0000-0001-6857-7314"}], "contributor":[{"@type":"Person","name":"Kiara Marnitt Ascencion Arevalo","url":"https://orcid.org/0000-0002-4158-9478"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
     <script> 
 function loadHash() {
-  jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked.parse(jQuery(this).text())).remove()});
 	var hash = location.hash;
 	if($(hash).offset()!=null){
 	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
@@ -71,7 +82,7 @@ $(function(){
 <dd><a href="https://orcid.org/0000-0001-6857-7314">Rene Dorsch</a>, <a href="https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html">Data Spaces and IoT Solutions</a></dd>
 
 <dt>Contributors:</dt>
-<dd><a href="https://orcid.org/0000-0002-4158-9478">Kiara Marnitt Ascencion Arevalo</a>, <a href="https://www.th-nuernberg.de/einrichtungen-gesamt/fraunhofer-forschungsgruppen/future-engineering/">Future Engineering Research Group</a></dd><dd>Michael Freund</dd>
+<dd><a href="https://orcid.org/0000-0002-4158-9478">Kiara Marnitt Ascencion Arevalo</a>, <a href="https://www.th-nuernberg.de/einrichtungen-gesamt/fraunhofer-forschungsgruppen/future-engineering/">Future Engineering Research Group</a></dd>
 
 <dt>Publisher:</dt>
 <dd><a href="https://renedorsch.solidweb.org/#me">https://renedorsch.solidweb.org/#me</a></dd>
@@ -118,7 +129,6 @@ This is a place holder text for the introduction. The introduction should briefl
 </div>
 </div>
 </div>
-  
 
 <!--OVERVIEW SECTION-->
     <div id="overview"><h2 id="overv" class="list">SCO: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -239,6 +249,9 @@ This ontology has the following classes and properties.</span>
       <a href="#hasAddress" title="https://purl.org/sco/ns#hasAddress">has Address</a>
    </li>
    <li>
+      <a href="#hasInteractionID" title="https://purl.org/sco/ns#hasInteractionID">has Interaction ID</a>
+   </li>
+   <li>
       <a href="#hasName" title="https://purl.org/sco/ns#hasName">has Name</a>
    </li>
 </ul><h4>Named Individuals</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
@@ -246,1522 +259,1266 @@ This ontology has the following classes and properties.</span>
     class="hlist">
    <li>
       <a href="#ArraySchema" title="https://purl.org/sco/ns#ArraySchema">
-         <span>array schema</span>
+         <span>Array Schema</span>
       </a>
    </li>
    <li>
       <a href="#BluetoothLE" title="https://purl.org/sco/ns#BluetoothLE">
-         <span>bluetooth l e</span>
+         <span>Bluetooth L E</span>
       </a>
    </li>
    <li>
       <a href="#https://www.w3.org/2019/wot/json-schema#BooleanSchema"
          title="https://www.w3.org/2019/wot/json-schema#BooleanSchema">
-         <span>boolean schema</span>
+         <span>Boolean Schema</span>
       </a>
    </li>
    <li>
       <a href="#https://www.w3.org/2019/wot/json-schema#IntegerSchema"
          title="https://www.w3.org/2019/wot/json-schema#IntegerSchema">
-         <span>integer schema</span>
+         <span>Integer Schema</span>
       </a>
    </li>
    <li>
       <a href="#https://www.w3.org/2019/wot/json-schema#NullSchema"
          title="https://www.w3.org/2019/wot/json-schema#NullSchema">
-         <span>null schema</span>
+         <span>Null Schema</span>
       </a>
    </li>
    <li>
       <a href="#https://www.w3.org/2019/wot/json-schema#NumberSchema"
          title="https://www.w3.org/2019/wot/json-schema#NumberSchema">
-         <span>number schema</span>
+         <span>Number Schema</span>
       </a>
    </li>
    <li>
       <a href="#https://www.w3.org/2019/wot/json-schema#ObjectSchema"
          title="https://www.w3.org/2019/wot/json-schema#ObjectSchema">
-         <span>object schema</span>
+         <span>Object Schema</span>
       </a>
    </li>
    <li>
       <a href="#https://www.w3.org/2019/wot/json-schema#StringSchema"
          title="https://www.w3.org/2019/wot/json-schema#StringSchema">
-         <span>string schema</span>
+         <span>String Schema</span>
       </a>
    </li>
    <li>
       <a href="#Zigbee" title="https://purl.org/sco/ns#Zigbee">
-         <span>zigbee</span>
+         <span>Zigbee</span>
       </a>
    </li>
-</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
+</ul><iframe src="webvowl/index.html"></iframe> 
 </div>
   
 
 <!--DESCRIPTION SECTION-->
     <div id="description"><h2 id="desc" class="list">SCO: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 
-<span class="markdown">This is the Service Capability (SCO). SCO is a light-weight, application ontology for the translation of legacy IoT devices to the W3C Web of Things. SCO contributes to the automatic generation of Thing Descriptions for modeling the key components necessary for a W3C Web of Things Thing Description.  </span><img src="http://purl.org/sco/schema_diagram"></div>
-   
+<!--DESCRIPTION SECTION-->
+<div id="description"><h2 id="desc" class="list">SCO: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+   <span class="markdown">This is the Service Capability (SCO). SCO is a light-weight, application ontology for the translation of legacy IoT devices to the W3C Web of Things. SCO contributes to the automatic generation of Thing Descriptions for modeling the key components necessary for a W3C Web of Things Thing Description.</span>
+   <img src="./resources/images/schema-diagram.png">
+</div>
 
 <!--CROSSREF SECTION-->
    <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for SCO classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by SCO.
-<div xmlns:widoco="https://w3id.org/widoco/vocab#"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     id="classes">
-   <h3 id="classes-headline" class="list">Classes</h3>
-   <ul class="hlist">
-      <li>
-         <a href="#ActionInteraction" title="https://purl.org/sco/ns#ActionInteraction">Action Interaction</a>
-      </li>
-      <li>
-         <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a>
-      </li>
-      <li>
-         <a href="#Device" title="https://purl.org/sco/ns#Device">Device</a>
-      </li>
-      <li>
-         <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a>
-      </li>
-      <li>
-         <a href="#ProtocolStack" title="https://purl.org/sco/ns#ProtocolStack">Protocolstack</a>
-      </li>
-      <li>
-         <a href="#ReadInteraction" title="https://purl.org/sco/ns#ReadInteraction">Read Interaction</a>
-      </li>
-      <li>
-         <a href="#ServiceCapability" title="https://purl.org/sco/ns#ServiceCapability">Service Capability</a>
-      </li>
-      <li>
-         <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a>
-      </li>
-      <li>
-         <a href="#SubscribeInteraction" title="https://purl.org/sco/ns#SubscribeInteraction">Subscribe Interaction</a>
-      </li>
-      <li>
-         <a href="#TransformationRule" title="https://purl.org/sco/ns#TransformationRule">Transformation Rule</a>
-      </li>
-      <li>
-         <a href="#WriteInteraction" title="https://purl.org/sco/ns#WriteInteraction">Write Interaction</a>
-      </li>
-   </ul>
-   <div class="entity" id="ActionInteraction">
-      <h3>Action Interaction<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#ActionInteraction</p>
-      <div class="comment">
-         <span class="markdown">A action that is triggered whenever a service capability from the device is triggered. A action is a method to mainpultae or trigger a process.</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="DataModel">
-      <h3>Data Model<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#DataModel</p>
-      <div class="comment">
-         <span class="markdown">The Data Model describes how data for a specific Service Capability for the exchange between the device and another device is prepared.</span>
-      </div>
-      <dl class="description">
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#hasDecodingRule" title="https://purl.org/sco/ns#hasDecodingRule">has decoding rule</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasEncodingRule" title="https://purl.org/sco/ns#hasEncodingRule">has encoding rule</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasInputFormat" title="https://purl.org/sco/ns#hasInputFormat">has inputformat</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasOutputFormat" title="https://purl.org/sco/ns#hasOutputFormat">has outputformat</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasTransformationRule" title="https://purl.org/sco/ns#hasTransformationRule">has transformation rule</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasUnit" title="https://purl.org/sco/ns#hasUnit">has unit</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#dataModelOf" title="https://purl.org/sco/ns#dataModelOf">is datamodel of</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasDataModel" title="https://purl.org/sco/ns#hasDataModel">has datamodel</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#decodingRuleOf" title="https://purl.org/sco/ns#decodingRuleOf">is decoding rule of</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#encodingRuleOf" title="https://purl.org/sco/ns#encodingRuleOf">is encoding rule of</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#inputFormatOf" title="https://purl.org/sco/ns#inputFormatOf">is inputformat of</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#outputFormatOf" title="https://purl.org/sco/ns#outputFormatOf">is output format of</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#transformationRuleOf" title="https://purl.org/sco/ns#transformationRuleOf">is transformationrule of</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#unitOf" title="https://purl.org/sco/ns#unitOf">is unit of</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#Device" title="https://purl.org/sco/ns#Device">Device</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ProtocolStack" title="https://purl.org/sco/ns#ProtocolStack">Protocolstack</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ServiceCapability" title="https://purl.org/sco/ns#ServiceCapability">Service Capability</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#TransformationRule" title="https://purl.org/sco/ns#TransformationRule">Transformation Rule</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="Device">
-      <h3>Device<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#Device</p>
-      <div class="comment">
-         <span class="markdown">A device, capable of machine-to-machine (M2M) communication.</span>
-      </div>
-      <dl class="description">
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#hasManufacturer" title="https://purl.org/sco/ns#hasManufacturer">has Manufacturer</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasServiceCapability" title="https://purl.org/sco/ns#hasServiceCapability">has servicecapability</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#manufacturerOf" title="https://purl.org/sco/ns#manufacturerOf">is manufacturer of</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#serviceCapabilityOf" title="https://purl.org/sco/ns#serviceCapabilityOf">is servicecapability of</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ProtocolStack" title="https://purl.org/sco/ns#ProtocolStack">Protocolstack</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ServiceCapability" title="https://purl.org/sco/ns#ServiceCapability">Service Capability</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#TransformationRule" title="https://purl.org/sco/ns#TransformationRule">Transformation Rule</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="Format">
-      <h3>Format<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#Format</p>
-      <div class="comment">
-         <span class="markdown">A kind of dataformat to interpret the data exchanged by the Service capability.</span>
-      </div>
-      <dl class="description">
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#inputFormatOf" title="https://purl.org/sco/ns#inputFormatOf">is inputformat of</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#outputFormatOf" title="https://purl.org/sco/ns#outputFormatOf">is output format of</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasInputFormat" title="https://purl.org/sco/ns#hasInputFormat">has inputformat</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasOutputFormat" title="https://purl.org/sco/ns#hasOutputFormat">has outputformat</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>has members</dt>
-         <dd>
-            <a href="#ArraySchema" title="https://purl.org/sco/ns#ArraySchema">array schema</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://www.w3.org/2019/wot/json-schema#BooleanSchema"
-               title="https://www.w3.org/2019/wot/json-schema#BooleanSchema">boolean schema</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://www.w3.org/2019/wot/json-schema#IntegerSchema"
-               title="https://www.w3.org/2019/wot/json-schema#IntegerSchema">integer schema</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://www.w3.org/2019/wot/json-schema#NullSchema"
-               title="https://www.w3.org/2019/wot/json-schema#NullSchema">null schema</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://www.w3.org/2019/wot/json-schema#NumberSchema"
-               title="https://www.w3.org/2019/wot/json-schema#NumberSchema">number schema</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://www.w3.org/2019/wot/json-schema#ObjectSchema"
-               title="https://www.w3.org/2019/wot/json-schema#ObjectSchema">object schema</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://www.w3.org/2019/wot/json-schema#StringSchema"
-               title="https://www.w3.org/2019/wot/json-schema#StringSchema">string schema</a>
-            <sup class="type-ni" title="named individual">ni</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Device" title="https://purl.org/sco/ns#Device">Device</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ProtocolStack" title="https://purl.org/sco/ns#ProtocolStack">Protocolstack</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ServiceCapability" title="https://purl.org/sco/ns#ServiceCapability">Service Capability</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#TransformationRule" title="https://purl.org/sco/ns#TransformationRule">Transformation Rule</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="ProtocolStack">
-      <h3>Protocolstack<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#ProtocolStack</p>
-      <div class="comment">
-         <span class="markdown">The machine-to-machine communication protocol used to exchange information between two devices.</span>
-      </div>
-      <dl class="description">
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#protocolStackOf" title="https://purl.org/sco/ns#protocolStackOf">is protocolstack of</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasProtocolStack" title="https://purl.org/sco/ns#hasProtocolStack">has protocolstack</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>has members</dt>
-         <dd>
-            <a href="#BluetoothLE" title="https://purl.org/sco/ns#BluetoothLE">bluetooth l e</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Zigbee" title="https://purl.org/sco/ns#Zigbee">zigbee</a>
-            <sup class="type-ni" title="named individual">ni</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Device" title="https://purl.org/sco/ns#Device">Device</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ServiceCapability" title="https://purl.org/sco/ns#ServiceCapability">Service Capability</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#TransformationRule" title="https://purl.org/sco/ns#TransformationRule">Transformation Rule</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="ReadInteraction">
-      <h3>Read Interaction<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#ReadInteraction</p>
-      <div class="comment">
-         <span class="markdown">A reading of some data from the device whenever a service capability is triggered.</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="ServiceCapability">
-      <h3>Service Capability<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#ServiceCapability</p>
-      <div class="comment">
-         <span class="markdown">A service provided by a device to achieve some kind of processing. The service has often in machine-to-machine communication protocols other names, such as Characteristic in Bluetooth LE, Command or Attribute in ZigBee.</span>
-      </div>
-      <dl class="description">
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#hasDataModel" title="https://purl.org/sco/ns#hasDataModel">has datamodel</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasInteraction" title="https://purl.org/sco/ns#hasInteraction">has interaction</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#serviceCapabilityOf" title="https://purl.org/sco/ns#serviceCapabilityOf">is servicecapability of</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasServiceCapability" title="https://purl.org/sco/ns#hasServiceCapability">has servicecapability</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#dataModelOf" title="https://purl.org/sco/ns#dataModelOf">is datamodel of</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#interactionOf" title="https://purl.org/sco/ns#interactionOf">is interaction of</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Device" title="https://purl.org/sco/ns#Device">Device</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ProtocolStack" title="https://purl.org/sco/ns#ProtocolStack">Protocolstack</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#TransformationRule" title="https://purl.org/sco/ns#TransformationRule">Transformation Rule</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="ServiceInteraction">
-      <h3>Service Interaction<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#ServiceInteraction</p>
-      <div class="comment">
-         <span class="markdown">A kind of interaction provided through the service capability from the device.</span>
-      </div>
-      <dl class="description">
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#ActionInteraction" title="https://purl.org/sco/ns#ActionInteraction">Action Interaction</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ReadInteraction" title="https://purl.org/sco/ns#ReadInteraction">Read Interaction</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#SubscribeInteraction" title="https://purl.org/sco/ns#SubscribeInteraction">Subscribe Interaction</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#WriteInteraction" title="https://purl.org/sco/ns#WriteInteraction">Write Interaction</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#hasAddress" title="https://purl.org/sco/ns#hasAddress">has Address</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasProtocolStack" title="https://purl.org/sco/ns#hasProtocolStack">has protocolstack</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#interactionOf" title="https://purl.org/sco/ns#interactionOf">is interaction of</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasInteraction" title="https://purl.org/sco/ns#hasInteraction">has interaction</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#protocolStackOf" title="https://purl.org/sco/ns#protocolStackOf">is protocolstack of</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Device" title="https://purl.org/sco/ns#Device">Device</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ProtocolStack" title="https://purl.org/sco/ns#ProtocolStack">Protocolstack</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ServiceCapability" title="https://purl.org/sco/ns#ServiceCapability">Service Capability</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#TransformationRule" title="https://purl.org/sco/ns#TransformationRule">Transformation Rule</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="SubscribeInteraction">
-      <h3>Subscribe Interaction<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#SubscribeInteraction</p>
-      <div class="comment">
-         <span class="markdown">A subscribing to a service capability that is triggered when a change occurs to some data associated to the service capability.</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="TransformationRule">
-      <h3>Transformation Rule<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#TransformationRule</p>
-      <div class="comment">
-         <span class="markdown">A custom transformation rule expressed with a kind of model ontology, such as Function Ontology, Binary Data Ontology, or OpenMath, that can be used to describe the necessary transformations for a payload.</span>
-      </div>
-      <dl class="description">
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#decodingRuleOf" title="https://purl.org/sco/ns#decodingRuleOf">is decoding rule of</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#encodingRuleOf" title="https://purl.org/sco/ns#encodingRuleOf">is encoding rule of</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#transformationRuleOf" title="https://purl.org/sco/ns#transformationRuleOf">is transformationrule of</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasDecodingRule" title="https://purl.org/sco/ns#hasDecodingRule">has decoding rule</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasEncodingRule" title="https://purl.org/sco/ns#hasEncodingRule">has encoding rule</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasTransformationRule" title="https://purl.org/sco/ns#hasTransformationRule">has transformation rule</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Device" title="https://purl.org/sco/ns#Device">Device</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ProtocolStack" title="https://purl.org/sco/ns#ProtocolStack">Protocolstack</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ServiceCapability" title="https://purl.org/sco/ns#ServiceCapability">Service Capability</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="WriteInteraction">
-      <h3>Write Interaction<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#WriteInteraction</p>
-      <div class="comment">
-         <span class="markdown">A writing of some data to the device whenever a service capability is triggered.</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     id="objectproperties">
-   <h3 id="properties" class="list">Object Properties</h3>
-   <ul class="hlist">
-      <li>
-         <a href="#hasDataModel" title="https://purl.org/sco/ns#hasDataModel">has datamodel</a>
-      </li>
-      <li>
-         <a href="#hasDecodingRule" title="https://purl.org/sco/ns#hasDecodingRule">has decoding rule</a>
-      </li>
-      <li>
-         <a href="#hasEncodingRule" title="https://purl.org/sco/ns#hasEncodingRule">has encoding rule</a>
-      </li>
-      <li>
-         <a href="#hasInputFormat" title="https://purl.org/sco/ns#hasInputFormat">has inputformat</a>
-      </li>
-      <li>
-         <a href="#hasInteraction" title="https://purl.org/sco/ns#hasInteraction">has interaction</a>
-      </li>
-      <li>
-         <a href="#hasManufacturer" title="https://purl.org/sco/ns#hasManufacturer">
-            <span>has Manufacturer</span>
-         </a>
-      </li>
-      <li>
-         <a href="#hasOutputFormat" title="https://purl.org/sco/ns#hasOutputFormat">has outputformat</a>
-      </li>
-      <li>
-         <a href="#hasProtocolStack" title="https://purl.org/sco/ns#hasProtocolStack">has protocolstack</a>
-      </li>
-      <li>
-         <a href="#hasServiceCapability" title="https://purl.org/sco/ns#hasServiceCapability">has servicecapability</a>
-      </li>
-      <li>
-         <a href="#hasTransformationRule" title="https://purl.org/sco/ns#hasTransformationRule">has transformation rule</a>
-      </li>
-      <li>
-         <a href="#hasUnit" title="https://purl.org/sco/ns#hasUnit">has unit</a>
-      </li>
-      <li>
-         <a href="#dataModelOf" title="https://purl.org/sco/ns#dataModelOf">is datamodel of</a>
-      </li>
-      <li>
-         <a href="#decodingRuleOf" title="https://purl.org/sco/ns#decodingRuleOf">is decoding rule of</a>
-      </li>
-      <li>
-         <a href="#encodingRuleOf" title="https://purl.org/sco/ns#encodingRuleOf">is encoding rule of</a>
-      </li>
-      <li>
-         <a href="#inputFormatOf" title="https://purl.org/sco/ns#inputFormatOf">is inputformat of</a>
-      </li>
-      <li>
-         <a href="#interactionOf" title="https://purl.org/sco/ns#interactionOf">is interaction of</a>
-      </li>
-      <li>
-         <a href="#manufacturerOf" title="https://purl.org/sco/ns#manufacturerOf">is manufacturer of</a>
-      </li>
-      <li>
-         <a href="#outputFormatOf" title="https://purl.org/sco/ns#outputFormatOf">is output format of</a>
-      </li>
-      <li>
-         <a href="#protocolStackOf" title="https://purl.org/sco/ns#protocolStackOf">is protocolstack of</a>
-      </li>
-      <li>
-         <a href="#serviceCapabilityOf" title="https://purl.org/sco/ns#serviceCapabilityOf">is servicecapability of</a>
-      </li>
-      <li>
-         <a href="#transformationRuleOf" title="https://purl.org/sco/ns#transformationRuleOf">is transformationrule of</a>
-      </li>
-      <li>
-         <a href="#unitOf" title="https://purl.org/sco/ns#unitOf">is unit of</a>
-      </li>
-   </ul>
-   <div class="entity" id="hasDataModel">
-      <h3>has datamodel<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#hasDataModel</p>
-      <div class="comment">
-         <span class="markdown">References to the data model of a service capability of a device.</span>
-      </div>
-      <div class="description">
-         <p>
-            <strong>has characteristics:
-                </strong> functional</p>
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#ServiceCapability" title="https://purl.org/sco/ns#ServiceCapability">Service Capability</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#dataModelOf" title="https://purl.org/sco/ns#dataModelOf">is datamodel of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasDecodingRule">
-      <h3>has decoding rule<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#hasDecodingRule</p>
-      <div class="comment">
-         <span class="markdown">Identifies the transformation rule as a decoding rule, to decode some data provided by the device.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#hasTransformationRule" title="https://purl.org/sco/ns#hasTransformationRule">has transformation rule</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#TransformationRule" title="https://purl.org/sco/ns#TransformationRule">Transformation Rule</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#decodingRuleOf" title="https://purl.org/sco/ns#decodingRuleOf">is decoding rule of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasEncodingRule">
-      <h3>has encoding rule<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#hasEncodingRule</p>
-      <div class="comment">
-         <span class="markdown">Identifies the transformation rule as a encoding rule, to encode some data provided for the device.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#hasTransformationRule" title="https://purl.org/sco/ns#hasTransformationRule">has transformation rule</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#TransformationRule" title="https://purl.org/sco/ns#TransformationRule">Transformation Rule</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#encodingRuleOf" title="https://purl.org/sco/ns#encodingRuleOf">is encoding rule of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasInputFormat">
-      <h3>has inputformat<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#hasInputFormat</p>
-      <div class="comment">
-         <span class="markdown">Defines the expected inputformat for some data of a service capability.</span>
-      </div>
-      <div class="description">
-         <p>
-            <strong>has characteristics:
-                </strong> functional</p>
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#inputFormatOf" title="https://purl.org/sco/ns#inputFormatOf">is inputformat of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasInteraction">
-      <h3>has interaction<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#hasInteraction</p>
-      <div class="comment">
-         <span class="markdown">Indicates the interaction provided by a service capability through a specific service interaction method.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#ServiceCapability" title="https://purl.org/sco/ns#ServiceCapability">Service Capability</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#interactionOf" title="https://purl.org/sco/ns#interactionOf">is interaction of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasManufacturer">
-      <h3>has Manufacturer<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#hasManufacturer</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Device" title="https://purl.org/sco/ns#Device">Device</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#manufacturerOf" title="https://purl.org/sco/ns#manufacturerOf">is manufacturer of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is also defined as</dt>
-            <dd>data property</dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasOutputFormat">
-      <h3>has outputformat<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#hasOutputFormat</p>
-      <div class="comment">
-         <span class="markdown">Defines the expected outputformat for some data of a service capability.</span>
-      </div>
-      <div class="description">
-         <p>
-            <strong>has characteristics:
-                </strong> functional</p>
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#outputFormatOf" title="https://purl.org/sco/ns#outputFormatOf">is output format of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasProtocolStack">
-      <h3>has protocolstack<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#hasProtocolStack</p>
-      <div class="comment">
-         <span class="markdown">Refers to the set of network protocols used by a device or service.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#ProtocolStack" title="https://purl.org/sco/ns#ProtocolStack">Protocolstack</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#protocolStackOf" title="https://purl.org/sco/ns#protocolStackOf">is protocolstack of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasServiceCapability">
-      <h3>has servicecapability<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#hasServiceCapability</p>
-      <div class="comment">
-         <span class="markdown">Highlights the relation between the service capability and the device.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Device" title="https://purl.org/sco/ns#Device">Device</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#ServiceCapability" title="https://purl.org/sco/ns#ServiceCapability">Service Capability</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#serviceCapabilityOf" title="https://purl.org/sco/ns#serviceCapabilityOf">is servicecapability of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasTransformationRule">
-      <h3>has transformation rule<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#hasTransformationRule</p>
-      <div class="comment">
-         <span class="markdown">The rule used on some data provided through the data model.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has sub-properties</dt>
-            <dd>
-               <a href="#hasDecodingRule" title="https://purl.org/sco/ns#hasDecodingRule">has decoding rule</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#hasEncodingRule" title="https://purl.org/sco/ns#hasEncodingRule">has encoding rule</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#TransformationRule" title="https://purl.org/sco/ns#TransformationRule">Transformation Rule</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#transformationRuleOf" title="https://purl.org/sco/ns#transformationRuleOf">is transformationrule of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasUnit">
-      <h3>has unit<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#hasUnit</p>
-      <div class="comment">
-         <span class="markdown">Links the unit of some data provided by the device to the data model.</span>
-      </div>
-      <div class="description">
-         <p>
-            <strong>has characteristics:
-                </strong> functional</p>
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#unitOf" title="https://purl.org/sco/ns#unitOf">is unit of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="dataModelOf">
-      <h3>is datamodel of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#dataModelOf</p>
-      <div class="comment">
-         <span class="markdown">Represents the connection of data model to a specific service capability.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#ServiceCapability" title="https://purl.org/sco/ns#ServiceCapability">Service Capability</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#hasDataModel" title="https://purl.org/sco/ns#hasDataModel">has datamodel</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="decodingRuleOf">
-      <h3>is decoding rule of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#decodingRuleOf</p>
-      <div class="comment">
-         <span class="markdown">Is the decoding rule (a specail type of transformation rule) for some data model.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#transformationRuleOf" title="https://purl.org/sco/ns#transformationRuleOf">is transformationrule of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#TransformationRule" title="https://purl.org/sco/ns#TransformationRule">Transformation Rule</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#hasDecodingRule" title="https://purl.org/sco/ns#hasDecodingRule">has decoding rule</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="encodingRuleOf">
-      <h3>is encoding rule of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#encodingRuleOf</p>
-      <div class="comment">
-         <span class="markdown">Is the encoding rule (a specail type of transformation rule) for some data model.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#transformationRuleOf" title="https://purl.org/sco/ns#transformationRuleOf">is transformationrule of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#TransformationRule" title="https://purl.org/sco/ns#TransformationRule">Transformation Rule</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#hasEncodingRule" title="https://purl.org/sco/ns#hasEncodingRule">has encoding rule</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="inputFormatOf">
-      <h3>is inputformat of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#inputFormatOf</p>
-      <div class="comment">
-         <span class="markdown">Is the expected inputformat from the device after executing the optionally transformation function.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#hasInputFormat" title="https://purl.org/sco/ns#hasInputFormat">has inputformat</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="interactionOf">
-      <h3>is interaction of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#interactionOf</p>
-      <div class="comment">
-         <span class="markdown">References to a service interaction that is part of a specific service capability.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#ServiceCapability" title="https://purl.org/sco/ns#ServiceCapability">Service Capability</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#hasInteraction" title="https://purl.org/sco/ns#hasInteraction">has interaction</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="manufacturerOf">
-      <h3>is manufacturer of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#manufacturerOf</p>
-      <div class="comment">
-         <span class="markdown">Links the manufacturer to a specifc device.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Device" title="https://purl.org/sco/ns#Device">Device</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#hasManufacturer" title="https://purl.org/sco/ns#hasManufacturer">has Manufacturer</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="outputFormatOf">
-      <h3>is output format of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#outputFormatOf</p>
-      <div class="comment">
-         <span class="markdown">Is the expected outputformat from the device after executing the optionally transformation function.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#hasOutputFormat" title="https://purl.org/sco/ns#hasOutputFormat">has outputformat</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="protocolStackOf">
-      <h3>is protocolstack of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#protocolStackOf</p>
-      <div class="comment">
-         <span class="markdown">Is the protocol stack used for some interaction with a service capability.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#ProtocolStack" title="https://purl.org/sco/ns#ProtocolStack">Protocolstack</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#hasProtocolStack" title="https://purl.org/sco/ns#hasProtocolStack">has protocolstack</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="serviceCapabilityOf">
-      <h3>is servicecapability of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#serviceCapabilityOf</p>
-      <div class="comment">
-         <span class="markdown">Is the service capability of a device.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#ServiceCapability" title="https://purl.org/sco/ns#ServiceCapability">Service Capability</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Device" title="https://purl.org/sco/ns#Device">Device</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#hasServiceCapability" title="https://purl.org/sco/ns#hasServiceCapability">has servicecapability</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="transformationRuleOf">
-      <h3>is transformationrule of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#transformationRuleOf</p>
-      <div class="comment">
-         <span class="markdown">Is the transformation rule for some data model.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has sub-properties</dt>
-            <dd>
-               <a href="#decodingRuleOf" title="https://purl.org/sco/ns#decodingRuleOf">is decoding rule of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#encodingRuleOf" title="https://purl.org/sco/ns#encodingRuleOf">is encoding rule of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#TransformationRule" title="https://purl.org/sco/ns#TransformationRule">Transformation Rule</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#hasTransformationRule" title="https://purl.org/sco/ns#hasTransformationRule">has transformation rule</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="unitOf">
-      <h3>is unit of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#unitOf</p>
-      <div class="comment">
-         <span class="markdown">A unit of a data model.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#hasUnit" title="https://purl.org/sco/ns#hasUnit">has unit</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     id="dataproperties">
-   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
-   <ul class="hlist">
-      <li>
-         <a href="#hasAddress" title="https://purl.org/sco/ns#hasAddress">has Address</a>
-      </li>
-      <li>
-         <a href="#hasName" title="https://purl.org/sco/ns#hasName">has Name</a>
-      </li>
-   </ul>
-   <div class="entity" id="hasAddress">
-      <h3>has Address<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#hasAddress</p>
-      <div class="comment">
-         <span class="markdown">The address of a service capability to interact with it. E.g. a href for HTTP.</span>
-      </div>
-      <div class="description">
-         <p>
-            <strong>has characteristics:
-                </strong> functional</p>
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasName">
-      <h3>has Name<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#hasName</p>
-      <div class="comment">
-         <span class="markdown">The name of a device. Often a device provides a prefered name (e.g. Bluetooth LE or ZigBee).</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Device" title="https://purl.org/sco/ns#Device">Device</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#ServiceCapability" title="https://purl.org/sco/ns#ServiceCapability">Service Capability</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     id="namedindividuals">
-   <h3 id="namedindividuals" class="list">Named Individuals</h3>
-   <ul class="hlist">
-      <li>
-         <a href="#ArraySchema" title="https://purl.org/sco/ns#ArraySchema">
-            <span>array schema</span>
-         </a>
-      </li>
-      <li>
-         <a href="#BluetoothLE" title="https://purl.org/sco/ns#BluetoothLE">
-            <span>bluetooth l e</span>
-         </a>
-      </li>
-      <li>
-         <a href="#https://www.w3.org/2019/wot/json-schema#BooleanSchema"
-            title="https://www.w3.org/2019/wot/json-schema#BooleanSchema">
-            <span>boolean schema</span>
-         </a>
-      </li>
-      <li>
-         <a href="#https://www.w3.org/2019/wot/json-schema#IntegerSchema"
-            title="https://www.w3.org/2019/wot/json-schema#IntegerSchema">
-            <span>integer schema</span>
-         </a>
-      </li>
-      <li>
-         <a href="#https://www.w3.org/2019/wot/json-schema#NullSchema"
-            title="https://www.w3.org/2019/wot/json-schema#NullSchema">
-            <span>null schema</span>
-         </a>
-      </li>
-      <li>
-         <a href="#https://www.w3.org/2019/wot/json-schema#NumberSchema"
-            title="https://www.w3.org/2019/wot/json-schema#NumberSchema">
-            <span>number schema</span>
-         </a>
-      </li>
-      <li>
-         <a href="#https://www.w3.org/2019/wot/json-schema#ObjectSchema"
-            title="https://www.w3.org/2019/wot/json-schema#ObjectSchema">
-            <span>object schema</span>
-         </a>
-      </li>
-      <li>
-         <a href="#https://www.w3.org/2019/wot/json-schema#StringSchema"
-            title="https://www.w3.org/2019/wot/json-schema#StringSchema">
-            <span>string schema</span>
-         </a>
-      </li>
-      <li>
-         <a href="#Zigbee" title="https://purl.org/sco/ns#Zigbee">
-            <span>zigbee</span>
-         </a>
-      </li>
-   </ul>
-   <div class="entity" id="ArraySchema">
-      <h3>array schema<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#ArraySchema</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="BluetoothLE">
-      <h3>bluetooth l e<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#BluetoothLE</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#ProtocolStack" title="https://purl.org/sco/ns#ProtocolStack">Protocolstack</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="https://www.w3.org/2019/wot/json-schema#BooleanSchema">
-      <h3>boolean schema<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://www.w3.org/2019/wot/json-schema#BooleanSchema</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="https://www.w3.org/2019/wot/json-schema#IntegerSchema">
-      <h3>integer schema<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://www.w3.org/2019/wot/json-schema#IntegerSchema</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="https://www.w3.org/2019/wot/json-schema#NullSchema">
-      <h3>null schema<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://www.w3.org/2019/wot/json-schema#NullSchema</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="https://www.w3.org/2019/wot/json-schema#NumberSchema">
-      <h3>number schema<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://www.w3.org/2019/wot/json-schema#NumberSchema</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="https://www.w3.org/2019/wot/json-schema#ObjectSchema">
-      <h3>object schema<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://www.w3.org/2019/wot/json-schema#ObjectSchema</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="https://www.w3.org/2019/wot/json-schema#StringSchema">
-      <h3>string schema<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://www.w3.org/2019/wot/json-schema#StringSchema</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="Zigbee">
-      <h3>zigbee<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://purl.org/sco/ns#Zigbee</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#ProtocolStack" title="https://purl.org/sco/ns#ProtocolStack">Protocolstack</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#ActionInteraction" title="https://purl.org/sco/ns#ActionInteraction">Action Interaction</a></li>
+  <li><a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a></li>
+  <li><a href="#Device" title="https://purl.org/sco/ns#Device">Device</a></li>
+  <li><a href="#Format" title="https://purl.org/sco/ns#Format">Format</a></li>
+  <li><a href="#ProtocolStack" title="https://purl.org/sco/ns#ProtocolStack">Protocolstack</a></li>
+  <li><a href="#ReadInteraction" title="https://purl.org/sco/ns#ReadInteraction">Read Interaction</a></li>
+  <li><a href="#ServiceCapability" title="https://purl.org/sco/ns#ServiceCapability">Service Capability</a></li>
+  <li><a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a></li>
+  <li><a href="#SubscribeInteraction" title="https://purl.org/sco/ns#SubscribeInteraction">Subscribe Interaction</a></li>
+  <li><a href="#TransformationRule" title="https://purl.org/sco/ns#TransformationRule">Transformation Rule</a></li>
+  <li><a href="#WriteInteraction" title="https://purl.org/sco/ns#WriteInteraction">Write Interaction</a></li>
+ </ul>
+ <div class="entity" id="ActionInteraction">
+  <h3>Action Interaction<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#ActionInteraction</p>
+  <div class="comment">
+   <span class="markdown">A action that is triggered whenever a service capability from the device is triggered. A action is a method to mainpultae or trigger a process.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DataModel">
+  <h3>Data Model<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#DataModel</p>
+  <div class="comment">
+   <span class="markdown">The Data Model describes how data for a specific Service Capability for the exchange between the device and another device is prepared.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasDecodingRule" title="https://purl.org/sco/ns#hasDecodingRule">has decoding rule</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasEncodingRule" title="https://purl.org/sco/ns#hasEncodingRule">has encoding rule</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasInputFormat" title="https://purl.org/sco/ns#hasInputFormat">has inputformat</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasOutputFormat" title="https://purl.org/sco/ns#hasOutputFormat">has outputformat</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasTransformationRule" title="https://purl.org/sco/ns#hasTransformationRule">has transformation rule</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasUnit" title="https://purl.org/sco/ns#hasUnit">has unit</a> <sup class="type-op" title="object property">op</sup>, <a href="#dataModelOf" title="https://purl.org/sco/ns#dataModelOf">is datamodel of</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasDataModel" title="https://purl.org/sco/ns#hasDataModel">has datamodel</a> <sup class="type-op" title="object property">op</sup>, <a href="#decodingRuleOf" title="https://purl.org/sco/ns#decodingRuleOf">is decoding rule of</a> <sup class="type-op" title="object property">op</sup>, <a href="#encodingRuleOf" title="https://purl.org/sco/ns#encodingRuleOf">is encoding rule of</a> <sup class="type-op" title="object property">op</sup>, <a href="#inputFormatOf" title="https://purl.org/sco/ns#inputFormatOf">is inputformat of</a> <sup class="type-op" title="object property">op</sup>, <a href="#outputFormatOf" title="https://purl.org/sco/ns#outputFormatOf">is output format of</a> <sup class="type-op" title="object property">op</sup>, <a href="#transformationRuleOf" title="https://purl.org/sco/ns#transformationRuleOf">is transformationrule of</a> <sup class="type-op" title="object property">op</sup>, <a href="#unitOf" title="https://purl.org/sco/ns#unitOf">is unit of</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Device" title="https://purl.org/sco/ns#Device">Device</a> <sup class="type-c" title="class">c</sup>, <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a> <sup class="type-c" title="class">c</sup>, <a href="#ProtocolStack" title="https://purl.org/sco/ns#ProtocolStack">Protocolstack</a> <sup class="type-c" title="class">c</sup>, <a href="#ServiceCapability" title="https://purl.org/sco/ns#ServiceCapability">Service Capability</a> <sup class="type-c" title="class">c</sup>, <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a> <sup class="type-c" title="class">c</sup>, <a href="#TransformationRule" title="https://purl.org/sco/ns#TransformationRule">Transformation Rule</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Device">
+  <h3>Device<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#Device</p>
+  <div class="comment">
+   <span class="markdown">A device, capable of machine-to-machine (M2M) communication.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasManufacturer" title="https://purl.org/sco/ns#hasManufacturer">has Manufacturer</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasName" title="https://purl.org/sco/ns#hasName">has Name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasServiceCapability" title="https://purl.org/sco/ns#hasServiceCapability">has servicecapability</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#manufacturerOf" title="https://purl.org/sco/ns#manufacturerOf">is manufacturer of</a> <sup class="type-op" title="object property">op</sup>, <a href="#serviceCapabilityOf" title="https://purl.org/sco/ns#serviceCapabilityOf">is servicecapability of</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a> <sup class="type-c" title="class">c</sup>, <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a> <sup class="type-c" title="class">c</sup>, <a href="#ProtocolStack" title="https://purl.org/sco/ns#ProtocolStack">Protocolstack</a> <sup class="type-c" title="class">c</sup>, <a href="#ServiceCapability" title="https://purl.org/sco/ns#ServiceCapability">Service Capability</a> <sup class="type-c" title="class">c</sup>, <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a> <sup class="type-c" title="class">c</sup>, <a href="#TransformationRule" title="https://purl.org/sco/ns#TransformationRule">Transformation Rule</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Format">
+  <h3>Format<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#Format</p>
+  <div class="comment">
+   <span class="markdown">A kind of dataformat to interpret the data exchanged by the Service capability.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#inputFormatOf" title="https://purl.org/sco/ns#inputFormatOf">is inputformat of</a> <sup class="type-op" title="object property">op</sup>, <a href="#outputFormatOf" title="https://purl.org/sco/ns#outputFormatOf">is output format of</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasInputFormat" title="https://purl.org/sco/ns#hasInputFormat">has inputformat</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasOutputFormat" title="https://purl.org/sco/ns#hasOutputFormat">has outputformat</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#ArraySchema" title="https://purl.org/sco/ns#ArraySchema">Array Schema</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://www.w3.org/2019/wot/json-schema#BooleanSchema" title="https://www.w3.org/2019/wot/json-schema#BooleanSchema">Boolean Schema</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://www.w3.org/2019/wot/json-schema#IntegerSchema" title="https://www.w3.org/2019/wot/json-schema#IntegerSchema">Integer Schema</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://www.w3.org/2019/wot/json-schema#NullSchema" title="https://www.w3.org/2019/wot/json-schema#NullSchema">Null Schema</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://www.w3.org/2019/wot/json-schema#NumberSchema" title="https://www.w3.org/2019/wot/json-schema#NumberSchema">Number Schema</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://www.w3.org/2019/wot/json-schema#ObjectSchema" title="https://www.w3.org/2019/wot/json-schema#ObjectSchema">Object Schema</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://www.w3.org/2019/wot/json-schema#StringSchema" title="https://www.w3.org/2019/wot/json-schema#StringSchema">String Schema</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a> <sup class="type-c" title="class">c</sup>, <a href="#Device" title="https://purl.org/sco/ns#Device">Device</a> <sup class="type-c" title="class">c</sup>, <a href="#ProtocolStack" title="https://purl.org/sco/ns#ProtocolStack">Protocolstack</a> <sup class="type-c" title="class">c</sup>, <a href="#ServiceCapability" title="https://purl.org/sco/ns#ServiceCapability">Service Capability</a> <sup class="type-c" title="class">c</sup>, <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a> <sup class="type-c" title="class">c</sup>, <a href="#TransformationRule" title="https://purl.org/sco/ns#TransformationRule">Transformation Rule</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ProtocolStack">
+  <h3>Protocolstack<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#ProtocolStack</p>
+  <div class="comment">
+   <span class="markdown">The machine-to-machine communication protocol used to exchange information between two devices.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#protocolStackOf" title="https://purl.org/sco/ns#protocolStackOf">is protocolstack of</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasProtocolStack" title="https://purl.org/sco/ns#hasProtocolStack">has protocolstack</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#BluetoothLE" title="https://purl.org/sco/ns#BluetoothLE">Bluetooth L E</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Zigbee" title="https://purl.org/sco/ns#Zigbee">Zigbee</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a> <sup class="type-c" title="class">c</sup>, <a href="#Device" title="https://purl.org/sco/ns#Device">Device</a> <sup class="type-c" title="class">c</sup>, <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a> <sup class="type-c" title="class">c</sup>, <a href="#ServiceCapability" title="https://purl.org/sco/ns#ServiceCapability">Service Capability</a> <sup class="type-c" title="class">c</sup>, <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a> <sup class="type-c" title="class">c</sup>, <a href="#TransformationRule" title="https://purl.org/sco/ns#TransformationRule">Transformation Rule</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ReadInteraction">
+  <h3>Read Interaction<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#ReadInteraction</p>
+  <div class="comment">
+   <span class="markdown">A reading of some data from the device whenever a service capability is triggered.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ServiceCapability">
+  <h3>Service Capability<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#ServiceCapability</p>
+  <div class="comment">
+   <span class="markdown">A service provided by a device to achieve some kind of processing. The service has often in machine-to-machine communication protocols other names, such as Characteristic in Bluetooth LE, Command or Attribute in ZigBee.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasDataModel" title="https://purl.org/sco/ns#hasDataModel">has datamodel</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasInteraction" title="https://purl.org/sco/ns#hasInteraction">has interaction</a> <sup class="type-op" title="object property">op</sup>, <a href="#serviceCapabilityOf" title="https://purl.org/sco/ns#serviceCapabilityOf">is servicecapability of</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasServiceCapability" title="https://purl.org/sco/ns#hasServiceCapability">has servicecapability</a> <sup class="type-op" title="object property">op</sup>, <a href="#dataModelOf" title="https://purl.org/sco/ns#dataModelOf">is datamodel of</a> <sup class="type-op" title="object property">op</sup>, <a href="#interactionOf" title="https://purl.org/sco/ns#interactionOf">is interaction of</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a> <sup class="type-c" title="class">c</sup>, <a href="#Device" title="https://purl.org/sco/ns#Device">Device</a> <sup class="type-c" title="class">c</sup>, <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a> <sup class="type-c" title="class">c</sup>, <a href="#ProtocolStack" title="https://purl.org/sco/ns#ProtocolStack">Protocolstack</a> <sup class="type-c" title="class">c</sup>, <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a> <sup class="type-c" title="class">c</sup>, <a href="#TransformationRule" title="https://purl.org/sco/ns#TransformationRule">Transformation Rule</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ServiceInteraction">
+  <h3>Service Interaction<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#ServiceInteraction</p>
+  <div class="comment">
+   <span class="markdown">A kind of interaction provided through the service capability from the device.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#ActionInteraction" title="https://purl.org/sco/ns#ActionInteraction">Action Interaction</a> <sup class="type-c" title="class">c</sup>, <a href="#ReadInteraction" title="https://purl.org/sco/ns#ReadInteraction">Read Interaction</a> <sup class="type-c" title="class">c</sup>, <a href="#SubscribeInteraction" title="https://purl.org/sco/ns#SubscribeInteraction">Subscribe Interaction</a> <sup class="type-c" title="class">c</sup>, <a href="#WriteInteraction" title="https://purl.org/sco/ns#WriteInteraction">Write Interaction</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasAddress" title="https://purl.org/sco/ns#hasAddress">has Address</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasInteractionID" title="https://purl.org/sco/ns#hasInteractionID">has Interaction ID</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasProtocolStack" title="https://purl.org/sco/ns#hasProtocolStack">has protocolstack</a> <sup class="type-op" title="object property">op</sup>, <a href="#interactionOf" title="https://purl.org/sco/ns#interactionOf">is interaction of</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasInteraction" title="https://purl.org/sco/ns#hasInteraction">has interaction</a> <sup class="type-op" title="object property">op</sup>, <a href="#protocolStackOf" title="https://purl.org/sco/ns#protocolStackOf">is protocolstack of</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a> <sup class="type-c" title="class">c</sup>, <a href="#Device" title="https://purl.org/sco/ns#Device">Device</a> <sup class="type-c" title="class">c</sup>, <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a> <sup class="type-c" title="class">c</sup>, <a href="#ProtocolStack" title="https://purl.org/sco/ns#ProtocolStack">Protocolstack</a> <sup class="type-c" title="class">c</sup>, <a href="#ServiceCapability" title="https://purl.org/sco/ns#ServiceCapability">Service Capability</a> <sup class="type-c" title="class">c</sup>, <a href="#TransformationRule" title="https://purl.org/sco/ns#TransformationRule">Transformation Rule</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SubscribeInteraction">
+  <h3>Subscribe Interaction<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#SubscribeInteraction</p>
+  <div class="comment">
+   <span class="markdown">A subscribing to a service capability that is triggered when a change occurs to some data associated to the service capability.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="TransformationRule">
+  <h3>Transformation Rule<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#TransformationRule</p>
+  <div class="comment">
+   <span class="markdown">A custom transformation rule expressed with a kind of model ontology, such as Function Ontology, Binary Data Ontology, or OpenMath, that can be used to describe the necessary transformations for a payload.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#decodingRuleOf" title="https://purl.org/sco/ns#decodingRuleOf">is decoding rule of</a> <sup class="type-op" title="object property">op</sup>, <a href="#encodingRuleOf" title="https://purl.org/sco/ns#encodingRuleOf">is encoding rule of</a> <sup class="type-op" title="object property">op</sup>, <a href="#transformationRuleOf" title="https://purl.org/sco/ns#transformationRuleOf">is transformationrule of</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasDecodingRule" title="https://purl.org/sco/ns#hasDecodingRule">has decoding rule</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasEncodingRule" title="https://purl.org/sco/ns#hasEncodingRule">has encoding rule</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasTransformationRule" title="https://purl.org/sco/ns#hasTransformationRule">has transformation rule</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a> <sup class="type-c" title="class">c</sup>, <a href="#Device" title="https://purl.org/sco/ns#Device">Device</a> <sup class="type-c" title="class">c</sup>, <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a> <sup class="type-c" title="class">c</sup>, <a href="#ProtocolStack" title="https://purl.org/sco/ns#ProtocolStack">Protocolstack</a> <sup class="type-c" title="class">c</sup>, <a href="#ServiceCapability" title="https://purl.org/sco/ns#ServiceCapability">Service Capability</a> <sup class="type-c" title="class">c</sup>, <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="WriteInteraction">
+  <h3>Write Interaction<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#WriteInteraction</p>
+  <div class="comment">
+   <span class="markdown">A writing of some data to the device whenever a service capability is triggered.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#hasDataModel" title="https://purl.org/sco/ns#hasDataModel">has datamodel</a></li>
+  <li><a href="#hasDecodingRule" title="https://purl.org/sco/ns#hasDecodingRule">has decoding rule</a></li>
+  <li><a href="#hasEncodingRule" title="https://purl.org/sco/ns#hasEncodingRule">has encoding rule</a></li>
+  <li><a href="#hasInputFormat" title="https://purl.org/sco/ns#hasInputFormat">has inputformat</a></li>
+  <li><a href="#hasInteraction" title="https://purl.org/sco/ns#hasInteraction">has interaction</a></li>
+  <li><a href="#hasManufacturer" title="https://purl.org/sco/ns#hasManufacturer"> <span>has Manufacturer</span> </a></li>
+  <li><a href="#hasOutputFormat" title="https://purl.org/sco/ns#hasOutputFormat">has outputformat</a></li>
+  <li><a href="#hasProtocolStack" title="https://purl.org/sco/ns#hasProtocolStack">has protocolstack</a></li>
+  <li><a href="#hasServiceCapability" title="https://purl.org/sco/ns#hasServiceCapability">has servicecapability</a></li>
+  <li><a href="#hasTransformationRule" title="https://purl.org/sco/ns#hasTransformationRule">has transformation rule</a></li>
+  <li><a href="#hasUnit" title="https://purl.org/sco/ns#hasUnit">has unit</a></li>
+  <li><a href="#dataModelOf" title="https://purl.org/sco/ns#dataModelOf">is datamodel of</a></li>
+  <li><a href="#decodingRuleOf" title="https://purl.org/sco/ns#decodingRuleOf">is decoding rule of</a></li>
+  <li><a href="#encodingRuleOf" title="https://purl.org/sco/ns#encodingRuleOf">is encoding rule of</a></li>
+  <li><a href="#inputFormatOf" title="https://purl.org/sco/ns#inputFormatOf">is inputformat of</a></li>
+  <li><a href="#interactionOf" title="https://purl.org/sco/ns#interactionOf">is interaction of</a></li>
+  <li><a href="#manufacturerOf" title="https://purl.org/sco/ns#manufacturerOf">is manufacturer of</a></li>
+  <li><a href="#outputFormatOf" title="https://purl.org/sco/ns#outputFormatOf">is output format of</a></li>
+  <li><a href="#protocolStackOf" title="https://purl.org/sco/ns#protocolStackOf">is protocolstack of</a></li>
+  <li><a href="#serviceCapabilityOf" title="https://purl.org/sco/ns#serviceCapabilityOf">is servicecapability of</a></li>
+  <li><a href="#transformationRuleOf" title="https://purl.org/sco/ns#transformationRuleOf">is transformationrule of</a></li>
+  <li><a href="#unitOf" title="https://purl.org/sco/ns#unitOf">is unit of</a></li>
+ </ul>
+ <div class="entity" id="hasDataModel">
+  <h3>has datamodel<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#hasDataModel</p>
+  <div class="comment">
+   <span class="markdown">References to the data model of a service capability of a device.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ServiceCapability" title="https://purl.org/sco/ns#ServiceCapability">Service Capability</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#dataModelOf" title="https://purl.org/sco/ns#dataModelOf">is datamodel of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasDecodingRule">
+  <h3>has decoding rule<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#hasDecodingRule</p>
+  <div class="comment">
+   <span class="markdown">Identifies the transformation rule as a decoding rule, to decode some data provided by the device.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#hasTransformationRule" title="https://purl.org/sco/ns#hasTransformationRule">has transformation rule</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#TransformationRule" title="https://purl.org/sco/ns#TransformationRule">Transformation Rule</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#decodingRuleOf" title="https://purl.org/sco/ns#decodingRuleOf">is decoding rule of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasEncodingRule">
+  <h3>has encoding rule<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#hasEncodingRule</p>
+  <div class="comment">
+   <span class="markdown">Identifies the transformation rule as a encoding rule, to encode some data provided for the device.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#hasTransformationRule" title="https://purl.org/sco/ns#hasTransformationRule">has transformation rule</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#TransformationRule" title="https://purl.org/sco/ns#TransformationRule">Transformation Rule</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#encodingRuleOf" title="https://purl.org/sco/ns#encodingRuleOf">is encoding rule of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasInputFormat">
+  <h3>has inputformat<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#hasInputFormat</p>
+  <div class="comment">
+   <span class="markdown">Defines the expected inputformat for some data of a service capability.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#inputFormatOf" title="https://purl.org/sco/ns#inputFormatOf">is inputformat of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasInteraction">
+  <h3>has interaction<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#hasInteraction</p>
+  <div class="comment">
+   <span class="markdown">Indicates the interaction provided by a service capability through a specific service interaction method.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ServiceCapability" title="https://purl.org/sco/ns#ServiceCapability">Service Capability</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#interactionOf" title="https://purl.org/sco/ns#interactionOf">is interaction of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasManufacturer">
+  <h3>has Manufacturer<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#hasManufacturer</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="https://purl.org/sco/ns#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#manufacturerOf" title="https://purl.org/sco/ns#manufacturerOf">is manufacturer of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     is also defined as
+    </dt>
+    <dd>
+     data property
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasOutputFormat">
+  <h3>has outputformat<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#hasOutputFormat</p>
+  <div class="comment">
+   <span class="markdown">Defines the expected outputformat for some data of a service capability.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#outputFormatOf" title="https://purl.org/sco/ns#outputFormatOf">is output format of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasProtocolStack">
+  <h3>has protocolstack<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#hasProtocolStack</p>
+  <div class="comment">
+   <span class="markdown">Refers to the set of network protocols used by a device or service.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ProtocolStack" title="https://purl.org/sco/ns#ProtocolStack">Protocolstack</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#protocolStackOf" title="https://purl.org/sco/ns#protocolStackOf">is protocolstack of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasServiceCapability">
+  <h3>has servicecapability<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#hasServiceCapability</p>
+  <div class="comment">
+   <span class="markdown">Highlights the relation between the service capability and the device.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="https://purl.org/sco/ns#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ServiceCapability" title="https://purl.org/sco/ns#ServiceCapability">Service Capability</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#serviceCapabilityOf" title="https://purl.org/sco/ns#serviceCapabilityOf">is servicecapability of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasTransformationRule">
+  <h3>has transformation rule<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#hasTransformationRule</p>
+  <div class="comment">
+   <span class="markdown">The rule used on some data provided through the data model.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#hasDecodingRule" title="https://purl.org/sco/ns#hasDecodingRule">has decoding rule</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasEncodingRule" title="https://purl.org/sco/ns#hasEncodingRule">has encoding rule</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#TransformationRule" title="https://purl.org/sco/ns#TransformationRule">Transformation Rule</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#transformationRuleOf" title="https://purl.org/sco/ns#transformationRuleOf">is transformationrule of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasUnit">
+  <h3>has unit<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#hasUnit</p>
+  <div class="comment">
+   <span class="markdown">Links the unit of some data provided by the device to the data model.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#unitOf" title="https://purl.org/sco/ns#unitOf">is unit of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="dataModelOf">
+  <h3>is datamodel of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#dataModelOf</p>
+  <div class="comment">
+   <span class="markdown">Represents the connection of data model to a specific service capability.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ServiceCapability" title="https://purl.org/sco/ns#ServiceCapability">Service Capability</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasDataModel" title="https://purl.org/sco/ns#hasDataModel">has datamodel</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="decodingRuleOf">
+  <h3>is decoding rule of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#decodingRuleOf</p>
+  <div class="comment">
+   <span class="markdown">Is the decoding rule (a specail type of transformation rule) for some data model.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#transformationRuleOf" title="https://purl.org/sco/ns#transformationRuleOf">is transformationrule of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#TransformationRule" title="https://purl.org/sco/ns#TransformationRule">Transformation Rule</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasDecodingRule" title="https://purl.org/sco/ns#hasDecodingRule">has decoding rule</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="encodingRuleOf">
+  <h3>is encoding rule of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#encodingRuleOf</p>
+  <div class="comment">
+   <span class="markdown">Is the encoding rule (a specail type of transformation rule) for some data model.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#transformationRuleOf" title="https://purl.org/sco/ns#transformationRuleOf">is transformationrule of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#TransformationRule" title="https://purl.org/sco/ns#TransformationRule">Transformation Rule</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasEncodingRule" title="https://purl.org/sco/ns#hasEncodingRule">has encoding rule</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="inputFormatOf">
+  <h3>is inputformat of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#inputFormatOf</p>
+  <div class="comment">
+   <span class="markdown">Is the expected inputformat from the device after executing the optionally transformation function.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasInputFormat" title="https://purl.org/sco/ns#hasInputFormat">has inputformat</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="interactionOf">
+  <h3>is interaction of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#interactionOf</p>
+  <div class="comment">
+   <span class="markdown">References to a service interaction that is part of a specific service capability.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ServiceCapability" title="https://purl.org/sco/ns#ServiceCapability">Service Capability</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasInteraction" title="https://purl.org/sco/ns#hasInteraction">has interaction</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="manufacturerOf">
+  <h3>is manufacturer of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#manufacturerOf</p>
+  <div class="comment">
+   <span class="markdown">Links the manufacturer to a specifc device.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Device" title="https://purl.org/sco/ns#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasManufacturer" title="https://purl.org/sco/ns#hasManufacturer">has Manufacturer</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="outputFormatOf">
+  <h3>is output format of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#outputFormatOf</p>
+  <div class="comment">
+   <span class="markdown">Is the expected outputformat from the device after executing the optionally transformation function.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasOutputFormat" title="https://purl.org/sco/ns#hasOutputFormat">has outputformat</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="protocolStackOf">
+  <h3>is protocolstack of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#protocolStackOf</p>
+  <div class="comment">
+   <span class="markdown">Is the protocol stack used for some interaction with a service capability.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ProtocolStack" title="https://purl.org/sco/ns#ProtocolStack">Protocolstack</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasProtocolStack" title="https://purl.org/sco/ns#hasProtocolStack">has protocolstack</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="serviceCapabilityOf">
+  <h3>is servicecapability of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#serviceCapabilityOf</p>
+  <div class="comment">
+   <span class="markdown">Is the service capability of a device.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ServiceCapability" title="https://purl.org/sco/ns#ServiceCapability">Service Capability</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Device" title="https://purl.org/sco/ns#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasServiceCapability" title="https://purl.org/sco/ns#hasServiceCapability">has servicecapability</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="transformationRuleOf">
+  <h3>is transformationrule of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#transformationRuleOf</p>
+  <div class="comment">
+   <span class="markdown">Is the transformation rule for some data model.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#decodingRuleOf" title="https://purl.org/sco/ns#decodingRuleOf">is decoding rule of</a> <sup class="type-op" title="object property">op</sup>, <a href="#encodingRuleOf" title="https://purl.org/sco/ns#encodingRuleOf">is encoding rule of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#TransformationRule" title="https://purl.org/sco/ns#TransformationRule">Transformation Rule</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasTransformationRule" title="https://purl.org/sco/ns#hasTransformationRule">has transformation rule</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="unitOf">
+  <h3>is unit of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#unitOf</p>
+  <div class="comment">
+   <span class="markdown">A unit of a data model.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#DataModel" title="https://purl.org/sco/ns#DataModel">Data Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasUnit" title="https://purl.org/sco/ns#hasUnit">has unit</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#hasAddress" title="https://purl.org/sco/ns#hasAddress">has Address</a></li>
+  <li><a href="#hasInteractionID" title="https://purl.org/sco/ns#hasInteractionID">has Interaction ID</a></li>
+  <li><a href="#hasName" title="https://purl.org/sco/ns#hasName">has Name</a></li>
+ </ul>
+ <div class="entity" id="hasAddress">
+  <h3>has Address<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#hasAddress</p>
+  <div class="comment">
+   <span class="markdown">The address of a service capability to interact with it. E.g. a href for HTTP.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasInteractionID">
+  <h3>has Interaction ID<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#hasInteractionID</p>
+  <div class="comment">
+   <span class="markdown">Reference to a unique identifier of the interaction capability.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ServiceInteraction" title="https://purl.org/sco/ns#ServiceInteraction">Service Interaction</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasName">
+  <h3>has Name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#hasName</p>
+  <div class="comment">
+   <span class="markdown">The name of a device. Often a device provides a prefered name (e.g. Bluetooth LE or ZigBee).</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="https://purl.org/sco/ns#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+ <h3 id="namedindividuals" class="list">Named Individuals</h3>
+ <ul class="hlist">
+  <li><a href="#ArraySchema" title="https://purl.org/sco/ns#ArraySchema"> <span>Array Schema</span> </a></li>
+  <li><a href="#BluetoothLE" title="https://purl.org/sco/ns#BluetoothLE"> <span>Bluetooth L E</span> </a></li>
+  <li><a href="#https://www.w3.org/2019/wot/json-schema#BooleanSchema" title="https://www.w3.org/2019/wot/json-schema#BooleanSchema"> <span>Boolean Schema</span> </a></li>
+  <li><a href="#https://www.w3.org/2019/wot/json-schema#IntegerSchema" title="https://www.w3.org/2019/wot/json-schema#IntegerSchema"> <span>Integer Schema</span> </a></li>
+  <li><a href="#https://www.w3.org/2019/wot/json-schema#NullSchema" title="https://www.w3.org/2019/wot/json-schema#NullSchema"> <span>Null Schema</span> </a></li>
+  <li><a href="#https://www.w3.org/2019/wot/json-schema#NumberSchema" title="https://www.w3.org/2019/wot/json-schema#NumberSchema"> <span>Number Schema</span> </a></li>
+  <li><a href="#https://www.w3.org/2019/wot/json-schema#ObjectSchema" title="https://www.w3.org/2019/wot/json-schema#ObjectSchema"> <span>Object Schema</span> </a></li>
+  <li><a href="#https://www.w3.org/2019/wot/json-schema#StringSchema" title="https://www.w3.org/2019/wot/json-schema#StringSchema"> <span>String Schema</span> </a></li>
+  <li><a href="#Zigbee" title="https://purl.org/sco/ns#Zigbee"> <span>Zigbee</span> </a></li>
+ </ul>
+ <div class="entity" id="ArraySchema">
+  <h3>Array Schema<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#ArraySchema</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="BluetoothLE">
+  <h3>Bluetooth L E<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#BluetoothLE</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#ProtocolStack" title="https://purl.org/sco/ns#ProtocolStack">Protocolstack</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://www.w3.org/2019/wot/json-schema#BooleanSchema">
+  <h3>Boolean Schema<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3.org/2019/wot/json-schema#BooleanSchema</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://www.w3.org/2019/wot/json-schema#IntegerSchema">
+  <h3>Integer Schema<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3.org/2019/wot/json-schema#IntegerSchema</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://www.w3.org/2019/wot/json-schema#NullSchema">
+  <h3>Null Schema<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3.org/2019/wot/json-schema#NullSchema</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://www.w3.org/2019/wot/json-schema#NumberSchema">
+  <h3>Number Schema<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3.org/2019/wot/json-schema#NumberSchema</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://www.w3.org/2019/wot/json-schema#ObjectSchema">
+  <h3>Object Schema<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3.org/2019/wot/json-schema#ObjectSchema</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://www.w3.org/2019/wot/json-schema#StringSchema">
+  <h3>String Schema<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3.org/2019/wot/json-schema#StringSchema</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Format" title="https://purl.org/sco/ns#Format">Format</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Zigbee">
+  <h3>Zigbee<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/sco/ns#Zigbee</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#ProtocolStack" title="https://purl.org/sco/ns#ProtocolStack">Protocolstack</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <div   class="entity">
 <sup class="type-c" title="Classes">c</sup>: Classes <br/>
 <sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
 <sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
-<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
 </div>
 </div>
 </div>

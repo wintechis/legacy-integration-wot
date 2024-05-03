@@ -307,20 +307,20 @@ _:genid4 <http://xmlns.com/foaf/0.1/homepage> <https://www.scs.fraunhofer.de/de/
 <https://purl.org/sco/ns#hasAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "The address of a service capability to interact with it. E.g. a href for HTTP." .
 <https://purl.org/sco/ns#hasAddress> <http://www.w3.org/2000/01/rdf-schema#label> "has Address" .
 # 
+# https://purl.org/sco/ns#hasInteractionID
+<https://purl.org/sco/ns#hasInteractionID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://purl.org/sco/ns#hasInteractionID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://purl.org/sco/ns#hasInteractionID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/sco/ns#ServiceInteraction> .
+<https://purl.org/sco/ns#hasInteractionID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://purl.org/sco/ns#hasInteractionID> <http://www.w3.org/2000/01/rdf-schema#comment> "Reference to a unique identifier of the interaction capability." .
+<https://purl.org/sco/ns#hasInteractionID> <http://www.w3.org/2000/01/rdf-schema#label> "has Interaction ID" .
+# 
 # https://purl.org/sco/ns#hasManufacturer
 <https://purl.org/sco/ns#hasManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
 # https://purl.org/sco/ns#hasName
 <https://purl.org/sco/ns#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://purl.org/sco/ns#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid5 .
-_:genid5 <http://www.w3.org/2002/07/owl#unionOf> _:genid7 .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/sco/ns#ServiceCapability> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/sco/ns#Device> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/sco/ns#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/sco/ns#Device> .
 <https://purl.org/sco/ns#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://purl.org/sco/ns#hasName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of a device. Often a device provides a prefered name (e.g. Bluetooth LE or ZigBee)." .
 <https://purl.org/sco/ns#hasName> <http://www.w3.org/2000/01/rdf-schema#label> "has Name" .
@@ -438,30 +438,42 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://www.w3.org/2019/wot/json-schema#StringSchema> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://www.w3.org/2019/wot/json-schema#StringSchema> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/sco/ns#Format> .
 # 
-_:genid8 <http://schema.org/affiliation> _:genid9 .
-_:genid9 <http://xmlns.com/foaf/0.1/name> "Data Spaces and IoT Solutions" .
-_:genid9 <http://xmlns.com/foaf/0.1/homepage> <https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html> .
-_:genid8 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://renedorsch.solidweb.org/#me> .
-_:genid8 <http://xmlns.com/foaf/0.1/homepage> <https://orcid.org/0000-0001-6857-7314> .
-_:genid8 <http://xmlns.com/foaf/0.1/name> "Rene Dorsch" .
-_:genid10 <http://schema.org/affiliation> _:genid11 .
-_:genid11 <http://xmlns.com/foaf/0.1/name> "Data Spaces and IoT Solutions" .
-_:genid11 <http://xmlns.com/foaf/0.1/homepage> <https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html> .
-_:genid10 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://renedorsch.solidweb.org/#me> .
-_:genid10 <http://xmlns.com/foaf/0.1/homepage> <https://orcid.org/0000-0001-6857-7314> .
-_:genid10 <http://xmlns.com/foaf/0.1/name> "Rene Dorsch" .
-_:genid12 <http://schema.org/affiliation> _:genid13 .
-_:genid13 <http://xmlns.com/foaf/0.1/name> "Data Spaces and IoT Solutions" .
-_:genid13 <http://xmlns.com/foaf/0.1/homepage> <https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html> .
-_:genid12 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://renedorsch.solidweb.org/#me> .
-_:genid12 <http://xmlns.com/foaf/0.1/homepage> <https://orcid.org/0000-0001-6857-7314> .
-_:genid12 <http://xmlns.com/foaf/0.1/name> "Rene Dorsch" .
-_:genid14 <http://schema.org/affiliation> _:genid15 .
-_:genid15 <http://xmlns.com/foaf/0.1/name> "Data Spaces and IoT Solutions" .
-_:genid15 <http://xmlns.com/foaf/0.1/homepage> <https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html> .
-_:genid14 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://renedorsch.solidweb.org/#me> .
-_:genid14 <http://xmlns.com/foaf/0.1/homepage> <https://orcid.org/0000-0001-6857-7314> .
-_:genid14 <http://xmlns.com/foaf/0.1/name> "Rene Dorsch" .
+_:genid5 <http://schema.org/affiliation> _:genid6 .
+_:genid6 <http://xmlns.com/foaf/0.1/name> "Data Spaces and IoT Solutions" .
+_:genid6 <http://xmlns.com/foaf/0.1/homepage> <https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html> .
+_:genid5 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://renedorsch.solidweb.org/#me> .
+_:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://orcid.org/0000-0001-6857-7314> .
+_:genid5 <http://xmlns.com/foaf/0.1/name> "Rene Dorsch" .
+_:genid7 <http://schema.org/affiliation> _:genid8 .
+_:genid8 <http://xmlns.com/foaf/0.1/name> "Data Spaces and IoT Solutions" .
+_:genid8 <http://xmlns.com/foaf/0.1/homepage> <https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html> .
+_:genid7 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://renedorsch.solidweb.org/#me> .
+_:genid7 <http://xmlns.com/foaf/0.1/homepage> <https://orcid.org/0000-0001-6857-7314> .
+_:genid7 <http://xmlns.com/foaf/0.1/name> "Rene Dorsch" .
+_:genid9 <http://schema.org/affiliation> _:genid10 .
+_:genid10 <http://xmlns.com/foaf/0.1/name> "Data Spaces and IoT Solutions" .
+_:genid10 <http://xmlns.com/foaf/0.1/homepage> <https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html> .
+_:genid9 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://renedorsch.solidweb.org/#me> .
+_:genid9 <http://xmlns.com/foaf/0.1/homepage> <https://orcid.org/0000-0001-6857-7314> .
+_:genid9 <http://xmlns.com/foaf/0.1/name> "Rene Dorsch" .
+_:genid11 <http://schema.org/affiliation> _:genid12 .
+_:genid12 <http://xmlns.com/foaf/0.1/name> "Data Spaces and IoT Solutions" .
+_:genid12 <http://xmlns.com/foaf/0.1/homepage> <https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html> .
+_:genid11 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://renedorsch.solidweb.org/#me> .
+_:genid11 <http://xmlns.com/foaf/0.1/homepage> <https://orcid.org/0000-0001-6857-7314> .
+_:genid11 <http://xmlns.com/foaf/0.1/name> "Rene Dorsch" .
+_:genid13 <http://schema.org/affiliation> _:genid14 .
+_:genid14 <http://xmlns.com/foaf/0.1/name> "Data Spaces and IoT Solutions" .
+_:genid14 <http://xmlns.com/foaf/0.1/homepage> <https://www.scs.fraunhofer.de/de/ueber-uns/organisation/data-spaces-and-iot-solutions.html> .
+_:genid13 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://renedorsch.solidweb.org/#me> .
+_:genid13 <http://xmlns.com/foaf/0.1/homepage> <https://orcid.org/0000-0001-6857-7314> .
+_:genid13 <http://xmlns.com/foaf/0.1/name> "Rene Dorsch" .
+_:genid15 <http://schema.org/affiliation> _:genid16 .
+_:genid16 <http://xmlns.com/foaf/0.1/name> "Future Engineering Research Group" .
+_:genid16 <http://xmlns.com/foaf/0.1/homepage> <https://www.th-nuernberg.de/einrichtungen-gesamt/fraunhofer-forschungsgruppen/future-engineering/> .
+_:genid15 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.th-nuernberg.de/person/ascencion-arevalo-kiara-marnitt/> .
+_:genid15 <http://xmlns.com/foaf/0.1/homepage> <https://orcid.org/0000-0002-4158-9478> .
+_:genid15 <http://xmlns.com/foaf/0.1/name> "Kiara Marnitt Ascencion Arevalo" .
 # 
 # 
 # #################################################################
@@ -483,28 +495,28 @@ _:genid14 <http://xmlns.com/foaf/0.1/name> "Rene Dorsch" .
 # #################################################################
 # 
 # 
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid16 <http://www.w3.org/2002/07/owl#members> _:genid23 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid17 <http://www.w3.org/2002/07/owl#members> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
 _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
 _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
 _:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
 _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
 _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/sco/ns#TransformationRule> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/sco/ns#ServiceInteraction> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/sco/ns#TransformationRule> .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/sco/ns#ServiceCapability> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/sco/ns#ServiceInteraction> .
 _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/sco/ns#ProtocolStack> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/sco/ns#ServiceCapability> .
 _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/sco/ns#Format> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/sco/ns#ProtocolStack> .
 _:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/sco/ns#Device> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/sco/ns#Format> .
 _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/sco/ns#DataModel> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/sco/ns#Device> .
 _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/sco/ns#DataModel> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
