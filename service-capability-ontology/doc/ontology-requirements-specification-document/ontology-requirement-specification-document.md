@@ -9,7 +9,7 @@
 | **4**  | **Intended End-Users (optional)**                                                                              |
 |        | <ul>  <li> IoT Developer </li><li> WoT Developer <li>Smart Gateways (e.g. WoT Intermediaries) </li> <li>Software Agents</li> </li> </ul>                                        |
 | **5**  | **Intended Uses**                       |
-|        | <ul> <li> Allows the description of interpretations of en- and decodings. </li> <li> Generation of semantic interface descriptions (e.g. Thing Descriptions) </li> <li> Knowledge Graph Construction </li> </ul> (for specific use cases please see  [SCO Use Case Specification Document](./use-case-specification.md)                                       |
+|        | <ul> <li> Allows the description of interpretations of en- and decodings. </li> <li> Generation of semantic interface descriptions (e.g. Thing Descriptions) </li> <li> Knowledge Graph Construction </li> </ul> (for specific use cases please see  [SCO Use Case Specification Document](../usecases/use-case-specification.md)                                       |
 | **6**  | **Ontology Requirements**               |
 |        | **Non-Functional Requirements**         |
 |        | <ul> <li>Reuse of existing ontologies to describe de- and encoding functions </li> <li> Reusability of the ontology </li> <li> Standardization and semantic interoperability </li> <li> Online availability </li> <li> Must be able to be translated into terms of the WoT Thing description </li> <li> Resources must be labeled and commented in English. </li> </ul>                                                            |
