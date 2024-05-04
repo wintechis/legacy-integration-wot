@@ -1,4 +1,4 @@
-#!/home/rene/.cache/pypoetry/virtualenvs/woble-system-RUdZ6xzC-py3.10/bin/python
+#!/home/rene/.cache/pypoetry/virtualenvs/retrowot-RUdZ6xzC-py3.10/bin/python
 import asyncio
 import json
 from datetime import datetime
@@ -9,9 +9,9 @@ from bluetooth.client import Client
 from pydantic import BaseModel
 
 client = Client()
-path_to_devices = "/home/rene/Repositories/PhD/woble-system/woble-system/woble_system/experiments/devices.json"
+path_to_devices = "/home/rene/Repositories/PhD/retrowot/retrowot/retrowot/experiments/devices.json"
 path_to_experiment = (
-    "/home/rene/Repositories/PhD/woble-system/woble-system/woble_system/experiments/"
+    "/home/rene/Repositories/PhD/retrowot/retrowot/retrowot/experiments/"
 )
 
 

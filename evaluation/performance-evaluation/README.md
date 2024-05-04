@@ -16,7 +16,7 @@ To evaluate the performance, we created a arduino ide script that allows to setu
 
 For details, see the [implementation.](./bluetooth-device-setup.ino)
 
-The script, to measure the performance in the middleware is provided within the implementation as a python program. (see [performance-study-retrowot.py](../../implementation/woble-system/woble_system/performance-study-retrowot.py))
+The script, to measure the performance in the middleware is provided within the implementation as a python program. (see [performance-study-retrowot.py](../../implementation/retrowot/retrowot/performance-study-retrowot.py))
 
 ## Results
 

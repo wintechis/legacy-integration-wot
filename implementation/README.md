@@ -2,6 +2,13 @@
 This repository contains a proof of concept for a middleware to generate for legacy IoT devices (currently Bluetooth LE and ZigBee) a Web of Things Thing Description. 
 It is designed with different components to be easily extensible.
 
+## Demo
+<img src="./demo.gif" width="35%" alt="description">
+
+The demonstrator showcases the functionality of RetroWoT for Bluetooth LE devices (but also implemented for ZigBee). 
+1. Device Discovery: Surrounding devices are discovered and a user can select a given device (in the example a device with the address F3:82:06:2F:7C:0A)  
+2. Service Discovery: The devices services are discovered and generalized with the SCO ontology for further processing and creation of the TD
+3. Thing Descriptions: The Thing Description that is now accessible.
 
 ## Features
 - Supports the generation of Thing Descriptions (TDs) for Bluetooth LE and ZigBee devices.
@@ -103,10 +110,3 @@ python main.py
 4. A list of all discovered devices should appear after a while (10-15 seconds)
 5. Select your address of your device and run `localhost:8000/bluetooth/service_discovery/$ADDRESS$` or `localhost:8000/zigbee/service_discovery/$ADDRESS$`.
 
-## Demo
-<img src="./demo.gif" width="35%" alt="description">
-
-The demonstrator showcases the functionality of RetroWoT for Bluetooth LE devices (but also implemented for ZigBee). 
-1. Device Discovery: Surrounding devices are discovered and a user can select a given device (in the example a device with the address F3:82:06:2F:7C:0A)  
-2. Service Discovery: The devices services are discovered and generalized with the SCO ontology for further processing and creation of the TD
-3. Thing Descriptions: The Thing Description that is now accessible.
