@@ -1,0 +1,47 @@
+zigbee.ttl
+retrowot/linkings.ttl
+retrowot/bluetooth_discovery.txt
+retrowot/BBC micro:bit [geto.ttl
+retrowot/CRONJOB.md
+retrowot/BBC micro:bit [geto.ttl
+retrowot/logfile.log
+retrowot/devices.json
+retrowot/device.ttl
+retrowot/device_translation.txt
+retrowot/BBC micro:bit [geto.ttl
+zigbee_test_1_device.ttl
+retrowot/servicecapability_test_split_0.ttl
+retrowot/servicecapability_test_split_1.ttl
+retrowot/servicecapability_test_split_2.ttl
+retrowot/servicecapability_test_split_3.ttl
+retrowot/servicecapability_test_split_4.ttl
+retrowot/servicecapability_test_split_5.ttl
+retrowot/servicecapability_test_split_10.ttl
+retrowot/servicecapability_test_split_20.ttl
+retrowot/servicecapability_test_split_50.ttl
+retrowot/servicecapability_test_split_100.ttl
+retrowot/servicecapability_test_split_150.ttl
+retrowot/servicecapability_test_split_200.ttl
+retrowot/servicecapability_test.ttl
+retrowot/servicecapability_unchanged_split_0.ttl
+retrowot/servicecapability_unchanged_split_1.ttl
+retrowot/servicecapability_unchanged_split_2.ttl
+retrowot/servicecapability_unchanged_split_3.ttl
+retrowot/servicecapability_unchanged_split_4.ttl
+retrowot/servicecapability_unchanged_split_5.ttl
+retrowot/servicecapability_unchanged.ttl
+retrowot/__pycache__/
+retrowot/bluetooth/__pycache__/
+retrowot/bluetooth/__pycache__/client.cpython-310.pyc
+retrowot/experiments/
+retrowot/thing_description/__pycache__/__init__.cpython-310.pyc
+retrowot/thing_description/__pycache__/form.cpython-310.pyc
+retrowot/thing_description/__pycache__/interaction_affordance.cpython-310.pyc
+retrowot/thing_description/__pycache__/publish.cpython-310.pyc
+retrowot/thing_description/__pycache__/thing_description.cpython-310.pyc
+retrowot/zigbee/__pycache__/client.cpython-310.pyc
+retrowot/zigbee/__pycache__/datamodel.cpython-310.pyc
+retrowot/zigbee/__pycache__/device.cpython-310.pyc
+retrowot/BBC micro:bit [geto.ttl
+retrowot/BBC micro:bit [geto.ttl
+retrowot/bluetooth/__pycache__/datamodel.cpython-310.pyc

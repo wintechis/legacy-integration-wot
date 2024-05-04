@@ -1,0 +1,214 @@
+@prefix ns1: <https://freumi.inrupt.net/SimpleBluetoothOntology.ttl#> .
+@prefix ns2: <https://purl.org/ExtendedSimpleBluetoothOntology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://127.0.0.1/5859856887566863101> a ns1:BluetoothLEDevice ;
+    ns1:hasGAPRole ns1:Peripheral ;
+    ns1:hasService <https://127.0.0.1/1800>,
+        <https://127.0.0.1/1801>,
+        <https://127.0.0.1/180A>,
+        <https://127.0.0.1/E95D0753251D470AA062FA1922DFA9A8>,
+        <https://127.0.0.1/E95D6100251D470AA062FA1922DFA9A8>,
+        <https://127.0.0.1/E95D93AF251D470AA062FA1922DFA9A8>,
+        <https://127.0.0.1/E95D9882251D470AA062FA1922DFA9A8>,
+        <https://127.0.0.1/E95DD91D251D470AA062FA1922DFA9A8>,
+        <https://127.0.0.1/E97DD91D251D470AA062FA1922DFA9A8>,
+        <https://127.0.0.1/FE59> ;
+    ns1:isConnectable true ;
+    ns2:device_name "BBC micro:bit [geto" ;
+    ns2:firmware_revision "unknown" ;
+    ns2:hasAddress <https://127.0.0.1/4623546474730552319> ;
+    ns2:hasManufacturer "" ;
+    ns2:hasManufacturerSpecificData "b''" ;
+    ns2:hasName "BBC micro:bit [getov]" ;
+    ns2:model_number "BBC micro:bit V2" ;
+    ns2:serial_number "9377612185609194243" .
+
+<https://127.0.0.1/1030815073312823205> a ns1:Characteristic ;
+    ns1:hasUUID <urn:uuid:00002A2400001000800000805F9B34FB> ;
+    ns1:methodName ns1:read ;
+    ns2:hasHandle 24 .
+
+<https://127.0.0.1/1179046681280330243> a ns1:Characteristic ;
+    ns1:hasUUID <urn:uuid:00002AA600001000800000805F9B34FB> ;
+    ns1:methodName ns1:read ;
+    ns2:hasHandle 9 .
+
+<https://127.0.0.1/1213219735047332955> a ns1:Characteristic ;
+    ns1:hasUUID <urn:uuid:E95DFB24251D470AA062FA1922DFA9A8> ;
+    ns1:methodName ns1:read,
+        ns1:write ;
+    ns2:hasHandle 59 .
+
+<https://127.0.0.1/1229225332892108946> a ns1:Characteristic ;
+    ns1:hasUUID <urn:uuid:00002A0100001000800000805F9B34FB> ;
+    ns1:methodName ns1:read ;
+    ns2:hasHandle 5 .
+
+<https://127.0.0.1/1359756796478965264> a ns1:Characteristic ;
+    ns1:hasUUID <urn:uuid:00002A0500001000800000805F9B34FB> ;
+    ns1:methodName ns2:indicate ;
+    ns2:hasHandle 12 .
+
+<https://127.0.0.1/1800> a ns1:Service ;
+    ns1:hasCharacteristic <https://127.0.0.1/1179046681280330243>,
+        <https://127.0.0.1/1229225332892108946>,
+        <https://127.0.0.1/6372730603568827708>,
+        <https://127.0.0.1/8763764661299151991> ;
+    ns1:hasUUID <urn:uuid:00001800-0000-1000-8000-00805F9B34FB> .
+
+<https://127.0.0.1/1801> a ns1:Service ;
+    ns1:hasCharacteristic <https://127.0.0.1/1359756796478965264> ;
+    ns1:hasUUID <urn:uuid:00001801-0000-1000-8000-00805F9B34FB> .
+
+<https://127.0.0.1/180A> a ns1:Service ;
+    ns1:hasCharacteristic <https://127.0.0.1/1030815073312823205>,
+        <https://127.0.0.1/2302906282611817798>,
+        <https://127.0.0.1/6387531014064954493> ;
+    ns1:hasUUID <urn:uuid:0000180A-0000-1000-8000-00805F9B34FB> .
+
+<https://127.0.0.1/2302906282611817798> a ns1:Characteristic ;
+    ns1:hasUUID <urn:uuid:00002A2600001000800000805F9B34FB> ;
+    ns1:methodName ns1:read ;
+    ns2:hasHandle 28 .
+
+<https://127.0.0.1/2466658317382499856> a ns1:Characteristic ;
+    ns1:hasUUID <urn:uuid:E95D1B25251D470AA062FA1922DFA9A8> ;
+    ns1:methodName ns1:read,
+        ns1:write ;
+    ns2:hasHandle 65 .
+
+<https://127.0.0.1/2481210562097216424> a ns1:Characteristic ;
+    ns1:hasUUID <urn:uuid:E95DCA4B251D470AA062FA1922DFA9A8> ;
+    ns1:methodName ns1:notify,
+        ns1:read ;
+    ns2:hasHandle 56 .
+
+<https://127.0.0.1/3176881692180021094> a ns1:Characteristic ;
+    ns1:hasUUID <urn:uuid:E95D9250251D470AA062FA1922DFA9A8> ;
+    ns1:methodName ns1:notify,
+        ns1:read ;
+    ns2:hasHandle 62 .
+
+<https://127.0.0.1/3210697770977912353> a ns1:Characteristic ;
+    ns1:hasUUID <urn:uuid:E95D5404251D470AA062FA1922DFA9A8> ;
+    ns1:methodName ns1:write,
+        <https://freumi.inrupt.net/write-without-response> ;
+    ns2:hasHandle 34 .
+
+<https://127.0.0.1/3767919067896626170> a ns1:Characteristic ;
+    ns1:hasUUID <urn:uuid:8EC90004F3154F609FB8838830DAEA50> ;
+    ns1:methodName ns1:write,
+        ns2:indicate ;
+    ns2:hasHandle 16 .
+
+<https://127.0.0.1/3882427507650481321> a ns1:Characteristic ;
+    ns1:hasUUID <urn:uuid:E95D23C4251D470AA062FA1922DFA9A8> ;
+    ns1:methodName ns1:write ;
+    ns2:hasHandle 36 .
+
+<https://127.0.0.1/4491572942009513174> a ns1:Characteristic ;
+    ns1:hasUUID <urn:uuid:E95DDA90251D470AA062FA1922DFA9A8> ;
+    ns1:methodName ns1:notify,
+        ns1:read ;
+    ns2:hasHandle 49 .
+
+<https://127.0.0.1/4623546474730552319> a ns2:BluetoothAddress,
+        <https://purl.org/RANDOM> ;
+    ns2:hasIRK "" ;
+    ns2:hasMacAddress "F6:98:F1:18:38:36" ;
+    ns2:isResolvable false ;
+    ns2:isStatic true .
+
+<https://127.0.0.1/478967110306060351> a ns1:Characteristic ;
+    ns1:hasUUID <urn:uuid:E95DB84C251D470AA062FA1922DFA9A8> ;
+    ns1:methodName ns1:notify,
+        ns1:read ;
+    ns2:hasHandle 38 .
+
+<https://127.0.0.1/4792948790338850778> a ns1:Characteristic ;
+    ns1:hasUUID <urn:uuid:E95D9775251D470AA062FA1922DFA9A8> ;
+    ns1:methodName ns1:notify,
+        ns1:read ;
+    ns2:hasHandle 31 .
+
+<https://127.0.0.1/5455841001418825633> a ns1:Characteristic ;
+    ns1:hasUUID <urn:uuid:E95DDA91251D470AA062FA1922DFA9A8> ;
+    ns1:methodName ns1:notify,
+        ns1:read ;
+    ns2:hasHandle 52 .
+
+<https://127.0.0.1/5722469336029862902> a ns1:Characteristic ;
+    ns1:hasUUID <urn:uuid:E95D7B77251D470AA062FA1922DFA9A8> ;
+    ns1:methodName ns1:read,
+        ns1:write ;
+    ns2:hasHandle 42 .
+
+<https://127.0.0.1/6372730603568827708> a ns1:Characteristic ;
+    ns1:hasUUID <urn:uuid:00002A0400001000800000805F9B34FB> ;
+    ns1:methodName ns1:read ;
+    ns2:hasHandle 7 .
+
+<https://127.0.0.1/6387531014064954493> a ns1:Characteristic ;
+    ns1:hasUUID <urn:uuid:00002A2500001000800000805F9B34FB> ;
+    ns1:methodName ns1:read ;
+    ns2:hasHandle 26 .
+
+<https://127.0.0.1/8203792720800095638> a ns1:Characteristic ;
+    ns1:hasUUID <urn:uuid:E95D93EE251D470AA062FA1922DFA9A8> ;
+    ns1:methodName ns1:write ;
+    ns2:hasHandle 44 .
+
+<https://127.0.0.1/8597035699499297921> a ns1:Characteristic ;
+    ns1:hasUUID <urn:uuid:E97D3B10251D470AA062FA1922DFA9A8> ;
+    ns1:methodName ns1:notify,
+        <https://freumi.inrupt.net/write-without-response> ;
+    ns2:hasHandle 20 .
+
+<https://127.0.0.1/8763764661299151991> a ns1:Characteristic ;
+    ns1:hasUUID <urn:uuid:00002A0000001000800000805F9B34FB> ;
+    ns1:methodName ns1:read ;
+    ns2:hasHandle 3 .
+
+<https://127.0.0.1/9195430818705840847> a ns1:Characteristic ;
+    ns1:hasUUID <urn:uuid:E95D0D2D251D470AA062FA1922DFA9A8> ;
+    ns1:methodName ns1:read,
+        ns1:write ;
+    ns2:hasHandle 46 .
+
+<https://127.0.0.1/E95D0753251D470AA062FA1922DFA9A8> a ns1:Service ;
+    ns1:hasCharacteristic <https://127.0.0.1/1213219735047332955>,
+        <https://127.0.0.1/2481210562097216424> ;
+    ns1:hasUUID <urn:uuid:E95D0753251D470AA062FA1922DFA9A8> .
+
+<https://127.0.0.1/E95D6100251D470AA062FA1922DFA9A8> a ns1:Service ;
+    ns1:hasCharacteristic <https://127.0.0.1/2466658317382499856>,
+        <https://127.0.0.1/3176881692180021094> ;
+    ns1:hasUUID <urn:uuid:E95D6100251D470AA062FA1922DFA9A8> .
+
+<https://127.0.0.1/E95D93AF251D470AA062FA1922DFA9A8> a ns1:Service ;
+    ns1:hasCharacteristic <https://127.0.0.1/3210697770977912353>,
+        <https://127.0.0.1/3882427507650481321>,
+        <https://127.0.0.1/478967110306060351>,
+        <https://127.0.0.1/4792948790338850778> ;
+    ns1:hasUUID <urn:uuid:E95D93AF251D470AA062FA1922DFA9A8> .
+
+<https://127.0.0.1/E95D9882251D470AA062FA1922DFA9A8> a ns1:Service ;
+    ns1:hasCharacteristic <https://127.0.0.1/4491572942009513174>,
+        <https://127.0.0.1/5455841001418825633> ;
+    ns1:hasUUID <urn:uuid:E95D9882251D470AA062FA1922DFA9A8> .
+
+<https://127.0.0.1/E95DD91D251D470AA062FA1922DFA9A8> a ns1:Service ;
+    ns1:hasCharacteristic <https://127.0.0.1/5722469336029862902>,
+        <https://127.0.0.1/8203792720800095638>,
+        <https://127.0.0.1/9195430818705840847> ;
+    ns1:hasUUID <urn:uuid:E95DD91D251D470AA062FA1922DFA9A8> .
+
+<https://127.0.0.1/E97DD91D251D470AA062FA1922DFA9A8> a ns1:Service ;
+    ns1:hasCharacteristic <https://127.0.0.1/8597035699499297921> ;
+    ns1:hasUUID <urn:uuid:E97DD91D251D470AA062FA1922DFA9A8> .
+
+<https://127.0.0.1/FE59> a ns1:Service ;
+    ns1:hasCharacteristic <https://127.0.0.1/3767919067896626170> ;
+    ns1:hasUUID <urn:uuid:0000FE59-0000-1000-8000-00805F9B34FB> .
+
