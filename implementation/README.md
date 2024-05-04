@@ -97,6 +97,8 @@ python main.py
 ```
 streamlit run app.py
 ```
+3. Open a browser and call http://localhost:8501
+4. (Optional) To access the Thing Description Directory open a browser and call http://localhost:9000
 
 ### Usage via browser directly
 
