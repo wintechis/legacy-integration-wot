@@ -41,7 +41,7 @@ During the Implementation step, the ontology is conceptualized, encoded in a spe
 
 
 ### Conceptualization
-<img src="./resources/images/schema-diagram.png" width="100%" alt="See ./resources/images/schema-diagram.png">
+![](./resources/images/schema-diagram.png)
 
 ### Encoding 
 The Ontology is encoded in OWL. We provide different serialization of the ontology ([Turtle](./resources/serializations/ontology.ttl), [RDF/XML](./resources/serializations/ontology.owl), [JSON-LD](./resources/serializations/ontology.jsonld), [N-Triples](./resources/serializations/ontology.nt)) 
