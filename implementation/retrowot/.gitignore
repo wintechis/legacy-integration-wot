@@ -34,6 +34,9 @@ retrowot/__pycache__/
 retrowot/bluetooth/__pycache__/
 retrowot/bluetooth/__pycache__/client.cpython-310.pyc
 retrowot/experiments/
+retrowot/.mypy_cache/
+retrowot/.vscode/
+retrowot/**/__pycache__/
 retrowot/thing_description/__pycache__/__init__.cpython-310.pyc
 retrowot/thing_description/__pycache__/form.cpython-310.pyc
 retrowot/thing_description/__pycache__/interaction_affordance.cpython-310.pyc
