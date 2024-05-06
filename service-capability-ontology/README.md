@@ -41,7 +41,7 @@ During the Implementation step, the ontology is conceptualized, encoded in a spe
 
 
 ### Conceptualization
-<img src="./resources/images/schema-diagram.png" width="100%" alt="description">
+<img src="./resources/images/schema-diagram.png" width="100%" alt="See ./resources/images/schema-diagram.png">
 
 ### Encoding 
 The Ontology is encoded in OWL. We provide different serialization of the ontology ([Turtle](./resources/serializations/ontology.ttl), [RDF/XML](./resources/serializations/ontology.owl), [JSON-LD](./resources/serializations/ontology.jsonld), [N-Triples](./resources/serializations/ontology.nt)) 
@@ -51,7 +51,7 @@ The Ontology is encoded in OWL. We provide different serialization of the ontolo
 We used the [Oops-Validator](https://oeg.fi.upm.es/index.php/en/technologies/292-oops/index.html) to validate the evaluate the correctness. 
 The results of the evaluation are:
 
-<img src="./resources/images/oops_free.png" alt="drawing" width="200"/>
+<img src="./resources/images/oops_free.png" alt="See ./resources/images/oops_free.png" width="200"/>
 
 
 The usage of the ontology in the SCO implementation further validates its usage.

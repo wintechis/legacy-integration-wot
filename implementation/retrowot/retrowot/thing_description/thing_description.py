@@ -3,26 +3,21 @@ import sys
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 sys.path.append(PROJECT_ROOT)
-from rdflib import Graph, Literal
-from rdflib.plugins.sparql import prepareQuery
-
-
-from typing import Any, List
-from configs import settings
-from functools import lru_cache
-from configs import logger
-from thing_description.interaction_affordance import (
-    PropertyAffordance,
-    ActionAffordance,
-    EventAffordance,
-  
-)
-import aiohttp
 import asyncio
 import json
+from functools import lru_cache
+from typing import Any, List
+
+import aiohttp
+from configs import logger, settings
 from fastapi.encoders import jsonable_encoder
-
-
+from rdflib import Graph, Literal
+from rdflib.plugins.sparql import prepareQuery
+from thing_description.interaction_affordance import (
+    ActionAffordance,
+    EventAffordance,
+    PropertyAffordance,
+)
 
 SELECT_QUERY_SERVICE_TO_ACTION_AFFORDANCE = prepareQuery(
     """
@@ -191,6 +186,7 @@ WHERE {
 """
 )
 
+
 class ThingDescription:
     def __init__(self, graph: Graph):
         if settings.enrichment.use_service_enrichment:
@@ -217,22 +213,22 @@ class ThingDescription:
         Returns:
             A string representing the response from the thing directory.
         """
-        
+
         async def _post(session, url, data):
             async with session.post(url, data=data) as response:
                 return await response.text()
-        
+
         file = jsonable_encoder(self.dict())
-        
 
         async with aiohttp.ClientSession() as session:
-            text = await _post(session=session, 
-                    url=f"{settings.thing_directory.url}/{settings.thing_directory.post_endpoint}",
-                    data=json.dumps(file))
-            
+            text = await _post(
+                session=session,
+                url=f"{settings.thing_directory.url}/{settings.thing_directory.post_endpoint}",
+                data=json.dumps(file),
+            )
+
             logger.debug(f"Response from thing directory: {text}")
-            
-            
+
     @lru_cache(maxsize=1)
     def _load_capability_graph(
         self, enrichment_file="./retrowot/servicecapability.ttl"
@@ -249,17 +245,16 @@ class ThingDescription:
         return str(self.dict())
 
     def _get_device_types(self, graph: Graph) -> str:
-        res = ''
+        res = ""
         device_type = [
-            _.protocolStack.toPython()
-            for _ in graph.query(SELECT_QUERY_DEVICE_TYPES)
+            _.protocolStack.toPython() for _ in graph.query(SELECT_QUERY_DEVICE_TYPES)
         ]
         if len(device_type) > 0:
             res: str = device_type[0]
         return res
-    
+
     def _get_address(self, graph: Graph) -> str:
-        res = ''
+        res = ""
         address = [
             _.deviceName.toPython()
             for _ in graph.query(SELECT_QUERY_GET_DEVICE_ADDRESS)
@@ -269,8 +264,8 @@ class ThingDescription:
         return res
 
     def _get_name(self, graph: Graph) -> str:
-        
-        res = ''
+
+        res = ""
         deviceNames = [
             _.deviceName.toPython() for _ in graph.query(SELECT_QUERY_GET_DEVICE_NAME)
         ]
@@ -298,18 +293,17 @@ class ThingDescription:
                             break
                     if not exists:
                         res_2[affordance.title].forms += affordance.forms
-                
-        
+
         return list(res_2.values())
-    
+
     def _get_property_affordances(self, graph: Graph) -> List[PropertyAffordance]:
         res = []
-        graph.serialize("my_graph.ttl")
+        # graph.serialize("my_graph.ttl")
         for _ in graph.query(
             SELECT_QUERY_SERVICE_TO_PROPERTY_AFFORDANCE,
-        #    initBindings={"deviceName": Literal(self._device_address)},
+            #    initBindings={"deviceName": Literal(self._device_address)},
         ):
-            
+
             affordance = PropertyAffordance(
                 title=_.capabilityName.toPython(),
                 interactionType=_.interactionType.toPython(),
@@ -322,10 +316,10 @@ class ThingDescription:
                 f"Added PropertyAffordance {affordance.title} with \
                  and affordanceId {_.affordanceId.toPython()} to ThingDescription"
             )
-            
+
         # Check for duplicates and merge them
         res = self._remove_duplicate_affordances(res)
-            
+
         return res
 
     def _get_action_affordances(self, graph: Graph) -> List[ActionAffordance]:
@@ -348,10 +342,10 @@ class ThingDescription:
                 f"Added ActionAffordance {affordance.title} with \
                 and affordanceId {_.affordanceId.toPython()} to ThingDescription"
             )
-            
+
         # Check for duplicates and merge them
         res = self._remove_duplicate_affordances(res)
-            
+
         return res
 
     def _get_event_affordances(self, graph: Graph) -> List[EventAffordance]:
@@ -372,32 +366,34 @@ class ThingDescription:
                 f"Added EventAffordance {affordance.title} with \
                 and affordanceId {_.affordanceId.toPython()} to ThingDescription"
             )
-                    
+
         # Check for duplicates and merge them
         res = self._remove_duplicate_affordances(res)
-            
+
         return res
 
     def dict(self, *args, **kwargs):
         model_dict = {}
-        model_dict["@context"] = ["https://www.w3.org/2019/wot/td/v1", "https://www.w3.org/2022/wot/td/v1.1"]
-        
-        if self.device_type == 'http://purl.org/serviceCapability#BluetoothLE':
+        model_dict["@context"] = [
+            "https://www.w3.org/2019/wot/td/v1",
+            "https://www.w3.org/2022/wot/td/v1.1",
+        ]
+
+        if self.device_type == "http://purl.org/serviceCapability#BluetoothLE":
             model_dict["@context"].append(
-                {"sbo": "https://freumi.inrupt.net/SimpleBluetoothOntology.ttl#",
-                "bdo": "https://freumi.inrupt.net/BinaryDataOntology.ttl#" }
+                {
+                    "sbo": "https://freumi.inrupt.net/SimpleBluetoothOntology.ttl#",
+                    "bdo": "https://freumi.inrupt.net/BinaryDataOntology.ttl#",
+                }
             )
         model_dict["title"] = self.title
         model_dict["securityDefinitions"] = {"nosec_sc": {"scheme": "nosec"}}
         model_dict["security"] = ["nosec_sc"]
-        
-        
 
         model_dict["properties"] = {}
         model_dict["actions"] = {}
         model_dict["events"] = {}
 
-        
         for _ in self.properties:
             model_dict["properties"][_._camel_case(_.title)] = _.dict()
         for _ in self.actions:
@@ -412,25 +408,30 @@ class ThingDescription:
         if self.events == {}:
             del model_dict["events"]
         return model_dict
-    
+
     def to_tm(self):
         data = self.dict()
-        data['base'] = "gatt://{{MacOrWebBluetoothId}}/"
+        data["base"] = "gatt://{{MacOrWebBluetoothId}}/"
         td_dump = json.dumps(data)
         td_dump = td_dump.replace(f"gatt://{self.title}/", "./")
         return td_dump
 
+
 if __name__ == "__main__":
     from pyshacl import validate
-    graph = Graph().parse("/home/rene/Repositories/PhD/retrowot/retrowot/zigbee_test_1_device.ttl", format="turtle")
-    
+
+    graph = Graph().parse(
+        "/home/rene/Repositories/PhD/retrowot/retrowot/zigbee_test_1_device.ttl",
+        format="turtle",
+    )
+
     print("Length of graph: ", len(graph))
-    
+
     shacl_graph = Graph().parse("../servicetranslation.ttl")
 
     print("Length of shacl graph: ", len(shacl_graph))
     validate(graph, shacl_graph=shacl_graph, advanced=True, inplace=True, debug=True)
     graph.serialize("enriched_test.ttl", format="turtle")
     print("Length of graph: ", len(graph))
- 
+
     td = ThingDescription(graph=graph)
