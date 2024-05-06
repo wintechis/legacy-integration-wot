@@ -3,7 +3,7 @@ This repository contains a proof of concept for a middleware to generate for leg
 It is designed with different components to be easily extensible.
 
 ## Demo
-<img src="./demo.gif" width="35%" alt="description">
+![](./demo.gif)
 
 The demonstrator showcases the functionality of RetroWoT for Bluetooth LE devices (but also implemented for ZigBee). 
 1. Device Discovery: Surrounding devices are discovered and a user can select a given device (in the example a device with the address F3:82:06:2F:7C:0A)  
