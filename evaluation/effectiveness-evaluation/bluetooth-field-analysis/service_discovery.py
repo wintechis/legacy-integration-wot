@@ -9,10 +9,8 @@ from bluetooth.client import Client
 from pydantic import BaseModel
 
 client = Client()
-path_to_devices = "/home/rene/Repositories/PhD/retrowot/retrowot/retrowot/experiments/devices.json"
-path_to_experiment = (
-    "/home/rene/Repositories/PhD/retrowot/retrowot/retrowot/experiments/"
-)
+path_to_devices = "../experiments/devices.json"
+path_to_experiment = "../experiments/"
 
 
 class CharacteristicReport(BaseModel):
