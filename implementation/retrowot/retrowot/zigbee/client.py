@@ -1,31 +1,31 @@
+"""" Zigbee Client Module specifies a client for Zigbee communication. """
 import os
 import sys
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 sys.path.append(PROJECT_ROOT)
-from typing import List, Dict, Any, Optional, Type, Tuple, MutableSet, Union
-
-from configs import settings
-from utils import SingletonMeta
-from zigpy.application import ControllerApplication
 import asyncio
-import zigpy
-from pydantic import BaseModel
 from logging import getLogger
-import zigpy.types
-from pyee import AsyncIOEventEmitter
+from typing import Any, Dict, List, MutableSet, Optional, Tuple, Type, Union
 
-from zigbee.device import ZigbeeDevice
+import zigpy
+import zigpy.types
+import zigpy.types as t
+from configs import settings
+from pydantic import BaseModel
+from pyee import AsyncIOEventEmitter
+from utils import SingletonMeta
 from zigbee.datamodel import (
+    Attribute,
+    ClientCommand,
+    Command,
     Endpoint,
     InCluster,
     OutCluster,
-    Attribute,
-    Command,
-    ClientCommand,
     ServerCommand,
 )
-import zigpy.types as t
+from zigbee.device import ZigbeeDevice
+from zigpy.application import ControllerApplication
 from zigpy.zcl import foundation
 
 logger = getLogger("Logger")
@@ -288,7 +288,8 @@ class ZigbeeClient(metaclass=SingletonMeta):
         """Shutdown the Zigbee network."""
 
         if remove_db:
-            import os, errno
+            import errno
+            import os
 
             try:
                 os.remove(settings.zigbee.database)

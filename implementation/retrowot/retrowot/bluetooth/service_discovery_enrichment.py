@@ -1,9 +1,9 @@
-from bumble.device import Device, Peer
-from bumble.core import ProtocolError, UUID
-from bumble.company_ids import COMPANY_IDENTIFIERS
 import logging
-from bluetooth.devices import DeviceInformation, BLEDevice
-from rdflib import URIRef, Namespace
+
+from bluetooth.devices import BLEDevice, DeviceInformation
+from bumble.core import UUID
+from bumble.device import Peer
+from rdflib import Namespace, URIRef
 
 SBOE = Namespace("https://purl.org/ExtendedSimpleBluetoothOntology#")
 
@@ -12,7 +12,7 @@ async def service_discovery_enrichment(device: BLEDevice, peer: Peer) -> None:
     """Enriches the device with information from the service discovery."""
     logging.info("Enriching device through service discovery...")
     print("Enriching device through service discovery...")
-    
+
     device.discovered_device_information += [
         await has_device_name(peer),
         await has_system_id(peer),
@@ -22,7 +22,6 @@ async def service_discovery_enrichment(device: BLEDevice, peer: Peer) -> None:
         await has_hardware_revision(peer),
         await has_software_revision(peer),
     ]
-
 
 
 async def has_device_name(peer: Peer) -> DeviceInformation:

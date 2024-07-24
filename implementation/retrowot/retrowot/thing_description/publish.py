@@ -1,5 +1,6 @@
 from configs import logger
-from thing_description.thing_description import ThingDescription
+from thing_description.models import ThingDescription
+
 
 async def add_thing_description_to_thing_directory(device) -> None:
     """
@@ -18,4 +19,3 @@ async def add_thing_description_to_thing_directory(device) -> None:
     logger.debug("Adding thing description to thing directory...")
     thing_description: ThingDescription = device.thing_description
     await thing_description.publish_thing_description()
-        

@@ -1,0 +1,31 @@
+@prefix : <https://www.w3.org/2019/wot/td#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hctl: <https://www.w3.org/2019/wot/hypermedia#> .
+@prefix jsonschema: <https://www.w3.org/2019/wot/json-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix tm: <https://www.w3.org/2019/wot/tm#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix wotsec: <https://www.w3.org/2019/wot/security#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<http://purl.org/tm/00002ADA00001000800000805F9B34FB> a tm:ThingModel ;
+    rdfs:seeAlso <http://purl.org/bluetooth/characteristic#00002ADA00001000800000805F9B34FB> ;
+    :baseURI "gatt://{{MAC-ADDRESS}}" ;
+    :hasPropertyAffordance <http://purl.org/tm/00002ADA00001000800000805F9B34FB#propertyAffordance> ;
+    :title "Fitness Machine Status Thing Model" .
+
+
+<http://purl.org/tm/00002ADA00001000800000805F9B34FB#propertyAffordance> a :PropertyAffordance ;
+    :hasForm <http://purl.org/tm/00002ADA00001000800000805F9B34FB#propertyAffordanceForm> ;
+    :name "Fitness Machine Status" ;
+    :type "string" .
+
+<http://purl.org/tm/00002ADA00001000800000805F9B34FB#propertyAffordanceForm> a hctl:Form ;
+    hctl:forContentType "application/x.binary-data-stream" ;
+    hctl:hasOperationType :readProperty ;
+    hctl:hasTarget "./0000182600001000800000805f9b34fb/00002ada00001000800000805f9b34fb" .
+

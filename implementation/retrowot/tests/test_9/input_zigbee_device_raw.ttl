@@ -1,0 +1,701 @@
+@prefix ns1: <https://www.purl.org/SimpleZigbeeInteractionOntology.ttl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://127.0.0.1/3150411645006104563> a ns1:EndNode ;
+    ns1:hasDeviceModel "TS011F" ;
+    ns1:hasEndpoint <https://127.0.0.1/1588321956028544148>,
+        <https://127.0.0.1/2724731653710573992> ;
+    ns1:hasIEEEAddress "a4:c1:38:96:69:6d:a8:18" ;
+    ns1:hasManufacturer "_TZ3000_2putqrmw" ;
+    ns1:hasManufacturerID 4417 ;
+    ns1:hasNWKAddress 2674 .
+
+<https://127.0.0.1/1147140892769846568> a ns1:Attribute ;
+    ns1:hasUUID "0005" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/1480190493964894520> a ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0002" .
+
+<https://127.0.0.1/1518037964347029041> a ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0005" .
+
+<https://127.0.0.1/1588321956028544148> a ns1:Endpoint ;
+    ns1:hasCluster <https://127.0.0.1/250419709466774512>,
+        <https://127.0.0.1/2745600742944913030>,
+        <https://127.0.0.1/3145333493528281339>,
+        <https://127.0.0.1/3147899429480282733>,
+        <https://127.0.0.1/4978009917508373698>,
+        <https://127.0.0.1/5373801865148992142>,
+        <https://127.0.0.1/6032026213602873524>,
+        <https://127.0.0.1/6425455896896010622>,
+        <https://127.0.0.1/7394947656454787986>,
+        <https://127.0.0.1/7464953222129287589>,
+        <https://127.0.0.1/8614575227421999418> ;
+    ns1:hasUUID "0104" .
+
+<https://127.0.0.1/1625365545442691287> a ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0005" .
+
+<https://127.0.0.1/1698578887540127346> a ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0003" .
+
+<https://127.0.0.1/1708986414808123563> a ns1:Attribute ;
+    ns1:hasUUID "5000" ;
+    ns1:methodName ns1:Read,
+        ns1:Report,
+        ns1:Write .
+
+<https://127.0.0.1/1764207447552560599> a ns1:Attribute ;
+    ns1:hasUUID "0001" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/1844572420705042264> a ns1:Attribute ;
+    ns1:hasUUID "fffd" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/2247948570980480136> a ns1:Attribute ;
+    ns1:hasUUID "ffde" ;
+    ns1:methodName ns1:Read,
+        ns1:Report,
+        ns1:Write .
+
+<https://127.0.0.1/2389827027638933472> a ns1:Attribute ;
+    ns1:hasUUID "0004" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/2464899597322725605> a ns1:Attribute ;
+    ns1:hasUUID "0020" ;
+    ns1:methodName ns1:Read,
+        ns1:Write .
+
+<https://127.0.0.1/2469669040828419642> a ns1:Attribute ;
+    ns1:hasUUID "fffe" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/250419709466774512> a ns1:Cluster,
+        ns1:OutCluster ;
+    ns1:hasAttribute <https://127.0.0.1/1717466681803539255>,
+        <https://127.0.0.1/2906461442524267484>,
+        <https://127.0.0.1/2944640951608084678>,
+        <https://127.0.0.1/3815436160612573634>,
+        <https://127.0.0.1/5150721417619673834>,
+        <https://127.0.0.1/5545243756203944321>,
+        <https://127.0.0.1/594029540282465160>,
+        <https://127.0.0.1/600447685322848332>,
+        <https://127.0.0.1/7186633514531192916>,
+        <https://127.0.0.1/8586378697120058405>,
+        <https://127.0.0.1/8629237522630591695> ;
+    ns1:hasCommand <https://127.0.0.1/1717466681803539255>,
+        <https://127.0.0.1/2906461442524267484>,
+        <https://127.0.0.1/2944640951608084678>,
+        <https://127.0.0.1/3815436160612573634>,
+        <https://127.0.0.1/5150721417619673834>,
+        <https://127.0.0.1/594029540282465160>,
+        <https://127.0.0.1/600447685322848332>,
+        <https://127.0.0.1/7186633514531192916>,
+        <https://127.0.0.1/8586378697120058405>,
+        <https://127.0.0.1/8629237522630591695> ;
+    ns1:hasUUID "0019" .
+
+<https://127.0.0.1/2523197769690512206> a ns1:Attribute ;
+    ns1:hasUUID "4002" ;
+    ns1:methodName ns1:Read,
+        ns1:Report,
+        ns1:Write .
+
+<https://127.0.0.1/2590647673167480768> a ns1:Attribute ;
+    ns1:hasUUID "fffd" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/2724731653710573992> a ns1:Endpoint ;
+    ns1:hasCluster <https://127.0.0.1/3407919735629499425> ;
+    ns1:hasUUID "a1e0" .
+
+<https://127.0.0.1/2745600742944913030> a ns1:Cluster,
+        ns1:InCluster ;
+    ns1:hasAttribute <https://127.0.0.1/1147140892769846568>,
+        <https://127.0.0.1/1764207447552560599>,
+        <https://127.0.0.1/2247948570980480136>,
+        <https://127.0.0.1/2389827027638933472>,
+        <https://127.0.0.1/2469669040828419642>,
+        <https://127.0.0.1/346318699251894227>,
+        <https://127.0.0.1/438352659944582365>,
+        <https://127.0.0.1/4509009809547496159>,
+        <https://127.0.0.1/5881412460380426315>,
+        <https://127.0.0.1/594064961687529554>,
+        <https://127.0.0.1/6380647490789002229>,
+        <https://127.0.0.1/7304831749750683957>,
+        <https://127.0.0.1/939827319016035581> ;
+    ns1:hasCommand <https://127.0.0.1/594064961687529554> ;
+    ns1:hasUUID "0000" .
+
+<https://127.0.0.1/3052114552004789778> a ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0001" .
+
+<https://127.0.0.1/3116547602083294470> a ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0040" .
+
+<https://127.0.0.1/3145333493528281339> a ns1:Cluster,
+        ns1:InCluster ;
+    ns1:hasAttribute <https://127.0.0.1/5483596427027709180>,
+        <https://127.0.0.1/8215461387956561358> ;
+    ns1:hasCommand <https://127.0.0.1/1480190493964894520>,
+        <https://127.0.0.1/1625365545442691287>,
+        <https://127.0.0.1/1698578887540127346>,
+        <https://127.0.0.1/5124921427728850002>,
+        <https://127.0.0.1/5452164198364083343>,
+        <https://127.0.0.1/8215461387956561358> ;
+    ns1:hasUUID "0004" .
+
+<https://127.0.0.1/3147899429480282733> a ns1:Cluster,
+        ns1:InCluster ;
+    ns1:hasAttribute <https://127.0.0.1/2590647673167480768>,
+        <https://127.0.0.1/3288993661178874975>,
+        <https://127.0.0.1/81523576067594877>,
+        <https://127.0.0.1/90832737192440944> ;
+    ns1:hasCommand <https://127.0.0.1/3052114552004789778>,
+        <https://127.0.0.1/6096099629347899291> ;
+    ns1:hasUUID "0b04" .
+
+<https://127.0.0.1/3272232524899442785> a ns1:Attribute ;
+    ns1:hasUUID "d030" ;
+    ns1:methodName ns1:Read,
+        ns1:Report,
+        ns1:Write .
+
+<https://127.0.0.1/3288993661178874975> a ns1:Attribute ;
+    ns1:hasUUID "0505" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/3407919735629499425> a ns1:Cluster,
+        ns1:OutCluster ;
+    ns1:hasAttribute <https://127.0.0.1/2464899597322725605>,
+        <https://127.0.0.1/4252141550186557727>,
+        <https://127.0.0.1/4329110979488407200>,
+        <https://127.0.0.1/4823999075687064682>,
+        <https://127.0.0.1/4828914168651252739>,
+        <https://127.0.0.1/6786792497851263681>,
+        <https://127.0.0.1/8929790684834228850>,
+        <https://127.0.0.1/9086908957693253270> ;
+    ns1:hasUUID "0021" .
+
+<https://127.0.0.1/346318699251894227> a ns1:Attribute ;
+    ns1:hasUUID "0002" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/3526492528239022202> a ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0002" .
+
+<https://127.0.0.1/3706658221015920866> a ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0001" .
+
+<https://127.0.0.1/3778260644006173506> a ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0042" .
+
+<https://127.0.0.1/380068217920431472> a ns1:Attribute ;
+    ns1:hasUUID "d005" ;
+    ns1:methodName ns1:Read,
+        ns1:Report,
+        ns1:Write .
+
+<https://127.0.0.1/4252141550186557727> a ns1:Attribute ;
+    ns1:hasUUID "0021" ;
+    ns1:methodName ns1:Read,
+        ns1:Write .
+
+<https://127.0.0.1/4309980737093027894> a ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0005" .
+
+<https://127.0.0.1/4329110979488407200> a ns1:Attribute ;
+    ns1:hasUUID "fffd" ;
+    ns1:methodName ns1:Read .
+
+<https://127.0.0.1/438352659944582365> a ns1:Attribute ;
+    ns1:hasUUID "0007" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/4405127420741640557> a ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0000" .
+
+<https://127.0.0.1/4475082612724549363> a ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0002" .
+
+<https://127.0.0.1/4509009809547496159> a ns1:Attribute ;
+    ns1:hasUUID "ffe2" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/4672943342226207746> a ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0041" .
+
+<https://127.0.0.1/4720764702968055078> a ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0040" .
+
+<https://127.0.0.1/4823999075687064682> a ns1:Attribute ;
+    ns1:hasUUID "0022" ;
+    ns1:methodName ns1:Read,
+        ns1:Write .
+
+<https://127.0.0.1/4828914168651252739> a ns1:Attribute ;
+    ns1:hasUUID "0011" ;
+    ns1:methodName ns1:Read .
+
+<https://127.0.0.1/4978009917508373698> a ns1:Cluster,
+        ns1:OutCluster ;
+    ns1:hasAttribute <https://127.0.0.1/5411424902901683822> ;
+    ns1:hasUUID "000a" .
+
+<https://127.0.0.1/5052185118977307597> a ns1:Attribute ;
+    ns1:hasUUID "d000" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/5061864598986568938> a ns1:Attribute ;
+    ns1:hasUUID "d001" ;
+    ns1:methodName ns1:Read,
+        ns1:Report,
+        ns1:Write .
+
+<https://127.0.0.1/5124921427728850002> a ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0004" .
+
+<https://127.0.0.1/515565401598661868> a ns1:Attribute ;
+    ns1:hasUUID "8001" ;
+    ns1:methodName ns1:Read,
+        ns1:Report,
+        ns1:Write .
+
+<https://127.0.0.1/525542946376725971> a ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0001" .
+
+<https://127.0.0.1/5324070827668477864> a ns1:Attribute ;
+    ns1:hasUUID "8000" ;
+    ns1:methodName ns1:Read,
+        ns1:Report,
+        ns1:Write .
+
+<https://127.0.0.1/5373801865148992142> a ns1:Cluster,
+        ns1:InCluster ;
+    ns1:hasAttribute <https://127.0.0.1/1844572420705042264>,
+        <https://127.0.0.1/586906476302055479>,
+        <https://127.0.0.1/6151382986195300851>,
+        <https://127.0.0.1/6383800702413635967>,
+        <https://127.0.0.1/6751614112608708277>,
+        <https://127.0.0.1/8065587302081072156> ;
+    ns1:hasCommand <https://127.0.0.1/3526492528239022202>,
+        <https://127.0.0.1/3706658221015920866>,
+        <https://127.0.0.1/4309980737093027894>,
+        <https://127.0.0.1/5818865032806128986>,
+        <https://127.0.0.1/6383800702413635967>,
+        <https://127.0.0.1/7006074267758579535>,
+        <https://127.0.0.1/8945976996008087266> ;
+    ns1:hasUUID "0702" .
+
+<https://127.0.0.1/5411424902901683822> a ns1:Attribute ;
+    ns1:hasUUID "fffd" ;
+    ns1:methodName ns1:Read .
+
+<https://127.0.0.1/5452164198364083343> a ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0001" .
+
+<https://127.0.0.1/5458851314943684885> a ns1:Attribute ;
+    ns1:hasUUID "d002" ;
+    ns1:methodName ns1:Read,
+        ns1:Report,
+        ns1:Write .
+
+<https://127.0.0.1/5483596427027709180> a ns1:Attribute ;
+    ns1:hasUUID "fffd" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/5545243756203944321> a ns1:Attribute ;
+    ns1:hasUUID "fffd" ;
+    ns1:methodName ns1:Read .
+
+<https://127.0.0.1/5740085143845826478> a ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0041" .
+
+<https://127.0.0.1/5818865032806128986> a ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0003" .
+
+<https://127.0.0.1/586906476302055479> a ns1:Attribute ;
+    ns1:hasUUID "0303" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/5881412460380426315> a ns1:Attribute ;
+    ns1:hasUUID "fffd" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/6032026213602873524> a ns1:Cluster,
+        ns1:InCluster ;
+    ns1:hasAttribute <https://127.0.0.1/3272232524899442785>,
+        <https://127.0.0.1/5052185118977307597>,
+        <https://127.0.0.1/6037535672471266928>,
+        <https://127.0.0.1/6488601631255189813>,
+        <https://127.0.0.1/7017766831945722469>,
+        <https://127.0.0.1/714151114186113633>,
+        <https://127.0.0.1/8238771350052476185>,
+        <https://127.0.0.1/8562963199722695159>,
+        <https://127.0.0.1/8855713394178131528> ;
+    ns1:hasUUID "e001" .
+
+<https://127.0.0.1/6037535672471266928> a ns1:Attribute ;
+    ns1:hasUUID "d004" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/6096099629347899291> a ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0000" .
+
+<https://127.0.0.1/6151382986195300851> a ns1:Attribute ;
+    ns1:hasUUID "0306" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/615500555760661090> a ns1:Attribute ;
+    ns1:hasUUID "d004" ;
+    ns1:methodName ns1:Read,
+        ns1:Report,
+        ns1:Write .
+
+<https://127.0.0.1/6380647490789002229> a ns1:Attribute ;
+    ns1:hasUUID "0006" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/6425455896896010622> a ns1:Cluster,
+        ns1:InCluster ;
+    ns1:hasAttribute <https://127.0.0.1/380068217920431472>,
+        <https://127.0.0.1/5061864598986568938>,
+        <https://127.0.0.1/5458851314943684885>,
+        <https://127.0.0.1/615500555760661090>,
+        <https://127.0.0.1/8969451368316361734> ;
+    ns1:hasUUID "e000" .
+
+<https://127.0.0.1/6488601631255189813> a ns1:Attribute ;
+    ns1:hasUUID "d020" ;
+    ns1:methodName ns1:Read,
+        ns1:Report,
+        ns1:Write .
+
+<https://127.0.0.1/6751614112608708277> a ns1:Attribute ;
+    ns1:hasUUID "0200" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/6786792497851263681> a ns1:Attribute ;
+    ns1:hasUUID "0017" ;
+    ns1:methodName ns1:Read .
+
+<https://127.0.0.1/7006074267758579535> a ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0004" .
+
+<https://127.0.0.1/7017766831945722469> a ns1:Attribute ;
+    ns1:hasUUID "d010" ;
+    ns1:methodName ns1:Read,
+        ns1:Report,
+        ns1:Write .
+
+<https://127.0.0.1/714151114186113633> a ns1:Attribute ;
+    ns1:hasUUID "d002" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/7304831749750683957> a ns1:Attribute ;
+    ns1:hasUUID "0003" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/7394947656454787986> a ns1:Cluster,
+        ns1:InCluster ;
+    ns1:hasAttribute <https://127.0.0.1/2067361822444033938>,
+        <https://127.0.0.1/5875574985017351360>,
+        <https://127.0.0.1/6591354808970704818>,
+        <https://127.0.0.1/6916283498332939534>,
+        <https://127.0.0.1/7434217383781435945>,
+        <https://127.0.0.1/9124615725922523225> ;
+    ns1:hasCommand <https://127.0.0.1/1518037964347029041>,
+        <https://127.0.0.1/2067361822444033938>,
+        <https://127.0.0.1/4672943342226207746>,
+        <https://127.0.0.1/4720764702968055078>,
+        <https://127.0.0.1/5875574985017351360>,
+        <https://127.0.0.1/6591354808970704818>,
+        <https://127.0.0.1/6916283498332939534>,
+        <https://127.0.0.1/8168378635247461891>,
+        <https://127.0.0.1/8627446044108278510>,
+        <https://127.0.0.1/9124615725922523225> ;
+    ns1:hasUUID "0005" .
+
+<https://127.0.0.1/7434217383781435945> a ns1:Attribute ;
+    ns1:hasUUID "fffd" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/7464953222129287589> a ns1:Cluster,
+        ns1:InCluster ;
+    ns1:hasCommand <https://127.0.0.1/4405127420741640557>,
+        <https://127.0.0.1/525542946376725971>,
+        <https://127.0.0.1/9211315208359843313> ;
+    ns1:hasUUID "0003" .
+
+<https://127.0.0.1/7698110232186047238> a ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0001" .
+
+<https://127.0.0.1/8065587302081072156> a ns1:Attribute ;
+    ns1:hasUUID "0300" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/81523576067594877> a ns1:Attribute ;
+    ns1:hasUUID "0508" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/8168378635247461891> a ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0006" .
+
+<https://127.0.0.1/8238771350052476185> a ns1:Attribute ;
+    ns1:hasUUID "d001" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/8528627591723266790> a ns1:Attribute ;
+    ns1:hasUUID "8002" ;
+    ns1:methodName ns1:Read,
+        ns1:Report,
+        ns1:Write .
+
+<https://127.0.0.1/8562963199722695159> a ns1:Attribute ;
+    ns1:hasUUID "d005" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/8614575227421999418> a ns1:Cluster,
+        ns1:InCluster ;
+    ns1:hasAttribute <https://127.0.0.1/1708986414808123563>,
+        <https://127.0.0.1/2523197769690512206>,
+        <https://127.0.0.1/515565401598661868>,
+        <https://127.0.0.1/5324070827668477864>,
+        <https://127.0.0.1/8397086947718810140>,
+        <https://127.0.0.1/8528627591723266790>,
+        <https://127.0.0.1/9098582903819516837>,
+        <https://127.0.0.1/9200833689217759325> ;
+    ns1:hasCommand <https://127.0.0.1/3116547602083294470>,
+        <https://127.0.0.1/3778260644006173506>,
+        <https://127.0.0.1/4475082612724549363>,
+        <https://127.0.0.1/5740085143845826478>,
+        <https://127.0.0.1/7698110232186047238>,
+        <https://127.0.0.1/8397086947718810140> ;
+    ns1:hasUUID "0006" .
+
+<https://127.0.0.1/8627446044108278510> a ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0042" .
+
+<https://127.0.0.1/8855713394178131528> a ns1:Attribute ;
+    ns1:hasUUID "d003" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/8929790684834228850> a ns1:Attribute ;
+    ns1:hasUUID "0010" ;
+    ns1:methodName ns1:Read .
+
+<https://127.0.0.1/8945976996008087266> a ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0006" .
+
+<https://127.0.0.1/8969451368316361734> a ns1:Attribute ;
+    ns1:hasUUID "d003" ;
+    ns1:methodName ns1:Read,
+        ns1:Report,
+        ns1:Write .
+
+<https://127.0.0.1/90832737192440944> a ns1:Attribute ;
+    ns1:hasUUID "050b" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/9086908957693253270> a ns1:Attribute ;
+    ns1:hasUUID "0016" ;
+    ns1:methodName ns1:Read .
+
+<https://127.0.0.1/9098582903819516837> a ns1:Attribute ;
+    ns1:hasUUID "4001" ;
+    ns1:methodName ns1:Read,
+        ns1:Report,
+        ns1:Write .
+
+<https://127.0.0.1/9200833689217759325> a ns1:Attribute ;
+    ns1:hasUUID "fffd" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/9211315208359843313> a ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0040" .
+
+<https://127.0.0.1/939827319016035581> a ns1:Attribute ;
+    ns1:hasUUID "ffe3" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/1717466681803539255> a ns1:Attribute,
+        ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0006" ;
+    ns1:methodName ns1:Read .
+
+<https://127.0.0.1/2067361822444033938> a ns1:Attribute,
+        ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0003" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/2906461442524267484> a ns1:Attribute,
+        ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0008" ;
+    ns1:methodName ns1:Read .
+
+<https://127.0.0.1/2944640951608084678> a ns1:Attribute,
+        ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0002" ;
+    ns1:methodName ns1:Read .
+
+<https://127.0.0.1/3815436160612573634> a ns1:Attribute,
+        ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0000" ;
+    ns1:methodName ns1:Read .
+
+<https://127.0.0.1/5150721417619673834> a ns1:Attribute,
+        ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0003" ;
+    ns1:methodName ns1:Read .
+
+<https://127.0.0.1/5875574985017351360> a ns1:Attribute,
+        ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0004" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/594029540282465160> a ns1:Attribute,
+        ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0001" ;
+    ns1:methodName ns1:Read .
+
+<https://127.0.0.1/594064961687529554> a ns1:Attribute,
+        ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0000" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/600447685322848332> a ns1:Attribute,
+        ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0009" ;
+    ns1:methodName ns1:Read .
+
+<https://127.0.0.1/6383800702413635967> a ns1:Attribute,
+        ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0000" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/6591354808970704818> a ns1:Attribute,
+        ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0001" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/6916283498332939534> a ns1:Attribute,
+        ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0000" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/7186633514531192916> a ns1:Attribute,
+        ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0005" ;
+    ns1:methodName ns1:Read .
+
+<https://127.0.0.1/8215461387956561358> a ns1:Attribute,
+        ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0000" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/8397086947718810140> a ns1:Attribute,
+        ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0000" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+
+<https://127.0.0.1/8586378697120058405> a ns1:Attribute,
+        ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0004" ;
+    ns1:methodName ns1:Read .
+
+<https://127.0.0.1/8629237522630591695> a ns1:Attribute,
+        ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0007" ;
+    ns1:methodName ns1:Read .
+
+<https://127.0.0.1/9124615725922523225> a ns1:Attribute,
+        ns1:ClientCommand,
+        ns1:Command ;
+    ns1:hasUUID "0002" ;
+    ns1:methodName ns1:Read,
+        ns1:Report .
+

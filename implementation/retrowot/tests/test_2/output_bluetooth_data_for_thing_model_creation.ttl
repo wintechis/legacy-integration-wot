@@ -1,0 +1,167 @@
+@prefix ns1: <http://purl.org/bluetooth/> .
+@prefix ns2: <https://freumi.inrupt.net/SimpleBluetoothOntology.ttl/> .
+@prefix ns3: <https://www.w3.org/2019/wot/hypermedia#> .
+@prefix ns4: <https://www.w3.org/2019/wot/td#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://purl.org/bluetooth/characteristic#0000182600001000800000805F9B34FB> a ns1:Service ;
+    rdfs:label "Fitness Machine" ;
+    ns1:hasCharacteristic <http://purl.org/bluetooth/characteristic#00002ACC00001000800000805F9B34FB>,
+        <http://purl.org/bluetooth/characteristic#00002ACD00001000800000805F9B34FB>,
+        <http://purl.org/bluetooth/characteristic#00002ACE00001000800000805F9B34FB>,
+        <http://purl.org/bluetooth/characteristic#00002ACF00001000800000805F9B34FB>,
+        <http://purl.org/bluetooth/characteristic#00002AD000001000800000805F9B34FB>,
+        <http://purl.org/bluetooth/characteristic#00002AD100001000800000805F9B34FB>,
+        <http://purl.org/bluetooth/characteristic#00002AD200001000800000805F9B34FB>,
+        <http://purl.org/bluetooth/characteristic#00002AD300001000800000805F9B34FB>,
+        <http://purl.org/bluetooth/characteristic#00002AD400001000800000805F9B34FB>,
+        <http://purl.org/bluetooth/characteristic#00002AD500001000800000805F9B34FB>,
+        <http://purl.org/bluetooth/characteristic#00002AD600001000800000805F9B34FB>,
+        <http://purl.org/bluetooth/characteristic#00002AD700001000800000805F9B34FB>,
+        <http://purl.org/bluetooth/characteristic#00002AD800001000800000805F9B34FB>,
+        <http://purl.org/bluetooth/characteristic#00002AD900001000800000805F9B34FB>,
+        <http://purl.org/bluetooth/characteristic#00002ADA00001000800000805F9B34FB> ;
+    ns1:hasId "org.bluetooth.service.fitness_machine" ;
+    ns1:hasUUID "0000182600001000800000805f9b34fb"^^xsd:hexBinary ;
+    rdfs:comment "This service exposes training-related data in the sports and fitness environment, which allows a Server (e.g., a fitness machine) to send training-related data to a Client. The Fitness Machine Service (FTMS) exposes training-related data in the sports and fitness environment, which allows a Client to collect training data while a user is exercising with a fitness machine (Server)." ;
+    ns2:hasUUID "0000182600001000800000805f9b34fb"^^xsd:hexBinary .
+
+<http://purl.org/bluetooth/characteristic#00002A1800001000800000805F9B34FB> a ns1:Characteristic ;
+    rdfs:label "Glucose Measurement" ;
+    ns1:hasAccessProperty <http://purl.org/bluetooth/instance#1dfe8fca605f7f9690f43bbda390971e>,
+        <http://purl.org/bluetooth/instance#4860b57bab3bd03bb640707a2baf02bf>,
+        <http://purl.org/bluetooth/instance#73a209f2704c5f67cab6bf7a028b24ca>,
+        <http://purl.org/bluetooth/instance#89ba4cd7bb4688d0face9f6ce9caaf52>,
+        <http://purl.org/bluetooth/instance#8cbab5300546a40425b137e891d1caee>,
+        <http://purl.org/bluetooth/instance#caba322b3beb666084ab372fd75b7f96>,
+        <http://purl.org/bluetooth/instance#cc49478daa68712d7a2d10157c529424>,
+        <http://purl.org/bluetooth/instance#ce34518a79352ee1740a358d8aa6f78d>,
+        <http://purl.org/bluetooth/instance#d9a28f23acefcf401b5c9c6bf68b5397> ;
+    ns1:hasId "org.bluetooth.characteristic.glucose_measurement" ;
+    ns1:hasRequirementLevel <http://purl.org/bluetooth/unit#Mandatory> ;
+    ns1:hasUUID "00002a1800001000800000805f9b34fb"^^xsd:hexBinary ;
+    rdfs:comment """The Glucose Measurement characteristic is used to represent data related to a glucose measurement record.\r
+The structure of this characteristic is defined below.[{'field': 'Flags', 'type': 'boolean[8]', 'size': '1', 'description': 'See \\\\autoref{sec:org.bluetooth.characteristic.glucose_measurement/field/flags}'}, {'field': 'Sequence Number', 'type': 'uint16', 'size': '2', 'description': 'Contains a sequence number of the record. It is used to number a sequence of measurements as defined by the service.'}, {'field': 'Base Time', 'type': 'struct', 'size': '7', 'description': 'Refer to Date Time characteristic in \\\\autoref{sec:org.bluetooth.characteristic.date_time}'}, {'field': 'Time Offset', 'type': 'int16', 'size': '0 or 2', 'description': 'Specifies the time difference from the value of the Base Time field.\\nSee \\\\autoref{sec:org.bluetooth.characteristic.glucose_measurement/field/time_offset}\\nunit: org.bluetooth.unit.time.minute\\nPresent if bit 0 of Flags field is set to 1'}, {'field': 'Glucose Concentration', 'type': 'medfloat16', 'size': '0 or 2', 'description': 'If bit 2 of Flags field is set to 0,\\nunit: org.bluetooth.unit.mass_density.kilogram_per_liter\\nIf bit 2 of Flags field is set to 1,\\nunit: org.bluetooth.unit.mass_density.mole_per_litre\\nPresent if bit 1 of Flags field is set to 1'}, {'field': 'Type-Sample Location', 'type': 'struct', 'size': '0 or 1', 'description': 'See \\\\autoref{sec:org.bluetooth.characteristic.glucose_measurement/field/type-sample_location}\\nPresent if bit 1 of Flags field is set to 1'}, {'field': 'Sensor Status Annunciation', 'type': 'boolean[16]', 'size': '0 or 2', 'description': 'See \\\\autoref{sec:org.bluetooth.characteristic.glucose_measurement/field/sensor_status_annunciation}\\nPresent if bit 3 of Flags field is set to 1'}]""" ;
+    ns2:hasUUID "00002a1800001000800000805f9b34fb"^^xsd:hexBinary .
+
+<http://purl.org/bluetooth/instance#07c43ca25b797e3535e4bcd01c0469c1> a ns1:AccessProperty ;
+    ns1:hasAccessMethod ns1:Read ;
+    ns1:hasStatusLevel ns1:Mandatory .
+
+<http://purl.org/bluetooth/instance#1fd3a19fcc8c6afe3cfe800c8c2d3d7d> a ns1:AccessProperty ;
+    ns1:hasAccessMethod ns1:Writeableauxiliaries ;
+    ns1:hasStatusLevel ns1:Optional .
+
+<http://purl.org/bluetooth/instance#3952b549abb31fcb07c9e6b59f224c1b> a ns1:AccessProperty ;
+    ns1:hasAccessMethod ns1:Broadcast ;
+    ns1:hasStatusLevel ns1:Optional .
+
+<http://purl.org/bluetooth/instance#807817fed096a39e7ec1efbb9f23ad75> a ns1:AccessProperty ;
+    ns1:hasAccessMethod ns1:Reliablewrite ;
+    ns1:hasStatusLevel ns1:Optional .
+
+<http://purl.org/bluetooth/instance#83a9e7bf0f08b7f49b4397c7eb79cf0f> a ns1:AccessProperty ;
+    ns1:hasAccessMethod ns1:Extentedproperties ;
+    ns1:hasStatusLevel ns1:Excluded .
+
+<http://purl.org/bluetooth/instance#92ca8de113290402c7dfb3d8480d22e1> a ns1:AccessProperty ;
+    ns1:hasAccessMethod ns1:Write ;
+    ns1:hasStatusLevel ns1:Mandatory .
+
+<http://purl.org/bluetooth/instance#9f5ca9d4cff61702f37e1404b73b0c40> a ns1:AccessProperty ;
+    ns1:hasAccessMethod ns1:Notify ;
+    ns1:hasStatusLevel ns1:Optional .
+
+<http://purl.org/bluetooth/instance#a815ac86fcd0988693ac0d2560d5002a> a ns1:AccessProperty ;
+    ns1:hasAccessMethod ns1:Notify ;
+    ns1:hasStatusLevel ns1:Excluded .
+
+<http://purl.org/bluetooth/instance#b15493358426ba143364bbf8e2c093f0> a ns1:AccessProperty ;
+    ns1:hasAccessMethod ns1:Indicate ;
+    ns1:hasStatusLevel ns1:Mandatory .
+
+<http://purl.org/bluetooth/instance#b21d5668aeb2f73a86b397f68bf7938d> a ns1:AccessProperty ;
+    ns1:hasAccessMethod ns1:Writewithoutresponse ;
+    ns1:hasStatusLevel ns1:Mandatory .
+
+<http://purl.org/bluetooth/instance#b806ef9ab4f526688bb78af15f0394e9> a ns1:AccessProperty ;
+    ns1:hasAccessMethod ns1:Write ;
+    ns1:hasStatusLevel ns1:Optional .
+
+<http://purl.org/bluetooth/instance#ba5770548734c0d379d4e89b033c177a> a ns1:AccessProperty ;
+    ns1:hasAccessMethod ns1:Writewithoutresponse ;
+    ns1:hasStatusLevel ns1:Optional .
+
+<http://purl.org/bluetooth/instance#d58b0a60528682297fb4513f2526fe2a> a ns1:AccessProperty ;
+    ns1:hasAccessMethod ns1:Extentedproperties ;
+    ns1:hasStatusLevel ns1:Optional .
+
+<http://purl.org/tm/00002ADA00001000800000805F9B34FB> a <https://www.w3.org/2019/wot/tm#ThingModel> ;
+    rdfs:seeAlso <http://purl.org/bluetooth/characteristic#00002ADA00001000800000805F9B34FB> ;
+    ns4:baseURI "gatt://{{MAC-ADDRESS}}" ;
+    ns4:hasPropertyAffordance <http://purl.org/tm/00002ADA00001000800000805F9B34FB#propertyAffordance> ;
+    ns4:title "Fitness Machine Status Thing Model" .
+
+<http://purl.org/tm/00002ADA00001000800000805F9B34FB#propertyAffordance> a ns4:PropertyAffordance ;
+    ns4:hasForm <http://purl.org/tm/00002ADA00001000800000805F9B34FB#propertyAffordanceForm> ;
+    ns4:name "Fitness Machine Status" ;
+    ns4:type "string" .
+
+<http://purl.org/tm/00002ADA00001000800000805F9B34FB#propertyAffordanceForm> a ns3:Form ;
+    ns3:forContentType "application/x.binary-data-stream" ;
+    ns3:hasOperationType ns4:readProperty ;
+    ns3:hasTarget "./0000182600001000800000805f9b34fb/00002ada00001000800000805f9b34fb" .
+
+<http://purl.org/bluetooth/characteristic#00002ADA00001000800000805F9B34FB> a ns1:Characteristic ;
+    rdfs:label "Fitness Machine Status" ;
+    ns1:hasAccessProperty <http://purl.org/bluetooth/instance#1dfe8fca605f7f9690f43bbda390971e>,
+        <http://purl.org/bluetooth/instance#4860b57bab3bd03bb640707a2baf02bf>,
+        <http://purl.org/bluetooth/instance#73a209f2704c5f67cab6bf7a028b24ca>,
+        <http://purl.org/bluetooth/instance#89ba4cd7bb4688d0face9f6ce9caaf52>,
+        <http://purl.org/bluetooth/instance#8cbab5300546a40425b137e891d1caee>,
+        <http://purl.org/bluetooth/instance#caba322b3beb666084ab372fd75b7f96>,
+        <http://purl.org/bluetooth/instance#cc49478daa68712d7a2d10157c529424>,
+        <http://purl.org/bluetooth/instance#ce34518a79352ee1740a358d8aa6f78d>,
+        <http://purl.org/bluetooth/instance#d9a28f23acefcf401b5c9c6bf68b5397> ;
+    ns1:hasId "org.bluetooth.characteristic.fitness_machine_status" ;
+    ns1:hasRequirementLevel <http://purl.org/bluetooth/unit#Optional> ;
+    ns1:hasUUID "00002ada00001000800000805f9b34fb"^^xsd:hexBinary ;
+    ns2:hasUUID "00002ada00001000800000805f9b34fb"^^xsd:hexBinary .
+
+<http://purl.org/bluetooth/instance#1dfe8fca605f7f9690f43bbda390971e> a ns1:AccessProperty ;
+    ns1:hasAccessMethod ns1:Notify ;
+    ns1:hasStatusLevel ns1:Mandatory .
+
+<http://purl.org/bluetooth/instance#4860b57bab3bd03bb640707a2baf02bf> a ns1:AccessProperty ;
+    ns1:hasAccessMethod ns1:Write ;
+    ns1:hasStatusLevel ns1:Excluded .
+
+<http://purl.org/bluetooth/instance#73a209f2704c5f67cab6bf7a028b24ca> a ns1:AccessProperty ;
+    ns1:hasAccessMethod ns1:Broadcast ;
+    ns1:hasStatusLevel ns1:Excluded .
+
+<http://purl.org/bluetooth/instance#89ba4cd7bb4688d0face9f6ce9caaf52> a ns1:AccessProperty ;
+    ns1:hasAccessMethod ns1:Writeableauxiliaries ;
+    ns1:hasStatusLevel ns1:Excluded .
+
+<http://purl.org/bluetooth/instance#8cbab5300546a40425b137e891d1caee> a ns1:AccessProperty ;
+    ns1:hasAccessMethod ns1:Indicate ;
+    ns1:hasStatusLevel ns1:Excluded .
+
+<http://purl.org/bluetooth/instance#caba322b3beb666084ab372fd75b7f96> a ns1:AccessProperty ;
+    ns1:hasAccessMethod ns1:Reliablewrite ;
+    ns1:hasStatusLevel ns1:Excluded .
+
+<http://purl.org/bluetooth/instance#cc49478daa68712d7a2d10157c529424> a ns1:AccessProperty ;
+    ns1:hasAccessMethod ns1:Writewithoutresponse ;
+    ns1:hasStatusLevel ns1:Excluded .
+
+<http://purl.org/bluetooth/instance#ce34518a79352ee1740a358d8aa6f78d> a ns1:AccessProperty ;
+    ns1:hasAccessMethod ns1:Signedwrite ;
+    ns1:hasStatusLevel ns1:Excluded .
+
+<http://purl.org/bluetooth/instance#d9a28f23acefcf401b5c9c6bf68b5397> a ns1:AccessProperty ;
+    ns1:hasAccessMethod ns1:Read ;
+    ns1:hasStatusLevel ns1:Excluded .
+

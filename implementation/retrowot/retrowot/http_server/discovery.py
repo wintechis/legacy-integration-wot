@@ -1,14 +1,10 @@
-from fastapi import APIRouter
-from fastapi.responses import JSONResponse, Response
-from pydantic import BaseModel
-from bluetooth.discovery import device_discovery, service_discovery
-from pyee import AsyncIOEventEmitter
 from bluetooth.client import Client as BluetoothClient
-from fastapi.encoders import jsonable_encoder
-
-from zigbee.client import ZigbeeClient
-from utils import Emitter
 from configs import logger
+from fastapi import APIRouter
+from fastapi.encoders import jsonable_encoder
+from fastapi.responses import JSONResponse, RedirectResponse, Response
+from utils import Emitter
+from zigbee.client import ZigbeeClient
 
 mainRouter = APIRouter()
 emitters = Emitter()
@@ -25,7 +21,8 @@ async def device_discovery():
     logger.debug("Client called bluetooth device discovery endpoint")
     client = BluetoothClient()
 
-    await client.service_discovery(5)
+    # ToDo: Change name to service discovery
+    await client.device_discovery(5)
 
     logger.debug("Discovery Service found devices: {}".format(client.bluetooth_devices))
     return JSONResponse(
@@ -42,29 +39,23 @@ async def service_discovery(payload: str):
     client = BluetoothClient()
 
     device = client.get_device(payload)
-    
+
     if device is None:
         await client.discover_device(payload)
         device = client.get_device(payload)
-        
+
     if device is None:
         return Response(content="Device not found", status_code=404)
     if device.is_discovered():
-        return JSONResponse(
-            content={
-                "discovered_services": [_ for _ in jsonable_encoder(device.services)]
-            },
-            status_code=200,
-        )
+        return RedirectResponse(f"/{device.thing_description.title}")
 
-    await client.device_discovery(payload)
+    # ToDo: Change name to service discovery
+    await client.service_discovery(payload)
 
     logger.debug("Emit services_discovered")
     emitters.device_discovery_emitter.emit("services_discovered", device)
-    return JSONResponse(
-        content={"discovered_services": [_ for _ in jsonable_encoder(device.services)]},
-        status_code=200,
-    )
+
+    return RedirectResponse(f"/{device.thing_description.title}")
 
 
 @mainRouter.get("/zigbee/device_discovery")
@@ -92,15 +83,6 @@ async def service_discovery(payload: str):
 
     device = client.get_device(payload)
     await client.service_discovery(device)
-    rdf = device.to_rdf()
-    rdf.serialize(
-        destination="/home/rene/Repositories/PhD/retrowot/retrowot/zigbee.ttl",
-        format="turtle",
-    )
-    rdf.serialize(
-        destination="/home/rene/Repositories/PhD/retrowot/retrowot/zigbee_test_1_device.ttl",
-        format="turtle",
-    )
 
     logger.debug("Emit services_discovered")
     emitters.device_discovery_emitter.emit("services_discovered", device)
@@ -108,18 +90,9 @@ async def service_discovery(payload: str):
     if device is None:
         return Response(content="Device not found", status_code=404)
     if device.is_discovered():
-        return JSONResponse(
-            content={
-                "discovered_services": [_ for _ in jsonable_encoder(device.endpoints)]
-            },
-            status_code=200,
-        )
+        return RedirectResponse(f"/{device.thing_description.title}")
 
     await client.device_discovery(5)
 
-    return JSONResponse(
-        content={
-            "discovered_services": [_ for _ in jsonable_encoder(device.endpoints)]
-        },
-        status_code=200,
-    )
+    # Redirect to TD
+    return RedirectResponse(f"/{device.thing_description.title}")

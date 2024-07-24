@@ -11,7 +11,6 @@ Many IoT stacks (e.g. Bluetooth LE, ZigBee, or Matter) use these types of discov
 Thus they enable interoperability within an instantiated network (Think e.g. about your own home as such a network).
 
 In this repository we provide:
-- [Service Capability Ontology](./service-capability-ontology/README.md): The documentation of an ontology to align the results from discovery protocols of the IoT stack in a generic representation
 - [RetroWoT Middleware](./implementation/README.md): Our implementation that uses the discovery protocols of Bluetooth LE and ZigBee, and the ontology to create a Thing Description for a Bluetooth LE or ZigBee device.
 - [RetroWoT Evaluation](./evaluation/README.md): Scripts and results of the effectiveness and performance evaluation for our approach.  
 

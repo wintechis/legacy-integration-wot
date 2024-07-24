@@ -1,0 +1,930 @@
+{
+    "baseUri": "zigbee://a4:c1:38:96:69:6d:a8:18",
+    "title": "TS011F",
+    "properties": {
+        "0104/0000/ffe2": {
+            "title": "0104/0000/ffe2",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0000/ffe2",
+                    "op": "subscribeevent"
+                }
+            ]
+        },
+        "0104/0006/8000": {
+            "title": "0104/0006/8000",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0006/8000",
+                    "op": "subscribeevent"
+                }
+            ]
+        },
+        "stackVersion": {
+            "title": "Stack Version",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0000/0002",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "modelIdentifier": {
+            "title": "Model Identifier",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0000/0005",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "onOff": {
+            "title": "On Off",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0006/0000",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "0104/0006/8002": {
+            "title": "0104/0006/8002",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0006/8002",
+                    "op": "subscribeevent"
+                }
+            ]
+        },
+        "dateCode": {
+            "title": "Date Code",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0000/0006",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "manufacturerName": {
+            "title": "Manufacturer Name",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0000/0004",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "0104/0000/ffde": {
+            "title": "0104/0000/ffde",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0000/ffde",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "zclVersion": {
+            "title": "ZCL Version",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0000/0000",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "0104/0000/fffe": {
+            "title": "0104/0000/fffe",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0000/fffe",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "clusterRevision": {
+            "title": "Cluster Revision",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0000/fffd",
+                    "op": "writeproperty"
+                }
+            ]
+        },
+        "hwVersion": {
+            "title": "HW Version",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0000/0003",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "powerSource": {
+            "title": "Power Source",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0000/0007",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "0104/0006/fffd": {
+            "title": "0104/0006/fffd",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0006/fffd",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "0104/000a/fffd": {
+            "title": "0104/000a/fffd",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/000a/fffd",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "0104/0006/8001": {
+            "title": "0104/0006/8001",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0006/8001",
+                    "op": "subscribeevent"
+                }
+            ]
+        },
+        "onTime": {
+            "title": "On Time",
+            "description": "http://purl.org/zigbee/Seconds",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0006/4001",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "applicationVersion": {
+            "title": "Application Version",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0000/0001",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "0104/0006/5000": {
+            "title": "0104/0006/5000",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0006/5000",
+                    "op": "subscribeevent"
+                }
+            ]
+        },
+        "offWaitTime": {
+            "title": "Off Wait Time",
+            "description": "http://purl.org/zigbee/Seconds",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0006/4002",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "0104/0000/ffe3": {
+            "title": "0104/0000/ffe3",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0000/ffe3",
+                    "op": "subscribeevent"
+                }
+            ]
+        }
+    },
+    "actions": {
+        "0104/0006/0041": {
+            "title": "0104/0006/0041",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0006/0041",
+                    "op": "invokeaction"
+                }
+            ]
+        },
+        "powerSource": {
+            "title": "Power Source",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0000/0007",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "zclVersion": {
+            "title": "ZCL Version",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0000/0000",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "validUntilTime": {
+            "title": "Valid Until Time",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/000a/0009",
+                    "op": "writeproperty"
+                }
+            ]
+        },
+        "0104/0006/0001": {
+            "title": "0104/0006/0001",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0006/0001",
+                    "op": "invokeaction"
+                }
+            ]
+        },
+        "0104/0006/0006": {
+            "title": "0104/0006/0006",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0006/0006",
+                    "op": "invokeaction"
+                }
+            ]
+        },
+        "0104/000a/0040": {
+            "title": "0104/000a/0040",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/000a/0040",
+                    "op": "invokeaction"
+                }
+            ]
+        },
+        "dateCode": {
+            "title": "Date Code",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0000/0006",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "0104/0006/0009": {
+            "title": "0104/0006/0009",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0006/0009",
+                    "op": "invokeaction"
+                }
+            ]
+        },
+        "0104/0006/0042": {
+            "title": "0104/0006/0042",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0006/0042",
+                    "op": "invokeaction"
+                }
+            ]
+        },
+        "manufacturerName": {
+            "title": "Manufacturer Name",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0000/0004",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "timeStatus": {
+            "title": "Time Status",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/000a/0001",
+                    "op": "writeproperty"
+                }
+            ]
+        },
+        "hwVersion": {
+            "title": "HW Version",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0000/0003",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "standardTime": {
+            "title": "Standard Time",
+            "description": "Local time (without DST offset)",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/000a/0006",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "dstShift": {
+            "title": "Dst Shift",
+            "description": "http://purl.org/zigbee/Seconds",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/000a/0005",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "0104/0006/0003": {
+            "title": "0104/0006/0003",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0006/0003",
+                    "op": "invokeaction"
+                }
+            ]
+        },
+        "genericDeviceClass": {
+            "title": "Generic Device Class",
+            "description": "defines the field of application of the GenericDeviceType attribute",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0000/0008",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "localTime": {
+            "title": "Local Time",
+            "description": "Local time",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/000a/0007",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "0104/000a/0041": {
+            "title": "0104/000a/0041",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/000a/0041",
+                    "op": "invokeaction"
+                }
+            ]
+        },
+        "applicationVersion": {
+            "title": "Application Version",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0000/0001",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "0104/0006/0005": {
+            "title": "0104/0006/0005",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0006/0005",
+                    "op": "invokeaction"
+                }
+            ]
+        },
+        "0104/000a/0042": {
+            "title": "0104/000a/0042",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/000a/0042",
+                    "op": "invokeaction"
+                }
+            ]
+        },
+        "0104/0006/0004": {
+            "title": "0104/0006/0004",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0006/0004",
+                    "op": "invokeaction"
+                }
+            ]
+        },
+        "time": {
+            "title": "Time",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/000a/0000",
+                    "op": "writeproperty"
+                }
+            ]
+        },
+        "0104/0006/0007": {
+            "title": "0104/0006/0007",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0006/0007",
+                    "op": "invokeaction"
+                }
+            ]
+        },
+        "0104/0000/0041": {
+            "title": "0104/0000/0041",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0000/0041",
+                    "op": "invokeaction"
+                }
+            ]
+        },
+        "dstStart": {
+            "title": "Dst Start",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/000a/0003",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "0104/0006/0040": {
+            "title": "0104/0006/0040",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0006/0040",
+                    "op": "invokeaction"
+                }
+            ]
+        },
+        "modelIdentifier": {
+            "title": "Model Identifier",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0000/0005",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "stackVersion": {
+            "title": "Stack Version",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0000/0002",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "dstEnd": {
+            "title": "Dst End",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/000a/0004",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "onOff": {
+            "title": "On Off",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0006/0000",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "genericDeviceType": {
+            "title": "Generic Device Type",
+            "description": "allows an application to show an icon on a rich user interface (e.g. smartphone app)",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0000/0009",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "timeZone": {
+            "title": "Time Zone",
+            "description": "http://purl.org/zigbee/Seconds",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/000a/0002",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "0104/0000/0040": {
+            "title": "0104/0000/0040",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0000/0040",
+                    "op": "invokeaction"
+                }
+            ]
+        },
+        "0104/0006/0002": {
+            "title": "0104/0006/0002",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0006/0002",
+                    "op": "invokeaction"
+                }
+            ]
+        },
+        "0104/0006/0008": {
+            "title": "0104/0006/0008",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0006/0008",
+                    "op": "invokeaction"
+                }
+            ]
+        },
+        "lastSetTime": {
+            "title": "Last Set Time",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/000a/0008",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "0104/0000/0042": {
+            "title": "0104/0000/0042",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0104/0000/0042",
+                    "op": "invokeaction"
+                }
+            ]
+        }
+    },
+    "events": {},
+    "@context": [
+        "https://www.w3.org/2022/wot/td/v1.1",
+        {
+            "tm": "https://www.w3.org/2019/wot/tm#"
+        }
+    ],
+    "@type": "td:Thing",
+    "links": [
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0000/0007",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0000/0000",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/000A/0009",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0000/0002",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0000/0005",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0006/0000",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0000/0006",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0000/0006",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0000/0004",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/000A/0001",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0000/0004",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0000/0002",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0000/0000",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0000/0003",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/000A/0006",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0000/FFFD",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/000A/0005",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0000/0008",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0000/0003",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0000/0007",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/000A/0007",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0000/0005",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0000/0000",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0000/0001",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/000A/0000",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0006/4001",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0000/0001",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0000/0001",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0006/4002",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0006/0000",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/000A/0003",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0000/0004",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0000/0005",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0000/0002",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/000A/0004",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0000/0006",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0006/0000",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0000/0009",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/000A/0002",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0000/0003",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0006/4002",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0000/0007",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0000/FFFD",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/0006/4001",
+            "type": "application/tm+json"
+        },
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/zigbee/000A/0008",
+            "type": "application/tm+json"
+        }
+    ],
+    "securityDefinitions": {
+        "nosec_sc": {
+            "scheme": "nosec"
+        }
+    },
+    "security": [
+        "nosec_sc"
+    ]
+}

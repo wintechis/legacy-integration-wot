@@ -1,0 +1,216 @@
+{
+    "baseUri": "gatt://F6:98:F1:18:38:36",
+    "properties": {
+        "0000180000001000800000805f9b34fb/00002aa600001000800000805f9b34fb": {
+            "title": "0000180000001000800000805f9b34fb/00002aa600001000800000805f9b34fb",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0000180000001000800000805f9b34fb/00002aa600001000800000805f9b34fb",
+                    "op": "https://www.w3.org/2019/wot/td#readProperty"
+                }
+            ]
+        },
+        "e95d93af251d470aa062fa1922dfa9a8/e95db84c251d470aa062fa1922dfa9a8": {
+            "title": "e95d93af251d470aa062fa1922dfa9a8/e95db84c251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95d93af251d470aa062fa1922dfa9a8/e95db84c251d470aa062fa1922dfa9a8",
+                    "op": "https://www.w3.org/2019/wot/td#readProperty"
+                }
+            ]
+        },
+        "0000180000001000800000805f9b34fb/00002a0400001000800000805f9b34fb": {
+            "title": "0000180000001000800000805f9b34fb/00002a0400001000800000805f9b34fb",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0000180000001000800000805f9b34fb/00002a0400001000800000805f9b34fb",
+                    "op": "https://www.w3.org/2019/wot/td#readProperty"
+                }
+            ]
+        },
+        "e95d93af251d470aa062fa1922dfa9a8/e95d9775251d470aa062fa1922dfa9a8": {
+            "title": "e95d93af251d470aa062fa1922dfa9a8/e95d9775251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95d93af251d470aa062fa1922dfa9a8/e95d9775251d470aa062fa1922dfa9a8",
+                    "op": "https://www.w3.org/2019/wot/td#readProperty"
+                }
+            ]
+        },
+        "e95d0753251d470aa062fa1922dfa9a8/e95dfb24251d470aa062fa1922dfa9a8": {
+            "title": "e95d0753251d470aa062fa1922dfa9a8/e95dfb24251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95d0753251d470aa062fa1922dfa9a8/e95dfb24251d470aa062fa1922dfa9a8",
+                    "op": "https://www.w3.org/2019/wot/td#readProperty"
+                }
+            ]
+        },
+        "e95d0753251d470aa062fa1922dfa9a8/e95dca4b251d470aa062fa1922dfa9a8": {
+            "title": "e95d0753251d470aa062fa1922dfa9a8/e95dca4b251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95d0753251d470aa062fa1922dfa9a8/e95dca4b251d470aa062fa1922dfa9a8",
+                    "op": "https://www.w3.org/2019/wot/td#readProperty"
+                }
+            ]
+        },
+        "e95d6100251d470aa062fa1922dfa9a8/e95d9250251d470aa062fa1922dfa9a8": {
+            "title": "e95d6100251d470aa062fa1922dfa9a8/e95d9250251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95d6100251d470aa062fa1922dfa9a8/e95d9250251d470aa062fa1922dfa9a8",
+                    "op": "https://www.w3.org/2019/wot/td#readProperty"
+                }
+            ]
+        },
+        "0000180a00001000800000805f9b34fb/00002a2500001000800000805f9b34fb": {
+            "title": "0000180a00001000800000805f9b34fb/00002a2500001000800000805f9b34fb",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0000180a00001000800000805f9b34fb/00002a2500001000800000805f9b34fb",
+                    "op": "https://www.w3.org/2019/wot/td#readProperty"
+                }
+            ]
+        },
+        "e95d9882251d470aa062fa1922dfa9a8/e95dda90251d470aa062fa1922dfa9a8": {
+            "title": "e95d9882251d470aa062fa1922dfa9a8/e95dda90251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95d9882251d470aa062fa1922dfa9a8/e95dda90251d470aa062fa1922dfa9a8",
+                    "op": "https://www.w3.org/2019/wot/td#readProperty"
+                }
+            ]
+        },
+        "e95dd91d251d470aa062fa1922dfa9a8/e95d0d2d251d470aa062fa1922dfa9a8": {
+            "title": "e95dd91d251d470aa062fa1922dfa9a8/e95d0d2d251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95dd91d251d470aa062fa1922dfa9a8/e95d0d2d251d470aa062fa1922dfa9a8",
+                    "op": "https://www.w3.org/2019/wot/td#readProperty"
+                }
+            ]
+        },
+        "e95d9882251d470aa062fa1922dfa9a8/e95dda91251d470aa062fa1922dfa9a8": {
+            "title": "e95d9882251d470aa062fa1922dfa9a8/e95dda91251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95d9882251d470aa062fa1922dfa9a8/e95dda91251d470aa062fa1922dfa9a8",
+                    "op": "https://www.w3.org/2019/wot/td#readProperty"
+                }
+            ]
+        },
+        "0000180a00001000800000805f9b34fb/00002a2600001000800000805f9b34fb": {
+            "title": "0000180a00001000800000805f9b34fb/00002a2600001000800000805f9b34fb",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0000180a00001000800000805f9b34fb/00002a2600001000800000805f9b34fb",
+                    "op": "https://www.w3.org/2019/wot/td#readProperty"
+                }
+            ]
+        },
+        "fitnessMachineStatus": {
+            "title": "Fitness Machine Status",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0000182600001000800000805f9b34fb/00002ada00001000800000805f9b34fb",
+                    "op": "https://www.w3.org/2019/wot/td#readProperty"
+                }
+            ]
+        },
+        "0000180a00001000800000805f9b34fb/00002a2400001000800000805f9b34fb": {
+            "title": "0000180a00001000800000805f9b34fb/00002a2400001000800000805f9b34fb",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0000180a00001000800000805f9b34fb/00002a2400001000800000805f9b34fb",
+                    "op": "https://www.w3.org/2019/wot/td#readProperty"
+                }
+            ]
+        },
+        "e95d6100251d470aa062fa1922dfa9a8/e95d1b25251d470aa062fa1922dfa9a8": {
+            "title": "e95d6100251d470aa062fa1922dfa9a8/e95d1b25251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95d6100251d470aa062fa1922dfa9a8/e95d1b25251d470aa062fa1922dfa9a8",
+                    "op": "https://www.w3.org/2019/wot/td#readProperty"
+                }
+            ]
+        },
+        "0000180000001000800000805f9b34fb/00002a0000001000800000805f9b34fb": {
+            "title": "0000180000001000800000805f9b34fb/00002a0000001000800000805f9b34fb",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0000180000001000800000805f9b34fb/00002a0000001000800000805f9b34fb",
+                    "op": "https://www.w3.org/2019/wot/td#readProperty"
+                }
+            ]
+        },
+        "0000180000001000800000805f9b34fb/00002a0100001000800000805f9b34fb": {
+            "title": "0000180000001000800000805f9b34fb/00002a0100001000800000805f9b34fb",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0000180000001000800000805f9b34fb/00002a0100001000800000805f9b34fb",
+                    "op": "https://www.w3.org/2019/wot/td#readProperty"
+                }
+            ]
+        }
+    },
+    "actions": [],
+    "events": [],
+    "@context": [
+        "https://www.w3.org/2022/wot/td/v1.1",
+        {
+            "tm": "https://www.w3.org/2019/wot/tm#"
+        }
+    ],
+    "@type": "td:Thing",
+    "links": [
+        {
+            "rel": "type",
+            "href": "http://purl.org/tm/00002ADA00001000800000805F9B34FB",
+            "type": "application/tm+json"
+        }
+    ],
+    "securityDefinitions": {
+        "nosec_sc": {
+            "scheme": "nosec"
+        }
+    },
+    "security": [
+        "nosec_sc"
+    ]
+}

@@ -28,6 +28,7 @@ schedule = "^1.2.1"
 pyoxigraph = "^0.3.22"
 oxrdflib = "^0.3.6"
 requests = "^2.31.0"
+jsonschema = "^4.22.0"
 
 
 [build-system]

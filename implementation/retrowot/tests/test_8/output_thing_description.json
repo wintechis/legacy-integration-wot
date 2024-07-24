@@ -1,0 +1,443 @@
+{
+    "baseUri": "gatt://F6:98:F1:18:38:36",
+    "title": "BBC micro:bit [getov]",
+    "properties": {
+        "e95d0753251d470aa062fa1922dfa9a8/e95dca4b251d470aa062fa1922dfa9a8": {
+            "title": "e95d0753251d470aa062fa1922dfa9a8/e95dca4b251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95d0753251d470aa062fa1922dfa9a8/e95dca4b251d470aa062fa1922dfa9a8",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "e95d0753251d470aa062fa1922dfa9a8/e95dfb24251d470aa062fa1922dfa9a8": {
+            "title": "e95d0753251d470aa062fa1922dfa9a8/e95dfb24251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95d0753251d470aa062fa1922dfa9a8/e95dfb24251d470aa062fa1922dfa9a8",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "e95d6100251d470aa062fa1922dfa9a8/e95d1b25251d470aa062fa1922dfa9a8": {
+            "title": "e95d6100251d470aa062fa1922dfa9a8/e95d1b25251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95d6100251d470aa062fa1922dfa9a8/e95d1b25251d470aa062fa1922dfa9a8",
+                    "op": "writeproperty"
+                }
+            ]
+        },
+        "e95dd91d251d470aa062fa1922dfa9a8/e95d93ee251d470aa062fa1922dfa9a8": {
+            "title": "e95dd91d251d470aa062fa1922dfa9a8/e95d93ee251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95dd91d251d470aa062fa1922dfa9a8/e95d93ee251d470aa062fa1922dfa9a8",
+                    "op": "writeproperty"
+                }
+            ]
+        },
+        "0000180000001000800000805f9b34fb/00002a0400001000800000805f9b34fb": {
+            "title": "0000180000001000800000805f9b34fb/00002a0400001000800000805f9b34fb",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0000180000001000800000805f9b34fb/00002a0400001000800000805f9b34fb",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "0000180000001000800000805f9b34fb/00002a0100001000800000805f9b34fb": {
+            "title": "0000180000001000800000805f9b34fb/00002a0100001000800000805f9b34fb",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0000180000001000800000805f9b34fb/00002a0100001000800000805f9b34fb",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "e95dd91d251d470aa062fa1922dfa9a8/e95d0d2d251d470aa062fa1922dfa9a8": {
+            "title": "e95dd91d251d470aa062fa1922dfa9a8/e95d0d2d251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95dd91d251d470aa062fa1922dfa9a8/e95d0d2d251d470aa062fa1922dfa9a8",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "0000180000001000800000805f9b34fb/00002aa600001000800000805f9b34fb": {
+            "title": "0000180000001000800000805f9b34fb/00002aa600001000800000805f9b34fb",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0000180000001000800000805f9b34fb/00002aa600001000800000805f9b34fb",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "e95d93af251d470aa062fa1922dfa9a8/e95d23c4251d470aa062fa1922dfa9a8": {
+            "title": "e95d93af251d470aa062fa1922dfa9a8/e95d23c4251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95d93af251d470aa062fa1922dfa9a8/e95d23c4251d470aa062fa1922dfa9a8",
+                    "op": "writeproperty"
+                }
+            ]
+        },
+        "e95d93af251d470aa062fa1922dfa9a8/e95d9775251d470aa062fa1922dfa9a8": {
+            "title": "e95d93af251d470aa062fa1922dfa9a8/e95d9775251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95d93af251d470aa062fa1922dfa9a8/e95d9775251d470aa062fa1922dfa9a8",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "e97dd91d251d470aa062fa1922dfa9a8/e97d3b10251d470aa062fa1922dfa9a8": {
+            "title": "e97dd91d251d470aa062fa1922dfa9a8/e97d3b10251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e97dd91d251d470aa062fa1922dfa9a8/e97d3b10251d470aa062fa1922dfa9a8",
+                    "op": "writeproperty"
+                }
+            ]
+        },
+        "e95d93af251d470aa062fa1922dfa9a8/e95db84c251d470aa062fa1922dfa9a8": {
+            "title": "e95d93af251d470aa062fa1922dfa9a8/e95db84c251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95d93af251d470aa062fa1922dfa9a8/e95db84c251d470aa062fa1922dfa9a8",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "e95d93af251d470aa062fa1922dfa9a8/e95d5404251d470aa062fa1922dfa9a8": {
+            "title": "e95d93af251d470aa062fa1922dfa9a8/e95d5404251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95d93af251d470aa062fa1922dfa9a8/e95d5404251d470aa062fa1922dfa9a8",
+                    "op": "writeproperty"
+                }
+            ]
+        },
+        "e95d9882251d470aa062fa1922dfa9a8/e95dda90251d470aa062fa1922dfa9a8": {
+            "title": "e95d9882251d470aa062fa1922dfa9a8/e95dda90251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95d9882251d470aa062fa1922dfa9a8/e95dda90251d470aa062fa1922dfa9a8",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "e95d9882251d470aa062fa1922dfa9a8/e95dda91251d470aa062fa1922dfa9a8": {
+            "title": "e95d9882251d470aa062fa1922dfa9a8/e95dda91251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95d9882251d470aa062fa1922dfa9a8/e95dda91251d470aa062fa1922dfa9a8",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "e95dd91d251d470aa062fa1922dfa9a8/e95d7b77251d470aa062fa1922dfa9a8": {
+            "title": "e95dd91d251d470aa062fa1922dfa9a8/e95d7b77251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95dd91d251d470aa062fa1922dfa9a8/e95d7b77251d470aa062fa1922dfa9a8",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "0000180a00001000800000805f9b34fb/00002a2600001000800000805f9b34fb": {
+            "title": "0000180a00001000800000805f9b34fb/00002a2600001000800000805f9b34fb",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0000180a00001000800000805f9b34fb/00002a2600001000800000805f9b34fb",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "0000180a00001000800000805f9b34fb/00002a2400001000800000805f9b34fb": {
+            "title": "0000180a00001000800000805f9b34fb/00002a2400001000800000805f9b34fb",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0000180a00001000800000805f9b34fb/00002a2400001000800000805f9b34fb",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "0000180a00001000800000805f9b34fb/00002a2500001000800000805f9b34fb": {
+            "title": "0000180a00001000800000805f9b34fb/00002a2500001000800000805f9b34fb",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0000180a00001000800000805f9b34fb/00002a2500001000800000805f9b34fb",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "0000fe5900001000800000805f9b34fb/8ec90004f3154f609fb8838830daea50": {
+            "title": "0000fe5900001000800000805f9b34fb/8ec90004f3154f609fb8838830daea50",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0000fe5900001000800000805f9b34fb/8ec90004f3154f609fb8838830daea50",
+                    "op": "writeproperty"
+                }
+            ]
+        },
+        "0000180000001000800000805f9b34fb/00002a0000001000800000805f9b34fb": {
+            "title": "0000180000001000800000805f9b34fb/00002a0000001000800000805f9b34fb",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0000180000001000800000805f9b34fb/00002a0000001000800000805f9b34fb",
+                    "op": "readproperty"
+                }
+            ]
+        },
+        "e95d6100251d470aa062fa1922dfa9a8/e95d9250251d470aa062fa1922dfa9a8": {
+            "title": "e95d6100251d470aa062fa1922dfa9a8/e95d9250251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95d6100251d470aa062fa1922dfa9a8/e95d9250251d470aa062fa1922dfa9a8",
+                    "op": "readproperty"
+                }
+            ]
+        }
+    },
+    "actions": {
+        "e95d93af251d470aa062fa1922dfa9a8/e95d23c4251d470aa062fa1922dfa9a8": {
+            "title": "e95d93af251d470aa062fa1922dfa9a8/e95d23c4251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95d93af251d470aa062fa1922dfa9a8/e95d23c4251d470aa062fa1922dfa9a8",
+                    "op": "invokeaction"
+                }
+            ]
+        },
+        "e97dd91d251d470aa062fa1922dfa9a8/e97d3b10251d470aa062fa1922dfa9a8": {
+            "title": "e97dd91d251d470aa062fa1922dfa9a8/e97d3b10251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e97dd91d251d470aa062fa1922dfa9a8/e97d3b10251d470aa062fa1922dfa9a8",
+                    "op": "invokeaction"
+                }
+            ]
+        },
+        "e95d6100251d470aa062fa1922dfa9a8/e95d1b25251d470aa062fa1922dfa9a8": {
+            "title": "e95d6100251d470aa062fa1922dfa9a8/e95d1b25251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95d6100251d470aa062fa1922dfa9a8/e95d1b25251d470aa062fa1922dfa9a8",
+                    "op": "invokeaction"
+                }
+            ]
+        },
+        "e95dd91d251d470aa062fa1922dfa9a8/e95d7b77251d470aa062fa1922dfa9a8": {
+            "title": "e95dd91d251d470aa062fa1922dfa9a8/e95d7b77251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95dd91d251d470aa062fa1922dfa9a8/e95d7b77251d470aa062fa1922dfa9a8",
+                    "op": "invokeaction"
+                }
+            ]
+        },
+        "e95d0753251d470aa062fa1922dfa9a8/e95dfb24251d470aa062fa1922dfa9a8": {
+            "title": "e95d0753251d470aa062fa1922dfa9a8/e95dfb24251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95d0753251d470aa062fa1922dfa9a8/e95dfb24251d470aa062fa1922dfa9a8",
+                    "op": "invokeaction"
+                }
+            ]
+        },
+        "e95d93af251d470aa062fa1922dfa9a8/e95d5404251d470aa062fa1922dfa9a8": {
+            "title": "e95d93af251d470aa062fa1922dfa9a8/e95d5404251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95d93af251d470aa062fa1922dfa9a8/e95d5404251d470aa062fa1922dfa9a8",
+                    "op": "invokeaction"
+                }
+            ]
+        },
+        "0000fe5900001000800000805f9b34fb/8ec90004f3154f609fb8838830daea50": {
+            "title": "0000fe5900001000800000805f9b34fb/8ec90004f3154f609fb8838830daea50",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./0000fe5900001000800000805f9b34fb/8ec90004f3154f609fb8838830daea50",
+                    "op": "invokeaction"
+                }
+            ]
+        },
+        "e95dd91d251d470aa062fa1922dfa9a8/e95d93ee251d470aa062fa1922dfa9a8": {
+            "title": "e95dd91d251d470aa062fa1922dfa9a8/e95d93ee251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95dd91d251d470aa062fa1922dfa9a8/e95d93ee251d470aa062fa1922dfa9a8",
+                    "op": "invokeaction"
+                }
+            ]
+        },
+        "e95dd91d251d470aa062fa1922dfa9a8/e95d0d2d251d470aa062fa1922dfa9a8": {
+            "title": "e95dd91d251d470aa062fa1922dfa9a8/e95d0d2d251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95dd91d251d470aa062fa1922dfa9a8/e95d0d2d251d470aa062fa1922dfa9a8",
+                    "op": "invokeaction"
+                }
+            ]
+        }
+    },
+    "events": {
+        "e95d93af251d470aa062fa1922dfa9a8/e95d9775251d470aa062fa1922dfa9a8": {
+            "title": "e95d93af251d470aa062fa1922dfa9a8/e95d9775251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95d93af251d470aa062fa1922dfa9a8/e95d9775251d470aa062fa1922dfa9a8",
+                    "op": "subscribeevent"
+                }
+            ]
+        },
+        "e97dd91d251d470aa062fa1922dfa9a8/e97d3b10251d470aa062fa1922dfa9a8": {
+            "title": "e97dd91d251d470aa062fa1922dfa9a8/e97d3b10251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e97dd91d251d470aa062fa1922dfa9a8/e97d3b10251d470aa062fa1922dfa9a8",
+                    "op": "subscribeevent"
+                }
+            ]
+        },
+        "e95d6100251d470aa062fa1922dfa9a8/e95d9250251d470aa062fa1922dfa9a8": {
+            "title": "e95d6100251d470aa062fa1922dfa9a8/e95d9250251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95d6100251d470aa062fa1922dfa9a8/e95d9250251d470aa062fa1922dfa9a8",
+                    "op": "subscribeevent"
+                }
+            ]
+        },
+        "e95d9882251d470aa062fa1922dfa9a8/e95dda90251d470aa062fa1922dfa9a8": {
+            "title": "e95d9882251d470aa062fa1922dfa9a8/e95dda90251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95d9882251d470aa062fa1922dfa9a8/e95dda90251d470aa062fa1922dfa9a8",
+                    "op": "subscribeevent"
+                }
+            ]
+        },
+        "e95d93af251d470aa062fa1922dfa9a8/e95db84c251d470aa062fa1922dfa9a8": {
+            "title": "e95d93af251d470aa062fa1922dfa9a8/e95db84c251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95d93af251d470aa062fa1922dfa9a8/e95db84c251d470aa062fa1922dfa9a8",
+                    "op": "subscribeevent"
+                }
+            ]
+        },
+        "e95d0753251d470aa062fa1922dfa9a8/e95dca4b251d470aa062fa1922dfa9a8": {
+            "title": "e95d0753251d470aa062fa1922dfa9a8/e95dca4b251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95d0753251d470aa062fa1922dfa9a8/e95dca4b251d470aa062fa1922dfa9a8",
+                    "op": "subscribeevent"
+                }
+            ]
+        },
+        "e95d9882251d470aa062fa1922dfa9a8/e95dda91251d470aa062fa1922dfa9a8": {
+            "title": "e95d9882251d470aa062fa1922dfa9a8/e95dda91251d470aa062fa1922dfa9a8",
+            "type": "string",
+            "forms": [
+                {
+                    "contentType": "application/x.binary-data-stream",
+                    "href": "./e95d9882251d470aa062fa1922dfa9a8/e95dda91251d470aa062fa1922dfa9a8",
+                    "op": "subscribeevent"
+                }
+            ]
+        }
+    },
+    "@context": [
+        "https://www.w3.org/2022/wot/td/v1.1",
+        {
+            "tm": "https://www.w3.org/2019/wot/tm#"
+        }
+    ],
+    "@type": "td:Thing",
+    "securityDefinitions": {
+        "nosec_sc": {
+            "scheme": "nosec"
+        }
+    },
+    "security": [
+        "nosec_sc"
+    ]
+}

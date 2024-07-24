@@ -7,6 +7,7 @@ from aiocoap import *
 from aiocoap import CONTENT
 from aiocoap.resource import Resource, Site, WKCResource
 from pyee import AsyncIOEventEmitter
+
 from retrowot.bluetooth.client import Client
 from retrowot.coap.affordance import generate_subsite
 from retrowot.coap.discovery_affordance import (
@@ -15,7 +16,9 @@ from retrowot.coap.discovery_affordance import (
 )
 from retrowot.configs import logger, settings
 from retrowot.thing_description.publish import add_thing_description_to_thing_directory
-from retrowot.thing_description_translation import align_capabilities, enrich_affordance
+from retrowot.thing_description_translation import (
+    align_capabilities,  # , enrich_affordance
+)
 from retrowot.utils import Emitter
 
 
@@ -96,7 +99,7 @@ class CoAPServer:
         if settings.enrichment.use_enrichment:
             logger.debug("Enabling affordance enrichment...")
             self.emitters.device_discovery_emitter.on(
-                "affordance_aligned", enrich_affordance
+                "affordance_aligned", align_capabilities
             )
 
         if settings.thing_directory.use_thing_directory:

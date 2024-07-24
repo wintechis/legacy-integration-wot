@@ -1,0 +1,2986 @@
+@prefix ns1: <https://www.w3.org/2019/wot/td#> .
+@prefix ns2: <https://www.w3.org/2019/wot/hypermedia#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://127.0.0.1/3150411645006104563> a ns1:PartialThingDescription ;
+    rdfs:seeAlso <https://127.0.0.1/3150411645006104563> ;
+    ns1:baseURI "zigbee://a4:c1:38:96:69:6d:a8:18" ;
+    ns1:hasPropertyAffordance <https://127.0.0.1/3150411645006104563./0104/0000/0000#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/0000#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/0000#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/0001#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/0001#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/0001#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/0002#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/0002#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/0002#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/0003#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/0003#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/0003#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/0004#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/0004#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/0004#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/0005#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/0005#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/0005#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/0006#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/0006#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/0006#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/0007#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/0007#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/0007#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/0008#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/0009#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/0040#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/0041#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/0042#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/ffde#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/ffde#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/ffe2#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/ffe2#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/ffe3#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/ffe3#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/fffd#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/fffd#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/fffe#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0000/fffe#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0004/0000#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0004/0000#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0004/0000#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0004/0001#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0004/0002#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0004/0003#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0004/0004#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0004/0005#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0004/0006#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0004/0007#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0004/0008#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0004/0009#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0004/0040#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0004/0041#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0004/0042#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0004/fffd#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0004/fffd#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0005/0000#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0005/0000#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0005/0000#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0005/0001#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0005/0001#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0005/0001#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0005/0002#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0005/0002#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0005/0002#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0005/0003#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0005/0003#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0005/0003#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0005/0004#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0005/0004#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0005/0004#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0005/0005#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0005/0006#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0005/0007#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0005/0008#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0005/0009#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0005/0040#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0005/0041#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0005/0042#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0005/fffd#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0005/fffd#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/0000#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/0000#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/0000#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/0001#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/0002#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/0003#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/0004#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/0005#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/0006#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/0007#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/0008#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/0009#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/0040#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/0041#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/0042#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/4001#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/4001#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/4002#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/4002#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/5000#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/5000#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/8000#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/8000#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/8001#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/8001#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/8002#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/8002#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/fffd#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0006/fffd#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/000a/0000#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/000a/0001#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/000a/0002#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/000a/0003#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/000a/0004#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/000a/0005#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/000a/0006#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/000a/0007#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/000a/0008#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/000a/0009#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/000a/0040#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/000a/0041#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/000a/0042#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/000a/fffd#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0019/0000#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0019/0000#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0019/0001#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0019/0001#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0019/0002#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0019/0002#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0019/0003#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0019/0003#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0019/0004#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0019/0004#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0019/0005#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0019/0005#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0019/0006#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0019/0006#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0019/0007#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0019/0007#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0019/0008#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0019/0008#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0019/0009#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0019/0009#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0019/0040#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0019/0041#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0019/0042#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0019/fffd#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0702/0000#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0702/0000#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0702/0000#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0702/0001#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0702/0002#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0702/0003#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0702/0004#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0702/0005#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0702/0006#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0702/0007#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0702/0008#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0702/0009#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0702/0040#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0702/0041#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0702/0042#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0702/0200#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0702/0200#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0702/0300#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0702/0300#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0702/0303#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0702/0303#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0702/0306#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0702/0306#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0702/fffd#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0702/fffd#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0b04/0000#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0b04/0001#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0b04/0002#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0b04/0003#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0b04/0004#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0b04/0005#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0b04/0006#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0b04/0007#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0b04/0008#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0b04/0009#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0b04/0040#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0b04/0041#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0b04/0042#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0b04/0505#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0b04/0505#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0b04/0508#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0b04/0508#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0b04/050b#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0b04/050b#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0b04/fffd#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/0b04/fffd#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e000/0000#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e000/0001#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e000/0002#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e000/0003#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e000/0004#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e000/0005#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e000/0006#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e000/0007#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e000/0008#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e000/0009#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e000/0040#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e000/0041#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e000/0042#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e000/d001#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e000/d001#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e000/d002#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e000/d002#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e000/d003#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e000/d003#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e000/d004#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e000/d004#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e000/d005#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e000/d005#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/0000#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/0001#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/0002#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/0003#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/0004#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/0005#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/0006#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/0007#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/0008#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/0009#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/0040#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/0041#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/0042#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/d000#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/d000#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/d001#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/d001#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/d002#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/d002#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/d003#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/d003#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/d004#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/d004#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/d005#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/d005#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/d010#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/d010#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/d020#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/d020#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/d030#eventAffordance>,
+        <https://127.0.0.1/3150411645006104563./0104/e001/d030#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./a1e0/0021/0000#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./a1e0/0021/0001#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./a1e0/0021/0002#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./a1e0/0021/0003#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./a1e0/0021/0004#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./a1e0/0021/0005#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./a1e0/0021/0006#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./a1e0/0021/0007#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./a1e0/0021/0008#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./a1e0/0021/0009#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./a1e0/0021/0010#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./a1e0/0021/0011#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./a1e0/0021/0016#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./a1e0/0021/0017#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./a1e0/0021/0020#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./a1e0/0021/0021#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./a1e0/0021/0022#propertyAffordance>,
+        <https://127.0.0.1/3150411645006104563./a1e0/0021/0040#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./a1e0/0021/0041#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./a1e0/0021/0042#actionAffordance>,
+        <https://127.0.0.1/3150411645006104563./a1e0/0021/fffd#propertyAffordance> ;
+    ns1:title "TS011F" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0000#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0000#actionAffordanceForm> ;
+    ns1:name "0104/0000/0000" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0000#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0000/0000" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0000#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0000#eventAffordanceForm> ;
+    ns1:name "0104/0000/0000" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0000#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0000/0000" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0000#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0000#propertyAffordanceForm> ;
+    ns1:name "0104/0000/0000" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0000#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0000/0000" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0001#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0001#actionAffordanceForm> ;
+    ns1:name "0104/0000/0001" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0001#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0000/0001" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0001#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0001#eventAffordanceForm> ;
+    ns1:name "0104/0000/0001" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0001#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0000/0001" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0001#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0001#propertyAffordanceForm> ;
+    ns1:name "0104/0000/0001" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0001#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0000/0001" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0002#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0002#actionAffordanceForm> ;
+    ns1:name "0104/0000/0002" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0002#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0000/0002" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0002#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0002#eventAffordanceForm> ;
+    ns1:name "0104/0000/0002" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0002#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0000/0002" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0002#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0002#propertyAffordanceForm> ;
+    ns1:name "0104/0000/0002" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0002#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0000/0002" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0003#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0003#actionAffordanceForm> ;
+    ns1:name "0104/0000/0003" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0003#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0000/0003" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0003#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0003#eventAffordanceForm> ;
+    ns1:name "0104/0000/0003" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0003#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0000/0003" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0003#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0003#propertyAffordanceForm> ;
+    ns1:name "0104/0000/0003" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0003#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0000/0003" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0004#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0004#actionAffordanceForm> ;
+    ns1:name "0104/0000/0004" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0004#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0000/0004" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0004#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0004#eventAffordanceForm> ;
+    ns1:name "0104/0000/0004" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0004#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0000/0004" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0004#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0004#propertyAffordanceForm> ;
+    ns1:name "0104/0000/0004" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0004#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0000/0004" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0005#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0005#actionAffordanceForm> ;
+    ns1:name "0104/0000/0005" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0005#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0000/0005" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0005#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0005#eventAffordanceForm> ;
+    ns1:name "0104/0000/0005" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0005#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0000/0005" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0005#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0005#propertyAffordanceForm> ;
+    ns1:name "0104/0000/0005" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0005#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0000/0005" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0006#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0006#actionAffordanceForm> ;
+    ns1:name "0104/0000/0006" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0006#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0000/0006" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0006#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0006#eventAffordanceForm> ;
+    ns1:name "0104/0000/0006" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0006#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0000/0006" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0006#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0006#propertyAffordanceForm> ;
+    ns1:name "0104/0000/0006" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0006#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0000/0006" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0007#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0007#actionAffordanceForm> ;
+    ns1:name "0104/0000/0007" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0007#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0000/0007" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0007#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0007#eventAffordanceForm> ;
+    ns1:name "0104/0000/0007" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0007#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0000/0007" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0007#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0007#propertyAffordanceForm> ;
+    ns1:name "0104/0000/0007" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0007#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0000/0007" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0008#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0008#actionAffordanceForm> ;
+    ns1:name "0104/0000/0008" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0008#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0000/0008" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0009#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0009#actionAffordanceForm> ;
+    ns1:name "0104/0000/0009" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0009#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0000/0009" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0040#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0040#actionAffordanceForm> ;
+    ns1:name "0104/0000/0040" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0040#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0000/0040" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0041#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0041#actionAffordanceForm> ;
+    ns1:name "0104/0000/0041" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0041#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0000/0041" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0042#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/0042#actionAffordanceForm> ;
+    ns1:name "0104/0000/0042" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/0042#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0000/0042" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/ffde#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/ffde#eventAffordanceForm> ;
+    ns1:name "0104/0000/ffde" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/ffde#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0000/ffde" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/ffde#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/ffde#propertyAffordanceForm> ;
+    ns1:name "0104/0000/ffde" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/ffde#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty,
+        ns1:writeProperty ;
+    ns2:hasTarget "./0104/0000/ffde" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/ffe2#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/ffe2#eventAffordanceForm> ;
+    ns1:name "0104/0000/ffe2" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/ffe2#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0000/ffe2" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/ffe2#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/ffe2#propertyAffordanceForm> ;
+    ns1:name "0104/0000/ffe2" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/ffe2#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0000/ffe2" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/ffe3#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/ffe3#eventAffordanceForm> ;
+    ns1:name "0104/0000/ffe3" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/ffe3#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0000/ffe3" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/ffe3#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/ffe3#propertyAffordanceForm> ;
+    ns1:name "0104/0000/ffe3" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/ffe3#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0000/ffe3" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/fffd#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/fffd#eventAffordanceForm> ;
+    ns1:name "0104/0000/fffd" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/fffd#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0000/fffd" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/fffd#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/fffd#propertyAffordanceForm> ;
+    ns1:name "0104/0000/fffd" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/fffd#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0000/fffd" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/fffe#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/fffe#eventAffordanceForm> ;
+    ns1:name "0104/0000/fffe" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/fffe#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0000/fffe" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/fffe#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0000/fffe#propertyAffordanceForm> ;
+    ns1:name "0104/0000/fffe" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0000/fffe#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0000/fffe" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0000#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0004/0000#actionAffordanceForm> ;
+    ns1:name "0104/0004/0000" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0000#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0004/0000" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0000#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0004/0000#eventAffordanceForm> ;
+    ns1:name "0104/0004/0000" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0000#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0004/0000" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0000#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0004/0000#propertyAffordanceForm> ;
+    ns1:name "0104/0004/0000" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0000#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0004/0000" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0001#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0004/0001#actionAffordanceForm> ;
+    ns1:name "0104/0004/0001" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0001#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0004/0001" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0002#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0004/0002#actionAffordanceForm> ;
+    ns1:name "0104/0004/0002" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0002#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0004/0002" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0003#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0004/0003#actionAffordanceForm> ;
+    ns1:name "0104/0004/0003" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0003#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0004/0003" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0004#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0004/0004#actionAffordanceForm> ;
+    ns1:name "0104/0004/0004" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0004#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0004/0004" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0005#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0004/0005#actionAffordanceForm> ;
+    ns1:name "0104/0004/0005" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0005#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0004/0005" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0006#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0004/0006#actionAffordanceForm> ;
+    ns1:name "0104/0004/0006" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0006#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0004/0006" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0007#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0004/0007#actionAffordanceForm> ;
+    ns1:name "0104/0004/0007" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0007#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0004/0007" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0008#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0004/0008#actionAffordanceForm> ;
+    ns1:name "0104/0004/0008" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0008#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0004/0008" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0009#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0004/0009#actionAffordanceForm> ;
+    ns1:name "0104/0004/0009" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0009#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0004/0009" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0040#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0004/0040#actionAffordanceForm> ;
+    ns1:name "0104/0004/0040" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0040#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0004/0040" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0041#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0004/0041#actionAffordanceForm> ;
+    ns1:name "0104/0004/0041" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0041#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0004/0041" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0042#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0004/0042#actionAffordanceForm> ;
+    ns1:name "0104/0004/0042" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/0042#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0004/0042" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/fffd#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0004/fffd#eventAffordanceForm> ;
+    ns1:name "0104/0004/fffd" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/fffd#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0004/fffd" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/fffd#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0004/fffd#propertyAffordanceForm> ;
+    ns1:name "0104/0004/fffd" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0004/fffd#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0004/fffd" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0000#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0005/0000#actionAffordanceForm> ;
+    ns1:name "0104/0005/0000" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0000#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0005/0000" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0000#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0005/0000#eventAffordanceForm> ;
+    ns1:name "0104/0005/0000" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0000#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0005/0000" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0000#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0005/0000#propertyAffordanceForm> ;
+    ns1:name "0104/0005/0000" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0000#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0005/0000" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0001#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0005/0001#actionAffordanceForm> ;
+    ns1:name "0104/0005/0001" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0001#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0005/0001" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0001#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0005/0001#eventAffordanceForm> ;
+    ns1:name "0104/0005/0001" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0001#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0005/0001" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0001#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0005/0001#propertyAffordanceForm> ;
+    ns1:name "0104/0005/0001" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0001#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0005/0001" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0002#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0005/0002#actionAffordanceForm> ;
+    ns1:name "0104/0005/0002" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0002#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0005/0002" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0002#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0005/0002#eventAffordanceForm> ;
+    ns1:name "0104/0005/0002" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0002#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0005/0002" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0002#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0005/0002#propertyAffordanceForm> ;
+    ns1:name "0104/0005/0002" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0002#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0005/0002" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0003#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0005/0003#actionAffordanceForm> ;
+    ns1:name "0104/0005/0003" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0003#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0005/0003" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0003#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0005/0003#eventAffordanceForm> ;
+    ns1:name "0104/0005/0003" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0003#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0005/0003" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0003#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0005/0003#propertyAffordanceForm> ;
+    ns1:name "0104/0005/0003" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0003#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0005/0003" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0004#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0005/0004#actionAffordanceForm> ;
+    ns1:name "0104/0005/0004" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0004#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0005/0004" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0004#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0005/0004#eventAffordanceForm> ;
+    ns1:name "0104/0005/0004" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0004#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0005/0004" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0004#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0005/0004#propertyAffordanceForm> ;
+    ns1:name "0104/0005/0004" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0004#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0005/0004" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0005#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0005/0005#actionAffordanceForm> ;
+    ns1:name "0104/0005/0005" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0005#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0005/0005" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0006#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0005/0006#actionAffordanceForm> ;
+    ns1:name "0104/0005/0006" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0006#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0005/0006" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0007#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0005/0007#actionAffordanceForm> ;
+    ns1:name "0104/0005/0007" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0007#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0005/0007" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0008#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0005/0008#actionAffordanceForm> ;
+    ns1:name "0104/0005/0008" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0008#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0005/0008" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0009#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0005/0009#actionAffordanceForm> ;
+    ns1:name "0104/0005/0009" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0009#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0005/0009" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0040#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0005/0040#actionAffordanceForm> ;
+    ns1:name "0104/0005/0040" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0040#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0005/0040" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0041#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0005/0041#actionAffordanceForm> ;
+    ns1:name "0104/0005/0041" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0041#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0005/0041" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0042#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0005/0042#actionAffordanceForm> ;
+    ns1:name "0104/0005/0042" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/0042#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0005/0042" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/fffd#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0005/fffd#eventAffordanceForm> ;
+    ns1:name "0104/0005/fffd" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/fffd#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0005/fffd" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/fffd#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0005/fffd#propertyAffordanceForm> ;
+    ns1:name "0104/0005/fffd" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0005/fffd#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0005/fffd" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0000#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/0000#actionAffordanceForm> ;
+    ns1:name "0104/0006/0000" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0000#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0006/0000" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0000#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/0000#eventAffordanceForm> ;
+    ns1:name "0104/0006/0000" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0000#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0006/0000" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0000#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/0000#propertyAffordanceForm> ;
+    ns1:name "0104/0006/0000" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0000#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0006/0000" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0001#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/0001#actionAffordanceForm> ;
+    ns1:name "0104/0006/0001" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0001#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0006/0001" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0002#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/0002#actionAffordanceForm> ;
+    ns1:name "0104/0006/0002" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0002#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0006/0002" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0003#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/0003#actionAffordanceForm> ;
+    ns1:name "0104/0006/0003" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0003#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0006/0003" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0004#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/0004#actionAffordanceForm> ;
+    ns1:name "0104/0006/0004" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0004#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0006/0004" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0005#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/0005#actionAffordanceForm> ;
+    ns1:name "0104/0006/0005" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0005#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0006/0005" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0006#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/0006#actionAffordanceForm> ;
+    ns1:name "0104/0006/0006" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0006#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0006/0006" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0007#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/0007#actionAffordanceForm> ;
+    ns1:name "0104/0006/0007" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0007#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0006/0007" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0008#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/0008#actionAffordanceForm> ;
+    ns1:name "0104/0006/0008" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0008#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0006/0008" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0009#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/0009#actionAffordanceForm> ;
+    ns1:name "0104/0006/0009" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0009#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0006/0009" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0040#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/0040#actionAffordanceForm> ;
+    ns1:name "0104/0006/0040" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0040#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0006/0040" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0041#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/0041#actionAffordanceForm> ;
+    ns1:name "0104/0006/0041" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0041#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0006/0041" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0042#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/0042#actionAffordanceForm> ;
+    ns1:name "0104/0006/0042" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/0042#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0006/0042" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/4001#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/4001#eventAffordanceForm> ;
+    ns1:name "0104/0006/4001" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/4001#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0006/4001" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/4001#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/4001#propertyAffordanceForm> ;
+    ns1:name "0104/0006/4001" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/4001#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty,
+        ns1:writeProperty ;
+    ns2:hasTarget "./0104/0006/4001" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/4002#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/4002#eventAffordanceForm> ;
+    ns1:name "0104/0006/4002" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/4002#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0006/4002" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/4002#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/4002#propertyAffordanceForm> ;
+    ns1:name "0104/0006/4002" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/4002#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty,
+        ns1:writeProperty ;
+    ns2:hasTarget "./0104/0006/4002" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/5000#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/5000#eventAffordanceForm> ;
+    ns1:name "0104/0006/5000" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/5000#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0006/5000" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/5000#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/5000#propertyAffordanceForm> ;
+    ns1:name "0104/0006/5000" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/5000#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty,
+        ns1:writeProperty ;
+    ns2:hasTarget "./0104/0006/5000" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/8000#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/8000#eventAffordanceForm> ;
+    ns1:name "0104/0006/8000" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/8000#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0006/8000" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/8000#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/8000#propertyAffordanceForm> ;
+    ns1:name "0104/0006/8000" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/8000#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty,
+        ns1:writeProperty ;
+    ns2:hasTarget "./0104/0006/8000" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/8001#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/8001#eventAffordanceForm> ;
+    ns1:name "0104/0006/8001" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/8001#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0006/8001" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/8001#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/8001#propertyAffordanceForm> ;
+    ns1:name "0104/0006/8001" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/8001#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty,
+        ns1:writeProperty ;
+    ns2:hasTarget "./0104/0006/8001" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/8002#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/8002#eventAffordanceForm> ;
+    ns1:name "0104/0006/8002" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/8002#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0006/8002" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/8002#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/8002#propertyAffordanceForm> ;
+    ns1:name "0104/0006/8002" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/8002#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty,
+        ns1:writeProperty ;
+    ns2:hasTarget "./0104/0006/8002" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/fffd#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/fffd#eventAffordanceForm> ;
+    ns1:name "0104/0006/fffd" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/fffd#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0006/fffd" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/fffd#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0006/fffd#propertyAffordanceForm> ;
+    ns1:name "0104/0006/fffd" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0006/fffd#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0006/fffd" .
+
+<https://127.0.0.1/3150411645006104563./0104/000a/0000#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/000a/0000#actionAffordanceForm> ;
+    ns1:name "0104/000a/0000" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/000a/0000#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/000a/0000" .
+
+<https://127.0.0.1/3150411645006104563./0104/000a/0001#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/000a/0001#actionAffordanceForm> ;
+    ns1:name "0104/000a/0001" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/000a/0001#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/000a/0001" .
+
+<https://127.0.0.1/3150411645006104563./0104/000a/0002#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/000a/0002#actionAffordanceForm> ;
+    ns1:name "0104/000a/0002" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/000a/0002#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/000a/0002" .
+
+<https://127.0.0.1/3150411645006104563./0104/000a/0003#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/000a/0003#actionAffordanceForm> ;
+    ns1:name "0104/000a/0003" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/000a/0003#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/000a/0003" .
+
+<https://127.0.0.1/3150411645006104563./0104/000a/0004#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/000a/0004#actionAffordanceForm> ;
+    ns1:name "0104/000a/0004" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/000a/0004#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/000a/0004" .
+
+<https://127.0.0.1/3150411645006104563./0104/000a/0005#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/000a/0005#actionAffordanceForm> ;
+    ns1:name "0104/000a/0005" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/000a/0005#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/000a/0005" .
+
+<https://127.0.0.1/3150411645006104563./0104/000a/0006#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/000a/0006#actionAffordanceForm> ;
+    ns1:name "0104/000a/0006" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/000a/0006#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/000a/0006" .
+
+<https://127.0.0.1/3150411645006104563./0104/000a/0007#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/000a/0007#actionAffordanceForm> ;
+    ns1:name "0104/000a/0007" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/000a/0007#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/000a/0007" .
+
+<https://127.0.0.1/3150411645006104563./0104/000a/0008#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/000a/0008#actionAffordanceForm> ;
+    ns1:name "0104/000a/0008" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/000a/0008#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/000a/0008" .
+
+<https://127.0.0.1/3150411645006104563./0104/000a/0009#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/000a/0009#actionAffordanceForm> ;
+    ns1:name "0104/000a/0009" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/000a/0009#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/000a/0009" .
+
+<https://127.0.0.1/3150411645006104563./0104/000a/0040#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/000a/0040#actionAffordanceForm> ;
+    ns1:name "0104/000a/0040" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/000a/0040#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/000a/0040" .
+
+<https://127.0.0.1/3150411645006104563./0104/000a/0041#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/000a/0041#actionAffordanceForm> ;
+    ns1:name "0104/000a/0041" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/000a/0041#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/000a/0041" .
+
+<https://127.0.0.1/3150411645006104563./0104/000a/0042#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/000a/0042#actionAffordanceForm> ;
+    ns1:name "0104/000a/0042" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/000a/0042#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/000a/0042" .
+
+<https://127.0.0.1/3150411645006104563./0104/000a/fffd#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/000a/fffd#propertyAffordanceForm> ;
+    ns1:name "0104/000a/fffd" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/000a/fffd#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/000a/fffd" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0000#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0019/0000#actionAffordanceForm> ;
+    ns1:name "0104/0019/0000" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0000#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0019/0000" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0000#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0019/0000#propertyAffordanceForm> ;
+    ns1:name "0104/0019/0000" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0000#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0019/0000" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0001#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0019/0001#actionAffordanceForm> ;
+    ns1:name "0104/0019/0001" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0001#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0019/0001" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0001#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0019/0001#propertyAffordanceForm> ;
+    ns1:name "0104/0019/0001" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0001#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0019/0001" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0002#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0019/0002#actionAffordanceForm> ;
+    ns1:name "0104/0019/0002" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0002#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0019/0002" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0002#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0019/0002#propertyAffordanceForm> ;
+    ns1:name "0104/0019/0002" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0002#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0019/0002" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0003#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0019/0003#actionAffordanceForm> ;
+    ns1:name "0104/0019/0003" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0003#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0019/0003" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0003#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0019/0003#propertyAffordanceForm> ;
+    ns1:name "0104/0019/0003" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0003#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0019/0003" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0004#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0019/0004#actionAffordanceForm> ;
+    ns1:name "0104/0019/0004" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0004#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0019/0004" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0004#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0019/0004#propertyAffordanceForm> ;
+    ns1:name "0104/0019/0004" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0004#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0019/0004" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0005#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0019/0005#actionAffordanceForm> ;
+    ns1:name "0104/0019/0005" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0005#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0019/0005" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0005#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0019/0005#propertyAffordanceForm> ;
+    ns1:name "0104/0019/0005" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0005#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0019/0005" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0006#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0019/0006#actionAffordanceForm> ;
+    ns1:name "0104/0019/0006" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0006#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0019/0006" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0006#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0019/0006#propertyAffordanceForm> ;
+    ns1:name "0104/0019/0006" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0006#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0019/0006" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0007#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0019/0007#actionAffordanceForm> ;
+    ns1:name "0104/0019/0007" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0007#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0019/0007" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0007#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0019/0007#propertyAffordanceForm> ;
+    ns1:name "0104/0019/0007" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0007#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0019/0007" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0008#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0019/0008#actionAffordanceForm> ;
+    ns1:name "0104/0019/0008" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0008#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0019/0008" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0008#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0019/0008#propertyAffordanceForm> ;
+    ns1:name "0104/0019/0008" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0008#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0019/0008" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0009#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0019/0009#actionAffordanceForm> ;
+    ns1:name "0104/0019/0009" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0009#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0019/0009" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0009#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0019/0009#propertyAffordanceForm> ;
+    ns1:name "0104/0019/0009" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0009#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0019/0009" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0040#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0019/0040#actionAffordanceForm> ;
+    ns1:name "0104/0019/0040" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0040#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0019/0040" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0041#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0019/0041#actionAffordanceForm> ;
+    ns1:name "0104/0019/0041" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0041#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0019/0041" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0042#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0019/0042#actionAffordanceForm> ;
+    ns1:name "0104/0019/0042" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/0042#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0019/0042" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/fffd#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0019/fffd#propertyAffordanceForm> ;
+    ns1:name "0104/0019/fffd" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0019/fffd#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0019/fffd" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0000#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0702/0000#actionAffordanceForm> ;
+    ns1:name "0104/0702/0000" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0000#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0702/0000" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0000#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0702/0000#eventAffordanceForm> ;
+    ns1:name "0104/0702/0000" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0000#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0702/0000" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0000#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0702/0000#propertyAffordanceForm> ;
+    ns1:name "0104/0702/0000" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0000#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0702/0000" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0001#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0702/0001#actionAffordanceForm> ;
+    ns1:name "0104/0702/0001" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0001#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0702/0001" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0002#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0702/0002#actionAffordanceForm> ;
+    ns1:name "0104/0702/0002" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0002#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0702/0002" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0003#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0702/0003#actionAffordanceForm> ;
+    ns1:name "0104/0702/0003" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0003#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0702/0003" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0004#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0702/0004#actionAffordanceForm> ;
+    ns1:name "0104/0702/0004" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0004#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0702/0004" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0005#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0702/0005#actionAffordanceForm> ;
+    ns1:name "0104/0702/0005" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0005#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0702/0005" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0006#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0702/0006#actionAffordanceForm> ;
+    ns1:name "0104/0702/0006" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0006#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0702/0006" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0007#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0702/0007#actionAffordanceForm> ;
+    ns1:name "0104/0702/0007" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0007#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0702/0007" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0008#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0702/0008#actionAffordanceForm> ;
+    ns1:name "0104/0702/0008" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0008#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0702/0008" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0009#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0702/0009#actionAffordanceForm> ;
+    ns1:name "0104/0702/0009" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0009#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0702/0009" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0040#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0702/0040#actionAffordanceForm> ;
+    ns1:name "0104/0702/0040" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0040#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0702/0040" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0041#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0702/0041#actionAffordanceForm> ;
+    ns1:name "0104/0702/0041" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0041#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0702/0041" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0042#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0702/0042#actionAffordanceForm> ;
+    ns1:name "0104/0702/0042" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0042#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0702/0042" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0200#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0702/0200#eventAffordanceForm> ;
+    ns1:name "0104/0702/0200" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0200#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0702/0200" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0200#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0702/0200#propertyAffordanceForm> ;
+    ns1:name "0104/0702/0200" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0200#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0702/0200" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0300#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0702/0300#eventAffordanceForm> ;
+    ns1:name "0104/0702/0300" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0300#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0702/0300" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0300#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0702/0300#propertyAffordanceForm> ;
+    ns1:name "0104/0702/0300" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0300#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0702/0300" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0303#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0702/0303#eventAffordanceForm> ;
+    ns1:name "0104/0702/0303" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0303#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0702/0303" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0303#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0702/0303#propertyAffordanceForm> ;
+    ns1:name "0104/0702/0303" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0303#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0702/0303" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0306#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0702/0306#eventAffordanceForm> ;
+    ns1:name "0104/0702/0306" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0306#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0702/0306" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0306#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0702/0306#propertyAffordanceForm> ;
+    ns1:name "0104/0702/0306" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/0306#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0702/0306" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/fffd#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0702/fffd#eventAffordanceForm> ;
+    ns1:name "0104/0702/fffd" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/fffd#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0702/fffd" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/fffd#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0702/fffd#propertyAffordanceForm> ;
+    ns1:name "0104/0702/fffd" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0702/fffd#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0702/fffd" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0000#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0b04/0000#actionAffordanceForm> ;
+    ns1:name "0104/0b04/0000" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0000#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0b04/0000" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0001#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0b04/0001#actionAffordanceForm> ;
+    ns1:name "0104/0b04/0001" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0001#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0b04/0001" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0002#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0b04/0002#actionAffordanceForm> ;
+    ns1:name "0104/0b04/0002" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0002#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0b04/0002" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0003#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0b04/0003#actionAffordanceForm> ;
+    ns1:name "0104/0b04/0003" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0003#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0b04/0003" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0004#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0b04/0004#actionAffordanceForm> ;
+    ns1:name "0104/0b04/0004" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0004#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0b04/0004" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0005#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0b04/0005#actionAffordanceForm> ;
+    ns1:name "0104/0b04/0005" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0005#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0b04/0005" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0006#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0b04/0006#actionAffordanceForm> ;
+    ns1:name "0104/0b04/0006" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0006#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0b04/0006" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0007#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0b04/0007#actionAffordanceForm> ;
+    ns1:name "0104/0b04/0007" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0007#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0b04/0007" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0008#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0b04/0008#actionAffordanceForm> ;
+    ns1:name "0104/0b04/0008" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0008#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0b04/0008" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0009#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0b04/0009#actionAffordanceForm> ;
+    ns1:name "0104/0b04/0009" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0009#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0b04/0009" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0040#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0b04/0040#actionAffordanceForm> ;
+    ns1:name "0104/0b04/0040" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0040#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0b04/0040" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0041#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0b04/0041#actionAffordanceForm> ;
+    ns1:name "0104/0b04/0041" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0041#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0b04/0041" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0042#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0b04/0042#actionAffordanceForm> ;
+    ns1:name "0104/0b04/0042" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0042#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/0b04/0042" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0505#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0b04/0505#eventAffordanceForm> ;
+    ns1:name "0104/0b04/0505" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0505#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0b04/0505" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0505#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0b04/0505#propertyAffordanceForm> ;
+    ns1:name "0104/0b04/0505" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0505#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0b04/0505" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0508#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0b04/0508#eventAffordanceForm> ;
+    ns1:name "0104/0b04/0508" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0508#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0b04/0508" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0508#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0b04/0508#propertyAffordanceForm> ;
+    ns1:name "0104/0b04/0508" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/0508#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0b04/0508" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/050b#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0b04/050b#eventAffordanceForm> ;
+    ns1:name "0104/0b04/050b" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/050b#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0b04/050b" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/050b#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0b04/050b#propertyAffordanceForm> ;
+    ns1:name "0104/0b04/050b" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/050b#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0b04/050b" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/fffd#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0b04/fffd#eventAffordanceForm> ;
+    ns1:name "0104/0b04/fffd" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/fffd#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/0b04/fffd" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/fffd#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/0b04/fffd#propertyAffordanceForm> ;
+    ns1:name "0104/0b04/fffd" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/0b04/fffd#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/0b04/fffd" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/0000#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e000/0000#actionAffordanceForm> ;
+    ns1:name "0104/e000/0000" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/0000#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/e000/0000" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/0001#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e000/0001#actionAffordanceForm> ;
+    ns1:name "0104/e000/0001" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/0001#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/e000/0001" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/0002#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e000/0002#actionAffordanceForm> ;
+    ns1:name "0104/e000/0002" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/0002#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/e000/0002" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/0003#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e000/0003#actionAffordanceForm> ;
+    ns1:name "0104/e000/0003" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/0003#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/e000/0003" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/0004#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e000/0004#actionAffordanceForm> ;
+    ns1:name "0104/e000/0004" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/0004#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/e000/0004" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/0005#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e000/0005#actionAffordanceForm> ;
+    ns1:name "0104/e000/0005" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/0005#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/e000/0005" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/0006#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e000/0006#actionAffordanceForm> ;
+    ns1:name "0104/e000/0006" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/0006#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/e000/0006" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/0007#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e000/0007#actionAffordanceForm> ;
+    ns1:name "0104/e000/0007" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/0007#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/e000/0007" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/0008#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e000/0008#actionAffordanceForm> ;
+    ns1:name "0104/e000/0008" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/0008#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/e000/0008" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/0009#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e000/0009#actionAffordanceForm> ;
+    ns1:name "0104/e000/0009" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/0009#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/e000/0009" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/0040#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e000/0040#actionAffordanceForm> ;
+    ns1:name "0104/e000/0040" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/0040#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/e000/0040" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/0041#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e000/0041#actionAffordanceForm> ;
+    ns1:name "0104/e000/0041" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/0041#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/e000/0041" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/0042#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e000/0042#actionAffordanceForm> ;
+    ns1:name "0104/e000/0042" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/0042#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/e000/0042" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/d001#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e000/d001#eventAffordanceForm> ;
+    ns1:name "0104/e000/d001" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/d001#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/e000/d001" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/d001#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e000/d001#propertyAffordanceForm> ;
+    ns1:name "0104/e000/d001" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/d001#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty,
+        ns1:writeProperty ;
+    ns2:hasTarget "./0104/e000/d001" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/d002#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e000/d002#eventAffordanceForm> ;
+    ns1:name "0104/e000/d002" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/d002#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/e000/d002" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/d002#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e000/d002#propertyAffordanceForm> ;
+    ns1:name "0104/e000/d002" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/d002#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty,
+        ns1:writeProperty ;
+    ns2:hasTarget "./0104/e000/d002" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/d003#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e000/d003#eventAffordanceForm> ;
+    ns1:name "0104/e000/d003" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/d003#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/e000/d003" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/d003#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e000/d003#propertyAffordanceForm> ;
+    ns1:name "0104/e000/d003" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/d003#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty,
+        ns1:writeProperty ;
+    ns2:hasTarget "./0104/e000/d003" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/d004#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e000/d004#eventAffordanceForm> ;
+    ns1:name "0104/e000/d004" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/d004#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/e000/d004" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/d004#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e000/d004#propertyAffordanceForm> ;
+    ns1:name "0104/e000/d004" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/d004#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty,
+        ns1:writeProperty ;
+    ns2:hasTarget "./0104/e000/d004" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/d005#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e000/d005#eventAffordanceForm> ;
+    ns1:name "0104/e000/d005" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/d005#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/e000/d005" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/d005#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e000/d005#propertyAffordanceForm> ;
+    ns1:name "0104/e000/d005" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e000/d005#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty,
+        ns1:writeProperty ;
+    ns2:hasTarget "./0104/e000/d005" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/0000#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/0000#actionAffordanceForm> ;
+    ns1:name "0104/e001/0000" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/0000#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/e001/0000" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/0001#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/0001#actionAffordanceForm> ;
+    ns1:name "0104/e001/0001" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/0001#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/e001/0001" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/0002#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/0002#actionAffordanceForm> ;
+    ns1:name "0104/e001/0002" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/0002#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/e001/0002" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/0003#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/0003#actionAffordanceForm> ;
+    ns1:name "0104/e001/0003" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/0003#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/e001/0003" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/0004#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/0004#actionAffordanceForm> ;
+    ns1:name "0104/e001/0004" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/0004#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/e001/0004" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/0005#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/0005#actionAffordanceForm> ;
+    ns1:name "0104/e001/0005" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/0005#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/e001/0005" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/0006#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/0006#actionAffordanceForm> ;
+    ns1:name "0104/e001/0006" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/0006#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/e001/0006" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/0007#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/0007#actionAffordanceForm> ;
+    ns1:name "0104/e001/0007" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/0007#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/e001/0007" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/0008#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/0008#actionAffordanceForm> ;
+    ns1:name "0104/e001/0008" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/0008#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/e001/0008" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/0009#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/0009#actionAffordanceForm> ;
+    ns1:name "0104/e001/0009" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/0009#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/e001/0009" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/0040#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/0040#actionAffordanceForm> ;
+    ns1:name "0104/e001/0040" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/0040#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/e001/0040" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/0041#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/0041#actionAffordanceForm> ;
+    ns1:name "0104/e001/0041" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/0041#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/e001/0041" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/0042#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/0042#actionAffordanceForm> ;
+    ns1:name "0104/e001/0042" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/0042#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./0104/e001/0042" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d000#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/d000#eventAffordanceForm> ;
+    ns1:name "0104/e001/d000" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d000#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/e001/d000" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d000#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/d000#propertyAffordanceForm> ;
+    ns1:name "0104/e001/d000" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d000#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/e001/d000" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d001#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/d001#eventAffordanceForm> ;
+    ns1:name "0104/e001/d001" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d001#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/e001/d001" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d001#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/d001#propertyAffordanceForm> ;
+    ns1:name "0104/e001/d001" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d001#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/e001/d001" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d002#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/d002#eventAffordanceForm> ;
+    ns1:name "0104/e001/d002" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d002#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/e001/d002" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d002#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/d002#propertyAffordanceForm> ;
+    ns1:name "0104/e001/d002" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d002#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/e001/d002" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d003#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/d003#eventAffordanceForm> ;
+    ns1:name "0104/e001/d003" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d003#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/e001/d003" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d003#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/d003#propertyAffordanceForm> ;
+    ns1:name "0104/e001/d003" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d003#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/e001/d003" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d004#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/d004#eventAffordanceForm> ;
+    ns1:name "0104/e001/d004" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d004#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/e001/d004" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d004#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/d004#propertyAffordanceForm> ;
+    ns1:name "0104/e001/d004" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d004#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/e001/d004" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d005#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/d005#eventAffordanceForm> ;
+    ns1:name "0104/e001/d005" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d005#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/e001/d005" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d005#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/d005#propertyAffordanceForm> ;
+    ns1:name "0104/e001/d005" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d005#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./0104/e001/d005" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d010#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/d010#eventAffordanceForm> ;
+    ns1:name "0104/e001/d010" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d010#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/e001/d010" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d010#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/d010#propertyAffordanceForm> ;
+    ns1:name "0104/e001/d010" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d010#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty,
+        ns1:writeProperty ;
+    ns2:hasTarget "./0104/e001/d010" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d020#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/d020#eventAffordanceForm> ;
+    ns1:name "0104/e001/d020" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d020#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/e001/d020" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d020#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/d020#propertyAffordanceForm> ;
+    ns1:name "0104/e001/d020" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d020#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty,
+        ns1:writeProperty ;
+    ns2:hasTarget "./0104/e001/d020" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d030#eventAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/d030#eventAffordanceForm> ;
+    ns1:name "0104/e001/d030" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d030#eventAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:subscribeEvent ;
+    ns2:hasTarget "./0104/e001/d030" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d030#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./0104/e001/d030#propertyAffordanceForm> ;
+    ns1:name "0104/e001/d030" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./0104/e001/d030#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty,
+        ns1:writeProperty ;
+    ns2:hasTarget "./0104/e001/d030" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0000#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./a1e0/0021/0000#actionAffordanceForm> ;
+    ns1:name "a1e0/0021/0000" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0000#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./a1e0/0021/0000" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0001#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./a1e0/0021/0001#actionAffordanceForm> ;
+    ns1:name "a1e0/0021/0001" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0001#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./a1e0/0021/0001" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0002#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./a1e0/0021/0002#actionAffordanceForm> ;
+    ns1:name "a1e0/0021/0002" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0002#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./a1e0/0021/0002" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0003#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./a1e0/0021/0003#actionAffordanceForm> ;
+    ns1:name "a1e0/0021/0003" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0003#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./a1e0/0021/0003" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0004#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./a1e0/0021/0004#actionAffordanceForm> ;
+    ns1:name "a1e0/0021/0004" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0004#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./a1e0/0021/0004" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0005#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./a1e0/0021/0005#actionAffordanceForm> ;
+    ns1:name "a1e0/0021/0005" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0005#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./a1e0/0021/0005" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0006#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./a1e0/0021/0006#actionAffordanceForm> ;
+    ns1:name "a1e0/0021/0006" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0006#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./a1e0/0021/0006" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0007#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./a1e0/0021/0007#actionAffordanceForm> ;
+    ns1:name "a1e0/0021/0007" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0007#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./a1e0/0021/0007" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0008#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./a1e0/0021/0008#actionAffordanceForm> ;
+    ns1:name "a1e0/0021/0008" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0008#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./a1e0/0021/0008" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0009#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./a1e0/0021/0009#actionAffordanceForm> ;
+    ns1:name "a1e0/0021/0009" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0009#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./a1e0/0021/0009" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0010#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./a1e0/0021/0010#propertyAffordanceForm> ;
+    ns1:name "a1e0/0021/0010" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0010#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./a1e0/0021/0010" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0011#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./a1e0/0021/0011#propertyAffordanceForm> ;
+    ns1:name "a1e0/0021/0011" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0011#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./a1e0/0021/0011" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0016#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./a1e0/0021/0016#propertyAffordanceForm> ;
+    ns1:name "a1e0/0021/0016" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0016#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./a1e0/0021/0016" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0017#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./a1e0/0021/0017#propertyAffordanceForm> ;
+    ns1:name "a1e0/0021/0017" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0017#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./a1e0/0021/0017" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0020#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./a1e0/0021/0020#propertyAffordanceForm> ;
+    ns1:name "a1e0/0021/0020" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0020#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty,
+        ns1:writeProperty ;
+    ns2:hasTarget "./a1e0/0021/0020" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0021#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./a1e0/0021/0021#propertyAffordanceForm> ;
+    ns1:name "a1e0/0021/0021" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0021#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty,
+        ns1:writeProperty ;
+    ns2:hasTarget "./a1e0/0021/0021" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0022#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./a1e0/0021/0022#propertyAffordanceForm> ;
+    ns1:name "a1e0/0021/0022" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0022#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty,
+        ns1:writeProperty ;
+    ns2:hasTarget "./a1e0/0021/0022" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0040#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./a1e0/0021/0040#actionAffordanceForm> ;
+    ns1:name "a1e0/0021/0040" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0040#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./a1e0/0021/0040" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0041#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./a1e0/0021/0041#actionAffordanceForm> ;
+    ns1:name "a1e0/0021/0041" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0041#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./a1e0/0021/0041" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0042#actionAffordance> a ns1:ActionAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./a1e0/0021/0042#actionAffordanceForm> ;
+    ns1:name "a1e0/0021/0042" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/0042#actionAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:invokeAction ;
+    ns2:hasTarget "./a1e0/0021/0042" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/fffd#propertyAffordance> a ns1:PropertyAffordance ;
+    ns1:hasForm <https://127.0.0.1/3150411645006104563./a1e0/0021/fffd#propertyAffordanceForm> ;
+    ns1:name "a1e0/0021/fffd" ;
+    ns1:type "string" .
+
+<https://127.0.0.1/3150411645006104563./a1e0/0021/fffd#propertyAffordanceForm> a ns2:Form ;
+    ns2:forContentType "application/x.binary-data-stream" ;
+    ns2:hasOperationType ns1:readProperty ;
+    ns2:hasTarget "./a1e0/0021/fffd" .
+

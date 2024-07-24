@@ -3,10 +3,10 @@ import logging.config
 import os
 
 from dotenv import load_dotenv
-from pydantic import BaseModel, Field
-from pydantic_settings import BaseSettings, EnvSettingsSource, SettingsConfigDict
+from pydantic import Field
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
-load_dotenv()
+load_dotenv(dotenv_path="../.env")
 
 
 import os
@@ -88,7 +88,76 @@ class EnrichmentConfig(BaseSettings):
 
 
 class ZigbeeConfig(BaseSettings):
-    database: str = Field(default="/home/zigbee.db", alias="ZIGBEE_DATABASE")
+    database: str = (
+        "./retrowot/zigbee.db"  # Field(default="/home/test/zigbee.db", alias="ZIGBEE_DATABASE")
+    )
+    network_channel: int = Field(default=20, alias="ZIGBEE_NETWORK_CHANNEL")
+    pairing_timeout: int = Field(default=60, alias="ZGIBEE_PAIRING_TIMEOUT")
+    device_path: str = Field(default="/dev/ttyUSB0", alias="ZIGBEE_DEVICE_PATH")
+    baurate: int = Field(default=115200, alias="ZIGBEE_DEVICE_BAURATE")
+    radio_type: str = Field(default="ezsp", alias="ZIGBEE_DEVICE_RADIO_TYPE")
+
+    class Config:
+        env_file = "../.env"
+        env_file_encoding = "utf-8"
+
+
+class BaseOntologiesConfig(BaseSettings):
+
+    thing_description_ontology_path: str = Field(
+        default="./retrowot/ontologies/td.ttl", alias="THING_DESCRIPTION_ONTOLOGY_PATH"
+    )
+    thing_model_ontology_path: str = Field(
+        default="./retrowot/ontologies/tm.ttl", alias="THING_MODEL_ONTOLOGY_PATH"
+    )
+    hypermedia_ontology_path: str = Field(
+        default="./retrowot/ontologies/hctl.ttl", alias="HYPERMEDIA_ONTOLOGY_PATH"
+    )
+    web_security_ontology_path: str = Field(
+        default="./retrowot/ontologies/wotsec.ttl", alias="WEB_SECURITY_ONTOLOGY_PATH"
+    )
+
+    class Config:
+        env_file = "../.env"
+        env_file_encoding = "utf-8"
+
+
+class AlignmentsConfig(BaseSettings):
+
+    bluetooth_alignments_path: str = Field(
+        default="./retrowot/alignments/bluetooth_gatt_alignments.ttl",
+        alias="BLUETOOTH_ALIGNMENTS_PATH",
+    )
+    zigbee_alignments_path: str = Field(
+        default="./retrowot/alignments/zigbee_alignments.ttl",
+        alias="ZIGBEE_ALIGNMENTS_PATH",
+    )
+
+    class Config:
+        env_file = "../.env"
+        env_file_encoding = "utf-8"
+
+
+class ThingModelsConfig(BaseSettings):
+
+    bluetooth_thing_models_path: str = Field(
+        default="./retrowot/thing_models/bluetooth_thing_models.ttl",
+        alias="BLUETOOTH_THING_MODELS_PATH",
+    )
+    zigbee_thing_models_path: str = Field(
+        default="./retrowot/thing_models/zigbee_thing_models.ttl",
+        alias="ZIGBEE_THING_MODELS_PATH",
+    )
+
+    class Config:
+        env_file = "../.env"
+        env_file_encoding = "utf-8"
+
+
+class ZigbeeConfig(BaseSettings):
+    database: str = (
+        "./retrowot/zigbee.db"  # Field(default="/home/test/zigbee.db", alias="ZIGBEE_DATABASE")
+    )
     network_channel: int = Field(default=20, alias="ZIGBEE_NETWORK_CHANNEL")
     pairing_timeout: int = Field(default=60, alias="ZGIBEE_PAIRING_TIMEOUT")
     device_path: str = Field(default="/dev/ttyUSB0", alias="ZIGBEE_DEVICE_PATH")
@@ -115,7 +184,7 @@ class Settings(BaseSettings):
     hci: HCIConfig = Field(default_factory=HCIConfig)
     bluetooth: BluetoothConfig = Field(default_factory=BluetoothConfig)
     thing_directory: ThingDirectoryConfig = Field(default_factory=ThingDirectoryConfig)
-    server_type: str = Field(default="coap", alias="SERVER_TYPE")
+    server_type: str = Field(default="http", alias="SERVER_TYPE")
     model_config = SettingsConfigDict(
         env_file="../.env", env_file_encoding="utf-8", extra="ignore"
     )
@@ -123,10 +192,13 @@ class Settings(BaseSettings):
     coap_server: CoAPConfig = Field(default_factory=CoAPConfig)
     zigbee: ZigbeeConfig = Field(default_factory=ZigbeeConfig)
     enrichment: EnrichmentConfig = Field(default_factory=EnrichmentConfig)
+    ontologies: BaseOntologiesConfig = Field(default_factory=BaseOntologiesConfig)
+    alignments: AlignmentsConfig = Field(default_factory=AlignmentsConfig)
+    thing_models: ThingModelsConfig = Field(default_factory=ThingModelsConfig)
 
 
 settings = Settings()
-logger.debug(f"Initialized settings with: {settings}")
+print(f"Initialized settings with: {settings}")
 
 
 if __name__ == "__main__":

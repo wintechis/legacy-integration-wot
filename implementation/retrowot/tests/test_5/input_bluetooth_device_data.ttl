@@ -1,0 +1,196 @@
+@prefix ns1: <https://www.w3.org/2019/wot/hypermedia#> .
+@prefix ns2: <https://www.w3.org/2019/wot/td#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://127.0.0.1/8470331561404384697> a ns2:PartialThingDescription ;
+    ns2:title  "BBC micro:bit [getov]";
+    rdfs:seeAlso <https://127.0.0.1/8470331561404384697> ;
+    ns2:baseURI "gatt://F6:98:F1:18:38:36" ;
+    ns2:hasPropertyAffordance <https://127.0.0.1/8470331561404384697./0000180000001000800000805f9b34fb/00002a0000001000800000805f9b34fb#propertyAffordance>,
+        <https://127.0.0.1/8470331561404384697./0000180000001000800000805f9b34fb/00002a0100001000800000805f9b34fb#propertyAffordance>,
+        <https://127.0.0.1/8470331561404384697./0000180000001000800000805f9b34fb/00002a0400001000800000805f9b34fb#propertyAffordance>,
+        <https://127.0.0.1/8470331561404384697./0000180000001000800000805f9b34fb/00002aa600001000800000805f9b34fb#propertyAffordance>,
+        <https://127.0.0.1/8470331561404384697./0000180a00001000800000805f9b34fb/00002a2400001000800000805f9b34fb#propertyAffordance>,
+        <https://127.0.0.1/8470331561404384697./0000180a00001000800000805f9b34fb/00002a2500001000800000805f9b34fb#propertyAffordance>,
+        <https://127.0.0.1/8470331561404384697./0000180a00001000800000805f9b34fb/00002a2600001000800000805f9b34fb#propertyAffordance>,
+        <https://127.0.0.1/8470331561404384697./e95d0753251d470aa062fa1922dfa9a8/e95dca4b251d470aa062fa1922dfa9a8#propertyAffordance>,
+        <https://127.0.0.1/8470331561404384697./e95d0753251d470aa062fa1922dfa9a8/e95dfb24251d470aa062fa1922dfa9a8#propertyAffordance>,
+        <https://127.0.0.1/8470331561404384697./e95d6100251d470aa062fa1922dfa9a8/e95d1b25251d470aa062fa1922dfa9a8#propertyAffordance>,
+        <https://127.0.0.1/8470331561404384697./e95d6100251d470aa062fa1922dfa9a8/e95d9250251d470aa062fa1922dfa9a8#propertyAffordance>,
+        <https://127.0.0.1/8470331561404384697./e95d93af251d470aa062fa1922dfa9a8/e95d9775251d470aa062fa1922dfa9a8#propertyAffordance>,
+        <https://127.0.0.1/8470331561404384697./e95d93af251d470aa062fa1922dfa9a8/e95db84c251d470aa062fa1922dfa9a8#propertyAffordance>,
+        <https://127.0.0.1/8470331561404384697./e95d9882251d470aa062fa1922dfa9a8/e95dda90251d470aa062fa1922dfa9a8#propertyAffordance>,
+        <https://127.0.0.1/8470331561404384697./e95d9882251d470aa062fa1922dfa9a8/e95dda91251d470aa062fa1922dfa9a8#propertyAffordance>,
+        <https://127.0.0.1/8470331561404384697./e95dd91d251d470aa062fa1922dfa9a8/e95d0d2d251d470aa062fa1922dfa9a8#propertyAffordance>,
+        <https://127.0.0.1/8470331561404384697./e95dd91d251d470aa062fa1922dfa9a8/e95d7b77251d470aa062fa1922dfa9a8#propertyAffordance> .
+
+<https://127.0.0.1/8470331561404384697./0000180000001000800000805f9b34fb/00002a0000001000800000805f9b34fb#propertyAffordance> a ns2:PropertyAffordance ;
+    ns2:hasForm <https://127.0.0.1/8470331561404384697./0000180000001000800000805f9b34fb/00002a0000001000800000805f9b34fb#propertyAffordanceForm> ;
+    ns2:name "0000180000001000800000805f9b34fb/00002a0000001000800000805f9b34fb" ;
+    ns2:type "string" .
+
+<https://127.0.0.1/8470331561404384697./0000180000001000800000805f9b34fb/00002a0000001000800000805f9b34fb#propertyAffordanceForm> a ns1:Form ;
+    ns1:forContentType "application/x.binary-data-stream" ;
+    ns1:hasOperationType ns2:readProperty ;
+    ns1:hasTarget "./0000180000001000800000805f9b34fb/00002a0000001000800000805f9b34fb" .
+
+<https://127.0.0.1/8470331561404384697./0000180000001000800000805f9b34fb/00002a0100001000800000805f9b34fb#propertyAffordance> a ns2:PropertyAffordance ;
+    ns2:hasForm <https://127.0.0.1/8470331561404384697./0000180000001000800000805f9b34fb/00002a0100001000800000805f9b34fb#propertyAffordanceForm> ;
+    ns2:name "0000180000001000800000805f9b34fb/00002a0100001000800000805f9b34fb" ;
+    ns2:type "string" .
+
+<https://127.0.0.1/8470331561404384697./0000180000001000800000805f9b34fb/00002a0100001000800000805f9b34fb#propertyAffordanceForm> a ns1:Form ;
+    ns1:forContentType "application/x.binary-data-stream" ;
+    ns1:hasOperationType ns2:readProperty ;
+    ns1:hasTarget "./0000180000001000800000805f9b34fb/00002a0100001000800000805f9b34fb" .
+
+<https://127.0.0.1/8470331561404384697./0000180000001000800000805f9b34fb/00002a0400001000800000805f9b34fb#propertyAffordance> a ns2:PropertyAffordance ;
+    ns2:hasForm <https://127.0.0.1/8470331561404384697./0000180000001000800000805f9b34fb/00002a0400001000800000805f9b34fb#propertyAffordanceForm> ;
+    ns2:name "0000180000001000800000805f9b34fb/00002a0400001000800000805f9b34fb" ;
+    ns2:type "string" .
+
+<https://127.0.0.1/8470331561404384697./0000180000001000800000805f9b34fb/00002a0400001000800000805f9b34fb#propertyAffordanceForm> a ns1:Form ;
+    ns1:forContentType "application/x.binary-data-stream" ;
+    ns1:hasOperationType ns2:readProperty ;
+    ns1:hasTarget "./0000180000001000800000805f9b34fb/00002a0400001000800000805f9b34fb" .
+
+<https://127.0.0.1/8470331561404384697./0000180000001000800000805f9b34fb/00002aa600001000800000805f9b34fb#propertyAffordance> a ns2:PropertyAffordance ;
+    ns2:hasForm <https://127.0.0.1/8470331561404384697./0000180000001000800000805f9b34fb/00002aa600001000800000805f9b34fb#propertyAffordanceForm> ;
+    ns2:name "0000180000001000800000805f9b34fb/00002aa600001000800000805f9b34fb" ;
+    ns2:type "string" .
+
+<https://127.0.0.1/8470331561404384697./0000180000001000800000805f9b34fb/00002aa600001000800000805f9b34fb#propertyAffordanceForm> a ns1:Form ;
+    ns1:forContentType "application/x.binary-data-stream" ;
+    ns1:hasOperationType ns2:readProperty ;
+    ns1:hasTarget "./0000180000001000800000805f9b34fb/00002aa600001000800000805f9b34fb" .
+
+<https://127.0.0.1/8470331561404384697./0000180a00001000800000805f9b34fb/00002a2400001000800000805f9b34fb#propertyAffordance> a ns2:PropertyAffordance ;
+    ns2:hasForm <https://127.0.0.1/8470331561404384697./0000180a00001000800000805f9b34fb/00002a2400001000800000805f9b34fb#propertyAffordanceForm> ;
+    ns2:name "0000180a00001000800000805f9b34fb/00002a2400001000800000805f9b34fb" ;
+    ns2:type "string" .
+
+<https://127.0.0.1/8470331561404384697./0000180a00001000800000805f9b34fb/00002a2400001000800000805f9b34fb#propertyAffordanceForm> a ns1:Form ;
+    ns1:forContentType "application/x.binary-data-stream" ;
+    ns1:hasOperationType ns2:readProperty ;
+    ns1:hasTarget "./0000180a00001000800000805f9b34fb/00002a2400001000800000805f9b34fb" .
+
+<https://127.0.0.1/8470331561404384697./0000180a00001000800000805f9b34fb/00002a2500001000800000805f9b34fb#propertyAffordance> a ns2:PropertyAffordance ;
+    ns2:hasForm <https://127.0.0.1/8470331561404384697./0000180a00001000800000805f9b34fb/00002a2500001000800000805f9b34fb#propertyAffordanceForm> ;
+    ns2:name "0000180a00001000800000805f9b34fb/00002a2500001000800000805f9b34fb" ;
+    ns2:type "string" .
+
+<https://127.0.0.1/8470331561404384697./0000180a00001000800000805f9b34fb/00002a2500001000800000805f9b34fb#propertyAffordanceForm> a ns1:Form ;
+    ns1:forContentType "application/x.binary-data-stream" ;
+    ns1:hasOperationType ns2:readProperty ;
+    ns1:hasTarget "./0000180a00001000800000805f9b34fb/00002a2500001000800000805f9b34fb" .
+
+<https://127.0.0.1/8470331561404384697./0000180a00001000800000805f9b34fb/00002a2600001000800000805f9b34fb#propertyAffordance> a ns2:PropertyAffordance ;
+    ns2:hasForm <https://127.0.0.1/8470331561404384697./0000180a00001000800000805f9b34fb/00002a2600001000800000805f9b34fb#propertyAffordanceForm> ;
+    ns2:name "0000180a00001000800000805f9b34fb/00002a2600001000800000805f9b34fb" ;
+    ns2:type "string" .
+
+<https://127.0.0.1/8470331561404384697./0000180a00001000800000805f9b34fb/00002a2600001000800000805f9b34fb#propertyAffordanceForm> a ns1:Form ;
+    ns1:forContentType "application/x.binary-data-stream" ;
+    ns1:hasOperationType ns2:readProperty ;
+    ns1:hasTarget "./0000180a00001000800000805f9b34fb/00002a2600001000800000805f9b34fb" .
+
+<https://127.0.0.1/8470331561404384697./e95d0753251d470aa062fa1922dfa9a8/e95dca4b251d470aa062fa1922dfa9a8#propertyAffordance> a ns2:PropertyAffordance ;
+    ns2:hasForm <https://127.0.0.1/8470331561404384697./e95d0753251d470aa062fa1922dfa9a8/e95dca4b251d470aa062fa1922dfa9a8#propertyAffordanceForm> ;
+    ns2:name "e95d0753251d470aa062fa1922dfa9a8/e95dca4b251d470aa062fa1922dfa9a8" ;
+    ns2:type "string" .
+
+<https://127.0.0.1/8470331561404384697./e95d0753251d470aa062fa1922dfa9a8/e95dca4b251d470aa062fa1922dfa9a8#propertyAffordanceForm> a ns1:Form ;
+    ns1:forContentType "application/x.binary-data-stream" ;
+    ns1:hasOperationType ns2:readProperty ;
+    ns1:hasTarget "./e95d0753251d470aa062fa1922dfa9a8/e95dca4b251d470aa062fa1922dfa9a8" .
+
+<https://127.0.0.1/8470331561404384697./e95d0753251d470aa062fa1922dfa9a8/e95dfb24251d470aa062fa1922dfa9a8#propertyAffordance> a ns2:PropertyAffordance ;
+    ns2:hasForm <https://127.0.0.1/8470331561404384697./e95d0753251d470aa062fa1922dfa9a8/e95dfb24251d470aa062fa1922dfa9a8#propertyAffordanceForm> ;
+    ns2:name "e95d0753251d470aa062fa1922dfa9a8/e95dfb24251d470aa062fa1922dfa9a8" ;
+    ns2:type "string" .
+
+<https://127.0.0.1/8470331561404384697./e95d0753251d470aa062fa1922dfa9a8/e95dfb24251d470aa062fa1922dfa9a8#propertyAffordanceForm> a ns1:Form ;
+    ns1:forContentType "application/x.binary-data-stream" ;
+    ns1:hasOperationType ns2:readProperty ;
+    ns1:hasTarget "./e95d0753251d470aa062fa1922dfa9a8/e95dfb24251d470aa062fa1922dfa9a8" .
+
+<https://127.0.0.1/8470331561404384697./e95d6100251d470aa062fa1922dfa9a8/e95d1b25251d470aa062fa1922dfa9a8#propertyAffordance> a ns2:PropertyAffordance ;
+    ns2:hasForm <https://127.0.0.1/8470331561404384697./e95d6100251d470aa062fa1922dfa9a8/e95d1b25251d470aa062fa1922dfa9a8#propertyAffordanceForm> ;
+    ns2:name "e95d6100251d470aa062fa1922dfa9a8/e95d1b25251d470aa062fa1922dfa9a8" ;
+    ns2:type "string" .
+
+<https://127.0.0.1/8470331561404384697./e95d6100251d470aa062fa1922dfa9a8/e95d1b25251d470aa062fa1922dfa9a8#propertyAffordanceForm> a ns1:Form ;
+    ns1:forContentType "application/x.binary-data-stream" ;
+    ns1:hasOperationType ns2:readProperty ;
+    ns1:hasTarget "./e95d6100251d470aa062fa1922dfa9a8/e95d1b25251d470aa062fa1922dfa9a8" .
+
+<https://127.0.0.1/8470331561404384697./e95d6100251d470aa062fa1922dfa9a8/e95d9250251d470aa062fa1922dfa9a8#propertyAffordance> a ns2:PropertyAffordance ;
+    ns2:hasForm <https://127.0.0.1/8470331561404384697./e95d6100251d470aa062fa1922dfa9a8/e95d9250251d470aa062fa1922dfa9a8#propertyAffordanceForm> ;
+    ns2:name "e95d6100251d470aa062fa1922dfa9a8/e95d9250251d470aa062fa1922dfa9a8" ;
+    ns2:type "string" .
+
+<https://127.0.0.1/8470331561404384697./e95d6100251d470aa062fa1922dfa9a8/e95d9250251d470aa062fa1922dfa9a8#propertyAffordanceForm> a ns1:Form ;
+    ns1:forContentType "application/x.binary-data-stream" ;
+    ns1:hasOperationType ns2:readProperty ;
+    ns1:hasTarget "./e95d6100251d470aa062fa1922dfa9a8/e95d9250251d470aa062fa1922dfa9a8" .
+
+<https://127.0.0.1/8470331561404384697./e95d93af251d470aa062fa1922dfa9a8/e95d9775251d470aa062fa1922dfa9a8#propertyAffordance> a ns2:PropertyAffordance ;
+    ns2:hasForm <https://127.0.0.1/8470331561404384697./e95d93af251d470aa062fa1922dfa9a8/e95d9775251d470aa062fa1922dfa9a8#propertyAffordanceForm> ;
+    ns2:name "e95d93af251d470aa062fa1922dfa9a8/e95d9775251d470aa062fa1922dfa9a8" ;
+    ns2:type "string" .
+
+<https://127.0.0.1/8470331561404384697./e95d93af251d470aa062fa1922dfa9a8/e95d9775251d470aa062fa1922dfa9a8#propertyAffordanceForm> a ns1:Form ;
+    ns1:forContentType "application/x.binary-data-stream" ;
+    ns1:hasOperationType ns2:readProperty ;
+    ns1:hasTarget "./e95d93af251d470aa062fa1922dfa9a8/e95d9775251d470aa062fa1922dfa9a8" .
+
+<https://127.0.0.1/8470331561404384697./e95d93af251d470aa062fa1922dfa9a8/e95db84c251d470aa062fa1922dfa9a8#propertyAffordance> a ns2:PropertyAffordance ;
+    ns2:hasForm <https://127.0.0.1/8470331561404384697./e95d93af251d470aa062fa1922dfa9a8/e95db84c251d470aa062fa1922dfa9a8#propertyAffordanceForm> ;
+    ns2:name "e95d93af251d470aa062fa1922dfa9a8/e95db84c251d470aa062fa1922dfa9a8" ;
+    ns2:type "string" .
+
+<https://127.0.0.1/8470331561404384697./e95d93af251d470aa062fa1922dfa9a8/e95db84c251d470aa062fa1922dfa9a8#propertyAffordanceForm> a ns1:Form ;
+    ns1:forContentType "application/x.binary-data-stream" ;
+    ns1:hasOperationType ns2:readProperty ;
+    ns1:hasTarget "./e95d93af251d470aa062fa1922dfa9a8/e95db84c251d470aa062fa1922dfa9a8" .
+
+<https://127.0.0.1/8470331561404384697./e95d9882251d470aa062fa1922dfa9a8/e95dda90251d470aa062fa1922dfa9a8#propertyAffordance> a ns2:PropertyAffordance ;
+    ns2:hasForm <https://127.0.0.1/8470331561404384697./e95d9882251d470aa062fa1922dfa9a8/e95dda90251d470aa062fa1922dfa9a8#propertyAffordanceForm> ;
+    ns2:name "e95d9882251d470aa062fa1922dfa9a8/e95dda90251d470aa062fa1922dfa9a8" ;
+    ns2:type "string" .
+
+<https://127.0.0.1/8470331561404384697./e95d9882251d470aa062fa1922dfa9a8/e95dda90251d470aa062fa1922dfa9a8#propertyAffordanceForm> a ns1:Form ;
+    ns1:forContentType "application/x.binary-data-stream" ;
+    ns1:hasOperationType ns2:readProperty ;
+    ns1:hasTarget "./e95d9882251d470aa062fa1922dfa9a8/e95dda90251d470aa062fa1922dfa9a8" .
+
+<https://127.0.0.1/8470331561404384697./e95d9882251d470aa062fa1922dfa9a8/e95dda91251d470aa062fa1922dfa9a8#propertyAffordance> a ns2:PropertyAffordance ;
+    ns2:hasForm <https://127.0.0.1/8470331561404384697./e95d9882251d470aa062fa1922dfa9a8/e95dda91251d470aa062fa1922dfa9a8#propertyAffordanceForm> ;
+    ns2:name "e95d9882251d470aa062fa1922dfa9a8/e95dda91251d470aa062fa1922dfa9a8" ;
+    ns2:type "string" .
+
+<https://127.0.0.1/8470331561404384697./e95d9882251d470aa062fa1922dfa9a8/e95dda91251d470aa062fa1922dfa9a8#propertyAffordanceForm> a ns1:Form ;
+    ns1:forContentType "application/x.binary-data-stream" ;
+    ns1:hasOperationType ns2:readProperty ;
+    ns1:hasTarget "./e95d9882251d470aa062fa1922dfa9a8/e95dda91251d470aa062fa1922dfa9a8" .
+
+<https://127.0.0.1/8470331561404384697./e95dd91d251d470aa062fa1922dfa9a8/e95d0d2d251d470aa062fa1922dfa9a8#propertyAffordance> a ns2:PropertyAffordance ;
+    ns2:hasForm <https://127.0.0.1/8470331561404384697./e95dd91d251d470aa062fa1922dfa9a8/e95d0d2d251d470aa062fa1922dfa9a8#propertyAffordanceForm> ;
+    ns2:name "e95dd91d251d470aa062fa1922dfa9a8/e95d0d2d251d470aa062fa1922dfa9a8" ;
+    ns2:type "string" .
+
+<https://127.0.0.1/8470331561404384697./e95dd91d251d470aa062fa1922dfa9a8/e95d0d2d251d470aa062fa1922dfa9a8#propertyAffordanceForm> a ns1:Form ;
+    ns1:forContentType "application/x.binary-data-stream" ;
+    ns1:hasOperationType ns2:readProperty ;
+    ns1:hasTarget "./e95dd91d251d470aa062fa1922dfa9a8/e95d0d2d251d470aa062fa1922dfa9a8" .
+
+<https://127.0.0.1/8470331561404384697./e95dd91d251d470aa062fa1922dfa9a8/e95d7b77251d470aa062fa1922dfa9a8#propertyAffordance> a ns2:PropertyAffordance ;
+    ns2:hasForm <https://127.0.0.1/8470331561404384697./e95dd91d251d470aa062fa1922dfa9a8/e95d7b77251d470aa062fa1922dfa9a8#propertyAffordanceForm> ;
+    ns2:name "0000182600001000800000805f9b34fb/00002ada00001000800000805f9b34fb" ;
+    ns2:type "string" .
+
+<https://127.0.0.1/8470331561404384697./e95dd91d251d470aa062fa1922dfa9a8/e95d7b77251d470aa062fa1922dfa9a8#propertyAffordanceForm> a ns1:Form ;
+    ns1:forContentType "application/x.binary-data-stream" ;
+    ns1:hasOperationType ns2:readProperty ;
+    ns1:hasTarget "./0000182600001000800000805f9b34fb/00002ada00001000800000805f9b34fb" .
+

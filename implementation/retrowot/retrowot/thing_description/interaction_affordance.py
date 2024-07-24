@@ -1,14 +1,15 @@
-from pydantic import BaseModel
-from typing import List, Union, Dict
-from rdflib import Graph, Literal, BNode, Namespace, RDF, URIRef
-from thing_description.form import Form
 import decimal
 from functools import lru_cache
-from rdflib.plugins.sparql import prepareQuery
+from typing import Dict, List, Union
+
 from configs import settings
+from form import Form
+from pydantic import BaseModel
+from rdflib import RDF, BNode, Graph, Literal, Namespace, URIRef
+from rdflib.plugins.sparql import prepareQuery
 
 SELECT_QUERY_AFFORDANCE_COMMENT_ENRICHMENT = prepareQuery(
-"""
+    """
 PREFIX capability: <http://purl.org/serviceCapability#> 
 
 SELECT ?description 
@@ -23,7 +24,7 @@ WHERE {
 """
 )
 SELECT_QUERY_DEVICE_TYPE = prepareQuery(
-"""
+    """
 PREFIX capability: <http://purl.org/serviceCapability#> 
 
 SELECT ?deviceType 
@@ -37,7 +38,7 @@ WHERE {
 
 
 SELECT_QUERY_AFFORDANCE_TITLE_ENRICHMENT = prepareQuery(
-"""
+    """
 PREFIX capability: <http://purl.org/serviceCapability#> 
 
 SELECT ?capabilityName 
@@ -53,7 +54,7 @@ WHERE {
 )
 
 SELECT_QUERY_BYTELENGTH = prepareQuery(
-"""
+    """
 PREFIX capability: <http://purl.org/serviceCapability#> 
 PREFIX bdo: <https://freumi.inrupt.net/BinaryDataOntology.ttl#>
 PREFIX dct: <http://purl.org/dc/terms/>
@@ -116,6 +117,7 @@ WHERE {
 """
 )
 
+
 class InteractionAffordance:
     def __init__(
         self, title: str, interactionType: List[str], affordanceId: str, graph: Graph
@@ -126,7 +128,11 @@ class InteractionAffordance:
             affordanceId, graph
         )
         self.forms: List[Form] = self._get_forms(
-            interactionType, affordanceId, self.title, self._has_bytewise_interpretation(), graph
+            interactionType,
+            affordanceId,
+            self.title,
+            self._has_bytewise_interpretation(),
+            graph,
         )
         self.description: str = self._get_description(title, graph)
         # self.contentEncoding: str = "binary"
@@ -134,31 +140,29 @@ class InteractionAffordance:
         self._additional_fields: Dict = self._add_bytewise_interpretation(
             affordanceId, graph
         )
-        
+
     # Write a function to create camel case from whitespace separated string
     def _camel_case(self, name: str) -> str:
         name = "".join(x.capitalize() for x in name.split(" "))
         return name
-    
+
     @lru_cache(maxsize=128)
-    def _get_query_result(self, query, name, value, graph, filter='first'):
+    def _get_query_result(self, query, name, value, graph, filter="first"):
         res = None
         if (name is None) or (value is None):
             query_result = [_ for _ in graph.query(query)]
         else:
             query_result = [_ for _ in graph.query(query, initBindings={name: value})]
 
-        if filter == 'first':
+        if filter == "first":
             if len(query_result) > 0:
                 res = query_result[0]
-        elif filter == 'all':
+        elif filter == "all":
             if len(query_result) > 0:
                 res = query_result
-            
+
         return res
 
-
-    
     def _get_bytelength(self, title: str, graph: Graph) -> str:
         res = None
         bytelength = self._get_query_result(
@@ -174,19 +178,15 @@ class InteractionAffordance:
     def _get_device_type(self, title: str, graph: Graph) -> str:
         title = title.replace("urn:uuid:", "")
         res = None
-        device = self._get_query_result(
-            SELECT_QUERY_DEVICE_TYPE, None, None, graph
-        )
+        device = self._get_query_result(SELECT_QUERY_DEVICE_TYPE, None, None, graph)
 
         if device is not None:
             if device.deviceType is not None:
                 res = device.deviceType.toPython()
 
-
-
-        #print(f"Affordance Id is: {title}, result of query is: {res}")
+        # print(f"Affordance Id is: {title}, result of query is: {res}")
         return res
-    
+
     def _get_signed(self, title: str, graph: Graph) -> str:
         res = None
         signed = self._get_query_result(
@@ -198,8 +198,6 @@ class InteractionAffordance:
                 res = signed.signed.toPython()
 
         return res
-
-
 
     def _get_unit(self, title: str, graph: Graph) -> str:
         res = None
@@ -287,7 +285,7 @@ class InteractionAffordance:
             bdo:scale 1.0
             type integer
             bdo:signed False
-            
+
             >>> affordance_id = "urn:uuid:12345678"
             >>> graph = Graph()
             >>> result = self._add_bytewise_interpretation(affordance_id, graph)
@@ -322,14 +320,15 @@ class InteractionAffordance:
 
     def _has_bytewise_interpretation(self) -> bool:
         """Check if the affordance has bytewise interpretation."""
-        has_bytelength: bool = self._additional_fields.get("bdo:bytelength", None) is not None
-        has_signing: bool =  self._additional_fields.get("bdo:signed", None) is not None
-        has_scale: bool =  self._additional_fields.get("bdo:scale", None) is not None
-   
+        has_bytelength: bool = (
+            self._additional_fields.get("bdo:bytelength", None) is not None
+        )
+        has_signing: bool = self._additional_fields.get("bdo:signed", None) is not None
+        has_scale: bool = self._additional_fields.get("bdo:scale", None) is not None
+
         if has_bytelength or has_signing or has_scale:
             return True
         return False
-
 
     def __str__(self) -> str:
         return str(self.dict())
@@ -337,7 +336,11 @@ class InteractionAffordance:
     def _get_description(self, title: str, graph: Graph) -> str:
         title = title.replace("urn:uuid:", "")
         description = self._get_query_result(
-            SELECT_QUERY_AFFORDANCE_COMMENT_ENRICHMENT, "affordanceId", Literal(title), graph, 'all'
+            SELECT_QUERY_AFFORDANCE_COMMENT_ENRICHMENT,
+            "affordanceId",
+            Literal(title),
+            graph,
+            "all",
         )
 
         if description is not None:
@@ -356,7 +359,10 @@ class InteractionAffordance:
         title = title.replace("urn:uuid:", "")
 
         name = self._get_query_result(
-            SELECT_QUERY_AFFORDANCE_TITLE_ENRICHMENT, "affordanceId", Literal(title), graph
+            SELECT_QUERY_AFFORDANCE_TITLE_ENRICHMENT,
+            "affordanceId",
+            Literal(title),
+            graph,
         )
 
         if name is not None:
@@ -375,7 +381,7 @@ class InteractionAffordance:
         graph: Graph,
     ) -> List[Form]:
         res = []
-        
+
         if settings.enrichment.middleware_interface:
             # Add the interaction via the server
             form = Form(
@@ -383,11 +389,11 @@ class InteractionAffordance:
                 op=interactionType,
                 byte_wise_interpretation=byte_wise_interpretation,
                 graph=graph,
-                device_type=settings.server_type
+                device_type=settings.server_type,
             )
-            
+
             res = [form]
-        
+
         device_type = self._get_device_type(title, graph)
         if settings.enrichment.use_primary_interface:
             # Add the direct interaction with the device
@@ -396,9 +402,9 @@ class InteractionAffordance:
                 op=interactionType,
                 byte_wise_interpretation=byte_wise_interpretation,
                 graph=graph,
-                device_type=device_type
+                device_type=device_type,
             )
-            
+
             res.append(additional_form)
         return res
 
@@ -407,8 +413,8 @@ class InteractionAffordance:
             "type": self.type,
             "title": self._camel_case(self.title),
             "forms": [_.dict() for _ in self.forms],
-   #         "contentEncoding": self.contentEncoding,
-   #         "contentMediaType": self.contentMediaType,
+            #         "contentEncoding": self.contentEncoding,
+            #         "contentMediaType": self.contentMediaType,
         }
 
         if self.description != "":
@@ -424,7 +430,7 @@ class PropertyAffordance(InteractionAffordance):
     def __init__(
         self, title: str, interactionType: str, affordanceId: str, graph: Graph
     ):
-        #interactionTypes = self._get_interaction_types(affordanceId, graph)
+        # interactionTypes = self._get_interaction_types(affordanceId, graph)
         super().__init__(title, interactionType, affordanceId, graph)
         self.observable: Union[bool, None] = None
         self.readOnly: Union[bool, None] = None
@@ -437,12 +443,9 @@ class PropertyAffordance(InteractionAffordance):
             initBindings={"affordanceId": URIRef(affordanceId)},
         ):
             res.append(_.interactionType.toPython())
-            
-            
+
         return res
-    
-    
-    
+
     def __str__(self) -> str:
         return str(self.dict())
 
@@ -486,32 +489,27 @@ class EventAffordance(InteractionAffordance):
         super().__init__(title, interactionType, affordanceId, graph)
         self.cancellation_link: str = ""
         self.subscription_link: str = ""
-        
 
     def dict(self, *args, **kwargs):
         model_dict = super().dict()
-        
+
         if self.cancellation_link != "":
             model_dict["cancellation"] = self.cancellation_link
-            
+
         model_dict["data"] = {
             "type": model_dict.pop("type"),
         }
-        
 
-        if  "bdo:bytelength" in model_dict:
+        if "bdo:bytelength" in model_dict:
             model_dict["data"]["bdo:bytelength"] = model_dict.pop("bdo:bytelength")
 
-        if "bdo:signed" in model_dict :
+        if "bdo:signed" in model_dict:
             model_dict["data"]["bdo:signed"] = model_dict.pop("bdo:signed")
-        
-        if  "bdo:scale" in model_dict:
-            model_dict["data"]["bdo:scale"] = model_dict.pop("bdo:scale")
-            
-        return model_dict
-        
-        
 
-            
+        if "bdo:scale" in model_dict:
+            model_dict["data"]["bdo:scale"] = model_dict.pop("bdo:scale")
+
+        return model_dict
+
     def __str__(self) -> str:
         return str(self.dict())

@@ -1,0 +1,376 @@
+
+@prefix : <http://example.org/> .
+@prefix capability: <http://purl.org/serviceCapability#> .
+@prefix sbo: <https://freumi.inrupt.net/SimpleBluetoothOntology.ttl#> .
+@prefix sboe: <https://purl.org/ExtendedSimpleBluetoothOntology#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix spdx: <https://spdx.org/rdf/terms/spdx-ontology.owl.xml> .
+@prefix zigbee: <https://www.purl.org/SimpleZigbeeInteractionOntology.ttl#> .
+@prefix sbo: <https://freumi.inrupt.net/SimpleBluetoothOntology.ttl#> .
+@prefix sboe: <https://purl.org/ExtendedSimpleBluetoothOntology#> .
+@prefix zg: <https://www.purl.org/SimpleZigbeeInteractionOntology.ttl#> .
+
+:ZigBeeAttributeShape a sh:NodeShape ;
+sh:targetClass zg:Attribute;
+sh:property [
+    sh:path zg:hasUUID;
+    sh:minCount 1;
+    sh:maxCount 1;
+    sh:nodeKind sh:Literal ;
+]; 
+sh:property [
+    sh:path zg:methodName ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1;
+    sh:in (zg:Read zg:Report zg:Write)
+].
+
+:ZigBeeCommandShape a sh:NodeShape ;
+sh:targetClass zg:ClientCommand;
+sh:property [
+    sh:path zg:hasUUID;
+    sh:minCount 1;
+    sh:nodeKind sh:Literal ;
+    sh:pattern "[0-9A-Fa-f]{4}";
+].
+
+
+
+
+
+
+:ZigBeeCommandShape a sh:NodeShape ;
+sh:targetClass zg:ClientCommand;
+sh:property [
+    sh:path zg:hasUUID;
+    sh:minCount 1;
+    sh:nodeKind sh:Literal ;
+    sh:pattern "[0-9A-Fa-f]{4}";
+].
+
+
+
+
+
+
+:ZigBeeDeviceAdressShape a sh:NodeShape;
+sh:targetClass zg:EndNode;
+sh:property [
+sh:path zg:hasIEEEAddress;
+        sh:minCount 1;
+sh:maxCount 1;
+        sh:pattern "^([0-9A-Fa-f]{2}:){7}[0-9A-Fa-f]{2}$";
+].
+
+
+:ZigBeeEndpointShape a sh:NodeShape ;
+sh:targetClass zg:Cluster;
+sh:property [
+    sh:path zg:hasAttribute;
+    sh:nodeKind sh:IRI ;
+];
+sh:property [
+    sh:path zg:hasCommand;
+    sh:nodeKind sh:IRI
+] ;
+sh:property [
+    sh:path zg:hasUUID;
+    sh:minCount 1;
+    sh:nodeKind sh:Literal;
+    sh:pattern "[0-9A-Fa-f]{4}";
+].
+
+:ZigBeeEndpointShape a sh:NodeShape ;
+sh:targetClass zg:Endpoint;
+sh:property [
+    sh:path zg:hasCluster;
+    sh:nodeKind sh:IRI ;
+]; 
+sh:property [
+    sh:path zg:hasUUID;
+    sh:minCount 1;
+    sh:nodeKind sh:Literal;
+    sh:pattern "[0-9A-Fa-f]{4}";
+].
+
+
+:ZigbeeWriteInteractionShape a sh:NodeShape ;
+sh:targetClass zg:EndNode;;
+sh:rule [ 
+    a sh:SPARQLRule;
+    rdfs:label "Maps Zigbee Descriptions to the unified affordance model structure.";
+    sh:construct """
+
+PREFIX tm: <https://www.w3.org/2019/wot/tm#>
+PREFIX td: <https://www.w3.org/2019/wot/td#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX hctl: <https://www.w3.org/2019/wot/hypermedia#>
+PREFIX zg:  <https://www.purl.org/SimpleZigbeeInteractionOntology.ttl#> 
+
+CONSTRUCT {
+    $this a td:PartialThingDescription;
+    td:title ?thingDescriptionTitle;
+    td:baseURI ?baseURI;
+    rdfs:seeAlso $this;
+
+    td:hasPropertyAffordance ?propertyAffordance.
+
+    ?propertyAffordance a td:PropertyAffordance;
+    td:type "string";
+    td:name ?affordanceName;
+    td:hasForm ?propertyAffordanceForm.
+
+    ?propertyAffordanceForm a hctl:Form;
+    hctl:hasTarget ?affordanceId;
+    hctl:hasOperationType td:writeProperty;
+    hctl:forContentType "application/x.binary-data-stream".
+
+    td:writeProperty a td:OperationType.
+
+
+} WHERE {
+
+    $this a zg:EndNode;
+    zg:hasIEEEAddress ?ieeeAddress;
+    zg:hasEndpoint ?endpoint.
+
+    ?endpoint zg:hasUUID ?endpoint_uuid;
+    zg:hasCluster ?cluster.
+
+    ?cluster a zg:Cluster;
+        zg:hasUUID ?cluster_uuid;
+        zg:hasAttribute ?attribute.
+
+    ?attribute a zg:Attribute;
+        zg:hasUUID ?attribute_uuid;
+        zg:methodName zg:Write.
+
+
+    OPTIONAL {$this zg:hasDeviceModel ?preferredName}
+    
+    BIND(IF(BOUND(?preferredName), ?preferredName, ?ieeeAddress) AS ?thingDescriptionTitle)
+
+
+    BIND(CONCAT(LCASE(STR(?endpoint_uuid)), "/", LCASE(STR(?cluster_uuid)), "/", LCASE(STR(?attribute_uuid))) AS ?affordanceName)
+    BIND(CONCAT("./",LCASE(STR(?endpoint_uuid)), "/", LCASE(STR(?cluster_uuid)), "/", LCASE(STR(?attribute_uuid))) AS ?affordanceId)
+    BIND(IRI(CONCAT(STR($this), STR(?affordanceId), "#propertyAffordance")) as ?propertyAffordance)	
+    BIND(IRI(CONCAT(STR($this), STR(?affordanceId),  "#propertyAffordanceForm")) as ?propertyAffordanceForm)
+    BIND(CONCAT("zigbee://", STR(?ieeeAddress)) AS ?baseURI)
+}
+    
+    """
+].
+
+
+
+
+:ZigbeeReadInteractionShape a sh:NodeShape ;
+sh:targetClass zg:EndNode;;
+sh:rule [ 
+    a sh:SPARQLRule;
+    rdfs:label "Maps Zigbee Descriptions to the unified affordance model structure.";
+    sh:construct """
+
+PREFIX tm: <https://www.w3.org/2019/wot/tm#>
+PREFIX td: <https://www.w3.org/2019/wot/td#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX hctl: <https://www.w3.org/2019/wot/hypermedia#>
+PREFIX zg:  <https://www.purl.org/SimpleZigbeeInteractionOntology.ttl#> 
+
+CONSTRUCT {
+    $this a td:PartialThingDescription;
+    td:title ?thingDescriptionTitle;
+    td:baseURI ?baseURI;
+    rdfs:seeAlso $this;
+
+    td:hasPropertyAffordance ?propertyAffordance.
+
+    ?propertyAffordance a td:PropertyAffordance;
+    td:type "string";
+    td:name ?affordanceName;
+    td:hasForm ?propertyAffordanceForm.
+
+    ?propertyAffordanceForm a hctl:Form;
+    hctl:hasTarget ?affordanceId;
+    hctl:hasOperationType td:readProperty;
+    hctl:forContentType "application/x.binary-data-stream".
+
+    td:readProperty a td:OperationType.
+
+} WHERE {
+
+    $this a zg:EndNode;
+    zg:hasIEEEAddress ?ieeeAddress;
+    zg:hasEndpoint ?endpoint.
+
+    ?endpoint zg:hasUUID ?endpoint_uuid;
+    zg:hasCluster ?cluster.
+
+    ?cluster a zg:Cluster;
+        zg:hasUUID ?cluster_uuid;
+        zg:hasAttribute ?attribute.
+
+    ?attribute a zg:Attribute;
+        zg:hasUUID ?attribute_uuid;
+        zg:methodName zg:Read.
+
+
+    OPTIONAL {$this zg:hasDeviceModel ?preferredName}
+    
+    BIND(IF(BOUND(?preferredName), ?preferredName, ?ieeeAddress) AS ?thingDescriptionTitle)
+
+
+    BIND(CONCAT(LCASE(STR(?endpoint_uuid)), "/", LCASE(STR(?cluster_uuid)), "/", LCASE(STR(?attribute_uuid))) AS ?affordanceName)
+    BIND(CONCAT("./",LCASE(STR(?endpoint_uuid)), "/", LCASE(STR(?cluster_uuid)), "/", LCASE(STR(?attribute_uuid))) AS ?affordanceId)
+    BIND(IRI(CONCAT(STR($this), STR(?affordanceId), "#propertyAffordance")) as ?propertyAffordance)	
+    BIND(IRI(CONCAT(STR($this), STR(?affordanceId),  "#propertyAffordanceForm")) as ?propertyAffordanceForm)
+    BIND(CONCAT("zigbee://", STR(?ieeeAddress)) AS ?baseURI)
+}
+    
+    """
+].
+
+
+
+:ZigbeeReportInteractionShape a sh:NodeShape ;
+sh:targetClass zg:EndNode;;
+sh:rule [ 
+    a sh:SPARQLRule;
+    rdfs:label "Maps Zigbee Descriptions to the unified affordance model structure.";
+    sh:construct """
+
+PREFIX tm: <https://www.w3.org/2019/wot/tm#>
+PREFIX td: <https://www.w3.org/2019/wot/td#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX hctl: <https://www.w3.org/2019/wot/hypermedia#>
+PREFIX zg:  <https://www.purl.org/SimpleZigbeeInteractionOntology.ttl#> 
+
+CONSTRUCT {
+    $this a td:PartialThingDescription;
+    td:title ?thingDescriptionTitle;
+    td:baseURI ?baseURI;
+    rdfs:seeAlso $this;
+
+    td:hasPropertyAffordance ?propertyAffordance.
+
+    ?propertyAffordance a td:PropertyAffordance;
+    td:type "string";
+    td:name ?affordanceName;
+    td:hasForm ?propertyAffordanceForm.
+
+    ?propertyAffordanceForm a hctl:Form;
+    hctl:hasTarget ?affordanceId;
+    hctl:hasOperationType td:subscribeEvent;
+    hctl:forContentType "application/x.binary-data-stream".
+
+      td:subscribeEvent a td:OperationType.
+
+} WHERE {
+
+    $this a zg:EndNode;
+    zg:hasIEEEAddress ?ieeeAddress;
+    zg:hasEndpoint ?endpoint.
+
+    ?endpoint zg:hasUUID ?endpoint_uuid;
+    zg:hasCluster ?cluster.
+
+    ?cluster a zg:Cluster;
+        zg:hasUUID ?cluster_uuid;
+        zg:hasAttribute ?attribute.
+
+    ?attribute a zg:Attribute;
+        zg:hasUUID ?attribute_uuid;
+        zg:methodName zg:Report.
+
+
+    OPTIONAL {$this zg:hasDeviceModel ?preferredName}
+    
+    BIND(IF(BOUND(?preferredName), ?preferredName, ?ieeeAddress) AS ?thingDescriptionTitle)
+
+
+    BIND(CONCAT(LCASE(STR(?endpoint_uuid)), "/", LCASE(STR(?cluster_uuid)), "/", LCASE(STR(?attribute_uuid))) AS ?affordanceName)
+    BIND(CONCAT("./",LCASE(STR(?endpoint_uuid)), "/", LCASE(STR(?cluster_uuid)), "/", LCASE(STR(?attribute_uuid))) AS ?affordanceId)
+    BIND(IRI(CONCAT(STR($this), STR(?affordanceId), "#propertyAffordance")) as ?propertyAffordance)	
+    BIND(IRI(CONCAT(STR($this), STR(?affordanceId),  "#propertyAffordanceForm")) as ?propertyAffordanceForm)
+    BIND(CONCAT("zigbee://", STR(?ieeeAddress)) AS ?baseURI)
+}
+    
+    """
+].
+
+
+
+
+:ZigbeeActionInteractionShape a sh:NodeShape ;
+sh:targetClass zg:EndNode;;
+sh:rule [ 
+    a sh:SPARQLRule;
+    rdfs:label "Maps Zigbee Descriptions to the unified affordance model structure.";
+    sh:construct """
+
+PREFIX tm: <https://www.w3.org/2019/wot/tm#>
+PREFIX td: <https://www.w3.org/2019/wot/td#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX hctl: <https://www.w3.org/2019/wot/hypermedia#>
+PREFIX zg:  <https://www.purl.org/SimpleZigbeeInteractionOntology.ttl#> 
+
+CONSTRUCT {
+    $this a td:PartialThingDescription;
+    td:title ?thingDescriptionTitle;
+    td:baseURI ?baseURI;
+    rdfs:seeAlso $this;
+
+    td:hasPropertyAffordance ?propertyAffordance.
+
+    ?propertyAffordance a td:PropertyAffordance;
+    td:type "string";
+    td:name ?affordanceName;
+    td:hasForm ?propertyAffordanceForm.
+
+    ?propertyAffordanceForm a hctl:Form;
+    hctl:hasTarget ?affordanceId;
+    hctl:hasOperationType td:invokeAction;
+    hctl:forContentType "application/x.binary-data-stream".
+
+    td:invokeAction a td:OperationType.
+
+
+} WHERE {
+
+    $this a zg:EndNode;
+    zg:hasIEEEAddress ?ieeeAddress;
+    zg:hasEndpoint ?endpoint.
+
+    ?endpoint zg:hasUUID ?endpoint_uuid;
+    zg:hasCluster ?cluster.
+
+    ?cluster a zg:Cluster;
+        zg:hasUUID ?cluster_uuid;
+        zg:hasAttribute ?attribute.
+
+    ?command a zg:Command;
+        zg:hasUUID ?command_uuid.
+
+
+    OPTIONAL {$this zg:hasDeviceModel ?preferredName}
+    
+    BIND(IF(BOUND(?preferredName), ?preferredName, ?ieeeAddress) AS ?thingDescriptionTitle)
+
+
+    BIND(CONCAT(LCASE(STR(?endpoint_uuid)), "/", LCASE(STR(?cluster_uuid)), "/", LCASE(STR(?command_uuid))) AS ?affordanceName)
+    BIND(CONCAT("./",LCASE(STR(?endpoint_uuid)), "/", LCASE(STR(?cluster_uuid)), "/", LCASE(STR(?command_uuid))) AS ?affordanceId)
+    BIND(IRI(CONCAT(STR($this), STR(?affordanceId), "#actionAffordance")) as ?propertyAffordance)	
+    BIND(IRI(CONCAT(STR($this), STR(?affordanceId),  "#actionAffordanceForm")) as ?propertyAffordanceForm)
+    BIND(CONCAT("zigbee://", STR(?ieeeAddress)) AS ?baseURI)
+}
+    
+    """
+].

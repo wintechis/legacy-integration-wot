@@ -3,20 +3,18 @@
 ## Setup
 <img src="./RetroWoT Middleware.png" width="100%" alt="description">
 
-To evaluate our approach, we created a performance benchmark as shown in the figure. 
-We used a legacy device that does not provide a Thing Description and measure in the different components of our middleware the required time.
-(see t1, t2, t3, t4). 
+To evaluate our approach, we designed a performance benchmark as illustrated in the figure above. Our setup uses a legacy device, specifically a Micro:Bit V2, which does not provide a Thing Description. We measure the time required in different components of our middleware (t1, t2, t3, t4).
 
-We used as legacy device the Micro:Bit V2 during our evaluation.
-The Micro:Bit allows to be modified, such that a variety of different service capabilities can be tested.
-This allows to evaluate our middleware against the main factor that changes in the integration of legacy devices. 
-The number of available services of a device.
+The Micro:Bit V2 was chosen for its flexibility, allowing us to modify it to test a variety of services. This versatility enables us to evaluate our middleware against the primary variable in legacy device integration: the number of available services.
 
-To evaluate the performance, we created a arduino ide script that allows to setups with different numbers of service capabilities.
+For our evaluation, we developed:
+- An Arduino IDE script that sets up different numbers of services on the Micro:Bit V2. (See bluetooth-device-setup.ino for implementation details)
+- A Python program to measure performance within the middleware. (see [performance-study-retrowot.py](../../implementation/retrowot/retrowot/performance-study-retrowot.py))
 
-For details, see the [implementation.](./bluetooth-device-setup.ino)
+To maintain consistency, we ensured that the service enrichment component is always active. 
+This was achieved by using only services from a Standardization Organization for which we had created Thing Models based on their Service specifications.
 
-The script, to measure the performance in the middleware is provided within the implementation as a python program. (see [performance-study-retrowot.py](../../implementation/retrowot/retrowot/performance-study-retrowot.py))
+
 
 ## Results
 

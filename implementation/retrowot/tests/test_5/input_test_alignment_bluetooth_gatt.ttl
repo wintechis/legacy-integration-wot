@@ -1,0 +1,135 @@
+@prefix : <http://example.org/> .
+@prefix capability: <http://purl.org/serviceCapability#> .
+@prefix sbo: <https://freumi.inrupt.net/SimpleBluetoothOntology.ttl#> .
+@prefix sboe: <https://purl.org/ExtendedSimpleBluetoothOntology#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix spdx: <https://spdx.org/rdf/terms/spdx-ontology.owl.xml> .
+@prefix zigbee: <https://www.purl.org/SimpleZigbeeInteractionOntology.ttl#> .
+@prefix ble: <http://purl.org/bluetooth/> .
+@prefix sbo: <https://freumi.inrupt.net/SimpleBluetoothOntology.ttl#> .
+@prefix sboe: <https://purl.org/ExtendedSimpleBluetoothOntology#> .
+
+
+:BluetoothGATTShape a sh:NodeShape ;
+sh:targetClass sbo:BluetoothLEDevice;
+sh:property [
+    sh:path sbo:hasService;
+    sh:minCount 1;
+    sh:nodeKind sh:IRI ;
+]; 
+sh:property [
+    sh:path sbo:hasGAPRole ;
+            sh:nodeKind sh:IRI ;
+            sh:minCount 1;
+    sh:in (sbo:Peripheral);
+];
+sh:property [
+    sh:path sboe:hasAddress;
+    sh:minCount 1;
+            sh:nodeKind sh:IRI;
+];
+sh:property [
+    sh:path sbo:isConnectable ;
+    sh:hasValue true ;
+] .
+
+:BluetoothMACAdressShape a sh:NodeShape;
+sh:targetClass sboe:BluetoothAddress;
+sh:property [
+sh:path sboe:hasMacAddress;
+        sh:minCount 1;
+            sh:pattern "^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})$|^([0-9A-Fa-f]{4}[.]){2}([0-9A-Fa-f]{4})$|^[0-9A-Fa-f]{12}$";
+].
+
+
+:BluetoothServiceShape a sh:NodeShape ;
+sh:targetClass sbo:Service;
+sh:property [
+    sh:path sbo:hasCharacteristic;
+    sh:minCount 1;
+    sh:nodeKind sh:IRI ;
+]; 
+sh:property [
+    sh:path sbo:hasUUID;
+    sh:minCount 1;
+    sh:pattern "^[0-9A-Fa-f]{8}-?[0-9A-Fa-f]{4}-?[0-9A-Fa-f]{4}-?[0-9A-Fa-f]{4}-?[0-9A-Fa-f]{12}$";
+].
+
+:BluetoothCharacteristicShape a sh:NodeShape ;
+    sh:targetClass sbo:Characteristic;
+    sh:property [
+        sh:path sbo:methodName;
+        sh:minCount 1;
+        sh:nodeKind sh:IRI ;
+        sh:in (sbo:read sbo:write sbo:notify sboe:indicate <https://freumi.inrupt.net/write-without-response>);
+    ]; 
+    sh:property [
+        sh:path sbo:hasUUID;
+        sh:minCount 1;
+        sh:pattern "^[0-9A-Fa-f]{8}-?[0-9A-Fa-f]{4}-?[0-9A-Fa-f]{4}-?[0-9A-Fa-f]{4}-?[0-9A-Fa-f]{12}$";
+    ].
+:BluetoothGATTThingModel a sh:NodeShape ;
+sh:targetClass sbo:BluetoothLEDevice;
+sh:rule [ 
+    a sh:SPARQLRule;
+    rdfs:label "Maps Bluetooth Descriptions to the unified affordance model structure.";
+    sh:construct """
+PREFIX ble: <http://purl.org/bluetooth/>
+PREFIX tm: <https://www.w3.org/2019/wot/tm#>
+PREFIX td: <https://www.w3.org/2019/wot/td#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX hctl: <https://www.w3.org/2019/wot/hypermedia#>
+PREFIX sbo: <https://freumi.inrupt.net/SimpleBluetoothOntology.ttl#> 
+PREFIX sboe: <https://purl.org/ExtendedSimpleBluetoothOntology#> 
+CONSTRUCT {
+    $this a td:PartialThingDescription;
+    td:title ?thingDescriptionTitle;
+    td:baseURI ?baseURI;
+    rdfs:seeAlso $this;
+
+    td:hasPropertyAffordance ?propertyAffordance.
+
+    ?propertyAffordance a td:PropertyAffordance;
+    td:type "string";
+    td:name ?affordanceName;
+    td:hasForm ?propertyAffordanceForm.
+
+    ?propertyAffordanceForm a hctl:Form;
+    hctl:hasTarget ?affordanceId;
+    hctl:hasOperationType td:readProperty;
+    hctl:forContentType "application/x.binary-data-stream".
+
+
+} WHERE {
+
+    $this a sbo:BluetoothLEDevice;
+    sboe:hasAddress [ a sboe:BluetoothAddress; sboe:hasMacAddress ?macAddress];
+    sbo:hasService ?service.
+
+    ?service a sbo:Service;
+    sbo:hasCharacteristic ?characteristic;
+    sbo:hasUUID ?serviceId.
+
+    ?characteristic a sbo:Characteristic;
+    sbo:hasUUID ?characteristicId;
+    sbo:methodName sbo:read.
+
+    OPTIONAL {$this sboe:hasName ?preferredName}
+    
+    BIND(IF(BOUND(?preferredName), ?preferredName, ?macAddress) AS ?thingDescriptionTitle)
+
+
+    BIND(CONCAT(LCASE(STR(?serviceId)), "/", LCASE(STR(?characteristicId))) AS ?affordanceName)
+    BIND(CONCAT("./", LCASE(STR(?serviceId)), "/", LCASE(STR(?characteristicId))) AS ?affordanceId)
+    BIND(IRI(CONCAT(STR($this), STR(?affordanceId), "#propertyAffordance")) as ?propertyAffordance)	
+    BIND(IRI(CONCAT(STR($this), STR(?affordanceId),  "#propertyAffordanceForm")) as ?propertyAffordanceForm)
+    BIND(CONCAT("gatt://", STR(?macAddress)) AS ?baseURI)
+}
+    
+    """
+].

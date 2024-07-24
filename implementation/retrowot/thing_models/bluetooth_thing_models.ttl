@@ -1,0 +1,55 @@
+@prefix ns1: <https://www.w3.org/2019/wot/hypermedia#> .
+@prefix ns2: <https://www.w3.org/2019/wot/td#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://purl.org/tm/00002A0000001000800000805F9B34FB> a <https://www.w3.org/2019/wot/tm#ThingModel> ;
+    rdfs:seeAlso <http://purl.org/bluetooth/characteristic#00002A0000001000800000805F9B34FB> ;
+    ns2:baseURI "gatt://{{MAC-ADDRESS}}" ;
+    ns2:hasActionAffordance <http://purl.org/tm/00002A0000001000800000805F9B34FB#actionAffordance> ;
+    ns2:hasPropertyAffordance <http://purl.org/tm/00002A0000001000800000805F9B34FB#propertyAffordance> ;
+    ns2:title "Device Name Thing Model" .
+
+
+<http://purl.org/tm/00002A0000001000800000805F9B34FB#actionAffordance> a ns2:ActionAffordance ;
+    ns2:hasForm <http://purl.org/tm/00002A0000001000800000805F9B34FB#actionAffordanceForm> ;
+    ns2:name "Device Name" ;
+    ns2:type "string" .
+
+<http://purl.org/tm/00002A0000001000800000805F9B34FB#actionAffordanceForm> a ns1:Form ;
+    ns1:forContentType "application/x.binary-data-stream" ;
+    ns1:hasOperationType ns2:readProperty,
+        ns2:subscribeEvent ;
+    ns1:hasTarget "./0000180000001000800000805f9b34fb/00002a0000001000800000805f9b34fb" .
+
+<http://purl.org/tm/00002A0000001000800000805F9B34FB#propertyAffordance> a ns2:PropertyAffordance ;
+    ns2:hasForm <http://purl.org/tm/00002A0000001000800000805F9B34FB#propertyAffordanceForm> ;
+    ns2:name "Device Name" ;
+    ns2:type "string" .
+
+<http://purl.org/tm/00002A0000001000800000805F9B34FB#propertyAffordanceForm> a ns1:Form ;
+    ns1:forContentType "application/x.binary-data-stream" ;
+    ns1:hasOperationType ns2:readProperty,
+        ns2:writeProperty ;
+    ns1:hasTarget "./0000180000001000800000805f9b34fb/00002a0000001000800000805f9b34fb" .
+
+<http://purl.org/tm/00002A0100001000800000805F9B34FB#actionAffordance> a ns2:ActionAffordance ;
+    ns2:hasForm <http://purl.org/tm/00002A0100001000800000805F9B34FB#actionAffordanceForm> ;
+    ns2:name "Appearance" ;
+    ns2:type "string" .
+
+<http://purl.org/tm/00002A0100001000800000805F9B34FB#actionAffordanceForm> a ns1:Form ;
+    ns1:forContentType "application/x.binary-data-stream" ;
+    ns1:hasOperationType ns2:readProperty,
+        ns2:subscribeEvent ;
+    ns1:hasTarget "./0000180000001000800000805f9b34fb/00002a0100001000800000805f9b34fb" .
+
+<http://purl.org/tm/00002A0100001000800000805F9B34FB#propertyAffordance> a ns2:PropertyAffordance ;
+    ns2:hasForm <http://purl.org/tm/00002A0100001000800000805F9B34FB#propertyAffordanceForm> ;
+    ns2:name "Appearance" ;
+    ns2:type "string" .
+
+<http://purl.org/tm/00002A0100001000800000805F9B34FB#propertyAffordanceForm> a ns1:Form ;
+    ns1:forContentType "application/x.binary-data-stream" ;
+    ns1:hasOperationType ns2:readProperty,
+        ns2:writeProperty ;
+    ns1:hasTarget "./0000180000001000800000805f9b34fb/00002a0100001000800000805f9b34fb" .

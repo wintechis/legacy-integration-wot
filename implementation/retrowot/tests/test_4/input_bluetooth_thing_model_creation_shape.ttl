@@ -1,0 +1,142 @@
+@prefix : <http://example.org/> .
+@prefix capability: <http://purl.org/serviceCapability#> .
+@prefix sbo: <https://freumi.inrupt.net/SimpleBluetoothOntology.ttl#> .
+@prefix sboe: <https://purl.org/ExtendedSimpleBluetoothOntology#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix spdx: <https://spdx.org/rdf/terms/spdx-ontology.owl.xml> .
+@prefix zigbee: <https://www.purl.org/SimpleZigbeeInteractionOntology.ttl#> .
+@prefix ble: <http://purl.org/bluetooth/> .
+
+
+:BluetoothBasedPropertyThingModel a sh:NodeShape ;
+	sh:targetClass ble:Characteristic;
+	sh:rule [ 
+		a sh:SPARQLRule;
+		rdfs:label "Maps Bluetooth Descriptions to the unified affordance model structure.";
+		sh:construct """
+		PREFIX ble: <http://purl.org/bluetooth/>
+		PREFIX tm: <https://www.w3.org/2019/wot/tm#>
+		PREFIX td: <https://www.w3.org/2019/wot/td#>
+		PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+		PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+		PREFIX hctl: <https://www.w3.org/2019/wot/hypermedia#>
+		CONSTRUCT {
+			?tm a tm:ThingModel;
+
+				td:baseURI "gatt://{{MAC-ADDRESS}}";
+				td:title ?tmtitle;
+				rdfs:seeAlso $this;
+				td:hasPropertyAffordance ?propertyAffordance.
+		
+			?propertyAffordance a td:PropertyAffordance;
+				td:description ?description;
+				td:type "string";
+				td:name ?label;
+				td:hasForm ?propertyAffordanceForm.
+
+			?propertyAffordanceForm a hctl:Form;
+			    hctl:hasTarget ?affordanceId;
+				hctl:hasOperationType td:readProperty;
+				hctl:forContentType "application/x.binary-data-stream".
+
+		
+		} WHERE {
+
+			$this a ble:Characteristic;
+			ble:hasUUID ?characteristicId;
+			ble:hasAccessProperty ?bleAccessProperty.
+		
+			?bleAccessProperty ble:hasAccessMethod ble:Read ;
+			ble:hasStatusLevel ?level.
+		
+			?service ble:hasCharacteristic $this;
+			ble:hasUUID ?serviceId.
+		
+			BIND(IRI(REPLACE(STR($this), "http://purl.org/bluetooth/characteristic#", "http://purl.org/tm/")) AS ?tm)
+		
+			BIND(IRI(CONCAT(STR(?tm), "#propertyAffordance")) as ?propertyAffordance)
+			
+			BIND(IRI(CONCAT(STR(?tm), "#propertyAffordanceForm")) as ?propertyAffordanceForm)
+		
+			# FILTER (?level in (ble:Mandatory, ble:Optional)).
+			# FILTER (?level in (ble:Mandatory)).
+		
+			$this rdfs:label ?label.
+		
+		
+			BIND(CONCAT(STR(?label), " Thing Model") AS ?tmtitle)
+		
+			OPTIONAL {
+				$this rdfs:comment ?description.
+			}
+			BIND(CONCAT("./", STR(?serviceId), "/", STR(?characteristicId)) AS ?affordanceId)
+		}
+		
+		"""
+	].
+
+:BluetoothBasedPropertyThingModel2 a sh:NodeShape ;
+	sh:targetClass ble:Characteristic;
+	sh:rule [ 
+		a sh:SPARQLRule;
+		rdfs:label "Maps Bluetooth Descriptions to the unified affordance model structure.";
+		sh:construct """
+		PREFIX ble: <http://purl.org/bluetooth/>
+		PREFIX tm: <https://www.w3.org/2019/wot/tm#>
+		PREFIX td: <https://www.w3.org/2019/wot/td#>
+		PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+		PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+		CONSTRUCT {
+			?tm a tm:ThingModel;
+				td:baseUri "gatt://{{MAC-ADDRESS}}";
+				td:title ?tmtitle;
+				rdfs:seeAlso $this;
+				td:hasPropertyAffordance ?propertyAffordance.
+		
+			?propertyAffordance a tm:PropertyAffordance;
+				td:description ?description;
+				td:type "string";
+				td:hasForm ?propertyAffordanceForm.
+			
+			?propertyAffordanceForm td:href ?affordanceId;
+				td:op "readproperty";
+				td:contentType "application/x.binary-data-stream".
+		
+		} WHERE {
+
+			$this a ble:Characteristic;
+			ble:hasUUID ?characteristicId;
+			ble:hasAccessProperty ?bleAccessProperty.
+		
+			?bleAccessProperty ble:hasAccessMethod ble:Read ;
+			ble:hasStatusLevel ?level.
+		
+			?service ble:hasCharacteristic $this;
+			ble:hasUUID ?serviceId.
+		
+			BIND(IRI(REPLACE(STR($this), "http://purl.org/bluetooth/characteristic#", "http://purl.org/tm/")) AS ?tm)
+		
+			BIND(IRI(CONCAT(STR(?tm), "#propertyAffordance")) as ?propertyAffordance)
+			
+			BIND(IRI(CONCAT(STR(?tm), "#propertyAffordanceForm")) as ?propertyAffordanceForm)
+		
+			# FILTER (?level in (ble:Mandatory, ble:Optional)).
+			FILTER (?level in (ble:Mandatory)).
+		
+			$this rdfs:label ?label.
+		
+		
+			BIND(CONCAT(STR(?label), " Thing Model") AS ?tmtitle)
+		
+			OPTIONAL {
+				$this rdfs:comment ?description.
+			}
+			BIND(CONCAT("./", STR(?serviceId), "/", STR(?characteristicId)) AS ?affordanceId)
+		}
+		
+		"""
+	].

@@ -32,7 +32,6 @@ def signal_handler(signum, frame):
 
 if __name__ == "__main__":
     # Set its level to DEBUG
-  
     
     loop = asyncio.get_event_loop()
     logger.info("Started server...")

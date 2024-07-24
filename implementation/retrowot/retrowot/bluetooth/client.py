@@ -1,30 +1,31 @@
+""" Bluetooth Client Module specifies a client for Bluetooth GATT communication. """
 import os
 import sys
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 sys.path.append(PROJECT_ROOT)
 
-from bumble.device import Device, Peer
-from bumble.transport import Transport, open_transport_or_link
-from bumble.transport.common import TransportSink, TransportSource
-from bumble.gatt_client import CharacteristicProxy, ServiceProxy
-from bumble.core import ProtocolError, UUID
-from bumble.company_ids import COMPANY_IDENTIFIERS
-from bumble.hci import Address
-from typing import List, Dict, Any, Optional, Type, Tuple, MutableSet
-from pyee import AsyncIOEventEmitter
+import logging
+from typing import Any, Dict, List, MutableSet, Optional, Tuple, Type
+
+import bluetooth.devices as bleDe
 
 # from configs import settings
 from bluetooth.devices import AddressType, BLEDevice, BLEDeviceMessage
-import bluetooth.devices as bleDe
-
-# from data.DataPoint import DataPoint
-from configs import settings
-from utils import SingletonMeta
 from bluetooth.service_discovery_enrichment import service_discovery_enrichment
-import logging
+from bumble.company_ids import COMPANY_IDENTIFIERS
+from bumble.core import UUID, ProtocolError
+from bumble.device import Device, Peer
+from bumble.gatt_client import CharacteristicProxy, ServiceProxy
+from bumble.hci import Address
+from bumble.transport import Transport, open_transport_or_link
+from bumble.transport.common import TransportSink, TransportSource
 
+
+from configs import settings
 from pydantic import BaseModel
+from pyee import AsyncIOEventEmitter
+from utils import SingletonMeta
 
 
 class DataPoint(BaseModel):
@@ -38,7 +39,6 @@ class Service:
     def __init__(self) -> None:
         self.proxy: Optional[ServiceProxy] = None
         self.characteristics: Dict[str, CharacteristicProxy] = {}
-
 
 
 class ConnectionProfile:
@@ -63,8 +63,7 @@ class Client(metaclass=SingletonMeta):
 
     def has_active_connection(self, address: str) -> bool:
         return address in self.active_connections
-    
-    
+
     async def discover_device(self, target_address: str) -> None:
         """Discover Bluetooth LE services, characteristics and descriptors of a device"""
 
@@ -83,11 +82,12 @@ class Client(metaclass=SingletonMeta):
             name=target_address,
             manufacturer_specific_data=b"",
             manufacturer="",
-            address=bleDe.Address(uuid=target_address,
-                                  address_type=AddressType.PUBLIC,
-                                  static=True,
-                                  resolvable=True),
-            
+            address=bleDe.Address(
+                uuid=target_address,
+                address_type=AddressType.PUBLIC,
+                static=True,
+                resolvable=True,
+            ),
             rssi=0,
             data="",
             connectable=True,
@@ -101,10 +101,8 @@ class Client(metaclass=SingletonMeta):
         )
         self.bluetooth_devices[target_address] = ble_device
         await self.disconnect(target_address, peer)
-        
-        
 
-    async def device_discovery(self, target_address: str) -> None:
+    async def service_discovery(self, target_address: str) -> None:
         """Discover Bluetooth LE services, characteristics and descriptors of a device"""
 
         # print("device_discovery")
@@ -116,11 +114,9 @@ class Client(metaclass=SingletonMeta):
         if not self.is_initalized():
             await self.initalize()
 
-
-
         ble_device = self.bluetooth_devices.get(target_address, None)
         if ble_device is None:
-            await self.service_discovery(3)
+            await self.device_discovery(3)
             ble_device = self.bluetooth_devices.get(target_address, None)
 
         peer = await self.connect(target_address)
@@ -128,7 +124,7 @@ class Client(metaclass=SingletonMeta):
         await self._discover_device_information(peer)
         services: List[Service] = await self._extract_device_information(peer)
         ble_device.services = services
-        
+
         if settings.enrichment.use_service_discovery:
             await service_discovery_enrichment(ble_device, peer)
 
@@ -277,7 +273,7 @@ class Client(metaclass=SingletonMeta):
 
         self.device.on("advertisement", advertisment_handler)
 
-    async def service_discovery(self, sleeping_time: int = 5) -> None:
+    async def device_discovery(self, sleeping_time: int = 5) -> None:
         if not self.is_initalized():
             await self.initalize()
 
@@ -294,9 +290,9 @@ class Client(metaclass=SingletonMeta):
         hci_device_name: str = settings.hci.name,
         hci_device_mac: str = settings.hci.mac,
         hci_device_link: str = settings.hci.link,
-        hci_host = None
+        hci_host=None,
     ) -> None:
-        
+
         if hci_host is None:
             self.transport = await open_transport_or_link(hci_device_link)
             self.hci_source, self.hci_sink = await self.transport.__aenter__()
@@ -305,7 +301,9 @@ class Client(metaclass=SingletonMeta):
                 hci_device_name, Address(hci_device_mac), self.hci_source, self.hci_sink
             )
         else:
-            self.device = Device(hci_device_name, address=Address(hci_device_mac), host=hci_host)
+            self.device = Device(
+                hci_device_name, address=Address(hci_device_mac), host=hci_host
+            )
 
         self.initialize_advertisment()
 
@@ -344,9 +342,9 @@ class Client(metaclass=SingletonMeta):
             # Add the service to the connection
             _service: Service = Service()
             _service.proxy = found_service
-            connection.services[
-                str(found_service.uuid.to_bytes(force_128=True))
-            ] = _service
+            connection.services[str(found_service.uuid.to_bytes(force_128=True))] = (
+                _service
+            )
 
         return connection.services.get(str(service_uuid.to_bytes(force_128=True)), None)
 
@@ -401,8 +399,6 @@ class Client(metaclass=SingletonMeta):
         logging.debug(characteristic)
         logging.debug(f"Identified Characteristic: {characteristic}")
         return characteristic
-
-
 
     async def read_value(
         self,
@@ -528,6 +524,7 @@ class Client(metaclass=SingletonMeta):
         print(peer)
 
         connection = self.connections.get(connection_address, None)
+
         def on_notify(value):
             try:
                 point = DataPoint(
@@ -548,9 +545,9 @@ class Client(metaclass=SingletonMeta):
         try:
             _ = await characteristic.subscribe(subscriber=on_notify)
             connection.active_characteristics[characteristic_uuid] = {
-                "characterisitic": characteristic, 
-                "emitter": emitter, 
-                "subscriber": 1
+                "characterisitic": characteristic,
+                "emitter": emitter,
+                "subscriber": 1,
             }
             await peer.sustain()
 
@@ -641,8 +638,7 @@ async def test_subscription_to_multiple_devices():
         await task
 
     await asyncio.sleep(1.5)
-    
-    
+
     emitter2 = AsyncIOEventEmitter()
 
     emitter2.on("read", lambda x: print(x))
@@ -677,7 +673,7 @@ async def test_subscription_to_multiple_devices():
             3,
         )
     )
-    
+
     await asyncio.sleep(1.5)
     loop = asyncio.get_running_loop()  # Get the running loop
     emitter3 = AsyncIOEventEmitter()
@@ -703,15 +699,16 @@ async def test_subscription_to_multiple_devices():
     # task_4.cancel()
     print("Unsubscribe")
     await asyncio.sleep(15)
-    
+
     #
-    
+
 
 async def test_multiple_subscriptions():
-    
+
     # from configs import settings
 
     from pyee import AsyncIOEventEmitter
+
     DEVICE_2 = "F6:98:F1:18:38:36"
     c = Client()
     print("Initalize")
@@ -724,7 +721,6 @@ async def test_multiple_subscriptions():
 
     emitter1.on("read", lambda x: print(x))
     emitter1.on("notify", lambda x: print(x))
-
 
     async def job1():
         await asyncio.sleep(3)  # Task takes 3 seconds
@@ -739,8 +735,7 @@ async def test_multiple_subscriptions():
         await task
 
     await asyncio.sleep(1.5)
-    
-    
+
     emitter1 = AsyncIOEventEmitter()
 
     emitter1.on("read", lambda x: print(x))
@@ -756,10 +751,9 @@ async def test_multiple_subscriptions():
             3,
         )
     )
-    
+
     await asyncio.sleep(1.5)
-    
-        
+
     emitter2 = AsyncIOEventEmitter()
 
     emitter2.on("read", lambda x: print(x))
@@ -777,18 +771,15 @@ async def test_multiple_subscriptions():
     )
     # await task_5
 
-
     await asyncio.sleep(15)
-    
-
-
 
 
 async def test_unsubscribe():
-    
+
     # from configs import settings
 
     from pyee import AsyncIOEventEmitter
+
     DEVICE_2 = "F6:98:F1:18:38:36"
     c = Client()
     print("Initalize")
@@ -801,7 +792,6 @@ async def test_unsubscribe():
 
     emitter1.on("read", lambda x: print(x))
     emitter1.on("notify", lambda x: print(x))
-
 
     async def job1():
         await asyncio.sleep(3)  # Task takes 3 seconds
@@ -816,8 +806,7 @@ async def test_unsubscribe():
         await task
 
     await asyncio.sleep(1.5)
-    
-    
+
     emitter1 = AsyncIOEventEmitter()
 
     emitter1.on("read", lambda x: print(x))
@@ -830,9 +819,9 @@ async def test_unsubscribe():
             emitter=emitter1,
         )
     )
-    
+
     await asyncio.sleep(5)
-    
+
     # Cancle task and subscription
     asyncio.create_task(
         c.unsubscribe(
@@ -842,18 +831,15 @@ async def test_unsubscribe():
             emitter=emitter1,
         )
     )
-    
+
     await asyncio.sleep(5)
 
-
     await asyncio.sleep(15)
-    
 
 
 async def test_enrichment():
-    
-    # from configs import settings
 
+    # from configs import settings
 
     DEVICE_2 = "F6:98:F1:18:38:36"
     c = Client()
@@ -864,12 +850,13 @@ async def test_enrichment():
         hci_device_mac="F0:F1:F2:F3:F4:F5",
     )
 
-    await c.device_discovery(DEVICE_2)  
-    
+    await c.device_discovery(DEVICE_2)
+
     device = c.get_device(DEVICE_2)
-    
+
     print(device.to_rdf())
-    
+
+
 if __name__ == "__main__":
     asyncio.run(test_enrichment())
 # asyncio.run(main())
